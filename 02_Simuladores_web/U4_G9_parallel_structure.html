@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE PARALLEL BARS · English 8 · Unit 4 "Fine Distinctions"
+  Grammar 9 — parallel structure with single & paired conjunctions
+  (and/but/or · both…and · either…or · neither…nor · not only…but also ·
+  whether…or · rule of position · nearest-subject agreement · inversion)
+  Three modes: Explore (balance) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Grammar 9 · The Parallel Bars · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --garnet:#8C2F3F; --garnetdark:#5C1E29; --garnetlt:#F4E5E8;   /* Unit 4 identity */
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--garnet),var(--garnetdark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#F1C9D0; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#F5DDE2; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--garnetdark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--garnetdark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--garnetdark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-garnet{background:var(--garnet)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--garnet); background:var(--garnetlt); color:var(--garnetdark)}
+
+  /* ---------- the parallel bars ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .beam{background:#fff; border:1.5px solid var(--rule); border-radius:12px; padding:10px 14px 4px; margin-top:6px; overflow:hidden}
+  .beamhead{font-size:12px; font-weight:900; color:#888; text-transform:uppercase; letter-spacing:.05em}
+  .bar{display:flex; align-items:center; gap:10px; flex-wrap:wrap; padding:8px 12px; margin:9px 0; border-radius:8px; background:var(--garnetlt); border-bottom:5px solid var(--garnet); transform-origin:left center; transition:transform .45s ease, background .3s, border-color .3s}
+  .bar .cj{font-size:11px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:var(--garnetdark); min-width:58px}
+  .bar .it{font-size:clamp(15px,2.6vw,20px); font-weight:800; flex:1 1 120px}
+  .bar .fm{font-size:11px; font-weight:900; letter-spacing:.03em; text-transform:uppercase; background:#fff; border:1.5px solid var(--garnet); color:var(--garnetdark); border-radius:999px; padding:3px 9px; white-space:nowrap}
+  .bar.off{background:var(--thinklt); border-bottom-color:var(--think); transform:rotate(-2.5deg) translateY(5px)}
+  .bar.off .cj,.bar.off .fm{color:var(--think); border-color:var(--think)}
+  .bar.fixed{background:var(--greenlt); border-bottom-color:var(--green)}
+  .bar.fixed .cj,.bar.fixed .fm{color:var(--greendark); border-color:var(--green)}
+  .bar.mask{background:#EEE; border-bottom-color:#999; cursor:pointer} .bar.mask .it,.bar.mask .fm,.bar.mask .cj{color:#999; border-color:#999}
+  .psent{font-size:clamp(17px,3vw,23px); font-weight:800; text-align:center; padding:14px 12px; background:var(--soft); border-radius:12px; margin-top:10px; line-height:1.7}
+  .pi{background:var(--garnetlt); color:var(--garnetdark); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--garnet)}
+  .pi.off{background:var(--thinklt); color:var(--think); box-shadow:inset 0 -2px 0 var(--think)}
+  .pi.fixed{background:var(--greenlt); color:var(--greendark); box-shadow:inset 0 -2px 0 var(--green)}
+  .pi.mask{background:#EEE; color:#999; box-shadow:inset 0 -2px 0 #999; cursor:pointer; min-width:48px; display:inline-block; text-align:center}
+  .verdict{margin-top:10px; border-left:4px solid var(--navy); background:var(--navylt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; color:#333}
+  .legend{display:flex; gap:10px; flex-wrap:wrap; font-size:12px; font-weight:800; margin-top:10px}
+  .legend span{border-radius:6px; padding:1px 8px}
+
+  /* rule of position */
+  .shiftgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:6px; margin-top:4px}
+  .shiftgrid div{background:#fff; border:1.5px solid var(--rule); border-radius:8px; padding:6px 10px; font-size:14px; font-weight:700}
+  .shiftgrid .a{color:var(--navy)} .shiftgrid .b{color:var(--garnet); display:block; font-size:13px; font-style:italic; font-weight:600}
+  .pl{font-size:clamp(17px,3vw,22px); font-weight:800; line-height:2; text-align:center; background:var(--soft); border-radius:12px; padding:12px; margin-top:8px}
+  .pl .slot{display:inline-block; border:2px dashed var(--navy); color:var(--navy); background:#fff; border-radius:8px; padding:0 8px; margin:0 3px; cursor:pointer; font-size:14px; line-height:1.7; vertical-align:middle}
+  .pl .slot:hover{background:var(--navylt)}
+  .pl .pw{background:var(--navy); color:#fff; border-radius:8px; padding:0 8px; margin:0 3px}
+  .pl .pw2{background:var(--navylt); color:var(--navy); border-radius:8px; padding:0 6px}
+  .minibars{display:grid; grid-template-columns:1fr; gap:0 10px; margin-top:6px}
+  @media (min-width:640px){ .minibars{grid-template-columns:1fr 1fr} }
+
+  /* special cases selector */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; max-width:100%; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)}
+
+  /* errors card */
+  .errlist{list-style:none; margin-top:6px}
+  .errlist li{display:flex; gap:10px; align-items:center; flex-wrap:wrap; padding:8px 0; border-bottom:1px dashed var(--rule); font-size:15px; font-weight:700}
+  .errlist .bad{color:var(--think)} .errlist .bad::before{content:"✘ "}
+  .errlist .good{color:var(--green); display:none} .errlist .good::before{content:"✔ "}
+  .errlist .why{display:none; margin:0; flex-basis:100%; font-size:13px; padding:6px 10px}
+  .errlist li.open .good,.errlist li.open .why{display:block}
+  .errlist li.open .fixbtn{display:none}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--garnet); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--garnetdark); border:2px solid var(--garnet)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--garnet); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--garnet)}
+  .segbig button.on{background:var(--garnet); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--garnet); background:var(--garnetlt); color:var(--garnetdark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--garnetdark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--garnetdark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--garnet); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)}
+  .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick,.stn .w.rightpick{background:var(--think); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)}
+  .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--garnetdark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--garnet); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} .bar .cj{min-width:44px} .seg2 button{padding:6px 10px; font-size:12px} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">⚖️</span>
+  <div class="wrap">
+    <div class="kicker">English 8 · Unit 4 · Fine Distinctions</div>
+    <h1>⚖️ The Parallel Bars</h1>
+    <div class="sub"><b>Grammar 9</b> — parallel structure with single &amp; paired conjunctions: <i>and / but / or</i>, <i>both … and</i>, <i>either … or</i>, <i>neither … nor</i>, <i>not only … but also</i>, <i>whether … or</i>. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>⚖️ Explore the balance</span><span>🔧 Build a parallel line</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">⚖️ Explore<small>watch the bar tilt</small></button>
+    <button data-tab="build">🔧 Build<small>keep it parallel</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>One list, one uniform</h2>
+      <p class="muted">You met <i>and, but, or</i> joining clauses. Here they join smaller pieces — and demand that every piece have the <b>same
+        grammatical shape</b>: all nouns, all infinitives, all clauses. Load a sentence: each item sits on its own bar, labelled with its form.
+        An item in a different form <b>tilts</b> its bar ✘; <b>Level it</b> repairs the sentence. <span class="es">(Los elementos de una lista deben compartir la misma forma gramatical.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the last item, guess its form, then reveal</label>
+
+      <h3>1 · Choose the connector</h3>
+      <div class="chips" id="scChips"></div>
+
+      <h3>2 · Read each item against the shared opening</h3>
+      <div class="beam"><div class="beamhead" id="beamHead"></div><div id="bars"></div></div>
+      <div class="psent" id="psent"></div>
+      <div class="verdict" id="verdict"></div>
+      <div style="text-align:center; margin-top:10px"><button class="btn small" id="levelBtn">Level it ⚖️</button> <button class="btn ghost small" id="revealBtn" style="display:none">Reveal the last item ✓</button></div>
+      <div class="legend"><span class="pi">item in uniform</span><span class="pi off">odd item ✘</span><span class="pi fixed">repaired item ✔</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">📍 Rule of position</span>
+      <h2>The paired conjunctions — bracket the true alternatives</h2>
+      <div class="shiftgrid">
+        <div><span class="a">both … and</span><span class="b">both the cost and the schedule</span></div>
+        <div><span class="a">either … or</span><span class="b">either redesign the part or reinforce it</span></div>
+        <div><span class="a">neither … nor</span><span class="b">neither confirmed nor denied</span></div>
+        <div><span class="a">not only … but also</span><span class="b">not only faster but also cheaper</span></div>
+        <div><span class="a">whether … or</span><span class="b">whether by rail or by road</span></div>
+      </div>
+      <p class="muted" style="margin-top:10px">What follows the <b>first</b> word must match what follows the <b>second</b>. If the halves bracket different shapes,
+        do not rewrite the second item — <b>move the first half</b>. Tap a slot ▢ to place it. <span class="es">(Mueve la primera mitad del par; no reescribas la segunda.)</span></p>
+      <div class="chips" id="plChips"></div>
+      <div class="pl" id="plSent"></div>
+      <div class="minibars" id="plBars"></div>
+      <div class="verdict" id="plVerdict"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Special cases</span>
+      <h2>Agreement, inversion and the add-on</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="nearest" class="on">either / neither → nearest subject</button><button data-v="both">both … and → plural</button><button data-v="inv">not only → inversion</button><button data-v="aswell">as well as</button><button data-v="why">a set or a choice?</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">⚠️ Common errors</span>
+      <h2>Errors Spanish speakers make</h2>
+      <p class="muted">Read the sentence, find the problem, then tap <b>Fix</b> to check. <span class="es">(Errores típicos: adivina la corrección antes de verla.)</span></p>
+      <ul class="errlist" id="errList"></ul>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> is Grammar 9 on parallel bars: the "one list, one uniform" rule with <i>and</i> and every paired conjunction (both … and, either … or, neither … nor, not only … but also, whether … or), each item labelled by form, the odd item tilting its bar and the test "read it against the shared opening"; the rule-of-position card lets students move the first half of the pair; the special-cases card covers nearest-subject agreement, plural after both … and, inversion after clause-initial not only, as well as, and the set-or-choice explanation; the errors card is the manual's pitfall list plus the third-position trap.</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> the sentence by choosing the parallel item, the agreeing verb or the place of the first half (exam-format items from the manual and Task set 14), then <i>transform</i> broken sentences in a parallel surgery (exercise A, Task set 14 A and the mixed review) with validation.</li>
+          <li><b>Drill</b> merges the two exam formats into one graded engine (★ odd item, pair choice, agreement · ★★ but too, both … and, whether … or, third-position trap · ★★★ inversion, nearest plural subject, as well as, one negative) with a score and streak.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-garnet">🔧 Your turn to produce</span>
+      <h2>Build a parallel line</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">🩺 Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the sentence, then choose the piece that keeps the line <b>parallel</b> — the matching item, the agreeing verb, or the right
+          place for the first half of the pair. The machine assembles it — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">The missing piece should be…</div><div class="bchips" id="itemChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New sentence →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Parallel surgery: each sentence hides one item in the wrong form, a misplaced first half or a double negative. Rewrite the whole
+          sentence correctly and check it against the model. <span class="es">(Reescribe la oración completa.)</span></p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type the repaired sentence"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next sentence →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ spot the odd item, choose the pair, nearest subject · ★★ fix the error &amp; complete the pair · ★★★ inversion, <i>as well as</i>, one negative.
+        Both exam formats: complete the sentence and click the wrong word. Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 8 · Unit 4 «Fine Distinctions» · Grammar 9 — parallel structure · Level C1
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE PARALLEL BARS — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 8 Class Manual (Grammar 9).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE · the parallel bars (items on bars, labelled by form)
+===================================================================== */
+var SCEN = [
+  {label:"and · a list of three", open:"The job requires", tail:".", items:[{t:"welding",f:"-ing form"},{t:"drilling",f:"-ing form"},{t:"to paint",f:"to-infinitive",fix:"painting",ff:"-ing form"}],
+    why:"After <i>requires</i>, two -ing forms set the uniform, so the third item must be an -ing form too. The exam hides the broken item in third position, where your attention is lowest."},
+  {label:"and · two infinitives", open:"She promised", tail:".", items:[{t:"to review the code",f:"to-infinitive"},{t:"documenting every change",f:"-ing form",fix:"to document every change",ff:"to-infinitive"}],
+    why:"<i>promised to review</i> opens with a to-infinitive; the second item must repeat that shape: <i>to document</i>."},
+  {label:"and · adjectives", open:"The design is", tail:".", items:[{t:"compact",f:"adjective"},{t:"efficient",f:"adjective"},{t:"costs little",f:"verb phrase",fix:"inexpensive",ff:"adjective"}],
+    why:"Two adjectives after <i>is</i> set the uniform; a verb phrase in third position breaks it — swap it for an adjective: <i>inexpensive</i>."},
+  {label:"either … or", pair:["either","or"], open:"We can", tail:".", items:[{t:"redesign the part",f:"base verb"},{t:"reinforcement",f:"noun",fix:"reinforce it",ff:"base verb"}],
+    why:"Rule of position: what follows <i>either</i> must match what follows <i>or</i> — ✔ <i>either redesign or reinforce</i> · ✘ <i>either redesign or reinforcement</i>."},
+  {label:"not only … but also", pair:["not only","but also"], open:"The alloy is valued", tail:".", items:[{t:"for its strength",f:"prepositional phrase"},{t:"because it is light",f:"clause",fix:"for its lightness",ff:"prepositional phrase"}],
+    why:"After <i>not only</i> comes a prepositional phrase, so <i>but also</i> needs one too: <i>for its lightness</i>, not a clause."},
+  {label:"whether … or", pair:["whether","or"], open:"We must decide", tail:".", items:[{t:"to repair the roof",f:"to-infinitive"},{t:"replacing it entirely",f:"-ing form",fix:"to replace it entirely",ff:"to-infinitive"}],
+    why:"<i>whether to repair … or to replace</i> (or simply <i>or replace</i>): the same form after both halves of the pair."},
+  {label:"both … and", pair:["Both","and"], open:"", tail:" were responsible for the delay.", items:[{t:"the client",f:"noun phrase"},{t:"the contractor",f:"noun phrase"}],
+    why:"Two noun phrases, one uniform. As a subject, <i>both … and</i> builds a set of two, so the verb is <b>plural</b>: <i>were</i>."},
+  {label:"neither … nor", pair:["Neither","nor"], open:"", tail:" mention the fuse.", items:[{t:"the manual",f:"noun phrase"},{t:"the wiring diagrams",f:"noun phrase"}],
+    why:"Two noun phrases, one uniform. The verb agrees with the <b>nearest</b> subject — <i>the wiring diagrams <b>mention</b></i>, not <i>mentions</i>."}
+];
+var curScen=0, predictMode=false, revealed=false, leveled=false;
+SCEN.forEach(function(s,i){
+  var b=document.createElement("button"); b.textContent=s.label; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curScen=i; leveled=false; revealed=false; document.querySelectorAll("#scChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderScen(); });
+  $("scChips").appendChild(b);
+});
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderScen(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderScen(); });
+$("levelBtn").addEventListener("click", function(){ leveled=true; renderScen(); });
+function itText(it){ return (it.fix && leveled) ? it.fix : it.t; }
+function itForm(it){ return (it.fix && leveled) ? it.ff : it.f; }
+function itCls(it){ return it.fix ? (leveled ? "fixed" : "off") : ""; }
+function joinItems(s, parts){
+  if(s.pair) return s.pair[0]+" "+parts[0]+" "+s.pair[1]+" "+parts[1];
+  if(parts.length===2) return parts[0]+" and "+parts[1];
+  return parts.slice(0,-1).join(", ")+", and "+parts[parts.length-1];
+}
+function renderScen(){
+  var s=SCEN[curScen], mask=predictMode&&!revealed, n=s.items.length, bad=null, html="";
+  $("beamHead").textContent = s.open ? "Shared opening: "+s.open+" …" : "Subject pair: "+s.pair[0]+" … "+s.pair[1]+" …";
+  s.items.forEach(function(it,i){
+    var last=i===n-1, cls=itCls(it), cj=s.pair ? s.pair[i] : (i===0 ? "item" : (last ? "and" : "…"));
+    if(it.fix && !leveled) bad=it;
+    if(mask && last) html+='<div class="bar mask"><span class="cj">'+cj+'</span><span class="it">?</span><span class="fm">which form?</span></div>';
+    else html+='<div class="bar '+cls+'"><span class="cj">'+cj+'</span><span class="it">'+itText(it)+'</span><span class="fm">'+itForm(it)+(cls==="off"?" ✘":cls==="fixed"?" ✔":"")+'</span></div>';
+  });
+  $("bars").innerHTML=html;
+  var parts=s.items.map(function(it,i){ if(mask && i===n-1) return '<span class="pi mask">?</span>'; return '<span class="pi '+itCls(it)+'">'+itText(it)+'</span>'; });
+  $("psent").innerHTML=(s.open?s.open+" ":"")+joinItems(s,parts)+s.tail;
+  var v;
+  if(mask) v="🔮 What form must the last item take to stay on the bar? Decide, then reveal.";
+  else if(bad) v='<b style="color:var(--think)">✘ Off balance.</b> <i>'+bad.t+'</i> ('+bad.f+') breaks the line.'+(s.open?' The test — read it against the opening: <i>'+s.open+' … '+bad.t+'</i> ✘.':'')+' '+s.why;
+  else v='<b style="color:var(--green)">✔ Level.</b> '+(s.items.some(function(it){ return !!it.fix; }) ? 'Every item now wears the same uniform. ' : '')+s.why;
+  $("verdict").innerHTML=v;
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  $("levelBtn").style.display = (!mask && bad) ? "inline-block" : "none";
+  if(mask){ document.querySelectorAll("#bars .mask, #psent .mask").forEach(function(el){ el.addEventListener("click", function(){ revealed=true; renderScen(); }); }); }
+}
+renderScen();
+
+/* rule of position — move the first half of the pair */
+var PLACE = [
+  {w:"either", w2:"or", label:"either · French or German", tok:["She","speaks","French",'<span class="pw2">or</span> German.'],
+    slots:[{i:1,a:"speaks French",af:"verb + noun",b:"German",bf:"noun"},{i:2,a:"French",af:"noun",b:"German",bf:"noun",ok:true}], fix:"She speaks either French or German."},
+  {w:"either", w2:"or", label:"either · renegotiate or absorb", tok:["The firm","must","renegotiate its supplier terms",'<span class="pw2">or</span> absorb the losses.'],
+    slots:[{i:1,a:"must renegotiate its supplier terms",af:"modal + verb phrase",b:"absorb the losses",bf:"verb phrase"},{i:2,a:"renegotiate its supplier terms",af:"verb phrase",b:"absorb the losses",bf:"verb phrase",ok:true}], fix:"The firm must either renegotiate its supplier terms or absorb the losses."},
+  {w:"not only", w2:"but also", label:"not only · lighter but also stiffer", tok:["The prototype","is","lighter",'<span class="pw2">but also</span> stiffer than its predecessor.'],
+    slots:[{i:1,a:"is lighter",af:"verb + adjective",b:"stiffer",bf:"adjective"},{i:2,a:"lighter",af:"adjective",b:"stiffer",bf:"adjective",ok:true}], fix:"The prototype is not only lighter but also stiffer than its predecessor."},
+  {w:"both", w2:"and", label:"both · the cost and the schedule", tok:["The report","covers","the cost",'<span class="pw2">and</span> the schedule.'],
+    slots:[{i:1,a:"covers the cost",af:"verb + noun phrase",b:"the schedule",bf:"noun phrase"},{i:2,a:"the cost",af:"noun phrase",b:"the schedule",bf:"noun phrase",ok:true}], fix:"The report covers both the cost and the schedule."}
+];
+var curPl=0, plSlot=null;
+PLACE.forEach(function(p,i){
+  var b=document.createElement("button"); b.textContent=p.label; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curPl=i; plSlot=null; document.querySelectorAll("#plChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderPl(); });
+  $("plChips").appendChild(b);
+});
+function renderPl(){
+  var p=PLACE[curPl]; if(plSlot===null) plSlot=p.slots[0].i;
+  var html="";
+  p.tok.forEach(function(t,i){
+    var isSlot=p.slots.some(function(x){ return x.i===i; });
+    if(isSlot) html += (plSlot===i ? '<span class="pw">'+p.w+'</span> ' : '<span class="slot" data-i="'+i+'">▢</span> ');
+    html += t+" ";
+  });
+  $("plSent").innerHTML=html.trim();
+  document.querySelectorAll("#plSent .slot").forEach(function(el){ el.addEventListener("click", function(){ plSlot=+el.dataset.i; renderPl(); }); });
+  var s=p.slots.filter(function(x){ return x.i===plSlot; })[0];
+  $("plBars").innerHTML='<div class="bar'+(s.ok?"":" off")+'"><span class="cj">'+p.w+'</span><span class="it">'+s.a+'</span><span class="fm">'+s.af+(s.ok?"":" ✘")+'</span></div><div class="bar"><span class="cj">'+p.w2+'</span><span class="it">'+s.b+'</span><span class="fm">'+s.bf+'</span></div>';
+  $("plVerdict").innerHTML = s.ok
+    ? '<b style="color:var(--green)">✔ Level.</b> <i>'+p.w+' '+s.a+' '+p.w2+' '+s.b+'</i> — '+s.af+' / '+s.bf+'. The pair now brackets the true alternatives: <b>'+p.fix+'</b>'
+    : '<b style="color:var(--think)">✘ Off balance.</b> <i>'+p.w+'</i> is followed by <i>'+s.a+'</i> ('+s.af+') but <i>'+p.w2+'</i> by <i>'+s.b+'</i> ('+s.bf+'). Do not rewrite the second item — tap a slot ▢ and move <b>'+p.w+'</b>.';
+}
+renderPl();
+
+/* special cases */
+var SC = {
+  nearest:"<b>Agreement with either / neither … or / nor:</b> the verb agrees with the <b>nearest</b> subject. <i>Neither the sensors nor the logger <b>was</b> damaged.</i> · <i>Neither the logger nor the sensors <b>were</b> damaged.</i> · <i>Neither the blueprints nor the model <b>reflects</b> the revised loads.</i> Find the subject closest to the verb and let it win.",
+  both:"<b>both … and</b> as a subject always takes a <b>plural</b> verb: <i>Both the client and the contractor <b>were</b> responsible for the delay.</i> · <i>Both the theory and the measurements <b>point</b> to resonance.</i> Two things acting together = a set = plural.",
+  inv:"<b>not only</b> at the <b>start of a clause</b> triggers <b>inversion</b> (auxiliary before subject — a preview of Grammar 11): <i><b>Not only did the pump fail</b>, but the backup also stalled.</i> · <i><b>Not only does the system log</b> every event, but it also self-reports its errors.</i> ✘ <i>Not only the pump failed …</i> Inside the clause, no inversion: <i>The pump not only failed but also …</i>",
+  aswell:"<b>as well as</b> does <b>not</b> build a compound subject — it is a preposition-like add-on, so the subject it trails never counts: <i>The director, as well as her deputies, <b>was</b> present.</i> Compare <i>The director <b>and</b> her deputies <b>were</b> present.</i>",
+  why:"<b>Why English works this way.</b> <i>and</i> builds a <b>set</b> — two things acting together — so the verb goes plural. <i>or</i> and <i>nor</i> do the opposite: they present <b>alternatives</b>, and only one of them acts in any reading of the sentence; the verb cannot agree with both candidates, so English lets the <b>nearest</b> one win. <i>as well as</i> is an add-on, not a set-builder. Ask what the connector builds — a set or a choice — and the agreement rule writes itself."
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.nearest;
+
+/* common errors */
+var ERR = [
+  {bad:"She either speaks French or German.", good:"She speaks either French or German.", why:"Misplaced first word — the pair must bracket the true alternatives: <i>either French or German</i>."},
+  {bad:"The plant not only met its quota but too broke the regional record.", good:"The plant not only met its quota but also broke the regional record.", why:"<i>not only … but too / but as well</i> ✘ — the exam wants <b>but also</b>."},
+  {bad:"The firm didn’t accept neither offer.", good:"The firm accepted neither offer. / The firm didn’t accept either offer.", why:"Spanish <i>ni … ni</i> + negative verb. English keeps one negative: <i>neither</i> alone, or <i>didn’t … either</i>."},
+  {bad:"The robot can lift, sort, and packing the finished parts.", good:"The robot can lift, sort, and pack the finished parts.", why:"Read each item against the shared opening: <i>can … packing</i> fails. The broken item hides in third position."},
+  {bad:"Not only the vendor missed the date, but the parts also arrived damaged.", good:"Not only did the vendor miss the date, but the parts also arrived damaged.", why:"<i>not only</i> at the start of a clause triggers inversion: <i>Not only did the vendor miss …</i>"}
+];
+ERR.forEach(function(e){
+  var li=document.createElement("li");
+  li.innerHTML='<span class="bad">'+e.bad+'</span><button class="btn ghost small fixbtn">Fix ✓</button><span class="good">'+e.good+'</span><div class="why">'+e.why+'</div>';
+  li.querySelector(".fixbtn").addEventListener("click", function(){ li.classList.add("open"); });
+  $("errList").appendChild(li);
+});
+
+/* =====================================================================
+   BUILD · assemble (choose the parallel piece) + transform (parallel surgery)
+===================================================================== */
+var BUILD = [
+  {frame:"The new controller is valued for its precision, its speed, and {V}.", hint:"a list of three after for", options:["its reliability","because it is reliable","it is reliable","being reliable it"], correct:"its reliability", note:"Three noun phrases in one list: its precision, its speed, its reliability."},
+  {frame:"Neither the blueprints nor the model {V} the revised loads.", hint:"agreement after neither … nor", options:["reflects","reflect","are reflecting","have reflected"], correct:"reflects", note:"The verb agrees with the nearest subject: the model reflects."},
+  {frame:"The committee must decide whether to publish the data {V} them confidential.", hint:"the second half of whether … or", options:["or to keep","or keeping","or kept","nor to keep"], correct:"or to keep", note:"whether to publish … or to keep: the same form after both halves."},
+  {frame:"The plant not only met its quota {V} the regional record.", hint:"the second half of not only …", options:["but also broke","but too broke","also breaking","but it also breaking"], correct:"but also broke", note:"not only met … but also broke: the pair is but also, and the verb matches met."},
+  {frame:"The audit found errors in the invoices, the ledgers, and {V}.", hint:"a list of three after in", options:["the inventory counts","counting the inventory","to count inventory","how inventory was counted"], correct:"the inventory counts", note:"Three noun phrases after in: the invoices, the ledgers, the inventory counts."},
+  {frame:"Either the coupling {V} or the whole shaft must come out.", hint:"either brackets two clauses", options:["must be replaced","replacing","must replaced","is replace"], correct:"must be replaced", note:"Clause / clause: the coupling must be replaced or the whole shaft must come out."},
+  {frame:"Not only {V}, but it also filed the report early.", hint:"not only at the start of a clause", options:["did the team finish under budget","the team finished under budget","finishing under budget","the team did finished"], correct:"did the team finish under budget", note:"Clause-initial not only triggers inversion: Not only did the team finish …"},
+  {frame:"She {V} French or German.", hint:"where does either go?", options:["speaks either","either speaks"], correct:"speaks either", note:"The pair must bracket the true alternatives: either French or German."},
+  {frame:"The firm {V} its supplier terms or absorb the losses.", hint:"where does either go?", options:["must either renegotiate","either must renegotiate"], correct:"must either renegotiate", note:"Move the first half next to the true alternatives: either renegotiate … or absorb."},
+  {frame:"We must either accept the quote {V} the deadline.", hint:"the second half of either … or", options:["or renegotiate","or renegotiating","nor renegotiate","or to renegotiate"], correct:"or renegotiate", note:"either accept … or renegotiate: a base verb after both halves."},
+  {frame:"Both the rotor and the stator {V} rewound.", hint:"agreement after both … and", options:["were","was"], correct:"were", note:"both … and builds a set, so the verb is plural: were."},
+  {frame:"The director, as well as her deputies, {V} present.", hint:"as well as is not and", options:["was","were"], correct:"was", note:"as well as does not build a compound subject: the director was."}
+];
+var bi=0, bPick=null, bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function renderBuild(){
+  var it=BUILD[bi]; bPick=null;
+  $("bctx").innerHTML = it.frame.replace("{V}","___")+"<small>Clue: "+it.hint+"</small>";
+  var wrap=$("itemChips"); wrap.innerHTML="";
+  it.options.forEach(function(op){
+    var b=document.createElement("button"); b.textContent=op; b.dataset.v=op;
+    b.addEventListener("click", function(){ bPick=op; document.querySelectorAll("#itemChips button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bPick){ r.className="bresult bad"; r.innerHTML="Choose the missing piece first."; return; }
+  if(bPick===it.correct){
+    var sent=it.frame.replace("{V}", '<span class="pi fixed">'+it.correct+'</span>');
+    r.className="bresult good"; r.innerHTML="✅ "+sent+'<div class="bnote">'+it.note+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else {
+    document.querySelector('#itemChips button[data-v="'+bPick+'"]').classList.add("wrongpick");
+    r.className="bresult bad"; r.innerHTML="❌ That piece tilts the bar. <span class='bnote'>Hint — "+it.note+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:"The robot can lift, sort, and packing the finished parts.", accept:["the robot can lift sort and pack the finished parts"], model:"The robot can lift, sort, and pack the finished parts."},
+  {ctx:"The course covers statics, dynamics, and how to design mechanisms.", accept:["the course covers statics dynamics and mechanism design","the course covers statics dynamics and the design of mechanisms"], model:"The course covers statics, dynamics, and mechanism design."},
+  {ctx:"We must decide whether to repair the roof or replacing it entirely.", accept:["we must decide whether to repair the roof or to replace it entirely","we must decide whether to repair the roof or replace it entirely"], model:"We must decide whether to repair the roof or (to) replace it entirely."},
+  {ctx:"The alloy is valued not only for its strength but also because it is light.", accept:["the alloy is valued not only for its strength but also for its lightness","the alloy is valued not only for its strength but also for its light weight","the alloy is valued not only for its strength but also for its low weight"], model:"The alloy is valued not only for its strength but also for its lightness."},
+  {ctx:"Success depends on planning carefully, testing early, and communication.", accept:["success depends on planning carefully testing early and communicating clearly","success depends on planning carefully testing early and communicating"], model:"Success depends on planning carefully, testing early, and communicating (clearly)."},
+  {ctx:"The role involves scheduling, budgeting, and to negotiate with vendors.", accept:["the role involves scheduling budgeting and negotiating with vendors"], model:"The role involves scheduling, budgeting, and negotiating with vendors."},
+  {ctx:"You can pay by card, by transfer, or cash.", accept:["you can pay by card by transfer or in cash","you can pay by card by transfer or by cash"], model:"You can pay by card, by transfer, or in cash / by cash."},
+  {ctx:"The seminar teaches how to search, evaluate, and citing sources.", accept:["the seminar teaches how to search evaluate and cite sources"], model:"The seminar teaches how to search, evaluate, and cite sources."},
+  {ctx:"The design is compact, efficient, and costs little.", accept:["the design is compact efficient and inexpensive","the design is compact efficient and cheap","the design is compact efficient and affordable","the design is compact efficient and economical"], model:"The design is compact, efficient, and inexpensive."},
+  {ctx:"The firm didn’t accept neither offer.", accept:["the firm accepted neither offer","the firm didn't accept either offer","the firm did not accept either offer"], model:"The firm accepted neither offer. / The firm didn’t accept either offer."},
+  {ctx:"Not only the vendor missed the date, but the parts also arrived damaged.", accept:["not only did the vendor miss the date but the parts also arrived damaged","not only did the vendor miss the date but also the parts arrived damaged"], model:"Not only did the vendor miss the date, but the parts also arrived damaged."},
+  {ctx:"She either speaks French or German.", accept:["she speaks either french or german"], model:"She speaks either French or German."}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML="Repair it: "+it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Keep it parallel", q:"“The internship develops drafting, prototyping, and ___.”", o:["testing","to test","tests are run","how testing"], a:0, w:"One list, one uniform: three -ing forms — drafting, prototyping, testing."},
+  {kind:"mc", diff:1, tag:"Which pair?", q:"“Both the theory ___ the measurements point to resonance.”", o:["and","or","but also","as"], a:0, w:"both pairs only with and: both the theory and the measurements."},
+  {kind:"error", diff:1, tag:"Fix the error", words:["The robot","can","lift,","sort,","and","packing","the finished parts."], bad:5, fixOld:"packing", fixNew:"pack", w:"Three verbs after can share the base form: lift, sort, pack — the broken item hides in third position."},
+  {kind:"mc", diff:1, tag:"Agreement", q:"“Neither the gauge nor the display ___ the true pressure.”", o:["shows","show","are showing","have shown"], a:0, w:"With neither … nor the verb agrees with the nearest subject: the display shows."},
+  {kind:"error", diff:1, tag:"Fix the error", words:["She","either","speaks","French","or","German."], bad:1, fixOld:"either speaks French", fixNew:"speaks either French", w:"The pair must bracket the true alternatives: either French or German."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["The plant","not only","met its quota","but","too","broke","the regional record."], bad:4, fixOld:"but too broke", fixNew:"but also broke", w:"not only pairs with but also — never but too or but as well."},
+  {kind:"fill", diff:2, tag:"Agreement", q:"“Both the client and the contractor ___ (be) responsible for the delay.”", accept:["were"], w:"both … and builds a set, so the verb is plural: were."},
+  {kind:"mc", diff:2, tag:"Keep it parallel", q:"“The committee must decide whether to publish the data ___ them confidential.”", o:["or to keep","or keeping","or kept","nor to keep"], a:0, w:"whether to publish … or to keep: the same form after both halves of the pair."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["Success","depends on","planning carefully,","testing early,","and","communication."], bad:5, fixOld:"communication", fixNew:"communicating (clearly)", w:"Two -ing items set the uniform; the noun in third position breaks it."},
+  {kind:"mc", diff:3, tag:"Inversion", q:"“Not only ___, but it also self-reports its errors.”", o:["does the system log every event","the system logs every event","logging every event","the system every event logs"], a:0, w:"not only at the start of a clause triggers inversion: Not only does the system log …"},
+  {kind:"fill", diff:3, tag:"Agreement", q:"“Neither the manual nor the wiring diagrams ___ (mention) the fuse.”", accept:["mention"], w:"The nearest subject wins: the wiring diagrams mention (plural)."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["The director,","as well as","her deputies,","were","present."], bad:3, fixOld:"were", fixNew:"was", w:"as well as does not build a compound subject: the director … was."},
+  {kind:"mc", diff:3, tag:"One negative", q:"“The firm ___ offer — it rejected both.”", o:["didn’t accept either","didn’t accept neither","accepted not either","didn’t accept nor"], a:0, w:"English keeps one negative: didn’t accept either (or accepted neither)."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("i8_g9_drill_best")||0); if(dscore>best){ store("i8_g9_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Perfectly parallel. Ready for the ★★★ homework." : dscore>=8?"Good balance — review the special-cases card and go again." : "Re-read Grammar 9, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, '<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

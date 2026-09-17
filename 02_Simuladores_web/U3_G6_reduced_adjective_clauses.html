@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE REDUCTION PRESS · English 8 · Unit 3 "The Economy of Language"
+  Grammar 6 — reduced adjective clauses (participles, appositives, the first to)
+  Three modes: Explore (full→reduced) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Grammar 6 · The Reduction Press · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --copper:#9C4511; --copperdark:#632B0A; --copperlt:#F6EAE1;   /* Unit 3 identity — burnt copper */
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--copper),var(--copperdark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#F3D9C6; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#F6E6DA; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--copperdark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--copperdark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--copperdark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-copper{background:var(--copper)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--copper); background:var(--copperlt); color:var(--copperdark)}
+
+  /* ---------- the press spotlight ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .condline{font-size:14px; font-weight:700; color:var(--copperdark); background:var(--copperlt); border-left:4px solid var(--copper); border-radius:0 8px 8px 0; padding:7px 11px; margin:6px 0 10px}
+  .xcard{border-radius:12px; padding:14px 16px; margin:8px 0; position:relative}
+  .xcard .role{font-size:11px; font-weight:900; letter-spacing:.08em; text-transform:uppercase}
+  .xcard .snt{font-size:clamp(18px,3.1vw,24px); font-weight:800; margin-top:4px; line-height:1.55}
+  .xfull{background:var(--navylt); border:2px solid var(--navy)}
+  .xfull .role{color:var(--navy)}
+  .xreduced{background:var(--copperlt); border:2px solid var(--copper)}
+  .xreduced .role{color:var(--copperdark)}
+  .xreduced.jam{background:var(--thinklt); border-color:var(--think)}
+  .xreduced.jam .role{color:var(--think)}
+  .snt span{transition:opacity .35s}
+  .rcon{background:var(--thinklt); color:var(--think); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--think)}
+  .rbe{background:var(--navylt); color:var(--navy); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--navy)}
+  .rpp{background:#FAE1C4; color:#B25F12; border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--grammar)}
+  .rsub{background:#EDEDED; color:#555; border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 #999}
+  .rsub.flag{background:var(--thinklt); color:var(--think); box-shadow:0 0 0 3px var(--think)}
+  .gone{opacity:.28; text-decoration:line-through}
+  .rpp.masked{color:transparent; box-shadow:inset 0 -2px 0 var(--grammar); position:relative; cursor:pointer; min-width:56px; display:inline-block}
+  .rpp.masked::after{content:"?"; position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .pressrow{display:flex; align-items:center; gap:12px; margin:6px 0; flex-wrap:wrap}
+  .gauge{flex:1; min-width:120px; height:12px; background:#E7E2DD; border-radius:999px; overflow:hidden}
+  .gauge i{display:block; height:100%; background:linear-gradient(90deg,var(--copper),var(--copperdark)); width:0; transition:width .35s}
+  .gaugelab{font-weight:900; color:var(--copperdark); font-size:13px}
+  .placeholder{color:#999; font-weight:700; font-style:italic; font-size:17px}
+  .steps{list-style:none; margin:10px 0 0; counter-reset:s}
+  .steps li{position:relative; padding:4px 0 4px 30px; font-size:14px; font-weight:600; color:#aaa}
+  .steps li.done{color:#444}
+  .steps li::before{counter-increment:s; content:counter(s); position:absolute; left:0; top:3px; width:20px; height:20px; background:#CFC7C0; color:#fff; border-radius:50%; font-size:12px; font-weight:900; text-align:center; line-height:20px}
+  .steps li.done::before{background:var(--copper)}
+  .legend{display:flex; gap:10px; flex-wrap:wrap; font-size:12px; font-weight:800; margin-top:10px}
+  .legend span{border-radius:6px; padding:1px 8px}
+
+  /* rules table */
+  .rules{width:100%; border-collapse:collapse; font-size:14px; margin-top:6px}
+  .rules th{text-align:left; font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:#888; padding:6px 8px; border-bottom:2px solid var(--rule)}
+  .rules td{padding:7px 8px; border-bottom:1px solid var(--rule); vertical-align:top}
+  .rules td b{color:var(--copperdark)}
+  .rules td.how{color:#666; font-weight:700; font-size:13px}
+  .rules tr.no td{color:var(--think)}
+
+  /* special cases selector */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; max-width:100%; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)}
+
+  /* errors clinic */
+  .errs{list-style:none; margin:6px 0 0}
+  .errs li{padding:8px 0; border-bottom:1px dashed var(--rule); font-size:15px; font-weight:600}
+  .errs .no{color:var(--think); text-decoration:line-through} .errs .yes{color:var(--green); font-weight:800}
+  .errs small{display:block; color:#666; font-weight:600; font-size:13px; margin-top:2px}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--copper); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--copperdark); border:2px solid var(--copper)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--copper); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--copper)}
+  .segbig button.on{background:var(--copper); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bctx .dir{display:block; font-size:12px; letter-spacing:.06em; text-transform:uppercase; margin-bottom:3px; opacity:.8}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--copper); background:var(--copperlt); color:var(--copperdark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--copperdark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--copperdark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--copper); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)}
+  .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick,.stn .w.rightpick{background:var(--think); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)}
+  .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--copperdark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--copper); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} .rules{font-size:13px} .rules td{padding:6px 5px} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">🗜️</span>
+  <div class="wrap">
+    <div class="kicker">English 8 · Unit 3 · The Economy of Language</div>
+    <h1>🗜️ The Reduction Press</h1>
+    <div class="sub"><b>Grammar 6</b> — reduced adjective clauses: participles, appositives &amp; <i>the first to</i>. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🗜️ Explore the press</span><span>🔧 Build a reduction</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🗜️ Explore<small>watch it shrink</small></button>
+    <button data-tab="build">🔧 Build<small>reduce it yourself</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>The Reduction Press: full clause → reduced clause</h2>
+      <p class="muted">Good engineering removes material without removing strength. Academic English shrinks most adjective
+        clauses the same way: the press deletes the <b>connector</b> and <b>be</b> and keeps the participle. It works
+        <b>only when the connector is the subject</b> of its clause. Choose a pattern, then press — one step at a time.
+        <span class="es">(Solo se reduce cuando el conector es el sujeto de su cláusula; se borran conector y «be».)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the pressed form, guess, then reveal</label>
+
+      <h3>1 · Choose the pattern</h3>
+      <div class="chips" id="scChips"></div>
+      <div class="condline" id="condLine"></div>
+
+      <div class="xcard xfull"><div class="role">Full clause — before the press</div><div class="snt" id="fullSnt"></div></div>
+      <div class="pressrow"><button class="btn" id="pressBtn">Press ⬇</button><div class="gauge"><i id="gaugeFill"></i></div><span class="gaugelab" id="gaugeLab">0 / 3</span></div>
+      <div class="xcard xreduced" id="redCard"><div class="role" id="redRole">Reduced — after the press</div><div class="snt" id="redSnt"></div></div>
+      <div style="text-align:center"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the pressed form ✓</button></div>
+
+      <h3>What the press did</h3>
+      <ol class="steps" id="steps"></ol>
+      <div class="legend"><span class="rcon">connector (deleted)</span><span class="rbe">be / finite verb (deleted or converted)</span><span class="rpp">kept core</span><span class="rsub">own subject ✘</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">💡 The reduction rules at a glance</span>
+      <h2>Which clauses reduce — and how</h2>
+      <p class="muted">The manual's table, plus the two extra routes (<i>no be</i>, <i>the first to</i>) and the one that never works.
+        <span class="es">(Tres patrones con «be», la ruta sin «be», el infinitivo y el conector-objeto que no se reduce.)</span></p>
+      <table class="rules">
+        <tr><th>full clause</th><th>reduced</th><th>how</th></tr>
+        <tr><td>the crew <b>that is installing</b> the mast</td><td>the crew <b>installing</b> the mast</td><td class="how">be → delete; keep -ing</td></tr>
+        <tr><td>the parts <b>that were damaged</b> in transit</td><td>the parts <b>damaged</b> in transit</td><td class="how">be → delete; keep -ed</td></tr>
+        <tr><td>Ms. Vega, <b>who is</b> our lead welder</td><td>Ms. Vega, <b>our lead welder</b></td><td class="how">appositive (noun stays)</td></tr>
+        <tr><td>anyone <b>who holds</b> a license</td><td>anyone <b>holding</b> a license</td><td class="how">no be: verb → -ing</td></tr>
+        <tr><td>the first engineer <b>who proposed</b> the design</td><td>the first engineer <b>to propose</b> the design</td><td class="how">the first / second / last / only + superlatives → to-infinitive</td></tr>
+        <tr class="no"><td>the report <b>(that) we submitted</b></td><td>✘ <s>the report submitting we</s></td><td class="how">object connector: already minimal, never reduces</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Exceptions &amp; special cases</span>
+      <h2>Voice, commas, position, the infinitive</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="voice" class="on">-ing vs -ed</button><button data-v="commas">commas stay</button><button data-v="opening">opening the sentence</button><button data-v="infin">first / last / only</button><button data-v="object">object connector ✘</button><button data-v="pronoun">those / anyone</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">🚫 Error clinic</span>
+      <h2>Typical errors of Spanish speakers</h2>
+      <p class="muted">The exam's favourite is the wrong participle voice; the second is the hybrid that leaves half the clause behind.
+        <span class="es">(Decide quién hace la acción; nunca dejes el conector con un participio.)</span></p>
+      <ul class="errs" id="errList"></ul>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> is the manual's "reduction press" diagram made interactive: the three <i>be</i> patterns of the rules table, the <i>no be → -ing</i> route, the infinitive after <i>the first / the only</i> + superlatives, and the ✘ object-connector case (the clause with its own subject). The special-cases card covers the four exceptions and the error clinic covers the three pitfalls plus the Unit 3 review.</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> the reduced form (or declare "cannot be reduced") for the clauses of exercise A and Task set 10, then <i>transform</i> by text in both directions — reduce (exercise A) and expand back (exercise C).</li>
+          <li><b>Drill</b> merges the exam formats into one graded engine (★ identify the pattern · ★★ fix the hybrid &amp; reduce · ★★★ expand, commas &amp; the <i>by</i>-phrase): Structure completions with four options and Written Expression "click the wrong word", plus fill items with a score and streak.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-copper">🔧 Your turn to produce</span>
+      <h2>Build a reduction</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the full clause, then choose the form the press should leave behind — or declare that it <b>cannot be reduced</b>.
+          The machine assembles the sentence and names the rule — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">The reduced form should be…</div><div class="bchips" id="verbChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Press it 🔧</button><button class="btn ghost" id="bNext">New clause →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Two directions: <b>reduce</b> a full clause, or <b>expand</b> a reduced one back to its full form. Type the
+          <b>noun phrase only</b> (from the noun to the end of the clause) and check it against the model. Write <i>no reduction</i>
+          when the connector is an object. <span class="es">(Escribe solo la frase nominal; acepta that/which y las dos formas de «be».)</span></p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type the noun phrase"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next clause →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ identify the pattern · ★★ fix the hybrid &amp; reduce · ★★★ expand, commas &amp; the <i>by</i>-phrase.
+        Structure and Written Expression formats, as in the exam. Keep your streak alive. <span class="es">(Misma escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 8 · Unit 3 «The Economy of Language» · Grammar 6 — reduced adjective clauses · Level C1
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE REDUCTION PRESS — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 8 Class Manual (Grammar 6).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE · the press: full clause → reduced clause, one step at a time
+===================================================================== */
+var PRESS = [
+  {label:"🔧 be + -ing", cond:"<b>Connector = subject</b> · <i>be</i> + -ing (the crew is installing → active meaning) → delete <i>be</i>, keep -ing",
+   full:'the crew <span class="rcon">that</span> <span class="rbe">is</span> <span class="rpp">installing</span> the mast',
+   out:'the crew <span class="rpp">installing</span> the mast',
+   steps:["Delete the connector <i>that</i> — it is the subject of its clause, so nothing is lost.","Delete <i>be</i> (<i>is</i>).","Keep <b>installing</b>: the crew does the action, so the -ing form stays."]},
+  {label:"📦 be + -ed", cond:"<b>Connector = subject</b> · <i>be</i> + past participle (the parts were damaged → passive meaning) → delete <i>be</i>, keep -ed",
+   full:'the parts <span class="rcon">that</span> <span class="rbe">were</span> <span class="rpp">damaged</span> in transit',
+   out:'the parts <span class="rpp">damaged</span> in transit',
+   steps:["Delete the connector <i>that</i>.","Delete <i>be</i> (<i>were</i>).","Keep <b>damaged</b>: the parts receive the action, so the -ed form stays."]},
+  {label:"🏷️ be + noun", cond:"<b>Connector = subject</b> · <i>be</i> + noun phrase → appositive: the noun stays, the commas stay",
+   full:'Ms. Vega, <span class="rcon">who</span> <span class="rbe">is</span> <span class="rpp">our lead welder</span>, signs the report.',
+   out:'Ms. Vega, <span class="rpp">our lead welder</span>, signs the report.',
+   steps:["Delete the connector <i>who</i>.","Delete <i>be</i> (<i>is</i>).","Keep the noun phrase <b>our lead welder</b> between its two commas — an appositive."]},
+  {label:"⚙️ no be → -ing", cond:"<b>Connector = subject</b> · no <i>be</i> in the clause → convert the verb itself to -ing",
+   full:'anyone <span class="rcon">who</span> <span class="rbe">holds</span> a license',
+   out:'anyone <span class="rpp">holding</span> a license',
+   steps:["Delete the connector <i>who</i>.","There is no <i>be</i> to delete: the verb <i>holds</i> goes into the press instead.","It comes out as <b>holding</b> (-ing)."]},
+  {label:"🥇 the first / only → to", cond:"After <b>the first, the second, the last, the only</b> and superlatives → to-infinitive",
+   full:'the first engineer <span class="rcon">who</span> <span class="rbe">proposed</span> the design',
+   out:'the first engineer <span class="rpp">to propose</span> the design',
+   steps:["Delete the connector <i>who</i>.","The finite verb <i>proposed</i> goes into the press.","After <i>the first</i> it comes out as a to-infinitive: <b>to propose</b> (= who proposed)."]},
+  {label:"✘ object connector", jam:true, cond:"<b>Connector = object</b> · the clause has its own subject (<i>we</i>) → the press jams: nothing can be deleted",
+   full:'the report <span class="rcon">that</span> <span class="rsub">we</span> <span class="rbe">submitted</span>',
+   out:'✘ <s>the report submitting we</s> does not exist. Already minimal: <b>the report (that) we submitted</b>',
+   steps:["The clause has its own subject, <i>we</i>. The connector <i>that</i> is the <b>object</b> of <i>submitted</i>.","Deleting the connector and the verb would destroy the clause: object connectors never reduce.","The only economy available: drop <i>that</i> → <i>the report we submitted</i>."]}
+];
+var curType = 0, step = 0, predictMode = false, revealed = false;
+PRESS.forEach(function(p,i){
+  var b = document.createElement("button"); b.innerHTML = p.label; b.dataset.k = i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curType=i; step=0; revealed=false; document.querySelectorAll("#scChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderPress(); });
+  $("scChips").appendChild(b);
+});
+$("pressBtn").addEventListener("click", function(){ step = step>=3 ? 0 : step+1; revealed=false; renderPress(); });
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderPress(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderPress(); });
+function renderPress(){
+  var p = PRESS[curType];
+  $("condLine").innerHTML = p.cond;
+  $("fullSnt").innerHTML = p.full;
+  var con = document.querySelectorAll("#fullSnt .rcon"), be = document.querySelectorAll("#fullSnt .rbe"), sub = document.querySelectorAll("#fullSnt .rsub");
+  if(!p.jam){
+    if(step>=1) con.forEach(function(e){ e.classList.add("gone"); });
+    if(step>=2) be.forEach(function(e){ e.classList.add("gone"); });
+  } else {
+    if(step>=1) sub.forEach(function(e){ e.classList.add("flag"); });
+    if(step>=3) con.forEach(function(e){ e.classList.add("gone"); });
+  }
+  $("gaugeFill").style.width = (step/3*100)+"%"; $("gaugeLab").textContent = step+" / 3";
+  $("pressBtn").textContent = step>=3 ? "Reset ↺" : "Press ⬇";
+  var jammed = !!p.jam && step>=2;
+  $("redCard").classList.toggle("jam", jammed);
+  $("redRole").textContent = jammed ? "✘ The press jams — no reduction" : "Reduced — after the press";
+  $("redSnt").innerHTML = step>=3 ? p.out : '<span class="placeholder">'+(step===0 ? "… press to reduce" : jammed ? "… the press jams: this clause has its own subject" : "… pressing ("+step+" of 3)")+'</span>';
+  var ol = $("steps"); ol.innerHTML = "";
+  p.steps.forEach(function(s,i){ var li=document.createElement("li"); li.innerHTML=s; if(step>i) li.classList.add("done"); ol.appendChild(li); });
+  var mask = predictMode && !revealed && step>=3 && !p.jam;
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  if(mask){
+    document.querySelectorAll("#redSnt .rpp").forEach(function(el){ el.classList.add("masked"); el.addEventListener("click", function(){ revealed=true; renderPress(); }); });
+  }
+}
+renderPress();
+
+/* special cases */
+var SC = {
+  voice:"<b>Choose the participle by voice.</b> -ing = active meaning: <i>the team <b>winning</b> the contract</i> (the team wins). -ed = passive meaning: <i>the contract <b>awarded</b> yesterday</i> (the contract is awarded). Ask: does the noun <b>do</b> the action or <b>receive</b> it? <span class='es'>(-ing: el sustantivo hace la acción; -ed: la recibe.)</span>",
+  commas:"<b>Non-defining clauses reduce too — and keep their commas.</b> <i>The prototype, which was unveiled in March, exceeded every target.</i> → <i>The prototype, <b>unveiled in March</b>, exceeded every target.</i> The appositive keeps them as well: <i>Ms. Vega, <b>our lead welder</b>, …</i> <span class='es'>(Las comas de la cláusula explicativa se conservan.)</span>",
+  opening:"<b>A reduced clause can open the sentence.</b> <i><b>Founded in 1951</b>, the institute trains 4,000 engineers a year.</i> The phrase must describe the <b>subject</b> that follows it (<i>the institute</i> was founded) — if it describes something else, it dangles: that is the trap of Grammar 7. <span class='es'>(La frase inicial debe describir al sujeto que le sigue.)</span>",
+  infin:"<b>After <i>the first, the second, the last, the only</i> and superlatives</b>, the clause reduces to a <b>to-infinitive</b>: <i>the first engineer <b>to propose</b> the design</i> (= who proposed) · <i>the only material <b>to survive</b> all five tests</i> (= that survived) · <i>the youngest person <b>to chair</b> the committee</i>. <span class='es'>(Tras ordinales, «the only» y superlativos: infinitivo con «to».)</span>",
+  object:"<b>Object connectors never reduce.</b> <i>the report (that) we submitted</i> is already minimal: <i>we</i> is the subject of the clause and <i>that</i> is its object. ✘ <i>the report submitting we</i> does not exist. The only economy available is dropping <i>that</i>. <span class='es'>(Si la cláusula tiene su propio sujeto, no hay reducción.)</span>",
+  pronoun:"<b>Reductions modify nouns.</b> The pronouns <i>those</i> and <i>anyone</i> behave like nouns and take the -ing route: <i>those who attend the seminar</i> → ✔ <i>those <b>attending</b> the seminar</i> · <i>anyone who holds a license</i> → ✔ <i>anyone <b>holding</b> a license</i> · <i>anyone who needs an extension</i> → ✔ <i>anyone <b>needing</b> an extension</i>."
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.voice;
+
+/* error clinic */
+var ERR = [
+  {no:"the equipment <b>using</b> in the lab", yes:"the equipment <b>used</b> in the lab", why:"Wrong participle voice — the exam's favourite. The equipment is used (passive meaning) → -ed."},
+  {no:"the student <b>selected</b> the topic (as a description)", yes:"the student <b>selecting</b> the topic", why:"If the student selects, the meaning is active → -ing. Decide who does what."},
+  {no:"the candidates <b>interviewing</b> by the panel", yes:"the candidates <b>interviewed</b> by the panel", why:"A <i>by</i>-phrase names the doer: the candidates receive the action → -ed."},
+  {no:"the parts <b>that damaged</b> in transit", yes:"the parts <b>that were damaged</b> · the parts <b>damaged</b>", why:"Half a clause left behind: either full or reduced, never the hybrid."},
+  {no:"the crew <b>that installing</b> the mast", yes:"the crew <b>installing</b> the mast", why:"Same hybrid with -ing: the connector and <i>be</i> leave together."},
+  {no:"the report <b>submitting we</b>", yes:"the report (that) we submitted", why:"The clause has its own subject: object connectors never reduce."},
+  {no:"", yes:"those <b>attending</b> the seminar · anyone <b>holding</b> a license", why:"Reductions modify nouns; <i>those</i> and <i>anyone</i> take the -ing reduction like a noun."}
+];
+ERR.forEach(function(e){
+  var li=document.createElement("li");
+  li.innerHTML = (e.no ? '✘ <span class="no">'+e.no+'</span> → ' : '') + '✔ <span class="yes">'+e.yes+'</span><small>'+e.why+'</small>';
+  $("errList").appendChild(li);
+});
+
+/* =====================================================================
+   BUILD · assemble (choose the reduced form) + transform (type it)
+===================================================================== */
+var NOPE = "✘ cannot be reduced";
+var BUILD = [
+  {full:"The visitors <b>who are waiting</b> in the lobby have a 10 o’clock appointment.", frame:"The visitors {R} in the lobby have a 10 o’clock appointment.", options:["waiting","waited","who waiting",NOPE], correct:"waiting", note:"Connector = subject, be + -ing: delete who are, keep waiting (the visitors wait — active)."},
+  {full:"The corrections <b>that the editor requested</b> took a full week.", frame:"The corrections (that) the editor requested took a full week.", options:["requesting the editor","the editor requesting",NOPE], correct:NOPE, note:"The connector is the object (the editor requested them): object connectors never reduce. At most, drop that."},
+  {full:"The turbines <b>that were installed</b> in 2019 still run on the original bearings.", frame:"The turbines {R} in 2019 still run on the original bearings.", options:["installed","installing","that installed",NOPE], correct:"installed", note:"be + past participle (passive meaning): delete that were, keep installed."},
+  {full:"Dr. Kim, <b>who is the laboratory’s founder</b>, will retire next spring.", frame:"Dr. Kim, {R}, will retire next spring.", options:["the laboratory’s founder","who the laboratory’s founder","is the laboratory’s founder",NOPE], correct:"the laboratory’s founder", note:"who is + noun → appositive: only the noun phrase stays, and both commas stay."},
+  {full:"Anyone <b>who needs</b> an extension must request it in writing.", frame:"Anyone {R} an extension must request it in writing.", options:["needing","needed","who needing",NOPE], correct:"needing", note:"No be: the verb itself becomes -ing (anyone needing)."},
+  {full:"She was the first researcher <b>who mapped</b> the fault line.", frame:"She was the first researcher {R} the fault line.", options:["to map","mapping","mapped",NOPE], correct:"to map", note:"After the first (the last, the only, superlatives) the clause reduces to a to-infinitive."},
+  {full:"The invoice <b>that the supplier sent</b> contains an error.", frame:"The invoice (that) the supplier sent contains an error.", options:["sending","the supplier sending","that sending",NOPE], correct:NOPE, note:"The supplier is the subject of the clause and that is its object: no reduction exists."},
+  {full:"The prototype, <b>which was unveiled</b> in March, exceeded every target.", frame:"The prototype, {R} in March, exceeded every target.", options:["unveiled","unveiling","which unveiled",NOPE], correct:"unveiled", note:"Non-defining clauses reduce too — passive meaning → -ed — and keep their commas."},
+  {full:"It was the only material <b>that survived</b> all five tests.", frame:"It was the only material {R} all five tests.", options:["to survive","surviving","survived",NOPE], correct:"to survive", note:"After the only the clause reduces to a to-infinitive: to survive (= that survived)."},
+  {full:"Employees <b>who wish</b> to change shifts must apply in writing.", frame:"Employees {R} to change shifts must apply in writing.", options:["wishing","wished","who wishing",NOPE], correct:"wishing", note:"No be, connector = subject: wish → wishing."},
+  {full:"The institute, <b>which was founded</b> in 1951, trains 4,000 engineers a year.", frame:"The institute, {R} in 1951, trains 4,000 engineers a year.", options:["founded","founding","which founded",NOPE], correct:"founded", note:"Passive meaning → -ed, commas kept. The same phrase can open the sentence: Founded in 1951, the institute…"}
+];
+var bi=0, bPick=null, bPickBtn=null, bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function renderBuild(){
+  var it=BUILD[bi]; bPick=null; bPickBtn=null;
+  $("bctx").innerHTML = "Full clause: "+it.full;
+  var wrap=$("verbChips"); wrap.innerHTML="";
+  it.options.forEach(function(op){
+    var b=document.createElement("button"); b.textContent=op;
+    b.addEventListener("click", function(){ bPick=op; bPickBtn=b; document.querySelectorAll("#verbChips button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bPick){ r.className="bresult bad"; r.innerHTML="Choose the reduced form first."; return; }
+  if(bPick===it.correct){
+    var sent = it.correct===NOPE ? "🛑 "+it.frame : it.frame.replace("{R}", '<span class="rpp">'+it.correct+'</span>');
+    r.className="bresult good"; r.innerHTML="✅ "+sent+'<div class="bnote">'+it.note+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else {
+    if(bPickBtn) bPickBtn.classList.add("wrongpick");
+    r.className="bresult bad"; r.innerHTML="❌ Not that one. <span class='bnote'>Hint — "+it.note+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {dir:"reduce", ctx:"The drones that are patrolling the perimeter recharge automatically.", acc:["the drones patrolling the perimeter"], tail:"recharge automatically", model:"The drones patrolling the perimeter (recharge automatically).", rule:"Connector = subject, be + -ing: delete that are, keep patrolling."},
+  {dir:"reduce", ctx:"The panels that were replaced last winter are already discolored.", acc:["the panels replaced last winter"], tail:"are already discolored", model:"The panels replaced last winter (are already discolored).", rule:"be + past participle: delete that were, keep replaced (passive meaning)."},
+  {dir:"reduce", ctx:"Prof. Iturbe, who is the department’s safety officer, retires in June.", acc:["prof iturbe the department's safety officer"], tail:"retires in june", model:"Prof. Iturbe, the department’s safety officer, (retires in June).", rule:"who is + noun → appositive; both commas stay."},
+  {dir:"reduce", ctx:"Employees who wish to change shifts must apply in writing.", acc:["employees wishing to change shifts"], tail:"must apply in writing", model:"Employees wishing to change shifts (must apply in writing).", rule:"No be: the verb itself becomes -ing (wish → wishing)."},
+  {dir:"reduce", ctx:"She was the youngest engineer who ever led the division.", acc:["the youngest engineer ever to lead the division","the youngest engineer to ever lead the division"], pre:"she was", model:"She was the youngest engineer ever to lead the division.", rule:"Superlative (the youngest) → to-infinitive."},
+  {dir:"reduce", ctx:"The invoice that the supplier sent contains an error.", acc:["no reduction","no","cannot be reduced","the invoice the supplier sent"], tail:"contains an error", model:"No reduction — the invoice (that) the supplier sent.", rule:"The connector is the object (the supplier sent it): object connectors never reduce; you may only drop that."},
+  {dir:"expand", ctx:"The bridge connecting the two campuses closes at midnight.", acc:["the bridge that connects the two campuses","the bridge which connects the two campuses"], tail:"closes at midnight", model:"The bridge that/which connects the two campuses (closes at midnight).", rule:"Un-reduce: connector (subject) + finite verb — connects."},
+  {dir:"expand", ctx:"The figures cited in the appendix come from the 2025 census.", acc:["the figures that are cited in the appendix","the figures which are cited in the appendix","the figures that were cited in the appendix","the figures which were cited in the appendix"], tail:"come from the 2025 census", model:"The figures that/which are (were) cited in the appendix (come from the 2025 census).", rule:"Un-reduce: connector + be + past participle."},
+  {dir:"expand", ctx:"The last student to leave must sign the logbook.", acc:["the last student who leaves","the last student that leaves"], tail:"must sign the logbook", model:"The last student who leaves (must sign the logbook).", rule:"the last + to-infinitive ← who/that + present simple verb."},
+  {dir:"expand", ctx:"The reactor, shut down for maintenance, will restart on Monday.", acc:["the reactor which has been shut down for maintenance","the reactor which was shut down for maintenance","the reactor which is shut down for maintenance"], tail:"will restart on monday", model:"The reactor, which has been / was shut down for maintenance, (will restart on Monday).", rule:"Non-defining: which (not that) + be + past participle; the commas stay."}
+];
+function acceptsOf(it){
+  var a=[]; it.acc.forEach(function(p){ a.push(p); if(it.tail) a.push(p+" "+it.tail); if(it.pre) a.push(it.pre+" "+p); if(it.pre&&it.tail) a.push(it.pre+" "+p+" "+it.tail); });
+  return a.map(norm);
+}
+var ti=0, tDone=0;
+function renderTrans(){
+  var it=TRANS[ti];
+  $("tctx").innerHTML = '<span class="dir">'+(it.dir==="reduce" ? "🗜️ Reduce it — or write “no reduction”" : "↩ Expand it back to the full clause")+'</span>'+it.ctx;
+  $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML="";
+}
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=acceptsOf(it).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b><br>"+it.rule;
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Structure", q:"The regulations ___ last year apply to all new construction.", o:["adopting","adopted","that adopted","were adopted"], a:1, w:"The regulations were adopted (passive meaning): connector and be go, the past participle stays."},
+  {kind:"mc", diff:1, tag:"Structure", q:"Mr. Salas, ___, will oversee the migration.", o:["the senior database administrator","who the senior administrator","is the senior administrator","that is the administrator"], a:0, w:"who is + noun reduces to an appositive: only the noun phrase stays, between commas."},
+  {kind:"error", diff:1, tag:"Written Expression", words:["The","equipment","using","in","the","lab","is","checked","weekly."], bad:2, fixOld:"using", fixNew:"used", w:"The equipment is used (passive meaning) → past participle, not -ing."},
+  {kind:"mc", diff:1, tag:"The subject test", q:"Which clause CANNOT be reduced?", o:["the report that we submitted","the crew that is installing the mast","the parts that were damaged in transit","anyone who holds a license"], a:0, w:"That is the object of submitted and we is the subject: object connectors never reduce."},
+  {kind:"error", diff:1, tag:"Written Expression", words:["The","crane","lifted","the","main","girder","is","the","largest","in","the","port."], bad:2, fixOld:"lifted", fixNew:"lifting", w:"The crane lifts the girder (active meaning) → -ing."},
+  {kind:"error", diff:2, tag:"Written Expression", words:["The","turbines","that installed","in","2019","still","run","on","the","original","bearings."], bad:2, fixOld:"that installed", fixNew:"installed (or: that were installed)", w:"Never the hybrid: keep the full clause (that were installed) or reduce it fully (installed)."},
+  {kind:"fill", diff:2, tag:"Reduce it", q:"<i>Anyone who needs an extension must request it in writing.</i> → Anyone ___ an extension must request it in writing. (one word)", accept:["needing"], w:"No be: the verb itself becomes -ing → anyone needing."},
+  {kind:"mc", diff:2, tag:"Structure", q:"She was the only candidate ___ every stage of the review.", o:["surviving of","to survive","who surviving","survived"], a:1, w:"After the only (the first, the last, superlatives) the clause reduces to a to-infinitive."},
+  {kind:"error", diff:2, tag:"Written Expression", words:["Dr. Kim,","who","the","laboratory’s","founder,","will","retire","next","spring."], bad:1, fixOld:"who the laboratory’s founder", fixNew:"the laboratory’s founder", w:"An appositive keeps only the noun phrase: who and is leave together, never who alone."},
+  {kind:"fill", diff:3, tag:"Expand it", q:"<i>The last student to leave must sign the logbook.</i> → The last student ___ must sign the logbook. (connector + present simple verb)", accept:["who leaves","that leaves"], w:"the last + to-infinitive expands to who/that + verb: the last student who leaves."},
+  {kind:"error", diff:3, tag:"Written Expression", words:["The","candidates","interviewing","by","the","panel","will","be","notified","by","Friday."], bad:2, fixOld:"interviewing", fixNew:"interviewed", w:"by the panel names the doer, so the candidates are interviewed (passive meaning) → past participle."},
+  {kind:"mc", diff:3, tag:"Commas stay", q:"The prototype, ___, exceeded every target.", o:["unveiled in March","unveiling in March","which unveiled in March","was unveiled in March"], a:0, w:"A non-defining clause reduces too and keeps its commas; the prototype was unveiled → -ed."},
+  {kind:"fill", diff:3, tag:"Reduce it", q:"<i>She was the first researcher who mapped the fault line.</i> → She was the first researcher ___ the fault line. (two words)", accept:["to map"], w:"After the first the clause reduces to a to-infinitive: the first researcher to map."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("i8_g6_drill_best")||0); if(dscore>best){ store("i8_g6_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Pressed clean. Ready for Task set 10 at ★★★." : dscore>=8?"Good compression — review the special-cases card and go again." : "Re-read Grammar 6, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, '<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

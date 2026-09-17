@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE PASSIVE CHECK-UP · English 8 · Unit 3 "The Economy of Language"
+  Grammar 8 — the passive at C1 (every tense, get, causative, need + -ing, middle voice)
+  Three modes: Explore (service every tense) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Grammar 8 · The Passive Check-up · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --copper:#9C4511; --copperdark:#632B0A; --copperlt:#F6EAE1;   /* Unit 3 identity (burnt copper) */
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--copper),var(--copperdark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#F3D3BE; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#F8E6DA; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--copperdark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--copperdark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--copperdark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .no{color:var(--think); font-weight:700} .ok{color:var(--greendark); font-weight:700}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-copper{background:var(--copper)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--copper); background:var(--copperlt); color:var(--copperdark)}
+
+  /* ---------- tense dial + spotlight ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .tensechips{display:flex; gap:6px; flex-wrap:wrap; margin:8px 0}
+  .tensechips button{border:2px solid var(--rule); background:#fff; border-radius:8px; padding:6px 11px; font:700 13px Lato,sans-serif; cursor:pointer}
+  .tensechips button.on{border-color:var(--navy); background:var(--navylt); color:var(--navy)}
+  .xcard{border-radius:12px; padding:14px 16px; margin:8px 0; position:relative}
+  .xcard .role{font-size:11px; font-weight:900; letter-spacing:.08em; text-transform:uppercase}
+  .xcard .snt{font-size:clamp(18px,3.1vw,24px); font-weight:800; margin-top:4px; line-height:1.55}
+  .xactive{background:var(--navylt); border:2px solid var(--navy)}
+  .xactive .role{color:var(--navy)}
+  .xpassive{background:var(--copperlt); border:2px solid var(--copper)}
+  .xpassive .role{color:var(--copperdark)}
+  .arrowdown{text-align:center; font-size:26px; color:var(--grammar); margin:-2px 0}
+  .doer{background:#CDD8E6; color:var(--navy); border-radius:6px; padding:0 5px}
+  .vsubj{background:#D8EFE1; color:var(--greendark); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--green)}
+  .vbe{background:var(--navylt); color:var(--navy); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--navy)}
+  .vpp{background:var(--grammarlt); color:var(--grammar); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--grammar)}
+  .vby{background:#EDEDED; color:#777; border-radius:6px; padding:0 5px; font-style:italic}
+  .masked{color:transparent !important; position:relative; cursor:pointer; min-width:44px; display:inline-block}
+  .masked::after{content:"?"; position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .chainbar{display:flex; gap:6px; flex-wrap:wrap; align-items:stretch; margin-top:12px}
+  .chainbar .slot{flex:1; min-width:110px; border-radius:10px; padding:8px 10px; text-align:center; font-weight:900; font-size:15px; border:2px solid}
+  .chainbar .s1{background:#D8EFE1; color:var(--greendark); border-color:var(--green)}
+  .chainbar .s2{background:var(--navylt); color:var(--navy); border-color:var(--navy); flex:1.6}
+  .chainbar .s3{background:var(--grammarlt); color:var(--grammar); border-color:var(--grammar)}
+  .chainbar .s4{background:#F3F3F3; color:#888; border-color:#CCC; font-style:italic}
+  .chainbar .s4.off{opacity:.35; text-decoration:line-through}
+  .chainbar .lab{display:block; font-size:10px; letter-spacing:.06em; text-transform:uppercase; opacity:.75; font-weight:800}
+  .fm{font-family:ui-monospace,Menlo,Consolas,monospace; font-weight:700; font-size:13px; margin-top:8px; color:#555; text-align:center}
+  .doertoggle{display:inline-flex; align-items:center; gap:7px; font-weight:800; font-size:14px; margin-top:10px; cursor:pointer}
+  .doernote{font-size:13px; color:#555; font-weight:700; margin-top:8px; background:var(--soft); border-radius:8px; padding:8px 10px; border-left:3px solid var(--copper)}
+  .legend{display:flex; gap:10px; flex-wrap:wrap; font-size:12px; font-weight:800; margin-top:10px}
+  .legend span{border-radius:6px; padding:1px 8px}
+
+  /* beyond be · special cases · middle voice */
+  .bout{background:var(--copperlt); border:2px solid var(--copper); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .bout b{color:var(--copperdark)}
+  .bout .ex{font-size:clamp(17px,2.8vw,21px); font-weight:800; margin:8px 0; color:var(--ink); line-height:1.7}
+  .bout .cmp{font-size:14px; color:#555}
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; max-width:100%; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)}
+  .scout .chips button.on{border-color:var(--excep); background:#fff; color:var(--excep)}
+  .npout{background:#fff; border-radius:10px; padding:10px 12px; margin-top:6px; font-size:16px; font-weight:700; line-height:1.8}
+  .mvgrid{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:8px}
+  .mv{border:2px solid var(--rule); border-radius:12px; padding:12px 14px; cursor:pointer; background:#fff}
+  .mv .role{font-size:11px; font-weight:900; letter-spacing:.08em; text-transform:uppercase; color:#777}
+  .mv .snt{font-size:clamp(16px,2.6vw,20px); font-weight:800; margin-top:4px}
+  .mv .snt small{display:block; font-size:12px; color:#777; font-weight:700}
+  .mv:hover{border-color:var(--copper)}
+  .mv.good{border-color:var(--green); background:var(--greenlt)} .mv.bad{border-color:var(--think); background:var(--thinklt)}
+  .errgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr)); gap:8px; margin-top:6px}
+  .errgrid div{background:#fff; border:1.5px solid var(--rule); border-radius:10px; padding:8px 11px; font-size:14px; line-height:1.5}
+  .errgrid span{display:block} .errgrid small{display:block; color:#777; font-weight:700; margin-top:2px}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--copper); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--copperdark); border:2px solid var(--copper)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--copper); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--copper)}
+  .segbig button.on{background:var(--copper); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--copper); background:var(--copperlt); color:var(--copperdark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--copperdark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--copperdark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--copper); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)}
+  .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick,.stn .w.rightpick{background:var(--think); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)}
+  .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--copperdark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--copper); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} .mvgrid{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">⚙️</span>
+  <div class="wrap">
+    <div class="kicker">English 8 · Unit 3 · The Economy of Language</div>
+    <h1>⚙️ The Passive Check-up</h1>
+    <div class="sub"><b>Grammar 8</b> — the passive at C1: every tense, <i>get</i>, the causative, <i>need + -ing</i>, the middle voice. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🎛️ Explore the machine</span><span>🔧 Build a passive</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🎛️ Explore<small>service every tense</small></button>
+    <button data-tab="build">🔧 Build<small>assemble &amp; transform</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 Form: be + past participle, in every tense</span>
+      <h2>Service every tense: the auxiliary chain</h2>
+      <p class="muted">Every passive has two parts: an <b>auxiliary chain</b> that carries the tense (<i>is · has been · will have been · should have been</i>)
+        and a <b>past participle</b> that never changes. Tap a tense and watch only the chain move.
+        <span class="es">(Solo cambia la cadena de auxiliares; el participio queda fijo.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the chain and the participle, guess, then reveal</label>
+
+      <h3>1 · Choose a tense</h3>
+      <div class="tensechips" id="tenseChips"></div>
+
+      <div class="xcard xactive"><div class="role">Active — the crew does it</div><div class="snt" id="activeSnt"></div></div>
+      <div class="arrowdown">⬇</div>
+      <div class="xcard xpassive"><div class="role">Passive — the crane receives it</div><div class="snt" id="passiveSnt"></div></div>
+      <div style="text-align:center"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the chain ✓</button></div>
+
+      <div class="chainbar" id="chainBar"></div>
+      <div class="fm" id="tenseFm"></div>
+      <label class="doertoggle"><input type="checkbox" id="doerChk"> Show the doer (<i>by the crew</i>)</label>
+      <div class="doernote">🔎 Omit the doer when it adds nothing; keep it when the record needs it. And only <b>transitive</b> verbs form passives:
+        <span class="no">✘ was happened · ✘ was occurred · ✘ was arrived</span> — the exam plants these regularly.</div>
+      <div class="legend"><span class="vsubj">new subject</span><span class="vbe">auxiliary chain (tense)</span><span class="vpp">past participle (fixed)</span><span class="vby">by + doer (optional)</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-copper">🔩 Beyond be: get, have and the double object</span>
+      <h2>Four constructions the exam expects at C1</h2>
+      <p class="muted">The chain is not always <i>be</i>, and the subject is not always the direct object. Tap a construction.
+        <span class="es">(Cuatro estructuras más allá de «be + participio».)</span></p>
+      <div class="chips" id="beyondChips"></div>
+      <div class="bout" id="beyondOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Active form, passive meaning — and the reverse</span>
+      <h2>Special cases</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="middle" class="on">middle voice</button><button data-v="need">need + -ing</button><button data-v="state">state vs event</button><button data-v="bywith">by vs with</button><button data-v="nopass">no-passive verbs</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">⚠️ Pitfalls — the errors the exam plants</span>
+      <h2>Typical errors of Spanish speakers</h2>
+      <p class="muted">Each pair: the form the exam underlines → the repair. <span class="es">(Los errores que el examen siembra una y otra vez.)</span></p>
+      <div class="errgrid">
+        <div><span class="no">✘ The samples have analyzed.</span><span class="ok">✔ The samples have <b>been</b> analyzed.</span><small>missing been</small></div>
+        <div><span class="no">✘ must be replace</span><span class="ok">✔ must be <b>replaced</b></span><small>base form instead of participle after a modal</small></div>
+        <div><span class="no">✘ The accident was occurred at dawn.</span><span class="ok">✔ The accident <b>occurred</b> at dawn.</span><small>intransitive verbs have no passive</small></div>
+        <div><span class="no">✘ She born in 1998. · ✘ She was borned…</span><span class="ok">✔ She <b>was born</b> in 1998.</span><small>born is always passive — never without be</small></div>
+        <div><span class="no">✘ Titanium is resembled by this alloy.</span><span class="ok">✔ This alloy <b>resembles</b> titanium.</span><small>state verbs refuse the passive</small></div>
+        <div><span class="no">✘ announced with the dean</span><span class="ok">✔ announced <b>by</b> the dean</span><small>by = doer · with = instrument</small></div>
+        <div><span class="no">✘ The seals need replaced.</span><span class="ok">✔ The seals need <b>replacing</b> / need <b>to be replaced</b>.</span><small>need + -ing (or to be + participle), never the hybrid</small></div>
+        <div><span class="no">✘ have being verified</span><span class="ok">✔ have <b>been</b> verified</span><small>been follows have; being follows be (is being verified)</small></div>
+        <div><span class="no">✘ The results was published.</span><span class="ok">✔ The results <b>were</b> published.</span><small>be agrees with the new subject</small></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">⚖️ Middle voice or passive?</span>
+      <h2>A decision about causality</h2>
+      <p class="muted">Some verbs describe a change with <b>no doer at all</b>: <i>The door opened · The crack widened.</i> The <b>middle voice</b> presents the event as natural change;
+        the <b>passive</b> presents it as someone’s action with the doer offstage. Pick an event, read the cause, and tap the version a lab report needs.
+        <span class="es">(Elegir entre voz media y pasiva es afirmar algo sobre la causa.)</span></p>
+      <div class="chips" id="midChips"></div>
+      <div class="doernote" id="midCause"></div>
+      <div class="mvgrid"><div class="mv" id="mvMid"></div><div class="mv" id="mvPas"></div></div>
+      <div class="why" id="midWhy"></div>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> follows Grammar 8 in order: the tense table (dial of ten tenses with the chain/participle split), the second grammar box (get-passive, causative, two objects, reporting passive), the exceptions box (middle voice, need + -ing, stative vs event, by/with, state verbs with no passive), the pitfall box, and exercise D (middle voice vs passive) as a causality decision. <b>Predict first</b> hides the chain.</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> the chain and the participle for exercise A, then <i>transform</i> the sentences of exercise B and Task set 12 (passive, causative, reporting, need + -ing), with validation.</li>
+          <li><b>Drill</b> merges exercise C, Task set 12 C–D and the mixed review into one graded engine in the two exam formats (★ core forms · ★★ been, modal perfects, causative, by/with · ★★★ middle voice, need + -ing, state verbs, reporting passive) with a score and streak.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-copper">🔧 Your turn to produce</span>
+      <h2>Build a passive</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the idea and the target form, then choose the <b>auxiliary chain</b> and the <b>participle</b>. The machine assembles it — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">1 · Auxiliary chain</div><div class="bchips" id="chChips"></div></div>
+        <div class="bgroup"><div class="glab">2 · Participle / verb form</div><div class="bchips" id="ppChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New sentence →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Rewrite as instructed — passive, causative, reporting passive or <i>need + -ing</i>. Type it and check against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type the rewritten sentence"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next sentence →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ core forms · ★★ been, modal perfects, causative, by/with · ★★★ middle voice, need + -ing, state verbs, reporting passive.
+        Structure items complete the sentence; Written Expression items ask you to click the wrong segment. Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 8 · Unit 3 «The Economy of Language» · Grammar 8 — the passive at C1 · Level C1
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE PASSIVE CHECK-UP — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 8 Class Manual (Grammar 8).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE · tense dial — the manual's table (inspect), one chain at a time
+===================================================================== */
+var TENSES = [
+  {t:"present simple",     act:"inspects",              ch:"is",              when:"every Monday",         fm:"am / is / are + past participle"},
+  {t:"present continuous", act:"is inspecting",         ch:"is being",        when:"right now",            fm:"am / is / are + being + past participle"},
+  {t:"present perfect",    act:"has inspected",         ch:"has been",        when:"this morning",         fm:"has / have + been + past participle"},
+  {t:"past simple",        act:"inspected",             ch:"was",             when:"yesterday",            fm:"was / were + past participle"},
+  {t:"past continuous",    act:"was inspecting",        ch:"was being",       when:"when the outage hit",  fm:"was / were + being + past participle"},
+  {t:"past perfect",       act:"had inspected",         ch:"had been",        when:"before the lift",      fm:"had + been + past participle"},
+  {t:"future (will)",      act:"will inspect",          ch:"will be",         when:"tomorrow",             fm:"will + be + past participle"},
+  {t:"future perfect",     act:"will have inspected",   ch:"will have been",  when:"by Friday",            fm:"will + have been + past participle"},
+  {t:"modal",              act:"must inspect",          ch:"must be",         when:"before every lift",    fm:"modal + be + past participle"},
+  {t:"modal perfect",      act:"should have inspected", ch:"should have been",when:"before the lift",      fm:"modal + have been + past participle"}
+];
+var curTense=0, predictMode=false, revealed=false;
+TENSES.forEach(function(t,i){
+  var b=document.createElement("button"); b.textContent=t.t; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curTense=i; document.querySelectorAll("#tenseChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); revealed=false; renderTense(); });
+  $("tenseChips").appendChild(b);
+});
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderTense(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderTense(); });
+$("doerChk").addEventListener("change", renderTense);
+function renderTense(){
+  var t=TENSES[curTense], doer=$("doerChk").checked, mask=predictMode&&!revealed;
+  $("activeSnt").innerHTML='The crew <span class="doer">'+t.act+'</span> the crane '+t.when+'.';
+  $("passiveSnt").innerHTML='<span class="vsubj">The crane</span> <span class="vbe">'+t.ch+'</span> <span class="vpp">inspected</span>'+(doer?' <span class="vby">by the crew</span>':'')+' '+t.when+'.';
+  $("chainBar").innerHTML='<span class="slot s1"><span class="lab">new subject</span>The crane</span><span class="slot s2"><span class="lab">chain · '+t.t+'</span>'+t.ch+'</span><span class="slot s3"><span class="lab">participle</span>inspected</span><span class="slot s4'+(doer?'':' off')+'"><span class="lab">doer</span>by the crew</span>';
+  $("tenseFm").textContent = mask ? "chain = ? · participle = ?" : "chain = "+t.fm+" · participle = inspected (never changes)";
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  if(mask){
+    document.querySelectorAll("#passiveSnt .vbe, #passiveSnt .vpp, #chainBar .s2, #chainBar .s3").forEach(function(el){ el.classList.add("masked"); el.addEventListener("click", function(){ revealed=true; renderTense(); }); });
+  }
+}
+renderTense();
+
+/* beyond be: get · causative · two objects · reporting passive */
+var BEYOND = [
+  {label:"get-passive", html:'<b>get + past participle</b> — informal, often bad luck or change.<div class="ex">The drone <span class="vbe">got</span> <span class="vpp">damaged</span> during the demo.</div><div class="cmp">Same passive meaning as <i>was damaged</i>, with a shrug: something went wrong.</div>'},
+  {label:"causative have / get", html:'<b>have / get + object + past participle</b> — you arrange it; someone else does it.<div class="ex">We <span class="vbe">had</span> the boiler <span class="vpp">inspected</span>. · She <span class="vbe">got</span> the wiring <span class="vpp">replaced</span>.</div><div class="cmp">Compare: <i>We inspected the boiler</i> — we did it ourselves.</div>'},
+  {label:"two objects, two passives", html:'<b>Two objects → two passives.</b> Active: <i>They awarded <u>the team</u> <u>a patent</u>.</i><div class="ex"><span class="vsubj">The team</span> <span class="vbe">was</span> <span class="vpp">awarded</span> a patent. · <span class="vsubj">A patent</span> <span class="vbe">was</span> <span class="vpp">awarded</span> to the team.</div><div class="cmp">Either object can become the subject; the other one stays after the verb (with <i>to</i> when it is the person).</div>'},
+  {label:"reporting passive", html:'<b>Report a claim without naming who claims it</b> — two shapes.<div class="ex"><span class="vsubj">It</span> <span class="vbe">is</span> <span class="vpp">said</span> that the site was chosen for political reasons. · <span class="vsubj">The site</span> <span class="vbe">is</span> <span class="vpp">said</span> to have been chosen…</div><div class="cmp"><i>It is said / believed that…</i> or subject + <i>is said to</i> + infinitive; the perfect infinitive (<i>to have been chosen</i>) reports an earlier event.</div>'}
+];
+var curBeyond=0;
+BEYOND.forEach(function(b,i){
+  var el=document.createElement("button"); el.textContent=b.label; el.dataset.k=i;
+  if(i===0) el.classList.add("on");
+  el.addEventListener("click", function(){ curBeyond=i; document.querySelectorAll("#beyondChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); $("beyondOut").innerHTML=BEYOND[i].html; });
+  $("beyondChips").appendChild(el);
+});
+$("beyondOut").innerHTML=BEYOND[0].html;
+
+/* special cases (exceptions box) */
+var SC = {
+  middle:"<b>Middle voice — active form, passive-like meaning.</b> Some active verbs describe how a thing behaves, with no doer at all: <i>The manual <b>reads</b> well · The fabric <b>washes</b> easily · The model <b>sells</b> in three colors.</i> Nobody reads, washes or sells in these sentences — the subject simply has the property.",
+  need:"<b>need + -ing = passive.</b> <i>The filters <b>need changing</b></i> (= need <b>to be changed</b>). The -ing form after <i>need</i> carries passive meaning; both versions are correct. ✘ <s>The filters need changed</s> — the hybrid is never right.",
+  state:"<b>Stative passive = a state · dynamic passive = an event.</b> <i>The valve <b>is closed</b>.</i> (state: it is shut) vs. <i>The valve <b>is closed</b> by the controller at 22:00.</i> (event: someone closes it). Same words — the agent and the time turn a state into an action.",
+  bywith:"<b>by = doer · with = instrument.</b> <i>The plate was cut <b>by</b> the apprentice <b>with</b> a plasma torch.</i> ✘ <s>The winner was announced with the dean</s> → ✔ announced <b>by</b> the dean.",
+  nopass:'<b>Some transitive verbs still refuse the passive</b> — the state verbs <i>have, lack, resemble, suit, fit, hold</i> (capacity). If the verb describes a state rather than an action, test the passive before trusting it. Tap a verb to run the test:<div class="chips" id="npChips"></div><div class="npout" id="npOut"></div>'
+};
+var NOPASS = [
+  {v:"have",     bad:"A spare key is had by the crew.",            good:"The crew has a spare key."},
+  {v:"lack",     bad:"Experience is lacked by the trainee.",       good:"The trainee lacks experience."},
+  {v:"resemble", bad:"Titanium is resembled by this alloy.",       good:"This alloy resembles titanium."},
+  {v:"suit",     bad:"Nobody is suited by the night shift.",       good:"The night shift suits nobody."},
+  {v:"fit",      bad:"The old socket is fitted by the plug.",      good:"The plug fits the old socket."},
+  {v:"hold",     bad:"Forty litres are held by the tank.",         good:"The tank holds forty litres. (capacity)"}
+];
+function renderSC(v){
+  $("scOut").innerHTML=SC[v];
+  if(v!=="nopass") return;
+  NOPASS.forEach(function(n,i){
+    var b=document.createElement("button"); b.textContent=n.v; b.dataset.k=i;
+    b.addEventListener("click", function(){ document.querySelectorAll("#npChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); $("npOut").innerHTML='<span class="no">✘ <s>'+n.bad+'</s></span><br><span class="ok">✔ '+n.good+'</span>'; });
+    $("npChips").appendChild(b);
+  });
+  $("npOut").innerHTML='<span class="muted">Tap <b>have · lack · resemble · suit · fit · hold</b> — each passive attempt fails.</span>';
+}
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); renderSC(b.dataset.v); });
+});
+renderSC("middle");
+
+/* middle voice vs passive — exercise D as a decision */
+var MID = [
+  {label:"valve / close", cause:"the controller did it", mid:"The valve <b>closed</b>.", pas:"The valve <b>was closed</b> by the controller.", pick:"pas", why:"A lab report prefers the passive: the agent matters for the record."},
+  {label:"solution / turn cloudy", cause:"nobody did anything", mid:"The solution <b>turned</b> cloudy.", pas:"✘ <s>The solution was turned cloudy.</s>", pick:"mid", why:"Middle only: there is no agent to imply, so the passive would falsely suggest one."},
+  {label:"pressure / drop", cause:"cause unknown", mid:"The pressure <b>dropped</b>.", pas:"✘ <s>The pressure was dropped.</s>", pick:"mid", why:"Drop here is intransitive — no passive exists. The plain intransitive is the only correct option."},
+  {label:"settings / change", cause:"someone unknown did it, and it matters", mid:"The settings <b>changed</b>.<small>hides that someone acted</small>", pas:"The settings <b>were changed</b>.<small>signals an agent existed</small>", pick:"pas", why:"The report needs the passive: it preserves the fact of intervention."}
+];
+var curMid=0, midPicked=false;
+MID.forEach(function(m,i){
+  var b=document.createElement("button"); b.textContent=m.label; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curMid=i; document.querySelectorAll("#midChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderMid(); });
+  $("midChips").appendChild(b);
+});
+function renderMid(){
+  var m=MID[curMid]; midPicked=false;
+  $("midCause").innerHTML="🔎 Event: <b>"+m.label+"</b> — cause: <b>"+m.cause+"</b>. Which version does the lab report need? Tap it.";
+  $("mvMid").innerHTML='<div class="role">Middle — natural change, no doer</div><div class="snt">'+m.mid+'</div>';
+  $("mvPas").innerHTML='<div class="role">Passive — someone acted, doer offstage</div><div class="snt">'+m.pas+'</div>';
+  $("mvMid").className="mv"; $("mvPas").className="mv";
+  $("midWhy").className="why"; $("midWhy").innerHTML="";
+}
+function pickMid(which){
+  if(midPicked) return; midPicked=true;
+  var m=MID[curMid], ok=which===m.pick;
+  $(which==="mid"?"mvMid":"mvPas").classList.add(ok?"good":"bad");
+  $(m.pick==="mid"?"mvMid":"mvPas").classList.add("good");
+  $("midWhy").className="why show";
+  $("midWhy").innerHTML='<span class="k">'+(ok?"✓ Right.":"Not this one.")+'</span> '+m.why+' <span class="es">(Voz media = cambio natural; pasiva = alguien actuó.)</span>';
+}
+$("mvMid").addEventListener("click", function(){ pickMid("mid"); });
+$("mvPas").addEventListener("click", function(){ pickMid("pas"); });
+renderMid();
+
+/* =====================================================================
+   BUILD · assemble (chain + participle) + transform (rewrite)
+===================================================================== */
+var BUILD = [
+  {ctx:"the foundations / pour — last week", target:"past simple passive", frame:"The foundations {CH} {PP} last week.", ch:"were", chOpts:["were","was","have been","had been"], pp:"poured", ppOpts:["poured","pour","pouring"], note:"Past simple passive: was/were + past participle — foundations is plural, so were."},
+  {ctx:"the columns / erect — right now", target:"present continuous passive", frame:"The columns {CH} {PP} right now.", ch:"are being", chOpts:["are being","is being","are","have been"], pp:"erected", ppOpts:["erected","erect","erecting"], note:"Present continuous passive: am/is/are + being + past participle."},
+  {ctx:"the entire fleet / convert — by 2030, to electric drive", target:"future perfect passive", frame:"By 2030, the entire fleet {CH} {PP} to electric drive.", ch:"will have been", chOpts:["will have been","will be","will been","has been"], pp:"converted", ppOpts:["converted","convert","converting"], note:"Future perfect passive: will have been + past participle."},
+  {ctx:"every incident / report — within 24 hours (obligation)", target:"modal passive (must)", frame:"Every incident {CH} {PP} within 24 hours.", ch:"must be", chOpts:["must be","must been","must","must have been"], pp:"reported", ppOpts:["reported","report","reporting"], note:"Modal passive: modal + be + past participle."},
+  {ctx:"the bug / catch — in code review, but it slipped through", target:"modal perfect passive (should)", frame:"The bug {CH} {PP} in code review, but it slipped through.", ch:"should have been", chOpts:["should have been","should be","should been","should have"], pp:"caught", ppOpts:["caught","catched","catch"], note:"Modal perfect passive: modal + have been + past participle."},
+  {ctx:"the samples / transport — while …, the cooler failed", target:"past continuous passive", frame:"While the samples {CH} {PP}, the cooler failed.", ch:"were being", chOpts:["were being","was being","were","had been"], pp:"transported", ppOpts:["transported","transporting","transport"], note:"Past continuous passive: was/were + being + past participle."},
+  {ctx:"the committee / give — full access to the archives", target:"present perfect passive", frame:"The committee {CH} {PP} full access to the archives.", ch:"has been", chOpts:["has been","have been","was","is being"], pp:"given", ppOpts:["given","gave","give"], note:"Present perfect passive with two objects: has/have been + past participle, the person as subject."},
+  {ctx:"we / the boiler / inspect — we arranged it; someone else did it", target:"causative have (past)", frame:"We {CH} the boiler {PP}.", ch:"had", chOpts:["had","were","had been","was"], pp:"inspected", ppOpts:["inspected","inspect","inspecting"], note:"Causative: have + object + past participle — we arrange it, someone else does it."},
+  {ctx:"the filters / change — they are due", target:"need + -ing", frame:"The filters {CH} {PP}.", ch:"need", chOpts:["need","needs","are needed","need to"], pp:"changing", ppOpts:["changing","changed","change"], note:"need + -ing carries passive meaning: need changing (= need to be changed)."},
+  {ctx:"the drone / damage — during the demo (bad luck)", target:"get-passive (past)", frame:"The drone {CH} {PP} during the demo.", ch:"got", chOpts:["got","was got","get","has got"], pp:"damaged", ppOpts:["damaged","damage","damaging"], note:"get-passive: get + past participle — informal, often bad luck or change."}
+];
+var bi=0, bCh=null, bPp=null, bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function chipRow(id, opts, onPick){
+  var wrap=$(id); wrap.innerHTML="";
+  opts.forEach(function(op){
+    var b=document.createElement("button"); b.textContent=op; b.dataset.v=op;
+    b.addEventListener("click", function(){ onPick(op); document.querySelectorAll("#"+id+" button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+}
+function renderBuild(){
+  var it=BUILD[bi]; bCh=null; bPp=null;
+  $("bctx").innerHTML = "Idea: "+it.ctx+"<small>Target: "+it.target+"</small>";
+  chipRow("chChips", it.chOpts, function(v){ bCh=v; });
+  chipRow("ppChips", it.ppOpts, function(v){ bPp=v; });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bCh||!bPp){ r.className="bresult bad"; r.innerHTML="Choose a chain <b>and</b> a participle first."; return; }
+  var okCh=bCh===it.ch, okPp=bPp===it.pp;
+  if(okCh&&okPp){
+    var sent=it.frame.replace("{CH}", '<span class="vbe">'+it.ch+'</span>').replace("{PP}", '<span class="vpp">'+it.pp+'</span>');
+    r.className="bresult good"; r.innerHTML="✅ "+sent+'<div class="bnote">'+it.note+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else {
+    if(!okCh) document.querySelector('#chChips button[data-v="'+bCh+'"]').classList.add("wrongpick");
+    if(!okPp) document.querySelector('#ppChips button[data-v="'+bPp+'"]').classList.add("wrongpick");
+    var what = !okCh&&!okPp ? "Both parts are wrong." : !okCh ? "The chain is wrong." : "The participle is wrong.";
+    r.className="bresult bad"; r.innerHTML="❌ "+what+" <span class='bnote'>Hint — "+it.note+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:"The crew inspects the crane every Monday. <b>(passive — keep the tense; drop the doer)</b>", accept:["the crane is inspected every monday","the crane is inspected every monday by the crew","the crane is inspected by the crew every monday"], model:"The crane is inspected every Monday."},
+  {ctx:"Someone has moved the reference samples. <b>(passive)</b>", accept:["the reference samples have been moved"], model:"The reference samples have been moved."},
+  {ctx:"They were testing the alarm when the outage hit. <b>(passive)</b>", accept:["the alarm was being tested when the outage hit"], model:"The alarm was being tested when the outage hit."},
+  {ctx:"Operators must log every intervention. <b>(passive)</b>", accept:["every intervention must be logged","every intervention must be logged by operators","every intervention must be logged by the operators"], model:"Every intervention must be logged."},
+  {ctx:"The jury awarded the team first prize. <b>(passive — the team as subject)</b>", accept:["the team was awarded first prize","the team was awarded first prize by the jury","the team were awarded first prize","the team were awarded first prize by the jury"], model:"The team was awarded first prize (by the jury)."},
+  {ctx:"Someone services our compressors every six months. <b>(causative — start with We)</b>", accept:["we have our compressors serviced every six months","we get our compressors serviced every six months"], model:"We have our compressors serviced every six months."},
+  {ctx:"People say that the dam was built on unstable rock. <b>(start with It)</b>", accept:["it is said that the dam was built on unstable rock","it is said the dam was built on unstable rock"], model:"It is said that the dam was built on unstable rock."},
+  {ctx:"People say that the dam was built on unstable rock. <b>(start with The dam)</b>", accept:["the dam is said to have been built on unstable rock"], model:"The dam is said to have been built on unstable rock."},
+  {ctx:"The foundation granted her a full scholarship. <b>(passive — person as subject)</b>", accept:["she was granted a full scholarship","she was granted a full scholarship by the foundation"], model:"She was granted a full scholarship (by the foundation)."},
+  {ctx:"She arranged for someone to repair the roof. <b>(start with She got)</b>", accept:["she got the roof repaired"], model:"She got the roof repaired."},
+  {ctx:"The seals need something — they are worn out. <b>(need + -ing)</b>", accept:["the seals need replacing","the seals need changing"], model:"The seals need replacing."}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML="Rewrite: "+it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Structure", q:"“The delegation ___ a tour of the reactor hall.”", o:["was given","was gave","gave to","given"], a:0, w:"Two-object passive: be + past participle with the person as subject."},
+  {kind:"mc", diff:1, tag:"Structure", q:"“The leak ___ while the crew was at lunch.”", o:["happened","was happened","was happening by","happens"], a:0, w:"Happen is intransitive: it has no passive."},
+  {kind:"error", diff:1, tag:"Written Expression", words:["The","manuals","must","be","rewrite","before","the","auditors","arrive."], bad:4, fixOld:"rewrite", fixNew:"rewritten", w:"After modal + be the passive needs the past participle."},
+  {kind:"error", diff:1, tag:"Written Expression", words:["She","born","in","1998,","the","year","the","plant","opened."], bad:1, fixOld:"born", fixNew:"was born", w:"Born is always passive in English: be + born."},
+  {kind:"fill", diff:1, tag:"Complete", q:"“Every incident must ___ (report) within 24 hours.”", accept:["be reported","must be reported"], w:"Modal passive: modal + be + past participle."},
+  {kind:"mc", diff:2, tag:"Structure", q:"“We ___ the ventilation ducts cleaned twice a year.”", o:["have","make","are","let"], a:0, w:"Causative have + object + past participle: we arrange it, someone else does it."},
+  {kind:"error", diff:2, tag:"Written Expression", words:["Three","defects","have detected","since","the","line","was upgraded."], bad:2, fixOld:"have detected", fixNew:"have been detected", w:"The present perfect passive needs been: have been + past participle."},
+  {kind:"fill", diff:2, tag:"Complete", q:"“The bug ___ (should / catch) in code review, but it slipped through.”", accept:["should have been caught","should've been caught"], w:"Modal perfect passive: modal + have been + past participle."},
+  {kind:"error", diff:2, tag:"Written Expression", words:["The","winner","was announced","with","the","dean","at","the","closing","session."], bad:3, fixOld:"with", fixNew:"by", w:"by marks the doer; with marks the instrument."},
+  {kind:"mc", diff:3, tag:"Middle or passive?", q:"“The logs show a login at 02:14: the settings ___.”", o:["were changed","changed","were change","have changing"], a:0, w:"An agent is implied and it matters: the passive preserves the fact of intervention."},
+  {kind:"error", diff:3, tag:"Written Expression", words:["The","engine","needs","to overhaul","after","2,000","hours."], bad:3, fixOld:"to overhaul", fixNew:"overhauling / to be overhauled", w:"need + -ing carries passive meaning: needs overhauling (= needs to be overhauled)."},
+  {kind:"mc", diff:3, tag:"Structure", q:"“This alloy ___ titanium in both weight and colour.”", o:["resembles","is resembled by","is resembled","resembled by"], a:0, w:"Resemble is a state verb: transitive, but it refuses the passive."},
+  {kind:"fill", diff:3, tag:"Reporting passive", q:"People say that the dam was built on unstable rock. → “The dam ___ on unstable rock.”", accept:["is said to have been built"], w:"Subject + is said to + perfect infinitive reports an earlier event: is said to have been built."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("i8_g8_drill_best")||0); if(dscore>best){ store("i8_g8_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Fully serviced. Ready for the ★★★ homework." : dscore>=8?"Good service — review the special cases and the pitfalls, then go again." : "Re-read Grammar 8, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, '<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

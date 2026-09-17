@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE FOUR-WAY JOINT · English 8 · Unit 1 "Load-Bearing Structures"
+  Grammar 3 — condition, contrast, manner & place connectors (unless,
+  provided that, in case, even if, although, whereas, much as, despite,
+  as if / as though, where, wherever…)
+  Three modes: Explore (four-family dial + swap the family) · Build · Drill.
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Grammar 3 · The Four-Way Joint · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --steel:#2C5F8C; --steeldark:#1B3B58; --steellt:#E4EDF4;   /* Unit 1 identity — steel blue */
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#142741; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--steel),var(--steeldark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#C3D6E6; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#DCE6EF; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--steeldark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--steeldark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--steeldark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-steel{background:var(--steel)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--steel); background:var(--steellt); color:var(--steeldark)}
+
+  /* ---------- four-family dial ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .lchips{display:flex; gap:6px; flex-wrap:wrap; margin:8px 0}
+  .lchips button{border:2px solid var(--rule); background:#fff; border-radius:8px; padding:6px 12px; font:800 14px Lato,sans-serif; cursor:pointer; position:relative}
+  .lchips button.on{border-color:var(--grammar); background:var(--grammarlt); color:var(--grammar)}
+  .lchips.blind button{color:transparent}
+  .lchips.blind button::after{content:"?"; position:absolute; inset:0; display:flex; align-items:center; justify-content:center; color:#999; font-weight:900}
+  .lout{background:var(--soft); border-radius:12px; padding:16px; margin-top:6px}
+  .lout .mean{font-size:13px; font-weight:900; color:var(--grammar); text-transform:uppercase; letter-spacing:.04em}
+  .lout .ex{font-size:clamp(17px,2.9vw,23px); font-weight:800; margin:6px 0; line-height:1.6}
+  .lout .note{font-size:13px; font-weight:700; color:#666}
+  .vlink{background:var(--grammarlt); color:var(--grammar); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--grammar)}
+  .vcl{background:var(--steellt); border-radius:6px; padding:1px 4px; box-shadow:inset 0 -2px 0 var(--steel)}
+  .cm{color:var(--think)}
+  .vlink.masked{color:transparent; position:relative; cursor:pointer; min-width:56px; display:inline-block}
+  .vlink.masked::after{content:"?"; position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .comma{border:2px solid var(--grammar); border-radius:12px; padding:12px 14px; background:var(--grammarlt); margin-top:14px}
+  .comma .seg{display:flex; border:2px solid var(--grammar); border-radius:999px; overflow:hidden; width:max-content; margin:8px 0}
+  .comma .seg button{border:0; background:#fff; padding:6px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:var(--grammar)}
+  .comma .seg button.on{background:var(--grammar); color:#fff}
+  .comma .demo{font-size:17px; font-weight:800; margin-top:4px; line-height:1.6}
+  .comma .vcl{background:#fff}
+
+  /* swap the family */
+  .ideas{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:8px 0}
+  .ideas div{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:8px 12px}
+  .ideas span{display:block; font-size:11px; font-weight:900; letter-spacing:.08em; color:var(--navy); text-transform:uppercase}
+  .ideas b{font-size:16px}
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; flex-wrap:wrap; margin-top:8px}
+  .seg2 button{border:0; background:#fff; padding:8px 16px; font:800 14px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--steel); color:#fff}
+  .swsent{font-size:clamp(18px,3vw,24px); font-weight:800; text-align:center; padding:16px; background:var(--steellt); border-radius:12px; margin-top:12px; line-height:1.5}
+  .swsent .vlink{background:#fff}
+  .swwhy{text-align:center; font-weight:800; color:var(--steeldark); margin-top:10px; font-size:15px}
+
+  /* special cases selector + error clinic */
+  .scseg{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; flex-wrap:wrap}
+  .scseg button{border:0; background:#fff; padding:7px 13px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .scseg button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)}
+  .errs{display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr)); gap:8px; margin-top:6px}
+  .errs div{border:1.5px solid var(--rule); border-radius:10px; padding:8px 11px; font-size:14px; font-weight:600}
+  .errs .no{display:block; color:var(--think)} .errs .no b{background:var(--thinklt); border-radius:4px; padding:0 3px}
+  .errs .ok{display:block; color:var(--greendark)} .errs small{display:block; color:#777; font-weight:700; margin-top:3px}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--steel); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--steeldark); border:2px solid var(--steel)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--steel); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--steel)}
+  .segbig button.on{background:var(--steel); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--steel); background:var(--steellt); color:var(--steeldark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none; line-height:1.5}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--steeldark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--steeldark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--steel); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)}
+  .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick,.stn .w.rightpick{background:var(--think); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)}
+  .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--steeldark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--steel); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} .ideas{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">🔩</span>
+  <div class="wrap">
+    <div class="kicker">English 8 · Unit 1 · Load-Bearing Structures</div>
+    <h1>🔩 The Four-Way Joint</h1>
+    <div class="sub"><b>Grammar 3</b> — condition, contrast, manner &amp; place: <i>unless · provided that · although · whereas · as if · wherever</i>. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🔎 Explore the four families</span><span>🔧 Build a joint</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🔎 Explore<small>four families, one rule</small></button>
+    <button data-tab="build">🔧 Build<small>connector + what follows</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>Four families, one rule: connector + subject + verb</h2>
+      <p class="muted">Time and cause were the first half of the adverb-clause family. Here is the rest of the toolbox:
+        <b>condition</b>, <b>contrast</b>, <b>manner</b> and <b>place</b>. Every one of them takes a <b>full clause</b>.
+        Pick a family, then a connector, and read its meaning, its example and where the comma goes.
+        <span class="es">(Cuatro familias; todas exigen una cláusula completa.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the connector, guess it from the meaning, then reveal</label>
+
+      <h3>1 · Choose the family</h3>
+      <div class="chips" id="famChips"></div>
+      <h3>2 · Choose the connector</h3>
+      <div class="lchips" id="linkChips"></div>
+      <div class="lout"><div class="mean" id="lMean"></div><div class="ex" id="lEx"></div><div class="note" id="lNote"></div>
+        <div style="text-align:center;margin-top:8px"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the connector ✓</button></div></div>
+
+      <div class="comma"><h3 style="margin-top:0">The comma rule</h3>
+        <p class="muted" style="margin:0">Adverb clause first → comma. Adverb clause second → <b>no</b> comma. <span class="es">(La coma solo cuando la cláusula va delante.)</span></p>
+        <div class="seg" id="commaSeg"><button data-v="f" class="on">clause first</button><button data-v="b">clause second</button></div>
+        <div class="demo" id="commaDemo"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-steel">🔀 Swap the family</span>
+      <h2>Same two ideas, different joint — different meaning</h2>
+      <p class="muted">A <b>condition</b> connector makes idea B <b>depend</b> on idea A, which is not a fact yet. A <b>contrast</b>
+        connector states A as a <b>fact</b> — and B happens anyway. Toggle the joint and watch the logic (and the tense) change.
+        <span class="es">(Mismas ideas; el conector decide la lógica.)</span></p>
+      <div class="chips" id="swChips"></div>
+      <div class="ideas"><div><span>Idea A</span><b id="swA"></b></div><div><span>Idea B</span><b id="swB"></b></div></div>
+      <div class="seg2" id="swSeg"><button data-v="cond" class="on">🔀 condition</button><button data-v="cont">⚖️ contrast</button></div>
+      <div class="swsent" id="swSent"></div>
+      <div class="swwhy" id="swWhy"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Exceptions</span>
+      <h2>Seven joints that do not behave like the others</h2>
+      <div class="scseg" id="scSeg">
+        <button data-v="unless" class="on">unless</button><button data-v="incase">in case</button><button data-v="despite">despite</button><button data-v="asif">as if</button><button data-v="whereas">whereas</button><button data-v="muchas">much as</button><button data-v="adverbs">adverbs ≠ connectors</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">🚫 Common mistakes</span>
+      <h2>Where Spanish speakers overload the joint</h2>
+      <p class="muted">Each card shows the failed joint, the repaired one and the rule it breaks. <span class="es">(Calcos de «aunque… pero», «aun», «a pesar de que», «como si» + presente.)</span></p>
+      <div class="errs" id="errGrid"></div>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> is Grammar 3’s table (condition · contrast · manner · place, every connector + subject + verb) with the comma rule, the “swap the family” contrast (condition vs contrast on the same two ideas), the seven exceptions (unless, in case, despite, as if, whereas, much as, adverbs ≠ connectors) and the pitfall box.</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> a joint by choosing the connector <b>and</b> what follows it (clause / noun / -ing / tense), then <i>transform</i> sentences with the connector in brackets (exercise B and Task set 3), with validation.</li>
+          <li><b>Drill</b> merges the two exam formats into one graded engine (★ structure &amp; double connector · ★★ preposition vs clause, unless, unreal manner · ★★★ as though, otherwise, much as, rewrite) with a score and streak.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-steel">🔧 Your turn to produce</span>
+      <h2>Build a joint</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the frame and the meaning you need. Choose the <b>connector</b> and <b>what follows it</b> — a full clause,
+          a noun phrase, an <i>-ing</i> form, the right tense. The machine assembles the joint and tells you whether it bears the load.
+          <b>Guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">1 · The connector</div><div class="bchips" id="conChips"></div></div>
+        <div class="bgroup"><div class="glab">2 · What follows it</div><div class="bchips" id="folChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New frame →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Rewrite each sentence with the connector in brackets, keeping the meaning. Type it and check against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type the rewritten sentence"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next sentence →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ choose the joint &amp; spot the double connector · ★★ preposition vs clause, <i>unless</i>, unreal manner · ★★★ <i>as though</i>, <i>otherwise</i>, <i>much as</i>, rewrite.
+        Both exam formats: complete the sentence, and click the wrong part. Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 8 · Unit 1 «Load-Bearing Structures» · Grammar 3 — condition, contrast, manner &amp; place · Level C1
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE FOUR-WAY JOINT — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 8 Class Manual (Grammar 3).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+function cap(s){ return s.charAt(0).toUpperCase()+s.slice(1); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE · four-family dial (c = connector, a = rest of the clause, m = main clause)
+   pos: default order (f = clause first, b = clause second) · mid: keeps a comma in second position
+   nf: manner clauses do not go first · prep: takes a noun / -ing, not a clause
+===================================================================== */
+var FAM = [["cond","🔀 condition"],["cont","⚖️ contrast"],["man","🪞 manner"],["place","📍 place"]];
+var FAMN = {cond:"condition", cont:"contrast", man:"manner", place:"place"};
+var LINK = [
+  {f:"cond", t:"if", c:"if", a:"the seal is replaced", m:"the leak will stop", pos:"f", mean:"on the condition that", note:"The basic joint. Present tense after it, not will: if the seal is replaced… (the result clause keeps its will)."},
+  {f:"cond", t:"unless", c:"unless", a:"the seal is replaced", m:"the leak will return", pos:"f", mean:"if… not / except if", note:"= if the seal is not replaced. Do not stack negatives (✘ unless… don’t) and no will after it."},
+  {f:"cond", t:"provided that / providing", c:"provided that", a:"you log every tool you borrow", m:"you may use the workshop", pos:"b", mean:"only if (formal)", note:"provided (that) and providing are the same joint; a full clause in the present follows."},
+  {f:"cond", t:"as long as", c:"as long as", a:"the training is current", m:"access is granted", pos:"b", mean:"only if", note:"Same logic as provided that, a little less formal."},
+  {f:"cond", t:"in case", c:"in case", a:"the first one blows", m:"take a spare fuse", pos:"b", mean:"as a precaution — because it might happen", note:"Precaution, not condition: you take the fuse now. Compare if: take a spare fuse if you can find one. A clause follows (not in case of + clause)."},
+  {f:"cond", t:"even if", c:"even if", a:"it rains", m:"we will fly", pos:"f", mean:"the condition changes nothing (unknown)", note:"even if = a condition, real or not; even though = a known fact. Never even alone."},
+  {f:"cond", t:"whether or not", c:"whether or not", a:"the sponsors attend", m:"the launch will proceed", pos:"b", mean:"in both cases", note:"Covers both possibilities at once: the result does not depend on the clause."},
+  {f:"cont", t:"although", c:"although", a:"the model is old", m:"it remains accurate", pos:"f", mean:"in contrast with the fact that", note:"A fact + an unexpected result. One joint, one connector: never although… but."},
+  {f:"cont", t:"though", c:"though", a:"the model is old", m:"it remains accurate", pos:"f", mean:"= although (less formal)", note:"Same meaning as although; equally common in second position."},
+  {f:"cont", t:"even though", c:"even though", a:"the budget doubled", m:"the project still finished late", pos:"f", mean:"although (stronger) — a known fact", note:"The fact is known: it did double. If it is only possible, use even if."},
+  {f:"cont", t:"while", c:"while", a:"steel fails suddenly", m:"wood gives warning", pos:"f", mean:"whereas — two opposite facts", note:"Contrast while, not time while. It balances two facts and, like whereas, keeps a comma between them.", mid:true},
+  {f:"cont", t:"whereas", c:"whereas", a:"wood gives warning", m:"steel fails suddenly", pos:"b", mean:"in contrast with — formal, academic", note:"The formal contrast connector of academic writing. In the manual’s examples it keeps its comma even in second position: two balanced opposites.", mid:true},
+  {f:"cont", t:"much as", c:"much as", a:"we admired the design", m:"we could not fund it", pos:"f", mean:"although, with admiration built in", note:"Elegant C1 joint. A full clause follows, exactly like although."},
+  {f:"cont", t:"despite / in spite of", c:"despite", a:"the delay", m:"the survey continued", pos:"f", mean:"contrast — but a preposition", note:"Noun or -ing only, never a clause: despite the delay · despite being late · ✘ despite the flight was late. Need a clause? despite the fact that…", prep:true},
+  {f:"man", t:"as", c:"as", a:"the simulation predicted", m:"the wing behaved", pos:"b", mean:"in the way that", note:"Before a clause, formal English wants as, not like (✘ like the simulation predicted). The exam prefers as.", nf:true},
+  {f:"man", t:"as if", c:"as if", a:"he owned the company", m:"he talks", pos:"b", mean:"unreal manner — it is not so", note:"Past tense for unreal manner: he owned (he does not). Formal English allows were: as if it were new.", nf:true},
+  {f:"man", t:"as though", c:"as though", a:"he had been here for twenty years", m:"the intern behaves", pos:"b", mean:"= as if", note:"Same joint as as if. Unreal → past: had been (or were), not has been.", nf:true},
+  {f:"place", t:"where", c:"where", a:"the two metals touch", m:"rust appears", pos:"b", mean:"in the place that", note:"A full clause follows: where + subject + verb."},
+  {f:"place", t:"wherever", c:"wherever", a:"moisture accumulates", m:"corrosion appears", pos:"b", mean:"in every place that", note:"= in any / every place that. Front position also works: Wherever moisture accumulates, corrosion appears."}
+];
+var curFam="cond", curLink=0, predictMode=false, revealed=false, commaOrder="f";
+function sent(l, order){
+  var cl = function(c){ return '<span class="vcl"><span class="vlink">'+c+'</span> '+l.a+'</span>'; };
+  return order==="f" ? cl(cap(l.c))+'<b class="cm">,</b> '+l.m+'.' : cap(l.m)+(l.mid?'<b class="cm">,</b>':'')+' '+cl(l.c)+'.';
+}
+FAM.forEach(function(f){
+  var b=document.createElement("button"); b.textContent=f[1]; b.dataset.k=f[0];
+  if(f[0]===curFam) b.classList.add("on");
+  b.addEventListener("click", function(){
+    curFam=f[0]; revealed=false; document.querySelectorAll("#famChips button").forEach(function(x){ x.classList.toggle("on", x.dataset.k===curFam); });
+    for(var i=0;i<LINK.length;i++){ if(LINK[i].f===curFam){ curLink=i; break; } }
+    buildLinkChips(); renderLink();
+  });
+  $("famChips").appendChild(b);
+});
+function buildLinkChips(){
+  var w=$("linkChips"); w.innerHTML="";
+  LINK.forEach(function(l,i){
+    if(l.f!==curFam) return;
+    var b=document.createElement("button"); b.textContent=l.t; b.dataset.k=i;
+    if(i===curLink) b.classList.add("on");
+    b.addEventListener("click", function(){ curLink=i; revealed=false; w.querySelectorAll("button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderLink(); });
+    w.appendChild(b);
+  });
+}
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderLink(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderLink(); });
+function renderLink(){
+  var l=LINK[curLink], mask = predictMode && !revealed;
+  $("lMean").textContent = FAMN[l.f]+" · = "+l.mean;
+  $("lEx").innerHTML = sent(l, l.pos);
+  $("lNote").innerHTML = "💡 "+l.note;
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  $("linkChips").classList.toggle("blind", mask);
+  if(mask){ document.querySelectorAll("#lEx .vlink").forEach(function(el){ el.classList.add("masked"); el.addEventListener("click", function(){ revealed=true; renderLink(); }); }); }
+  renderComma();
+}
+function renderComma(){
+  var l=LINK[curLink], d=$("commaDemo"), tail;
+  if(l.nf && commaOrder==="f"){ d.innerHTML = sent(l,"b")+' <span class="es" style="font-size:14px">— manner clauses follow the main clause: no comma</span>'; return; }
+  tail = commaOrder==="f" ? "— clause first: comma" : (l.mid ? "— second, but whereas / while keep their comma: two balanced opposites" : "— clause second: no comma");
+  d.innerHTML = sent(l, commaOrder)+' <span class="es" style="font-size:14px">'+tail+"</span>";
+}
+document.querySelectorAll("#commaSeg button").forEach(function(b){ b.addEventListener("click", function(){ commaOrder=b.dataset.v; document.querySelectorAll("#commaSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); renderComma(); }); });
+buildLinkChips(); renderLink();
+
+/* swap the family */
+var SWAP = [
+  {lab:"budget & delay", a:"the budget doubles", b:"the project finishes late",
+    cond:{s:'<span class="vlink">Even if</span> the budget doubles, the project will still finish late.', why:"Condition: the doubling is not a fact yet — and it would change nothing."},
+    cont:{s:'<span class="vlink">Even though</span> the budget doubled, the project still finished late.', why:"Contrast: the doubling is a known fact — and the project was late anyway."}},
+  {lab:"seal & leak", a:"the seal is replaced", b:"the leak returns",
+    cond:{s:'<span class="vlink">Unless</span> the seal is replaced, the leak will return.', why:"Condition: the return of the leak depends on the seal — replace it and the leak stops."},
+    cont:{s:'<span class="vlink">Although</span> the seal was replaced, the leak returned.', why:"Contrast: the seal WAS replaced — and the leak came back anyway."}},
+  {lab:"pay & internship", a:"the pay covers your rent", b:"the internship is worth it",
+    cond:{s:'The internship is worth it <span class="vlink">provided that</span> the pay covers your rent.', why:"Condition: its value depends on the pay — only if."},
+    cont:{s:'The internship is worth it <span class="vlink">although</span> the pay barely covers your rent.', why:"Contrast: the poor pay is a known fact — and it is worth it anyway."}}
+];
+var curSw=0, swMode="cond";
+SWAP.forEach(function(s,i){
+  var b=document.createElement("button"); b.textContent=s.lab; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curSw=i; document.querySelectorAll("#swChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderSwap(); });
+  $("swChips").appendChild(b);
+});
+document.querySelectorAll("#swSeg button").forEach(function(b){ b.addEventListener("click", function(){ swMode=b.dataset.v; document.querySelectorAll("#swSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); renderSwap(); }); });
+function renderSwap(){ var s=SWAP[curSw], v=s[swMode]; $("swA").textContent=s.a; $("swB").textContent=s.b; $("swSent").innerHTML=v.s; $("swWhy").textContent=v.why; }
+renderSwap();
+
+/* special cases (the manual’s exception box) */
+var SC = {
+  unless:"<b>unless = if… not.</b> <i>Unless you object</i> = <i>If you do not object</i>. Do not stack negatives: ✘ Unless you <s>don’t</s> object. And no <i>will</i> after it: ✘ Unless the client <s>will pay</s>… ✔ Unless the client <b>pays</b>…",
+  incase:"<b>in case is precaution, not condition</b>: do A because B might happen. <i>Take a spare fuse <b>in case</b> the first one blows.</i> (you take it now) · Compare <i>if</i>: <i>Take a spare fuse <b>if</b> you can find one.</i> (a real condition on the taking)",
+  despite:"<b>despite / in spite of</b> express contrast but are <b>prepositions</b>: noun or <i>-ing</i>, never a clause. ✔ Despite the delay… ✔ Despite being late… ✘ Despite <s>the flight was late</s>… Need a clause? Add <b>the fact that</b>: Despite the fact that the flight was late…",
+  asif:"<b>as if / as though + past</b> for unreal manner: <i>He talks as if he <b>owned</b> the company.</i> (He does not.) Formal English allows <i>were</i>: <i>as if it <b>were</b> new</i>. ✘ as if he <s>owns</s> · ✘ as though he <s>has been</s> here for twenty years.",
+  whereas:"<b>whereas</b> is the formal contrast connector of academic writing: <i>Steel fails suddenly, <b>whereas</b> wood gives warning.</i> Two balanced facts, opposite directions; <b>while</b> can do the same job.",
+  muchas:"<b>much as = although</b>, with admiration built in (elegant C1): <i><b>Much as</b> we admired the design, we could not fund it.</i> A full clause follows, exactly like although.",
+  adverbs:"<b>otherwise, even so, instead, meanwhile</b> look like connectors but are <b>adverbs</b> — like <i>however</i>, they need a semicolon or a new sentence: <i>Follow the checklist<b>;</b> otherwise, steps get skipped.</i> ✘ Follow the checklist<s>, otherwise</s> steps get skipped. (comma splice)"
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){ b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; }); });
+$("scOut").innerHTML = SC.unless;
+
+/* error clinic (the manual’s pitfall box + exceptions) */
+var ERR = [
+  ["Although the pay is low, <b>but</b> the experience is valuable.", "Although the pay is low, the experience is valuable.", "One joint, one connector: although or but, never both (aunque… pero)."],
+  ["<b>Even</b> it rains, we will fly.", "Even if it rains, we will fly. (unknown) · Even though it rained, we flew. (known fact)", "even is not a connector by itself."],
+  ["Tighten the bolts <b>like</b> the manual says.", "Tighten the bolts as the manual instructs.", "Before a clause, formal English wants as (manner); like is informal. The exam prefers as."],
+  ["Unless the client <b>will pay</b>, the work stops.", "Unless the client pays, the work stops.", "No will after condition connectors — just as in time clauses."],
+  ["Unless you <b>don’t</b> object, we proceed.", "Unless you object, we proceed.", "unless already means if… not: no double negative."],
+  ["<b>Despite of</b> the delay… · Despite <b>the flight was late</b>…", "Despite the delay… · Despite being late… · Despite the fact that the flight was late…", "despite / in spite of are prepositions: noun or -ing, never a clause — and never despite of."],
+  ["He talks as if he <b>owns</b> the company. (he does not)", "He talks as if he owned the company.", "Unreal manner: as if / as though + past (formal: were)."],
+  ["Follow the checklist<b>, otherwise</b> steps get skipped.", "Follow the checklist; otherwise, steps get skipped.", "otherwise is an adverb, not a connector: semicolon or new sentence, never a comma splice."]
+];
+ERR.forEach(function(e){ var d=document.createElement("div"); d.innerHTML='<span class="no">✘ '+e[0]+'</span><span class="ok">✔ '+e[1]+'</span><small>'+e[2]+'</small>'; $("errGrid").appendChild(d); });
+
+/* =====================================================================
+   BUILD · assemble (connector × what follows it) + transform
+   cons[].k = kinds the connector accepts ("" = not a valid joint here) · fol[].k = kind of the follower
+===================================================================== */
+var BUILD = [
+  {frame:"The engine kept running {J}.", hint:"contrast — it had lost oil",
+    cons:[{t:"although",k:"cl",why:"although is a conjunction: it needs subject + verb."},{t:"despite",k:"np|ing",why:"despite is a preposition: noun or -ing, never a clause."},{t:"in spite of",k:"np|ing",why:"in spite of is a preposition: noun or -ing, never a clause."}],
+    fol:[{t:"it had lost oil",k:"cl"},{t:"the loss of oil",k:"np"},{t:"having lost oil",k:"ing"}],
+    rule:"Conjunction + clause (although it had lost oil) or preposition + noun / -ing (despite the loss of oil · despite having lost oil)."},
+  {frame:"{J}, the valve stays closed.", hint:"if the pressure does not drop — in one connector",
+    cons:[{t:"Unless",k:"pr",why:"unless = if… not: a positive present-tense clause follows."},{t:"Even",k:"",why:"even is not a connector by itself: even if / even though."},{t:"In case",k:"",why:"in case = precaution (it might happen), not if… not."}],
+    fol:[{t:"the pressure drops",k:"pr"},{t:"the pressure will drop",k:"wi",why:"No will after a condition connector: unless the pressure drops."},{t:"the pressure doesn’t drop",k:"ng",why:"unless already contains the not: a double negative reverses the meaning."}],
+    rule:"unless + positive clause in the present = if the pressure does not drop."},
+  {frame:"The intern gives orders {J}.", hint:"unreal manner — he does not run it",
+    cons:[{t:"as if",k:"pa",why:"as if takes a full clause in the past for unreal manner."},{t:"like",k:"",why:"Before a clause, formal English wants as if / as though, not like; the exam prefers as."},{t:"as",k:"",why:"as = in the way that (real manner); an unreal comparison needs as if / as though."}],
+    fol:[{t:"he ran the department",k:"pa"},{t:"he runs the department",k:"pr",why:"Unreal manner takes the past: he ran (he does not)."},{t:"running the department",k:"ing",why:"as if needs a full clause: subject + verb."}],
+    rule:"as if / as though + past for unreal manner: as if he ran the department (he does not)."},
+  {frame:"Keep a printed copy {J}.", hint:"a precaution — the database might go down",
+    cons:[{t:"in case",k:"pr",why:"in case + present-tense clause."},{t:"if",k:"",why:"if = a reaction after it happens; a precaution taken beforehand is in case."},{t:"unless",k:"",why:"unless = if… not, a condition — not a precaution."}],
+    fol:[{t:"the database goes down",k:"pr"},{t:"the database will go down",k:"wi",why:"No will after in case: the present tense."},{t:"of the database going down",k:"of",why:"in case takes the clause directly: in case the database goes down."}],
+    rule:"in case + present clause: do A now because B might happen later."},
+  {frame:"Aluminum is light and corrosion-resistant, {J}.", hint:"formal contrast between two facts",
+    cons:[{t:"whereas",k:"cl",why:"whereas is a conjunction: a full clause follows."},{t:"however",k:"",why:"however is an adverb, not a connector: it needs a semicolon or a new sentence."},{t:"unless",k:"",why:"unless = if… not — a condition, not a contrast."}],
+    fol:[{t:"iron is heavy and rusts",k:"cl"},{t:"iron’s weight and rust",k:"np",why:"whereas needs a full clause: iron is heavy and rusts."},{t:"iron being heavy",k:"ing",why:"whereas needs a full clause: iron is heavy and rusts."}],
+    rule:"whereas + clause: the formal contrast joint of academic writing."},
+  {frame:"Corrosion appears {J}.", hint:"in every place that",
+    cons:[{t:"wherever",k:"cl",why:"wherever + full clause."},{t:"where",k:"cl",why:"where + full clause."},{t:"in case",k:"",why:"in case = precaution — the joint here is place."}],
+    fol:[{t:"moisture accumulates",k:"cl"},{t:"moisture accumulating",k:"ing",why:"Place connectors take a full clause: moisture accumulates."},{t:"the accumulation of moisture",k:"np",why:"Place connectors take a full clause: moisture accumulates."}],
+    rule:"where / wherever + subject + verb: wherever moisture accumulates (= in every place that)."},
+  {frame:"{J}, the flight took off on time.", hint:"contrast — the storm was severe",
+    cons:[{t:"Despite the fact that",k:"cl",why:"despite the fact that is followed by a full clause: the storm was severe."},{t:"Despite",k:"np|ing",why:"despite is a preposition: noun or -ing, never a clause."},{t:"Although",k:"cl",why:"although needs subject + verb."}],
+    fol:[{t:"the storm was severe",k:"cl"},{t:"the severe storm",k:"np"},{t:"the storm being severe",k:"ing"}],
+    rule:"Three legal joints: Although + clause · Despite + noun / -ing · Despite the fact that + clause."},
+  {frame:"{J}, we will fly.", hint:"a condition that changes nothing — the rain is not known yet",
+    cons:[{t:"Even if",k:"pr",why:"even if + present-tense clause."},{t:"Even though",k:"",why:"even though = a known fact; the rain is unknown, so even if."},{t:"Even",k:"",why:"even is not a connector by itself."}],
+    fol:[{t:"it rains",k:"pr"},{t:"it will rain",k:"wi",why:"No will after a condition connector: even if it rains."},{t:"raining",k:"ing",why:"even if takes a full clause: it rains."}],
+    rule:"even if + present clause = the condition, real or not, changes nothing."},
+  {frame:"{J}, we could not fund it.", hint:"although, with admiration built in",
+    cons:[{t:"Much as",k:"cl",why:"much as + full clause."},{t:"Despite",k:"np|ing",why:"despite is a preposition: noun or -ing, never a clause."},{t:"Even",k:"",why:"even is not a connector by itself."}],
+    fol:[{t:"we admired the design",k:"cl"},{t:"our admiration for the design",k:"np"},{t:"admiring the design",k:"ing"}],
+    rule:"Much as we admired the design = Although we admired it (elegant C1); despite + noun / -ing also bears the load."},
+  {frame:"You may use the workshop {J}.", hint:"only if",
+    cons:[{t:"provided that",k:"pr",why:"provided that + present-tense clause."},{t:"whether or not",k:"",why:"whether or not = in both cases, not only if."},{t:"in case",k:"",why:"in case = precaution, not only if."}],
+    fol:[{t:"you log every tool you borrow",k:"pr"},{t:"you will log every tool you borrow",k:"wi",why:"No will after a condition connector: you log."},{t:"logging every tool you borrow",k:"ing",why:"provided that takes a full clause: you log."}],
+    rule:"provided that / providing / as long as + present clause = only if."}
+];
+var bi=0, bCon=null, bFol=null, bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function chipRow(id, arr, cb){
+  var w=$(id); w.innerHTML="";
+  arr.forEach(function(o,i){
+    var b=document.createElement("button"); b.textContent=o.t;
+    b.addEventListener("click", function(){ cb(i); w.querySelectorAll("button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    w.appendChild(b);
+  });
+}
+function renderBuild(){
+  var it=BUILD[bi]; bCon=null; bFol=null;
+  $("bctx").innerHTML = it.frame.replace("{J}", "<u>_____</u>")+"<small>Meaning you need: "+it.hint+"</small>";
+  chipRow("conChips", it.cons, function(i){ bCon=i; });
+  chipRow("folChips", it.fol, function(i){ bFol=i; });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(bCon===null || bFol===null){ r.className="bresult bad"; r.innerHTML="Choose a connector and what follows it first."; return; }
+  var c=it.cons[bCon], f=it.fol[bFol], why=null;
+  if(!c.k) why=c.why; else if(c.k.split("|").indexOf(f.k)<0) why=f.why||c.why;
+  if(why){
+    (c.k ? $("folChips").children[bFol] : $("conChips").children[bCon]).classList.add("wrongpick");
+    r.className="bresult bad"; r.innerHTML="❌ The joint fails. <span class='bnote'>"+why+"</span>"; return;
+  }
+  var j='<span class="vcl"><span class="vlink">'+c.t+'</span> '+f.t+'</span>';
+  r.className="bresult good"; r.innerHTML="✅ "+it.frame.replace("{J}", j)+'<div class="bnote">'+it.rule+"</div>";
+  bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:"If the pressure does not drop, the valve stays closed. <b>(UNLESS)</b>", accept:["unless the pressure drops the valve stays closed","the valve stays closed unless the pressure drops"], model:"Unless the pressure drops, the valve stays closed."},
+  {ctx:"The engine kept running although it had lost oil. <b>(DESPITE)</b>", accept:["the engine kept running despite having lost oil","the engine kept running despite the loss of oil","the engine kept running despite the fact that it had lost oil","the engine kept running despite losing oil","the engine kept running despite the oil loss","the engine kept running despite its loss of oil","the engine kept running despite having lost its oil","despite having lost oil the engine kept running","despite the loss of oil the engine kept running","despite the fact that it had lost oil the engine kept running","despite losing oil the engine kept running"], model:"The engine kept running despite having lost oil / despite the loss of oil / despite the fact that it had lost oil."},
+  {ctx:"The results looked artificial — like a machine had produced them. <b>(AS IF)</b>", accept:["the results looked as if a machine had produced them","the results looked artificial as if a machine had produced them"], model:"The results looked as if a machine had produced them."},
+  {ctx:"Concrete is strong in compression; in tension it is weak. <b>(WHEREAS)</b>", accept:["concrete is strong in compression whereas it is weak in tension","concrete is strong in compression whereas in tension it is weak","concrete is strong in compression whereas it's weak in tension"], model:"Concrete is strong in compression, whereas it is weak in tension."},
+  {ctx:"Bring your ID; the guard might ask for it. <b>(IN CASE)</b>", accept:["bring your id in case the guard asks for it","bring your id in case the guard asks"], model:"Bring your ID in case the guard asks for it."},
+  {ctx:"Although the storm was severe, the antennas survived. <b>(DESPITE)</b>", accept:["despite the severe storm the antennas survived","the antennas survived despite the severe storm","despite the storm's severity the antennas survived","the antennas survived despite the storm's severity","despite the severity of the storm the antennas survived","the antennas survived despite the severity of the storm","despite the fact that the storm was severe the antennas survived","the antennas survived despite the fact that the storm was severe"], model:"Despite the severe storm / the storm’s severity, the antennas survived."},
+  {ctx:"If you do not register, you cannot present. <b>(UNLESS)</b>", accept:["unless you register you cannot present","unless you register you can't present","you cannot present unless you register","you can't present unless you register"], model:"Unless you register, you cannot present."},
+  {ctx:"The robot moves the way the operator moves. <b>(AS)</b>", accept:["the robot moves as the operator does","the robot moves as the operator moves"], model:"The robot moves as the operator does / moves."},
+  {ctx:"He acts like the owner of the lab. He is not. <b>(AS THOUGH)</b>", accept:["he acts as though he owned the lab","he acts as though he were the owner of the lab","he acts as though he was the owner of the lab"], model:"He acts as though he owned the lab."}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML="Rewrite: "+it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow (13 items: 5 ★ · 4 ★★ · 4 ★★★)
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Structure", q:"“___ repeated warnings, the schedule was never adjusted.”", o:["Despite","Although","Whereas","Unless"], a:0, w:"A noun phrase follows the gap, so it needs the preposition despite; although takes a full clause."},
+  {kind:"mc", diff:1, tag:"Structure", q:"“The coating peels ___ humidity exceeds eighty percent.”", o:["wherever","despite","as though","in case of"], a:0, w:"Place connector + full clause: wherever = in every place that."},
+  {kind:"fill", diff:1, tag:"Complete", q:"“Keep a printed copy ___ the database goes down.” (a precaution: it might happen)", accept:["in case"], w:"in case = precaution: do A because B might happen."},
+  {kind:"error", diff:1, tag:"Double connector · keep Although", words:["Although","the specs","were clear,","but","two suppliers","misread","them."], bad:3, fixOld:"…were clear, but two suppliers…", fixNew:"…were clear, two suppliers…", w:"One joint, one connector: although already joins the clauses, so but must go."},
+  {kind:"error", diff:1, tag:"Fix the error", words:["Even","the gauge","reads","zero,","treat","the line","as","pressurized."], bad:0, fixOld:"Even", fixNew:"Even if", w:"even is not a connector by itself: even if (unknown) or even though (known fact)."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["In spite of","the site","was flooded,","the survey crew","completed","its","measurements."], bad:0, fixOld:"In spite of", fixNew:"Although", w:"in spite of is a preposition (noun or -ing only); a clause needs although."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["Unless","the samples","won’t arrive","today,","we","can still meet","the","deadline."], bad:2, fixOld:"won’t arrive", fixNew:"arrive", w:"unless already means if… not, and no will follows a condition connector."},
+  {kind:"fill", diff:2, tag:"Unreal manner", q:"“The intern gives orders as if he ___ the department.” (verb: run — he does not run it)", accept:["ran","were running","was running"], w:"as if + past for unreal manner: he ran (he does not)."},
+  {kind:"mc", diff:2, tag:"Structure", q:"“The polymer deforms ___ it were made of wax.”", o:["as if","even if","unless","provided that"], a:0, w:"Unreal manner: as if / as though + past (formal were)."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["The intern","behaves","as though","he","has been","here","for","twenty years."], bad:4, fixOld:"has been", fixNew:"had been", w:"Unreal manner after as though takes the past: had been (or were)."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["Follow","the torque sequence,","otherwise","the flange","will leak","under","pressure."], bad:2, fixOld:", otherwise", fixNew:"; otherwise,", w:"otherwise is an adverb, not a connector: it needs a semicolon or a new sentence."},
+  {kind:"mc", diff:3, tag:"Structure", q:"“___ we admired the concept, the numbers never worked.”", o:["Much as","Even","Despite","As if"], a:0, w:"much as = although with admiration built in; a full clause follows."},
+  {kind:"fill", diff:3, tag:"Rewrite (UNLESS)", q:"“If you do not register, you cannot present.” →", accept:["unless you register you cannot present","unless you register you can't present","you cannot present unless you register","you can't present unless you register"], w:"if… not → unless + positive clause: Unless you register, you cannot present."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("i8_g3_drill_best")||0); if(dscore>best){ store("i8_g3_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Every joint bears the load. Ready for the ★★★ homework." : dscore>=8?"Solid joints — review the exceptions card and go again." : "Re-read Grammar 3, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, '<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

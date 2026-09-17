@@ -1,7 +1,7 @@
 # Inglés 8 · Material de práctica (C1 · preparación SELLI)
 
 Ejercicios de práctica de **Inglés 8** (nivel C1, preparación para el examen SELLI en formato
-TOEFL ITP): doce **simuladores web** de gramática, uno por tema del manual (Grammar 1–12), y el
+TOEFL ITP): simuladores web de gramática, uno por tema del manual (**5 de 12 publicados**, Grammar 1–12 cuando esté completo), y el
 **simulacro tipo SELLI de las Units 1–2** con su audio. Todo es material original de práctica;
 **no incluye exámenes ni claves de respuesta** (las claves se revisan en clase).
 
@@ -18,24 +18,24 @@ TOEFL ITP): doce **simuladores web** de gramática, uno por tema del manual (Gra
 | Carpeta | Qué es | Cómo se usa |
 |---|---|---|
 | `01_SELLI_Mock_U1-U2/` | **Simulacro tipo SELLI** de las Units 1–2: 81 reactivos, 85 min (Listening 16 · Structure 20 · Written Expression 25 · Reading 20). Cuadernillo de 11 págs. + audio de 11:45. | Reproduce el audio **una sola vez y sin pausar**: trae las instrucciones, el ejemplo y los 12 s de respuesta de cada reactivo. Después resuelve las Secciones B–D en unos 70 min. Al final llena la hoja de perfil: lo que importa es qué fila salió baja. |
-| `02_Simuladores_web/` | **12 simuladores interactivos** de gramática (Grammar 1–12): conectores coordinantes, cláusulas adverbiales, noun clauses, adjective clauses, reducciones de cláusulas, pasiva C1, paralelismo, inversión. | Descarga el `.html` y ábrelo con doble clic: funciona **sin internet**, en computadora o celular. Tres modos: *Explore* (ver la regla en acción) → *Build* (armar oraciones) → *Drill* (práctica graduada con marcador, en los dos formatos del examen). |
+| `02_Simuladores_web/` | **Simuladores interactivos** de gramática, uno por tema del manual. Publicados hoy: Grammar 1 (conectores coordinantes), 3 (condición, contraste, manera y lugar), 6 (reduced adjective clauses), 8 (la pasiva C1) y 9 (paralelismo). En preparación: 2, 4, 5, 7, 10, 11 y 12. | Descarga el `.html` y ábrelo con doble clic: funciona **sin internet**, en computadora o celular. Tres modos: *Explore* (ver la regla en acción) → *Build* (armar oraciones) → *Drill* (práctica graduada con marcador, en los dos formatos del examen). |
 
 ## Simuladores
 
 | Unidad | Tema | Archivo |
 |---|---|---|
 | Unit 1 · Load-Bearing Structures | Grammar 1 — coordinate connectors | `U1_G1_coordinate_connectors.html` |
-| Unit 1 | Grammar 2 — adverb clauses of time & cause | `U1_G2_time_cause_clauses.html` |
+| Unit 1 | Grammar 2 — adverb clauses of time & cause | `U1_G2_time_cause_clauses.html` *(en preparación)* |
 | Unit 1 | Grammar 3 — condition, contrast, manner & place | `U1_G3_condition_contrast_manner_place.html` |
-| Unit 2 · Clauses Within Clauses | Grammar 4 — noun clauses | `U2_G4_noun_clauses.html` |
-| Unit 2 | Grammar 5 — adjective clauses | `U2_G5_adjective_clauses.html` |
+| Unit 2 · Clauses Within Clauses | Grammar 4 — noun clauses | `U2_G4_noun_clauses.html` *(en preparación)* |
+| Unit 2 | Grammar 5 — adjective clauses | `U2_G5_adjective_clauses.html` *(en preparación)* |
 | Unit 3 · The Economy of Language | Grammar 6 — reduced adjective clauses | `U3_G6_reduced_adjective_clauses.html` |
-| Unit 3 | Grammar 7 — reduced adverb clauses | `U3_G7_reduced_adverb_clauses.html` |
+| Unit 3 | Grammar 7 — reduced adverb clauses | `U3_G7_reduced_adverb_clauses.html` *(en preparación)* |
 | Unit 3 | Grammar 8 — the passive at C1 | `U3_G8_passive_c1.html` |
 | Unit 4 · Fine Distinctions | Grammar 9 — parallel structure | `U4_G9_parallel_structure.html` |
-| Unit 4 | Grammar 10 — parallelism in comparisons | `U4_G10_parallel_comparisons.html` |
-| Unit 5 · Word Order as Power | Grammar 11 — inversion after place & negatives | `U5_G11_inversion_place_negative.html` |
-| Unit 5 | Grammar 12 — inversion in conditionals & comparisons | `U5_G12_inversion_conditionals_comparisons.html` |
+| Unit 4 | Grammar 10 — parallelism in comparisons | `U4_G10_parallel_comparisons.html` *(en preparación)* |
+| Unit 5 · Word Order as Power | Grammar 11 — inversion after place & negatives | `U5_G11_inversion_place_negative.html` *(en preparación)* |
+| Unit 5 | Grammar 12 — inversion in conditionals & comparisons | `U5_G12_inversion_conditionals_comparisons.html` *(en preparación)* |
 
 ## Reglas de oro del SELLI (Structure y Written Expression)
 

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE JUNCTION MACHINE · English 8 · Unit 1 "Load-Bearing Structures"
+  Grammar 1 — coordinate connectors (and, but, or, nor, for, so, yet):
+  the comma, the three exam checks, exceptions, ellipsis & gapping.
+  Three modes: Explore (the joint) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Grammar 1 · The Junction Machine · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --steel:#2C5F8C; --steeldark:#1B3B58; --steellt:#E4EDF4;   /* Unit 1 identity — steel blue */
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#142741; --navylt:#E8ECF3;   /* darker navy so the "original" cards stay apart from steel */
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--steel),var(--steeldark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#BFD3E6; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#D5E2EE; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--steeldark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--steeldark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--steeldark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-steel{background:var(--steel)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--steel); background:var(--steellt); color:var(--steeldark)}
+  .chips button i{display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:6px; vertical-align:middle}
+
+  /* ---------- the joint (two beams + one bolt) ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .m-add{background:var(--green)} .m-con{background:var(--grammar)} .m-alt{background:var(--excep)} .m-neg{background:var(--think)} .m-rea{background:var(--navy)} .m-res{background:var(--steel)}
+  .joint{display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:8px; margin:12px 0 6px}
+  .beam{position:relative; flex:1 1 200px; max-width:380px; background:var(--steellt); border:2px solid var(--steel); border-radius:8px; padding:12px 18px; text-align:center; font-weight:800; font-size:clamp(15px,2.7vw,19px); color:var(--steeldark)}
+  .beam::before,.beam::after{content:""; position:absolute; top:6px; width:7px; height:7px; border-radius:50%; background:var(--steel); opacity:.7}
+  .beam::before{left:6px} .beam::after{right:6px}
+  .beam small{display:block; font-size:11px; font-weight:800; color:#888; margin-top:4px; letter-spacing:.03em}
+  .beam.dep{border-style:dashed; background:#fff}
+  .bolt{color:#fff; font-weight:900; font-size:clamp(16px,2.8vw,20px); padding:9px 14px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,.22); white-space:nowrap}
+  .bolt.masked,.cx.masked{background:#999; cursor:pointer}
+  .hang{display:flex; flex-direction:column; align-items:center; margin:12px 0 6px}
+  .hangline{width:3px; height:22px; background:var(--steel)}
+  .result{font-size:clamp(17px,3vw,23px); font-weight:800; text-align:center; padding:14px 12px; background:var(--soft); border-radius:12px; margin:8px 0 4px; line-height:1.6}
+  .cx{color:#fff; border-radius:6px; padding:0 7px; font-weight:900}
+  .changes{list-style:none; margin:8px 0 0}
+  .changes li{position:relative; padding:3px 0 3px 22px; font-size:14px; font-weight:600; color:#555}
+  .changes li::before{content:"→"; position:absolute; left:0; top:3px; color:var(--grammar); font-weight:900}
+  .legend{display:flex; gap:8px; flex-wrap:wrap; font-size:12px; font-weight:800; margin-top:10px}
+  .legend span{border-radius:6px; padding:1px 8px; color:#fff}
+
+  /* inspection (the three exam checks) */
+  .insp{font-size:clamp(17px,2.9vw,22px); font-weight:800; text-align:center; padding:14px; background:var(--navylt); border:2px solid var(--navy); border-radius:12px; margin:8px 0; line-height:1.8; color:var(--navy)}
+  .sj{border-bottom:3px solid var(--steel)} .vb{border-bottom:3px solid var(--grammar)}
+  .bad{background:var(--thinklt); color:var(--think); border-radius:6px; padding:0 4px}
+  .checks{list-style:none; margin:8px 0 0}
+  .checks li{padding:4px 0 4px 26px; position:relative; font-size:14px; font-weight:600; color:#444}
+  .checks li::before{position:absolute; left:0; font-weight:900}
+  .checks li.ok::before{content:"✔"; color:var(--green)} .checks li.no::before{content:"✘"; color:var(--think)}
+  .fixline{margin-top:8px; font-weight:700; font-size:15px; color:var(--greendark)}
+
+  /* special cases + pitfalls + ellipsis + comma call */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; max-width:100%; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .seg2.steel button.on{background:var(--steel)}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)}
+  .pit{list-style:none}
+  .pit li{padding:8px 0; border-top:1px dashed var(--rule); font-size:15px; font-weight:600; color:#444}
+  .pit li:first-child{border-top:0}
+  .wr{color:var(--think); font-weight:700} .rt{color:var(--greendark); font-weight:700}
+  .ell{font-size:clamp(17px,2.9vw,22px); font-weight:800; text-align:center; padding:14px; background:var(--grammarlt); border:2px solid var(--grammar); border-radius:12px; margin:8px 0; line-height:1.8}
+  .g{color:#888; border:1.5px dashed #aaa; border-radius:6px; padding:0 5px; font-style:italic; font-weight:700}
+  .g.no{color:var(--think); border-color:var(--think); background:var(--thinklt)}
+  .pm{display:inline-block; min-width:24px; text-align:center; background:var(--excep); color:#fff; border-radius:6px; padding:0 6px; margin:0 2px}
+  .pm.none{background:#aaa; font-size:12px; vertical-align:middle}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--steel); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--steeldark); border:2px solid var(--steel)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--steel); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--steel)}
+  .segbig button.on{background:var(--steel); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--steel); background:var(--steellt); color:var(--steeldark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--steeldark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--steeldark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--steel); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)}
+  .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick,.stn .w.rightpick{background:var(--think); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)}
+  .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--steeldark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--steel); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} .seg2{border-radius:14px} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">🔩</span>
+  <div class="wrap">
+    <div class="kicker">English 8 · Unit 1 · Load-Bearing Structures</div>
+    <h1>🔩 The Junction Machine</h1>
+    <div class="sub"><b>Grammar 1</b> — coordinate connectors: <i>and, but, or, nor, for, so, yet</i>, the comma &amp; ellipsis. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🔩 Explore the joint</span><span>🔧 Build a joint</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🔩 Explore<small>bolt two clauses</small></button>
+    <button data-tab="build">🔧 Build<small>join it yourself</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>Two equals, one bolt: the coordinate joint</h2>
+      <p class="muted">A <b>coordinate connector</b> joins two <b>independent clauses</b> — each has its own subject and verb, and each could stand alone.
+        The pattern: independent clause <b>, + connector +</b> independent clause. The comma appears <b>before</b> the connector, never after it.
+        Pick a connector and watch the joint. <span class="es">(Une dos cláusulas independientes; la coma va antes del conector, nunca después.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — chips show only the meaning; guess the connector, then reveal</label>
+
+      <h3>1 · Choose the connector</h3>
+      <div class="chips" id="connChips"></div>
+
+      <h3>2 · Same weight? — the two kinds of joint</h3>
+      <div class="seg2 steel" id="weightSeg"><button data-v="coord" class="on">⚖ Coordination — two equals</button><button data-v="sub">Subordination — one hangs</button></div>
+
+      <div id="coordBox">
+        <div class="joint"><div class="beam" id="beamA"></div><div class="bolt" id="bolt"></div><div class="beam" id="beamB"></div></div>
+        <div class="result" id="jointOut"></div>
+        <div style="text-align:center"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the connector ✓</button></div>
+        <p class="bnote" id="meaningLine"></p>
+        <ul class="changes" id="jointNotes"></ul>
+        <div class="legend"><span class="m-add">addition</span><span class="m-con">contrast</span><span class="m-alt">alternative</span><span class="m-neg">negative addition</span><span class="m-rea">reason (formal)</span><span class="m-res">result</span></div>
+      </div>
+
+      <div id="subBox" style="display:none">
+        <div class="hang"><div class="beam">the tank drained<small>main clause — stands alone ✔</small></div><div class="hangline"></div><div class="beam dep"><b>because</b> the pump failed<small>cannot stand alone ✘</small></div></div>
+        <div class="result">⇒ The tank drained <b>because</b> the pump failed.</div>
+        <p class="muted"><b>The listener test.</b> Say “because the pump failed” on its own and a listener waits for the rest. Say “the tank drained” and nobody waits.
+          That is the whole difference between the two joints — and the reason a subordinate clause can never be punctuated as a sentence.
+          A coordinate connector needs <b>two equals</b>: two clauses that both pass the test. <span class="es">(Coordinación = dos iguales; subordinación = una cláusula cuelga de la otra.)</span></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">🔍 What the exam actually checks</span>
+      <h2>Inspect the joint: three checks</h2>
+      <p class="muted">When you see a coordinate connector in an exam sentence, run three checks: <b>one subject–verb pair on each side</b> · <b>no comma splice</b> · <b>no double connector</b>.
+        Subjects are underlined in steel, verbs in orange. <span class="es">(Sujeto y verbo a cada lado; sin coma suelta; un solo conector.)</span></p>
+      <div class="chips" id="inspChips"></div>
+      <div class="insp" id="inspSnt"></div>
+      <ul class="checks" id="inspChecks"></ul>
+      <div class="fixline" id="inspFix"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Exceptions &amp; special cases</span>
+      <h2>Inversion, <i>for</i>, short clauses, <i>so that</i>, shared subject</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="nor" class="on">nor + inversion</button><button data-v="forr">for = because</button><button data-v="short">short clauses</button><button data-v="sothat">so vs so that</button><button data-v="shared">shared subject</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">⚠ Common mistakes — don’t fall in!</span>
+      <h2>Traps for Spanish speakers</h2>
+      <ul class="pit">
+        <li><b>however / therefore / moreover are NOT coordinate connectors.</b> They are adverbs and cannot join clauses with just a comma — one of the most-tested traps at this level.<br>
+          <span class="wr">✘ The budget was cut, however the project survived.</span><br>
+          <span class="rt">✔ The budget was cut<b>;</b> however, the project survived.</span> · <span class="rt">✔ The budget was cut, <b>but</b> the project survived.</span></li>
+        <li>Spanish <i>pero</i> tolerates starting after a comma anywhere; English <b>but</b> needs a <b>full clause on each side</b> inside one sentence. <span class="es">(“…, pero” suelto no es una oración en inglés.)</span></li>
+        <li><span class="wr">✘ The results were clear, so that we published them.</span> — <b>so</b> (result) does not take <i>that</i>. <span class="rt">✔ …, so we published them.</span></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-grammar">🧬 C1 refinement — ellipsis</span>
+      <h2>The second mention can vanish</h2>
+      <p class="muted">Coordination does not just join clauses; it licenses <b>deletion</b>. Whatever the two sides share may be said once.
+        The safety rule: the deleted words must be recoverable <b>exactly</b> — if restoring them forces a change, the ellipsis is illegal.
+        <span class="es">(Lo compartido se dice una vez, pero debe poder restaurarse sin cambiar nada.)</span></p>
+      <div class="seg2" id="ellSeg"></div>
+      <div class="ell" id="ellSnt"></div>
+      <div style="text-align:center"><button class="btn ghost small" id="ellBtn">Restore the deleted words ↩</button></div>
+      <p class="bnote" id="ellNote"></p>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">✂️ Punctuation call</span>
+      <h2>Comma, semicolon or nothing?</h2>
+      <p class="muted">Tap a case to see which mark the joint takes. <span class="es">(Coma antes del conector; nada si el sujeto es compartido; punto y coma antes de <i>however</i>.)</span></p>
+      <div class="chips" id="pmChips"></div>
+      <div class="result" id="pmSnt"></div>
+      <p class="bnote" id="pmRule"></p>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> is Grammar 1’s “two kinds of joint”: the seven connectors, coloured by meaning, bolt two independent beams together (with <i>nor</i>’s inversion); the same-weight switch shows the subordinate joint and the listener test; the inspection card runs the manual’s three exam checks; the exceptions card is the manual’s list (nor, for, short clauses, so that, shared subject); the pitfalls card its traps; the ellipsis card the C1 refinement (subject, auxiliary, gapping, illegal deletion); and the punctuation card the “punctuation call”.</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> the joint (connector + comma, word order or ellipsis — exercises B, D and Task set 1) and <i>transform</i> by typing (sentence surgery, the comma-splice clinic and “restore the ellipsis” — exercises C and E), with validation against model answers.</li>
+          <li><b>Drill</b> merges the two exam formats into one graded engine (★ complete the sentence · ★★ find the wrong word: splice, <i>however</i>, <i>so that</i> · ★★★ gapping, illegal ellipsis, inversion after <i>nor</i>) with a score and streak.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-steel">🔧 Your turn to produce</span>
+      <h2>Build a joint</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the two ideas, then choose the <b>connector</b> and the <b>joint</b> (comma, word order or ellipsis). The machine bolts them together — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div id="bGroups"></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Bolt it 🔧</button><button class="btn ghost" id="bNext">New pair →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Join, repair or restore each sentence as instructed. Type it and check against the model. <span class="es">(La coma no se evalúa aquí; sí en Assemble y Drill.)</span></p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type the sentence"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next sentence →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ complete the joint · ★★ find the wrong word (comma splice, <i>however</i>, <i>so that</i>) · ★★★ gapping, illegal ellipsis &amp; inversion.
+        Two exam formats: Structure (complete) and Written Expression (click the error). Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 8 · Unit 1 «Load-Bearing Structures» · Grammar 1 — coordinate connectors · Level C1
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE JUNCTION MACHINE — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 8 Class Manual (Grammar 1).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE · the joint: two beams, one bolt
+===================================================================== */
+var CONN = [
+  {w:"and", m:"addition", cls:"m-add", a:"The pump failed", b:"the pressure dropped", out:'The pump failed, <span class="cx m-add">and</span> the pressure dropped.',
+    notes:["<b>and</b> = addition: the second clause adds a fact of equal weight","comma <b>before</b> the connector, never after","one subject–verb pair on each side: <i>the pump failed</i> · <i>the pressure dropped</i>"]},
+  {w:"but", m:"contrast", cls:"m-con", a:"The design was simple", b:"it worked", out:'The design was simple, <span class="cx m-con">but</span> it worked.',
+    notes:["<b>but</b> = contrast","English <b>but</b> needs a full clause on each side, inside one sentence","comma before the connector"]},
+  {w:"or", m:"alternative", cls:"m-alt", a:"We can repair it", b:"we can replace it", out:'We can repair it, <span class="cx m-alt">or</span> we can replace it.',
+    notes:["<b>or</b> = alternative: one option or the other","with a shared subject the second one may vanish: <i>We can repair it or replace it</i> (no comma)"]},
+  {w:"nor", m:"negative addition", cls:"m-neg", a:"The alarm did not sound", b:"the backup did not start", join:"nor <b>did the backup</b> start", out:'The alarm did not sound, <span class="cx m-neg">nor</span> did the backup start.',
+    notes:["<b>nor</b> = negative addition: it carries the <i>not</i> of the second clause","<b>inversion</b> — auxiliary before subject: <i>nor <b>did the backup</b> start</i>","comma before the connector"]},
+  {w:"for", m:"reason (formal)", cls:"m-rea", a:"They stopped the test", b:"the readings made no sense", out:'They stopped the test, <span class="cx m-rea">for</span> the readings made no sense.',
+    notes:["<b>for</b> = <i>because</i>, but only <b>between</b> clauses — never at the start of the sentence with that meaning","formal and mostly written"]},
+  {w:"so", m:"result", cls:"m-res", a:"The data were corrupted", b:"we repeated the run", out:'The data were corrupted, <span class="cx m-res">so</span> we repeated the run.',
+    notes:["<b>so</b> = result","no <i>that</i> after it: <b>so that</b> is a different word (purpose)","comma before the connector"]},
+  {w:"yet", m:"unexpected contrast", cls:"m-con", a:"The material is cheap", b:"it outperforms steel", out:'The material is cheap, <span class="cx m-con">yet</span> it outperforms steel.',
+    notes:["<b>yet</b> = unexpected contrast: the second clause surprises","comma before the connector"]}
+];
+var curC = 0, predictMode = false, revealed = false;
+CONN.forEach(function(c,i){
+  var b = document.createElement("button"); b.dataset.k = i;
+  b.addEventListener("click", function(){ curC=i; revealed=false; renderJoint(); });
+  $("connChips").appendChild(b);
+});
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderJoint(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderJoint(); });
+$("bolt").addEventListener("click", function(){ if(predictMode){ revealed=true; renderJoint(); } });
+function renderJoint(){
+  var c = CONN[curC], mask = predictMode && !revealed;
+  document.querySelectorAll("#connChips button").forEach(function(x,i){ x.classList.toggle("on", i===curC); x.innerHTML='<i class="'+CONN[i].cls+'"></i>'+(predictMode?CONN[i].m:CONN[i].w); });
+  $("beamA").innerHTML = c.a+'<small>stands alone ✔</small>';
+  $("beamB").innerHTML = c.b+'<small>stands alone ✔</small>';
+  var bolt=$("bolt"); bolt.className = "bolt "+(mask?"masked":c.cls); bolt.textContent = mask ? ", ?" : ", "+c.w;
+  $("jointOut").innerHTML = "⇒ "+(mask ? c.out.replace(/<span class="cx[^>]*>[^<]*<\/span>/, '<span class="cx masked">?</span>') : c.out);
+  $("meaningLine").innerHTML = mask ? "Meaning needed: <b>"+c.m+"</b>. Which connector holds this joint? Tap the bolt to reveal." : "<b>"+c.w+"</b> = "+c.m+(c.join ? " · <b>inversion</b>: "+c.join : "");
+  var ul=$("jointNotes"); ul.innerHTML="";
+  if(!mask) c.notes.forEach(function(n){ var li=document.createElement("li"); li.innerHTML=n; ul.appendChild(li); });
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+}
+renderJoint();
+document.querySelectorAll("#weightSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#weightSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); var sub=b.dataset.v==="sub"; $("coordBox").style.display=sub?"none":"block"; $("subBox").style.display=sub?"block":"none"; });
+});
+
+/* inspection — the three exam checks */
+var INSP = [
+  {t:"engine / pilot", s:'<span class="sj">The engine</span> <span class="vb">stalled</span>, <span class="cx m-con">but</span> <span class="sj">the pilot</span> <span class="vb">recovered</span>.',
+    ch:[[1,"one subject–verb pair on each side: <i>the engine stalled</i> · <i>the pilot recovered</i>"],[1,"no comma splice: a connector follows the comma"],[1,"one joint, one connector"]], fix:"✔ Correct — two equals bolted together."},
+  {t:"test / celebrated", s:'<span class="sj">The test</span> <span class="vb">ended</span><span class="bad">,</span> <span class="sj">the team</span> <span class="vb">celebrated</span>.',
+    ch:[[1,"two pairs: <i>the test ended</i> · <i>the team celebrated</i>"],[0,"<b>comma splice</b>: two independent clauses joined by a comma alone"],[1,"no double connector"]], fix:"✔ The test ended, <b>and</b> the team celebrated."},
+  {t:"although / but", s:'<span class="bad">Although</span> <span class="sj">it</span> <span class="vb">rained</span>, <span class="bad">but</span> <span class="sj">we</span> <span class="vb">continued</span>.',
+    ch:[[1,"two pairs: <i>it rained</i> · <i>we continued</i>"],[1,"no comma splice"],[0,"<b>double connector</b>: one joint needs one connector"]], fix:"✔ Although it rained, we continued."},
+  {t:"budget / however", s:'<span class="sj">The budget</span> <span class="vb">was cut</span><span class="bad">, however</span> <span class="sj">the project</span> <span class="vb">survived</span>.',
+    ch:[[1,"two pairs: <i>the budget was cut</i> · <i>the project survived</i>"],[0,"<b>comma splice</b>: <i>however</i> is an adverb, not a coordinate connector"],[1,"one joining word — but the wrong kind"]], fix:"✔ The budget was cut<b>;</b> however, the project survived. · ✔ The budget was cut, <b>but</b> the project survived."}
+];
+var curI = 0;
+INSP.forEach(function(x,i){
+  var b=document.createElement("button"); b.textContent=x.t; if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curI=i; document.querySelectorAll("#inspChips button").forEach(function(y,j){ y.classList.toggle("on", j===i); }); renderInsp(); });
+  $("inspChips").appendChild(b);
+});
+function renderInsp(){
+  var x=INSP[curI]; $("inspSnt").innerHTML=x.s;
+  var ul=$("inspChecks"); ul.innerHTML="";
+  x.ch.forEach(function(c){ var li=document.createElement("li"); li.className=c[0]?"ok":"no"; li.innerHTML=c[1]; ul.appendChild(li); });
+  $("inspFix").innerHTML=x.fix;
+}
+renderInsp();
+
+/* special cases */
+var SC = {
+  nor:"<b>nor</b> triggers <b>inversion</b> — auxiliary before subject: <i>She did not resign, nor <b>did she</b> apologize.</i> ✘ <i>nor she did apologize</i>. (You will meet this pattern again in Grammar 11.)",
+  forr:"<b>for</b> = <i>because</i>, but only <b>between</b> clauses, never at the start of the sentence with that meaning. It is formal and mostly written: <i>They stopped the test, <b>for</b> the readings made no sense.</i>",
+  short:"With two <b>short</b> clauses, the comma may disappear: <i>He tried <b>and</b> he failed.</i>",
+  sothat:"<b>so that</b> (purpose) is a different word from <b>so</b> (result): <i>We labeled every cable <b>so that</b> nobody would confuse them.</i> · <i>The data were corrupted, <b>so</b> we repeated the run.</i>",
+  shared:"When the second clause <b>shares the subject</b> of the first, drop <b>both</b> the comma and the second subject: <i>The valve opened <b>and</b> released the pressure.</i> ✘ <i>The valve opened, and released…</i>"
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.nor;
+
+/* ellipsis — the second mention can vanish */
+var ELL = [
+  {t:"shared subject", el:'The pump restarted <span class="cx m-add">and</span> ran normally.', full:'The pump restarted <span class="cx m-add">and</span> <span class="g">the pump</span> ran normally.', note:"Shared subject — said once. No comma: the second half has no subject of its own."},
+  {t:"shared auxiliary", el:'The samples were labeled <span class="cx m-add">and</span> stored.', full:'The samples were labeled <span class="cx m-add">and</span> <span class="g">were</span> stored.', note:"Shared auxiliary — said once. Restoring gives <i>were stored</i>: exact, so the deletion is legal."},
+  {t:"shared verb — gapping", el:'The first test measured strain; the second<b>,</b> temperature.', full:'The first test measured strain; the second <span class="g">test measured</span> temperature.', note:"Gapping — elegant and formal: the shared verb vanishes and the <b>comma stands where the verb was</b>."},
+  {t:"illegal deletion", el:'The report was written <span class="cx m-add">and</span> the data analyzed carefully.', full:'The report was written <span class="cx m-add">and</span> the data <span class="g no">was</span> analyzed carefully.', note:"Restoring gives <i>the data <b>was</b> analyzed</i>, but <i>data</i> needs <i>were</i> — the ellipsis is illegal. ✔ <i>…and the data <b>were</b> analyzed carefully.</i> The exam plants exactly this mismatch."}
+];
+var curE = 0, ellFull = false;
+ELL.forEach(function(x,i){
+  var b=document.createElement("button"); b.textContent=x.t; if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curE=i; ellFull=false; document.querySelectorAll("#ellSeg button").forEach(function(y,j){ y.classList.toggle("on", j===i); }); renderEll(); });
+  $("ellSeg").appendChild(b);
+});
+$("ellBtn").addEventListener("click", function(){ ellFull=!ellFull; renderEll(); });
+function renderEll(){ var x=ELL[curE]; $("ellSnt").innerHTML = ellFull ? x.full : x.el; $("ellBtn").textContent = ellFull ? "Delete them again ✂" : "Restore the deleted words ↩"; $("ellNote").innerHTML = x.note; }
+renderEll();
+
+/* punctuation call */
+var COMMA = [
+  {t:"two independent clauses", s:'The estimate was low<span class="pm">,</span> yet nobody questioned it.', r:"<b>Comma</b> before the connector, never after: two subject–verb pairs, one connector."},
+  {t:"shared subject", s:'The furnace heats the billet<span class="pm none">nothing</span> and shapes it in one pass.', r:"<b>Nothing</b>: one subject, two verbs. Drop both the comma and the second subject."},
+  {t:"two short clauses", s:'He tried<span class="pm none">optional</span> and he failed.', r:"With two <b>short</b> clauses the comma may disappear: <i>He tried and he failed.</i>"},
+  {t:"however / therefore", s:'The design is finished<span class="pm">;</span> however<span class="pm">,</span> the tooling is not.', r:"<b>Semicolon</b> before the adverb and a comma after it — or replace it with a coordinate connector: <i>…finished, but the tooling is not.</i>"},
+  {t:"no connector", s:'The alarm sounded<span class="pm">;</span> the crew evacuated in four minutes.', r:"No connector → a <b>semicolon</b> (or a comma + <i>and</i>). A comma alone would be a splice."},
+  {t:"gapping", s:'Two valves control the intake<span class="pm">;</span> three<span class="pm">,</span> the exhaust.', r:"<b>Semicolon</b> between the clauses; the <b>comma</b> stands where the deleted verb was."}
+];
+var curP = 0;
+COMMA.forEach(function(x,i){
+  var b=document.createElement("button"); b.textContent=x.t; if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curP=i; document.querySelectorAll("#pmChips button").forEach(function(y,j){ y.classList.toggle("on", j===i); }); renderPm(); });
+  $("pmChips").appendChild(b);
+});
+function renderPm(){ var x=COMMA[curP]; $("pmSnt").innerHTML=x.s; $("pmRule").innerHTML=x.r; }
+renderPm();
+
+/* =====================================================================
+   BUILD · assemble (connector + joint) + transform (type it)
+===================================================================== */
+var JOINT = ["comma before it","no comma","comma after it"];
+var BUILD = [
+  {ctx:"The design was rejected. · The team started over.", cue:"meaning needed: result", groups:[{lab:"Connector",o:["so","yet","nor","for"]},{lab:"The joint",o:JOINT}],
+    ok:[{p:["so","comma before it"], out:'The design was rejected, <span class="cx m-res">so</span> the team started over.', note:"Two independent clauses → comma before the connector; so = result."}], hint:"Two full clauses take a comma before the connector, and the meaning is result."},
+  {ctx:"The motor is small. · It delivers surprising torque.", cue:"meaning needed: unexpected contrast", groups:[{lab:"Connector",o:["yet","so","nor","for"]},{lab:"The joint",o:JOINT}],
+    ok:[{p:["yet","comma before it"], out:'The motor is small, <span class="cx m-con">yet</span> it delivers surprising torque.', note:"yet = unexpected contrast; comma before the connector."}], hint:"The second clause surprises: yet, with the comma before it."},
+  {ctx:"Check the fuse. · The fault will remain a mystery.", cue:"meaning needed: alternative", groups:[{lab:"Connector",o:["or","and","yet","nor"]},{lab:"The joint",o:JOINT}],
+    ok:[{p:["or","comma before it"], out:'Check the fuse, <span class="cx m-alt">or</span> the fault will remain a mystery.', note:"or = alternative: do this, or that follows; comma before it."}], hint:"Do this, or the other thing happens: or + comma before it."},
+  {ctx:"The signal never arrived. · The backup did not ping.", cue:"meaning needed: negative addition", groups:[{lab:"Connector",o:["nor","or","so","yet"]},{lab:"Word order after it",o:["did the backup ping","the backup did ping","the backup pinged"]}],
+    ok:[{p:["nor","did the backup ping"], out:'The signal never arrived, <span class="cx m-neg">nor</span> did the backup ping.', note:"nor carries the negative and triggers inversion: auxiliary before subject."}], hint:"A negative added to a negative: nor + auxiliary + subject."},
+  {ctx:"The pour was postponed. · Rain was forecast for the afternoon.", cue:"meaning needed: reason (formal)", groups:[{lab:"Connector",o:["for","so","or","nor"]},{lab:"The joint",o:JOINT}],
+    ok:[{p:["for","comma before it"], out:'The pour was postponed, <span class="cx m-rea">for</span> rain was forecast for the afternoon.', note:"for = because, between clauses; comma before it."}], hint:"The second clause gives the reason: for, between the clauses, comma before it."},
+  {ctx:"The valve opened. · It released the pressure.", cue:"same subject on both sides", groups:[{lab:"Connector",o:["and","so","or","for"]},{lab:"The joint",o:JOINT}],
+    ok:[{p:["and","no comma"], out:'The valve opened <span class="cx m-add">and</span> released the pressure.', note:"Shared subject: drop both the comma and the second subject."}], hint:"When the subject is shared, both the comma and the second subject disappear."},
+  {ctx:"The budget was cut. · The project survived.", cue:"contrast — two legal ways", groups:[{lab:"Joining word",o:["but","however","so","for"]},{lab:"Punctuation",o:["comma before it","semicolon before it, comma after"]}],
+    ok:[{p:["but","comma before it"], out:'The budget was cut, <span class="cx m-con">but</span> the project survived.', note:"but is a coordinate connector: comma before it."},
+        {p:["however","semicolon before it, comma after"], out:'The budget was cut<b>;</b> however<b>,</b> the project survived.', note:"however is an adverb, not a coordinate connector: semicolon before, comma after."}], hint:"but takes a comma; however takes a semicolon before and a comma after."},
+  {ctx:"The report was filed. · The annexes were attached to it.", cue:"ellipsis check — can the second was vanish?", groups:[{lab:"Connector",o:["and","but"]},{lab:"Second clause",o:["the annexes attached to it","the annexes were attached to it"]}],
+    ok:[{p:["and","the annexes were attached to it"], out:'The report was filed, <span class="cx m-add">and</span> the annexes were attached to it.', note:"Restoring a shared was would give annexes was ✘ — the ellipsis is illegal, so keep were."}], hint:"Deleted words must be recoverable exactly: annexes needs were, not was."},
+  {ctx:"Two valves control the intake. · Three valves control the exhaust.", cue:"gapping", groups:[{lab:"After the semicolon",o:["three, the exhaust","three the exhaust","three valves control, the exhaust"]}],
+    ok:[{p:["three, the exhaust"], out:'Two valves control the intake; three<b>,</b> the exhaust.', note:"Gapping: the shared verb is deleted and the comma stands where it was."}], hint:"Delete the shared verb and leave a comma in its place."},
+  {ctx:"The steel was ordered in May. · The steel was delivered in August.", cue:"say the shared words once", groups:[{lab:"Ellipsis",o:["and delivered in August","and it delivered in August",", and delivered in August"]}],
+    ok:[{p:["and delivered in August"], out:'The steel was ordered in May <span class="cx m-add">and</span> delivered in August.', note:"Shared subject and auxiliary (the steel was) said once — no comma."}], hint:"Subject and auxiliary are shared: keep only and + participle, no comma."}
+];
+var bi=0, bPick=[], bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function renderBuild(){
+  var it=BUILD[bi]; bPick=[];
+  $("bctx").innerHTML = it.ctx+"<small>"+it.cue+"</small>";
+  var wrap=$("bGroups"); wrap.innerHTML="";
+  it.groups.forEach(function(g,gi){
+    var box=document.createElement("div"); box.className="bgroup"; box.innerHTML='<div class="glab">'+g.lab+'</div>';
+    var row=document.createElement("div"); row.className="bchips";
+    g.o.forEach(function(op){
+      var b=document.createElement("button"); b.textContent=op;
+      b.addEventListener("click", function(){ bPick[gi]=op; row.querySelectorAll("button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+      row.appendChild(b);
+    });
+    box.appendChild(row); wrap.appendChild(box);
+  });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!it.groups.every(function(g,gi){ return !!bPick[gi]; })){ r.className="bresult bad"; r.innerHTML="Choose one option in every group first."; return; }
+  var hit=null; it.ok.forEach(function(o){ if(!hit && o.p.every(function(v,gi){ return v===bPick[gi]; })) hit=o; });
+  if(hit){
+    r.className="bresult good"; r.innerHTML="✅ "+hit.out+'<div class="bnote">'+hit.note+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else {
+    document.querySelectorAll("#bGroups .bgroup").forEach(function(box,gi){ if(!it.ok.some(function(o){ return o.p[gi]===bPick[gi]; })) box.querySelectorAll("button.on").forEach(function(x){ x.classList.add("wrongpick"); }); });
+    r.className="bresult bad"; r.innerHTML="❌ That joint will not hold. <span class='bnote'>Hint — "+it.hint+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:"Join with a coordinate connector (unexpected contrast): The simulation predicted failure. The real structure survived.", accept:["the simulation predicted failure yet the real structure survived","the simulation predicted failure but the real structure survived"], model:"The simulation predicted failure, yet the real structure survived."},
+  {ctx:"Join (contrast): The funding arrived late. The team started anyway.", accept:["the funding arrived late but the team started anyway","the funding arrived late yet the team started anyway"], model:"The funding arrived late, but the team started anyway."},
+  {ctx:"Join (result): The instrument was miscalibrated. Every reading was useless.", accept:["the instrument was miscalibrated so every reading was useless"], model:"The instrument was miscalibrated, so every reading was useless."},
+  {ctx:"Join with nor: The sensor did not respond. The backup unit did not respond.", accept:["the sensor did not respond nor did the backup unit","the sensor did not respond nor did the backup unit respond","the sensor didn't respond nor did the backup unit","the sensor didn't respond nor did the backup unit respond"], model:"The sensor did not respond, nor did the backup unit."},
+  {ctx:"Fix the comma splice with a coordinate connector: The valve stuck, the line overheated.", accept:["the valve stuck so the line overheated","the valve stuck and the line overheated"], model:"The valve stuck, so/and the line overheated."},
+  {ctx:"Fix the double connector: Although the specs were clear, but two suppliers misread them.", accept:["although the specs were clear two suppliers misread them","the specs were clear but two suppliers misread them","the specs were clear yet two suppliers misread them"], model:"Although the specs were clear, two suppliers misread them. (or: The specs were clear, but two suppliers misread them.)"},
+  {ctx:"Restore the ellipsis — write the second clause in full: The first prototype weighed nine kilos; the second, six.", accept:["the second prototype weighed six kilos","the second prototype weighed six","the second weighed six kilos","the second weighed six"], model:"the second (prototype) weighed six (kilos)"},
+  {ctx:"Restore the ellipsis — write the second clause in full: The morning shift runs the tests and the night shift the simulations.", accept:["the night shift runs the simulations","and the night shift runs the simulations"], model:"(and) the night shift runs the simulations — legal gapping"},
+  {ctx:"Illegal deletion — restore and repair the second clause: The report was filed and the annexes attached to it.", accept:["the annexes were attached to it","and the annexes were attached to it","the report was filed and the annexes were attached to it"], model:"…and the annexes were attached to it (restoring the shared was gives annexes was ✘)"}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML=it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Complete the joint", q:"The gasket held under vacuum, ___ it failed under vibration.", o:["nor","yet","for","so"], a:1, w:"yet = unexpected contrast between two independent clauses."},
+  {kind:"mc", diff:1, tag:"Complete the joint", q:"Recheck the torque, ___ the wheel may loosen at speed.", o:["yet","nor","or","and"], a:2, w:"or = alternative: do this, or the bad result follows."},
+  {kind:"mc", diff:1, tag:"Complete the joint", q:"The bridge closed at noon, ___ inspectors had found a crack in a main cable.", o:["so","for","or","nor"], a:1, w:"for = because, used only between clauses."},
+  {kind:"mc", diff:1, tag:"Complete the joint", q:"The alloy resists heat, ___ it costs less than titanium.", o:["and","nor","for","or"], a:0, w:"and = addition: a second advantage of equal weight."},
+  {kind:"error", diff:1, tag:"Fix the error", words:["Although","the","deadline","was","close,","but","the","team","stayed","calm."], bad:5, fixOld:"close, but the team", fixNew:"close, the team", w:"One joint needs one connector: although already joins the clauses."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["The","generator","started, the","lights","stayed","off."], bad:2, fixOld:"started, the lights", fixNew:"started, but the lights", w:"Comma splice: two independent clauses need a connector after the comma (or a semicolon)."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["The","committee","rejected","the","proposal,","however","it","praised","the","method."], bad:5, fixOld:"proposal, however it", fixNew:"proposal; however, it", w:"however is an adverb, not a coordinate connector: it cannot join clauses with just a comma (or write: proposal, but it)."},
+  {kind:"fill", diff:2, tag:"Negative addition", q:"He never patented the device, ___ did he publish the design. (one word)", accept:["nor"], w:"nor = negative addition, and it triggers inversion: nor did he."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["The","results","were","clear,","so that","we","published","them."], bad:4, fixOld:"so that we published", fixNew:"so we published", w:"so (result) never takes that; so that means purpose."},
+  {kind:"mc", diff:3, tag:"Gapping", q:"The first line prints labels; the second, ___.", o:["barcodes","prints it barcodes","barcodes prints","to print barcodes"], a:0, w:"Gapping: the shared verb prints is deleted and the comma stands where it was."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["The","report","was","written","and","the","data analyzed","carefully."], bad:6, fixOld:"the data analyzed", fixNew:"the data were analyzed", w:"Ellipsis must restore exactly: data needs were, so the shared was cannot be deleted."},
+  {kind:"fill", diff:3, tag:"Restore the ellipsis", q:"The steel was ordered in May and delivered in August. → and (the steel) ___ delivered in August. (one word)", accept:["was"], w:"The shared auxiliary was is said once; restoring it gives the steel was delivered."},
+  {kind:"mc", diff:3, tag:"Inversion", q:"The turbine did not restart, ___.", o:["nor the generator did","nor did the generator","neither the generator","nor generator did"], a:1, w:"nor + auxiliary + subject: inversion after nor."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("i8_g1_drill_best")||0); if(dscore>best){ store("i8_g1_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Every joint holds. Ready for the ★★★ homework." : dscore>=8?"Solid work — review the exceptions and ellipsis cards and go again." : "Re-read Grammar 1, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, '<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>
