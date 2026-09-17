@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE INVERSION X-RAY · English 8 · Unit 5 "Word Order as Power"
+  Grammar 11 — inversion after place & negative expressions
+  Three modes: Explore (the swap) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Grammar 11 · The Inversion X-Ray · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --royal:#4B3A8C; --royaldark:#30255C; --royallt:#E9E6F4;
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--royal),var(--royaldark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#CFC7EA; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#E1DCF2; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--royaldark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--royaldark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--royaldark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-royal{background:var(--royal)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--royal); background:var(--royallt); color:var(--royaldark)}
+  .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin:10px 0 2px}
+
+  /* ---------- the x-ray ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .xray{background:var(--soft); border-radius:12px; padding:12px 10px; margin-top:10px}
+  .slotnums{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:6px; margin:0 0 3px}
+  .slotnums span{text-align:center; font-size:11px; font-weight:900; color:#aaa}
+  .xrow{margin:6px 0}
+  .rowlab{display:block; font-size:11px; font-weight:900; letter-spacing:.07em; text-transform:uppercase; color:#999; margin-bottom:3px}
+  .slots{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:6px}
+  .slots div{border-radius:8px; padding:7px 6px; font-size:13px; font-weight:800; text-align:center; border:2px solid; overflow-wrap:break-word; transition:background .25s,color .25s}
+  .psub{background:var(--navylt); border-color:var(--navy); color:var(--navy)}
+  .paux{background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)}
+  .pneg{background:var(--thinklt); border-color:var(--think); color:var(--think)}
+  .pplace{background:var(--greenlt); border-color:var(--green); color:var(--greendark)}
+  .prest{background:#fff; border-color:var(--rule); color:#777}
+  .pnone{background:#fff; border-color:var(--rule); color:#bbb; border-style:dashed; font-style:italic}
+  .swapnote{text-align:center; font-size:12px; font-weight:800; color:var(--grammar); margin:8px 0 2px}
+  .xcard{border-radius:12px; padding:14px 16px; margin:8px 0; position:relative}
+  .xcard .role{font-size:11px; font-weight:900; letter-spacing:.08em; text-transform:uppercase}
+  .xcard .snt{font-size:clamp(17px,3vw,23px); font-weight:800; margin-top:4px; line-height:1.55}
+  .xneutral{background:var(--navylt); border:2px solid var(--navy)}
+  .xneutral .role{color:var(--navy)}
+  .xfronted{background:var(--royallt); border:2px solid var(--royal)}
+  .xfronted .role{color:var(--royaldark)}
+  .arrowdown{text-align:center; font-size:26px; color:var(--grammar); margin:-2px 0}
+  .snt .psub,.snt .paux,.snt .pneg,.snt .pplace{border:0; padding:0 5px; border-radius:6px; display:inline}
+  .snt .psub{box-shadow:inset 0 -2px 0 var(--navy)}
+  .snt .paux{box-shadow:inset 0 -2px 0 var(--grammar)}
+  .snt .pneg{box-shadow:inset 0 -2px 0 var(--think)}
+  .snt .pplace{box-shadow:inset 0 -2px 0 var(--green)}
+  .snt .paux.masked{color:transparent; position:relative; cursor:pointer; min-width:56px; display:inline-block}
+  .snt .paux.masked::after{content:"?"; position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .changes{list-style:none; margin:10px 0 0}
+  .changes li{position:relative; padding:3px 0 3px 22px; font-size:14px; font-weight:600; color:#555}
+  .changes li::before{content:"→"; position:absolute; left:0; top:3px; color:var(--grammar); font-weight:900}
+  .rulebar{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:700}
+  .legend{display:flex; gap:8px; flex-wrap:wrap; font-size:12px; font-weight:800; margin-top:10px}
+  .legend span{border-radius:6px; padding:1px 8px; border:1.5px solid}
+
+  /* echo card */
+  .echochips{display:flex; gap:6px; flex-wrap:wrap; margin:8px 0}
+  .echochips button{border:2px solid var(--rule); background:#fff; border-radius:8px; padding:6px 11px; font:700 13px Lato,sans-serif; cursor:pointer; text-align:left}
+  .echochips button.on{border-color:var(--navy); background:var(--navylt); color:var(--navy)}
+  .echoout{background:var(--soft); border-radius:12px; padding:16px; text-align:center; margin-top:6px}
+  .echoout .said{font-size:15px; font-weight:700; color:#555}
+  .echoout .ech{font-size:clamp(18px,3vw,24px); font-weight:900; margin-top:8px}
+  .echoout .ech span{border-radius:6px; padding:0 5px}
+  .echoout .why2{font-size:14px; color:#555; margin-top:8px; font-weight:600}
+
+  /* no-inversion grid */
+  .nogrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:8px; margin-top:6px}
+  .nogrid div{background:var(--soft); border:1.5px solid var(--rule); border-radius:10px; padding:9px 11px; font-size:14px; font-weight:600}
+  .nogrid b{display:block; font-size:13px; color:var(--royaldark); text-transform:uppercase; letter-spacing:.03em; margin-bottom:3px}
+  .no{color:var(--think); font-weight:800} .yes{color:var(--green); font-weight:800}
+
+  /* special cases selector */
+  .seg2{display:flex; border:2px solid var(--excep); border-radius:999px; overflow:hidden; width:max-content; flex-wrap:wrap; max-width:100%}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)}
+  .misl{list-style:none; margin-top:4px}
+  .misl li{padding:7px 0; border-bottom:1px dashed var(--rule); font-size:14.5px; font-weight:600}
+  .misl li:last-child{border:0}
+  .misl small{display:block; color:#777; font-weight:700; margin-top:2px}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--royal); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--royaldark); border:2px solid var(--royal)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--royal); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--royal)}
+  .segbig button.on{background:var(--royal); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{margin:0 0 5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--royal); background:var(--royallt); color:var(--royaldark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(16px,2.7vw,21px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--royaldark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--royaldark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--royal); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)}
+  .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick{background:var(--think); color:#fff}
+  .stn .w.rightpick{background:var(--green); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)}
+  .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--royaldark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--royal); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} .slots div{font-size:11px; padding:6px 3px} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">🔀</span>
+  <div class="wrap">
+    <div class="kicker">English 8 · Unit 5 · Word Order as Power</div>
+    <h1>🔀 The Inversion X-Ray</h1>
+    <div class="sub"><b>Grammar 11</b> — inversion after place &amp; negative expressions. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🔍 X-ray the swap</span><span>🔧 Build the inversion</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🔍 Explore<small>watch it swap</small></button>
+    <button data-tab="build">🔧 Build<small>invert it yourself</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>Front the trigger, and the sentence swaps slots</h2>
+      <p class="muted">English word order is rigid, so breaking it on purpose is a signal. Push a <b>negative or restrictive</b>
+        expression — or a <b>place</b> expression — into slot 1, and the machinery behind it moves. Read the
+        <b>column numbers</b>, not the words. <span class="es">(Adelanta el disparador y observa qué pieza se mueve.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the inverted auxiliary, guess, then reveal</label>
+
+      <div class="glab">Family 2 · negative &amp; restrictive openers — auxiliary inversion</div>
+      <div class="chips" id="chipsNeg"></div>
+      <div class="glab">Family 1 · fronted place expressions — full inversion</div>
+      <div class="chips" id="chipsPlace"></div>
+
+      <div class="xray">
+        <div class="slotnums"><span>1</span><span>2</span><span>3</span><span>4</span></div>
+        <div class="xrow"><span class="rowlab">neutral</span><div class="slots" id="slotsN"></div></div>
+        <div class="swapnote" id="swapNote"></div>
+        <div class="xrow"><span class="rowlab">fronted</span><div class="slots" id="slotsF"></div></div>
+      </div>
+
+      <div class="xcard xneutral"><div class="role">Neutral order — nothing is marked</div><div class="snt" id="plainSnt"></div></div>
+      <div class="arrowdown">⬇</div>
+      <div class="xcard xfronted"><div class="role">Fronted &amp; inverted — the emphasis seat is taken</div><div class="snt" id="invSnt"></div></div>
+      <div style="text-align:center"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the inverted auxiliary ✓</button></div>
+
+      <div class="rulebar" id="ruleBar"></div>
+      <h3>What moved?</h3>
+      <ul class="changes" id="changes"></ul>
+      <div class="legend"><span class="psub">subject</span><span class="paux">auxiliary / verb</span><span class="pneg">negative trigger</span><span class="pplace">place expression</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">🚪 The doorway: echo inversions</span>
+      <h2>So do I · Neither did we · Nor does the report</h2>
+      <p class="muted">These tiny echoes run on the <b>identical mechanism</b> as <i>Never have we…</i>: negative-or-additive word
+        first, then the auxiliary, then the subject. Master the small version and the solemn one comes free.
+        <span class="es">(Misma máquina, versión de bolsillo.)</span></p>
+      <div class="echochips" id="echoChips"></div>
+      <div class="echoout"><div class="said" id="echoSaid"></div><div class="ech" id="echoEch"></div><div class="why2" id="echoWhy"></div></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">🚫 When NOT to invert</span>
+      <h2>Six places where the machinery stays off</h2>
+      <div class="nogrid">
+        <div><b>The trigger is not at the front</b><span class="yes">✔</span> The simulation <b>rarely matches</b> reality.<br>
+          Inversion is paid for by fronting. No fronting, no swap.</div>
+        <div><b>Only + subject</b><span class="yes">✔</span> Only the director <b>knows</b>.<br>
+          Nothing moves. Inversion needs <b>only + adverbial</b> (time, place, condition, means):
+          <span class="yes">✔</span> Only then <b>did we understand</b>.</div>
+        <div><b>Place inversion with an object</b><span class="no">✘</span> On the table put the technician the tools.<br>
+          <span class="yes">✔</span> On the table, the technician <b>put</b> the tools. The verb must be <b>intransitive</b> (position or motion).</div>
+        <div><b>Place inversion with a pronoun</b><span class="yes">✔</span> Here <b>comes the bus</b>. (noun subject)<br>
+          <span class="yes">✔</span> Here <b>it comes</b>. (pronoun subject — no inversion)</div>
+        <div><b>Not only inside the clause</b><span class="yes">✔</span> It <b>not only failed</b>, but it failed publicly.<br>
+          Only the fronted version inverts: <b>Not only did it fail</b>…</div>
+        <div><b>Not until — the wrong clause</b><span class="no">✘</span> Not until the audit <b>did end</b>, we learned the truth.<br>
+          <span class="yes">✔</span> Not until the audit ended <b>did we learn</b> the truth. The <b>main</b> clause inverts.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">🏛️ Why English works this way</span>
+      <h2>Inversion is a V2 fossil</h2>
+      <p class="muted">A thousand years ago English, like modern German, kept its verb in <b>second position</b> no matter what
+        came first. Modern English dropped that rule — except in fossils: <b>questions</b>, <b>here comes / there goes</b>, and the
+        fronted negatives of this unit. Push <i>never</i> or <i>rarely</i> into the emphasis seat and the old grammar wakes up and
+        demands the verb right behind it. That is why inversion sounds solemn and slightly ancient: it <b>is</b> ancient. Formal
+        English keeps the ruin standing precisely because its rarity is what gives it weight.
+        <span class="es">(No es un truco: es gramática antigua que sigue operando.)</span></p>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Special cases</span>
+      <h2>The five the exam keeps testing</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="onlysubj" class="on">only + subject</button><button data-v="notuntil">not until</button><button data-v="sosuch">so / such</button><button data-v="echo">echo forms</button><button data-v="beaux">be &amp; modals</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">⚠️ Common mistakes</span>
+      <h2>What Spanish speakers get wrong here</h2>
+      <ul class="misl">
+        <li><span class="no">✘</span> Never I have seen such results. · <span class="no">✘</span> Never saw we such results. → <span class="yes">✔</span> <b>Never have I seen</b> such results.
+          <small>Do not invert the main verb and do not leave the subject first: the <b>auxiliary</b> goes before the subject.</small></li>
+        <li><span class="no">✘</span> Rarely the model fails. → <span class="yes">✔</span> <b>Rarely does the model fail.</b>
+          <small>A fronted negative <b>requires</b> inversion; it is not optional emphasis.</small></li>
+        <li><span class="no">✘</span> Rarely does she goes out. → <span class="yes">✔</span> <b>Rarely does she go</b> out.
+          <small>After borrowed <i>do/does/did</i> the main verb returns to its <b>base form</b>.</small></li>
+        <li><span class="no">✘</span> Here it comes the bus. → <span class="yes">✔</span> <b>Here comes the bus.</b> · <span class="yes">✔</span> <b>Here it comes.</b>
+          <small>One subject only: a noun inverts, a pronoun does not.</small></li>
+        <li><span class="no">✘</span> On the table put the technician the tools. → <span class="yes">✔</span> <b>On the table, the technician put</b> the tools.
+          <small>Place inversion is blocked when the verb has an object.</small></li>
+        <li><span class="no">✘</span> Never we don’t inspect the seals. → <span class="yes">✔</span> <b>Never do we inspect</b> the seals.
+          <small>One negation per clause: the trigger already carries it.</small></li>
+      </ul>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> animates Grammar 11's X-ray diagram: the four fixed slots, the trigger travelling to slot 1 and the auxiliary/subject exchange, over both families (place expressions and negative/restrictive openers) including do-support and <i>be</i> as main verb. The echo card is exercise C; the no-inversion grid holds the conditions and exceptions; the tip box is <i>Why English works this way</i>.</li>
+          <li><b>Build</b> is productive: <i>Assemble</i> (choose what must follow the fronted trigger, including the <i>only + subject</i> trap) and <i>Transform</i> (rewrite with the opener, exercises A–C of the manual and Task set 19).</li>
+          <li><b>Drill</b> is one graded flow in both exam formats — Structure completion and Written Expression error identification — with score, streak and a best score kept on this device.</li>
+          <li>Works <b>offline</b>. Reading and writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-royal">🔧 Your turn to produce</span>
+      <h2>Build the inversion</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the neutral sentence, then choose what must follow the <b>fronted opener</b>. The machine builds the
+          sentence and names the rule — <b>guess before you check.</b> Careful: one opener does not invert at all.</p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">After the opener the sentence continues…</div><div class="bchips" id="partChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New sentence →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Rewrite each sentence with the expression in brackets at the front, inverting where the rules allow.
+          Type it and check against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type the rewritten sentence"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next sentence →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — 13 items, three levels</h2>
+      <p class="muted">Both exam formats: <b>Structure</b> (complete the sentence) and <b>Written Expression</b> (click the word that must change).
+        ★ recognise the swap · ★★ repair it · ★★★ the traps. Keep your streak alive.
+        <span class="es">(Misma escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 8 · Unit 5 «Word Order as Power» · Grammar 11 — inversion after place and negative expressions · Level C1
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE INVERSION X-RAY — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 8 Class Manual (Grammar 11).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+function cap(s){ return s.charAt(0).toUpperCase()+s.slice(1); }
+function head1(s){ return (s||"").split(" ")[0].replace(/[^A-Za-z-]/g,""); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE · the x-ray  (g:"neg" = auxiliary inversion · g:"place" = full inversion)
+   neg  : sub · aux (empty = do-support) · trig · rest || fa = fronted auxiliary · fr = rest after the swap
+   place: sub · v (whole verb) · pl (place expression)
+===================================================================== */
+var XR = [
+  {k:"never", g:"neg", sub:"we", aux:"have", trig:"never", rest:"recorded such strain", fa:"have", fr:"recorded such strain",
+   plain:"We have never recorded such strain.", rule:"A fronted negative forces question word order: auxiliary before subject."},
+  {k:"rarely", g:"neg", sub:"the simulation", aux:"", trig:"rarely", rest:"matches reality so well", fa:"does", fr:"match reality so well",
+   plain:"The simulation rarely matches reality so well.", rule:"No auxiliary in the original? Borrow do/does/did — and the main verb returns to its base form."},
+  {k:"seldom", g:"neg", sub:"a design", aux:"", trig:"seldom", rest:"survives first contact with the workshop", fa:"does", fr:"survive first contact with the workshop",
+   plain:"A design seldom survives first contact with the workshop.", rule:"Seldom behaves exactly like rarely: it takes do-support."},
+  {k:"notonly", g:"neg", sub:"it", aux:"", trig:"not only", rest:"failed, but it failed publicly", fa:"did", fr:"fail, but it failed publicly",
+   plain:"It not only failed, but it failed publicly.", rule:"Not only inverts only when it opens the clause; inside the clause nothing moves."},
+  {k:"notuntil", g:"neg", sub:"the line", aux:"will", trig:"not … until 2027", ftrig:"Not until 2027", rest:"reopen", fa:"will", fr:"reopen",
+   plain:"The line will not reopen until 2027.", rule:"Not until inverts the main clause, never the until-clause."},
+  {k:"nosooner", g:"neg", sub:"the test", aux:"had", trig:"no sooner", rest:"begun than the fuse blew", fa:"had", fr:"begun than the fuse blew",
+   plain:"The test had no sooner begun than the fuse blew.", rule:"No sooner … than: past perfect in the first half, past simple in the second."},
+  {k:"hardly", g:"neg", sub:"the crew", aux:"had", trig:"hardly", rest:"sealed the joint when the pressure spiked", fa:"had", fr:"sealed the joint when the pressure spiked",
+   plain:"The crew had hardly sealed the joint when the pressure spiked.", rule:"Hardly … when is the twin of no sooner … than."},
+  {k:"undernc", g:"neg", sub:"the door", aux:"may", trig:"under no circumstances", rest:"be left open", fa:"may", fr:"be left open",
+   plain:"The door may under no circumstances be left open.", rule:"A negative prepositional phrase is a negative opener: the modal leads."},
+  {k:"atnotime", g:"neg", sub:"the operators", aux:"were", trig:"at no time", rest:"aware of the substitution", fa:"were", fr:"aware of the substitution",
+   plain:"The operators were at no time aware of the substitution.", rule:"With be as the main verb, be itself inverts — no do-support."},
+  {k:"little", g:"neg", sub:"they", aux:"", trig:"little", rest:"suspected the cause", fa:"did", fr:"suspect the cause",
+   plain:"They little suspected the cause.", rule:"Little is negative in meaning, so it triggers the same inversion."},
+  {k:"onlythen", g:"neg", sub:"we", aux:"", trig:"only then", rest:"understood", fa:"did", fr:"understand",
+   plain:"We understood only then.", rule:"Only + adverbial inverts. Only + subject never does."},
+  {k:"onlyby", g:"neg", sub:"you", aux:"can", trig:"only by testing", rest:"be sure", fa:"can", fr:"be sure",
+   plain:"You can be sure only by testing.", rule:"Only + adverbial of means also inverts: the modal jumps ahead of the subject."},
+  {k:"bench", g:"place", sub:"three broken prototypes", v:"sat", pl:"on the bench",
+   plain:"Three broken prototypes sat on the bench.", rule:"Fronted place + intransitive verb of position: the whole verb moves before the noun subject."},
+  {k:"chamber", g:"place", sub:"the coolant", v:"flowed", pl:"into the chamber",
+   plain:"The coolant flowed into the chamber.", rule:"Verbs of motion invert the same way — the verb has no object."},
+  {k:"floor", g:"place", sub:"the main power lines", v:"run", pl:"under the floor",
+   plain:"The main power lines run under the floor.", rule:"The verb still agrees with the subject that follows it: lines → run."},
+  {k:"here", g:"place", sub:"the inspector", v:"comes", pl:"here",
+   plain:"The inspector comes here.", rule:"Here comes / There goes are the everyday fossils, and they invert only with a noun subject: with a pronoun there is no inversion (Here he comes)."}
+];
+var curX = 0, predictMode = false, revealed = false;
+XR.forEach(function(x,i){
+  var b = document.createElement("button");
+  b.textContent = x.g==="neg" ? cap(x.ftrig||x.trig) : cap(x.pl);
+  b.dataset.k = i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curX=i; revealed=false;
+    document.querySelectorAll("#chipsNeg button,#chipsPlace button").forEach(function(y){ y.classList.toggle("on", +y.dataset.k===i); });
+    renderX(); });
+  $(x.g==="neg" ? "chipsNeg" : "chipsPlace").appendChild(b);
+});
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderX(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderX(); });
+function slotHtml(box, parts){
+  box.innerHTML = parts.map(function(p){ return '<div class="'+p[1]+'">'+p[0]+"</div>"; }).join("");
+}
+function renderX(){
+  var x = XR[curX], nParts, fParts, inv, moves;
+  if(x.g==="neg"){
+    nParts = [[cap(x.sub),"psub"], [x.aux||"no auxiliary","paux"], [x.trig,"pneg"], [x.rest,"prest"]];
+    if(!x.aux) nParts[1][1] = "pnone";
+    fParts = [[cap(x.ftrig||x.trig),"pneg"], [x.fa,"paux"], [x.sub,"psub"], [x.fr,"prest"]];
+    inv = '<span class="pneg">'+cap(x.ftrig||x.trig)+'</span> <span class="paux">'+x.fa+'</span> <span class="psub">'+x.sub+"</span> "+x.fr+".";
+    moves = ['<b>'+cap(x.ftrig||x.trig)+"</b> takes slot 1, the emphasis seat.",
+      x.aux ? "<b>"+x.fa+"</b> and <b>"+x.sub+"</b> trade places — the same swap that builds a question."
+            : "There was no auxiliary, so English borrows <b>"+x.fa+"</b>, and the main verb drops to its base form (<i>"+head1(x.rest)+"</i> → <b>"+head1(x.fr)+"</b>)."];
+    $("swapNote").innerHTML = "⬇ the trigger travels to slot 1 · the auxiliary and the subject trade places ⬇";
+  } else {
+    nParts = [[cap(x.sub),"psub"], [x.v,"paux"], [x.pl,"pplace"], ["—","prest"]];
+    fParts = [[cap(x.pl),"pplace"], [x.v,"paux"], [x.sub,"psub"], ["—","prest"]];
+    inv = '<span class="pplace">'+cap(x.pl)+'</span> <span class="paux">'+x.v+'</span> <span class="psub">'+x.sub+"</span>.";
+    moves = ["<b>"+cap(x.pl)+"</b> takes slot 1, the emphasis seat.",
+      "<b>"+x.v+"</b> — the whole verb, not an auxiliary — moves in front of <b>"+x.sub+"</b>.",
+      "The verb has <b>no object</b> and the subject is a <b>noun</b>; otherwise the swap is blocked."];
+    $("swapNote").innerHTML = "⬇ the place expression travels to slot 1 · subject and place exchange, around the verb ⬇";
+  }
+  slotHtml($("slotsN"), nParts); slotHtml($("slotsF"), fParts);
+  $("plainSnt").textContent = x.plain;
+  $("invSnt").innerHTML = inv;
+  $("ruleBar").innerHTML = "📏 "+x.rule;
+  var ul = $("changes"); ul.innerHTML = "";
+  moves.forEach(function(m){ var li=document.createElement("li"); li.innerHTML=m; ul.appendChild(li); });
+  var mask = predictMode && !revealed;
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  if(mask){
+    document.querySelectorAll("#invSnt .paux").forEach(function(el){
+      el.classList.add("masked");
+      el.addEventListener("click", function(){ revealed=true; renderX(); });
+    });
+  }
+}
+renderX();
+
+/* echo inversions — the everyday face of the same grammar */
+var ECHO = [
+  {s:"“Our team missed the workshop.”", t:"(ours, too)", e:['So','did','ours'], w:"Positive statement → So + auxiliary + subject. A past simple with no auxiliary borrows <b>did</b>."},
+  {s:"“The old firmware can’t read the new format.”", t:"(the beta version, either)", e:['Neither','can','the beta version'], w:"Negative statement → Neither / Nor + auxiliary + subject. Never add a second negative."},
+  {s:"“We’ve already submitted our abstract.”", t:"(we, too)", e:['So','have','we'], w:"Match the auxiliary exactly: have → <b>have</b>."},
+  {s:"“The night shift never touches the settings.”", t:"(the morning shift, either)", e:['Neither','does','the morning shift'], w:"<i>Never touches</i> has no auxiliary, so the echo borrows <b>does</b> — the same do-support as the long inversions."},
+  {s:"“I would have voted for the redesign.”", t:"(me, too)", e:['So','would','I'], w:"Only the <b>first</b> auxiliary echoes: would have voted → <b>would</b>."}
+];
+var curE = 0;
+ECHO.forEach(function(x,i){
+  var b=document.createElement("button"); b.textContent=x.s; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curE=i; document.querySelectorAll("#echoChips button").forEach(function(y){ y.classList.toggle("on", +y.dataset.k===i); }); renderEcho(); });
+  $("echoChips").appendChild(b);
+});
+function renderEcho(){
+  var x = ECHO[curE];
+  $("echoSaid").innerHTML = x.s+" <span class='es'>"+x.t+"</span>";
+  $("echoEch").innerHTML = '<span class="pneg">'+x.e[0]+'</span> <span class="paux">'+x.e[1]+'</span> <span class="psub">'+x.e[2]+"</span>.";
+  $("echoWhy").innerHTML = x.w;
+}
+renderEcho();
+
+/* special cases */
+var SC = {
+  onlysubj:"<b>Only + subject does NOT invert.</b> ✔ Only the director <b>knows</b>. · ✔ Only the shift supervisor <b>holds</b> that key. Inversion needs <b>only + adverbial</b>: Only then <b>did we understand</b>. · Only after decontamination <b>may you enter</b>. · Only by testing <b>can you be</b> sure.",
+  notuntil:"<b>Not until inverts the main clause</b>, not the until-clause. ✔ Not until the audit ended <b>did we learn</b> the truth. · ✔ Not until 2027 <b>will the line reopen</b>. The clause after <i>not until</i> keeps ordinary order.",
+  sosuch:"<b>So + adjective</b> and <b>such + noun</b> can front with inversion. ✔ So severe <b>was the corrosion</b> that the pipe crumbled. · ✔ So strong <b>was the vibration</b> that two welds cracked. · ✔ Such <b>was the damage</b> that the line closed for a week. ✘ So the vibration was strong that… — the adjective travels with <i>so</i>.",
+  echo:"<b>Neither / nor / so echo statements.</b> — We passed. — <b>So did they</b>. · — We didn’t. — <b>Neither did we</b>. · The main pump won’t restart — <b>nor will the backup</b>. Same order as every inversion: trigger, auxiliary, subject.",
+  beaux:"<b>be inverts by itself</b> (no do-support): ✔ At no time <b>were the operators</b> aware of the substitution. And a <b>modal</b> simply leads: ✔ Under no circumstances <b>may the door be left</b> open. Do-support appears only when there is no auxiliary and no <i>be</i>."
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.onlysubj;
+
+/* =====================================================================
+   BUILD · assemble (what follows the opener) + transform (rewrite it)
+===================================================================== */
+var BUILD = [
+  {ctx:"We have never lost a sample to contamination.", op:"Never", tail:" to contamination", options:["we have lost a sample","have we lost a sample","did we lose a sample"], correct:"have we lost a sample", note:"Fronted negative → auxiliary before subject: Never have we lost a sample to contamination."},
+  {ctx:"The model rarely fails.", op:"Rarely", options:["the model fails","does the model fails","does the model fail"], correct:"does the model fail", note:"No auxiliary → borrow does, and the main verb returns to its base form."},
+  {ctx:"The emergency generator sits behind the main hall.", op:"Behind the main hall", fam:"place", options:["sits the emergency generator","the emergency generator sits","does the emergency generator sit"], correct:"sits the emergency generator", note:"Place inversion: the whole verb moves before the noun subject. No do-support here."},
+  {ctx:"The alarm had no sooner sounded than the sprinklers activated.", op:"No sooner", tail:" than the sprinklers activated", options:["the alarm had sounded","did the alarm sound","had the alarm sounded"], correct:"had the alarm sounded", note:"No sooner … than: past perfect first, past simple after than."},
+  {ctx:"You may enter the reactor room only after decontamination.", op:"Only after decontamination", options:["you may enter the reactor room","may you enter the reactor room","do you may enter the reactor room"], correct:"may you enter the reactor room", note:"Only + adverbial → the modal leads: Only after decontamination may you enter."},
+  {ctx:"The team did not learn the real cause until Friday.", op:"Not until Friday", options:["did the team learn the real cause","the team had learned the real cause","learned the team the real cause"], correct:"did the team learn the real cause", note:"Not until inverts the main clause, with do-support in the past."},
+  {ctx:"Only the night operator noticed the reading.", op:"Only the night operator", fam:"subj", options:["did the night operator notice the reading","notice the reading","noticed the reading"], correct:"noticed the reading", note:"Trap: only + SUBJECT does not invert. Nothing moves — and the past tense stays on the verb."},
+  {ctx:"They little suspected what the flow meter was hiding.", op:"Little", options:["they suspected what the flow meter was hiding","did they suspect what the flow meter was hiding","did they suspected what the flow meter was hiding"], correct:"did they suspect what the flow meter was hiding", note:"Little is negative in meaning: do-support plus the base form."},
+  {ctx:"The operators were at no time aware of the substitution.", op:"At no time", tail:" of the substitution", options:["the operators were aware","did the operators be aware","were the operators aware"], correct:"were the operators aware", note:"be is the main verb here, so be itself inverts."},
+  {ctx:"The vibration was so strong that two welds cracked.", op:"So strong", options:["was the vibration that two welds cracked","the vibration was that two welds cracked","did the vibration be that two welds cracked"], correct:"was the vibration that two welds cracked", note:"so + adjective fronts together and be inverts: So strong was the vibration that…"}
+];
+var bi=0, bPick=null, bBuilt=0;
+function opClass(it){ return it.fam==="place" ? "pplace" : it.fam==="subj" ? "psub" : "pneg"; }
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function renderBuild(){
+  var it=BUILD[bi]; bPick=null;
+  $("bctx").innerHTML = "Neutral: "+it.ctx+"<small>Front it with: <b>"+it.op+"</b> …</small>";
+  var wrap=$("partChips"); wrap.innerHTML="";
+  it.options.forEach(function(op){
+    var b=document.createElement("button"); b.textContent=op; b.dataset.v=op;
+    b.addEventListener("click", function(){ bPick=op; document.querySelectorAll("#partChips button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bPick){ r.className="bresult bad"; r.innerHTML="Choose the continuation first."; return; }
+  if(bPick===it.correct){
+    r.className="bresult good";
+    r.innerHTML='✅ <span class="'+opClass(it)+'">'+it.op+'</span> <span class="paux">'+it.correct+'</span>'+(it.tail||"")+'.<div class="bnote">'+it.note+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else {
+    document.querySelector('#partChips button[data-v="'+bPick+'"]').classList.add("wrongpick");
+    r.className="bresult bad"; r.innerHTML="❌ Not that one. <span class='bnote'>Hint — "+it.note+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:"We have rarely seen corrosion spread this fast. (Rarely)", accept:["rarely have we seen corrosion spread this fast"], model:"Rarely have we seen corrosion spread this fast."},
+  {ctx:"The spare transformer sits behind the substation. (Behind the substation)", accept:["behind the substation sits the spare transformer"], model:"Behind the substation sits the spare transformer."},
+  {ctx:"The crew had no sooner sealed the joint than the pressure spiked. (No sooner)", accept:["no sooner had the crew sealed the joint than the pressure spiked"], model:"No sooner had the crew sealed the joint than the pressure spiked."},
+  {ctx:"You may bypass this interlock under no circumstances. (Under no circumstances)", accept:["under no circumstances may you bypass this interlock"], model:"Under no circumstances may you bypass this interlock."},
+  {ctx:"The auditors did not relax until the last log was checked. (Not until)", accept:["not until the last log was checked did the auditors relax"], model:"Not until the last log was checked did the auditors relax."},
+  {ctx:"They little suspected what the flow meter was hiding. (Little)", accept:["little did they suspect what the flow meter was hiding"], model:"Little did they suspect what the flow meter was hiding."},
+  {ctx:"Seldom a design survives first contact with the workshop. (repair the inversion)", accept:["seldom does a design survive first contact with the workshop"], model:"Seldom does a design survive first contact with the workshop."},
+  {ctx:"Here the samples are. (repair the place inversion)", accept:["here are the samples"], model:"Here are the samples."},
+  {ctx:"“Our sensors survived the surge.” — ours did, too. (echo)", accept:["so did ours","so did ours too","so did ours as well"], model:"So did ours."},
+  {ctx:"“We have never audited that vendor.” — we haven’t either. (echo)", accept:["neither have we","nor have we"], model:"Neither have we. (Nor have we.)"}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML="Rewrite: "+it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow — 13 items (5★ / 4★★ / 4★★★)
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Structure", q:"Never ___ such a clean data set.", o:["I have seen","have I seen","did I saw","saw I"], a:1, w:"A fronted negative takes question order: auxiliary + subject + main verb."},
+  {kind:"mc", diff:1, tag:"Structure", q:"Seldom ___ this margin of error in a certified batch.", o:["do we accept","we accept","we do accept","accept we"], a:0, w:"Seldom is restrictive: with no auxiliary, borrow do — and the subject still follows that auxiliary, never the main verb."},
+  {kind:"mc", diff:1, tag:"Structure", q:"Into the chamber ___ the coolant from the reserve tank.", o:["it flowed","did flow","flowed","flow"], a:2, w:"Fronted place expression: the whole verb moves before the noun subject — no do-support, no extra pronoun, and the verb agrees with the coolant."},
+  {kind:"error", diff:1, tag:"Written Expression", words:["Rarely","does","the","simulation","matches","reality","so","well."], bad:4, fixOld:"matches", fixNew:"match", w:"After borrowed do/does/did the main verb returns to its base form."},
+  {kind:"fill", diff:1, tag:"Front it", q:"We have never lost a sample to contamination. → Never ___ a sample to contamination. (3 words)", accept:["have we lost"], w:"Auxiliary before subject: Never have we lost a sample."},
+  {kind:"error", diff:2, tag:"Written Expression", words:["No","sooner","had","the","alarm","sounded","when","the","sprinklers","activated."], bad:6, fixOld:"when", fixNew:"than", w:"No sooner pairs with than; hardly and scarcely pair with when. The inversion itself (had the alarm sounded) is already right."},
+  {kind:"error", diff:2, tag:"Written Expression", words:["Here","it","comes","the","delivery","van."], bad:1, fixOld:"it", fixNew:"(drop it)", w:"One subject only: Here comes the delivery van. With a pronoun there is no inversion: Here it comes."},
+  {kind:"mc", diff:2, tag:"Structure", q:"Only the shift supervisor ___ that key.", o:["does the shift supervisor hold","hold","does holds","holds"], a:3, w:"Only + SUBJECT does not invert; inversion needs only + adverbial (Only then did we understand)."},
+  {kind:"fill", diff:2, tag:"Echo it", q:"“We have never audited that vendor.” — and we haven’t either. → ___ (3 words)", accept:["neither have we","nor have we"], w:"Negative echo: Neither/Nor + auxiliary + subject — one negative only."},
+  {kind:"error", diff:3, tag:"Written Expression", words:["Under","the","floor","runs","the","power","cables","and","the","fiber-optic","trunk."], bad:3, fixOld:"runs", fixNew:"run", w:"Place inversion pushes the subject behind the verb, but the verb still agrees with it: cables and trunk → run."},
+  {kind:"error", diff:3, tag:"Written Expression", words:["Only","after","the","second","failure","the","board","approved","the","redesign."], bad:7, fixOld:"approved", fixNew:"did the board approve", w:"Only + adverbial of time inverts the main clause: did the board approve."},
+  {kind:"mc", diff:3, tag:"Structure", q:"No sooner ___ than the clients asked for a second one.", o:["the demo had ended","had the demo ended","did the demo ended","the demo ended"], a:1, w:"No sooner + past perfect inverted, then than + past simple."},
+  {kind:"fill", diff:3, tag:"Front it", q:"The team did not learn the real cause until Friday. → Not until Friday ___ the real cause. (4 words)", accept:["did the team learn"], w:"Not until inverts the main clause: did the team learn."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("i8_g11_drill_best")||0); if(dscore>best){ store("i8_g11_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Inversion under control. Go straight to Task set 19." : dscore>=8?"Solid — reread the special-cases card and the traps, then run it again." : "Reread Grammar 11, work through Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the one word that must change.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, (ok?'<span class="k">\u2713 Correct.</span> ':'<span class="k">\u2717 Not that one: the green part is the error.</span> ')+'<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer: "+it.accept[0]+".")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

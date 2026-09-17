@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE EMBEDDING MACHINE · English 8 · Unit 2 "Clauses Within Clauses"
+  Grammar 4 — noun clauses: slots, statement order, whether, subjunctive,
+  extraposition. Three modes: Explore · Build · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Grammar 4 · The Embedding Machine · Prof. Daniel Lara</title>
+<style>
+  :root{ --plum:#7A3B69;--plumdark:#4F2544;--plumlt:#F2E7EF; --green:#1F7A4D;--greendark:#124D30;--greenlt:#E4F1EA; --grammar:#D9761A;--grammarlt:#FBEEDF;
+    --excep:#7A4FB0;--exceplt:#EEE8F6; --think:#C0392B;--thinklt:#F9E7E4; --navy:#1F3A5F;--navylt:#E8ECF3; --ink:#262626;--soft:#F4F6F5;--rule:#CBD3CE; }
+  *{box-sizing:border-box;margin:0;padding:0} html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--soft);line-height:1.55}
+  header{background:linear-gradient(135deg,var(--plum),var(--plumdark));color:#fff;padding:24px 20px 20px;position:relative;overflow:hidden}
+  header .deco{position:absolute;right:16px;top:-16px;font-size:118px;opacity:.13;pointer-events:none}
+  header .kicker{font-size:12px;letter-spacing:.13em;font-weight:800;color:#E6C9DE;text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px);margin:4px 0 3px;font-weight:900} header .sub{color:#F0DCEA;font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px;display:flex;gap:6px;flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16);border-radius:999px;padding:3px 11px;font-size:12px;font-weight:700}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 14px 96px} header .wrap{padding-bottom:0}
+  nav{display:flex;gap:7px;flex-wrap:wrap;margin:15px auto 0;max-width:1000px;padding:0 14px;position:relative;z-index:2}
+  nav button{border:0;border-radius:12px 12px 0 0;padding:11px 18px;font:800 15px Lato,sans-serif;background:rgba(255,255,255,.15);color:#fff;cursor:pointer}
+  nav button.on{background:var(--soft);color:var(--plumdark)} nav button small{display:block;font-size:11px;font-weight:700;opacity:.8} main{padding-top:18px}
+  section.tab{display:none} section.tab.on{display:block;animation:pop .25s ease}
+  @keyframes pop{from{opacity:0;transform:translateY(6px)} to{opacity:1}}
+  .card{background:#fff;border:1px solid var(--rule);border-radius:14px;padding:18px;margin-bottom:16px;box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px;color:var(--plumdark);margin-bottom:6px} .card h3{font-size:15px;color:var(--plumdark);margin:14px 0 6px} .muted{color:#666;font-size:14px}
+  .es{color:#777;font-style:italic} .boxtag{display:inline-block;color:#fff;font-weight:800;font-size:12px;padding:3px 10px;border-radius:7px;margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-plum{background:var(--plum)} .tag-navy{background:var(--navy)}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0}
+  .chips button{border:2px solid var(--rule);background:#fff;border-radius:999px;padding:7px 14px;font:700 14px Lato,sans-serif;cursor:pointer;color:var(--ink)}
+  .chips button.on{border-color:var(--plum);background:var(--plumlt);color:var(--plumdark)}
+  /* ---------- slot visualizer ---------- */
+  .predictbar{display:flex;align-items:center;gap:8px;justify-content:flex-end;font-weight:800;font-size:13px;color:var(--excep);cursor:pointer;margin:-2px 0 6px}
+  .slotseg{display:flex;border:2px solid var(--plum);border-radius:999px;overflow:hidden;width:max-content;max-width:100%;flex-wrap:wrap;margin:6px 0}
+  .slotseg button{border:0;background:#fff;padding:7px 14px;font:800 13px Lato,sans-serif;cursor:pointer;color:var(--plum)}
+  .slotseg button.on{background:var(--plum);color:#fff} .frame{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 4px}
+  .frame span{flex:1;min-width:86px;text-align:center;border:2px dashed var(--rule);border-radius:10px;padding:6px 8px;font-size:12px;font-weight:900;letter-spacing:.05em;color:#999;text-transform:uppercase}
+  .frame span.on{border-style:solid;border-color:var(--plum);background:var(--plumlt);color:var(--plumdark)}
+  .frame span.fv{border-style:solid;border-color:var(--grammar);background:var(--grammarlt);color:var(--grammar)}
+  .xcard{border-radius:12px;padding:14px 16px;margin:8px 0;position:relative} .xcard .role{font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+  .xcard .snt{font-size:clamp(17px,3vw,23px);font-weight:800;margin-top:4px;line-height:1.65}
+  .xnoun{background:var(--navylt);border:2px solid var(--navy)} .xnoun .role{color:var(--navy)}
+  .xclause{background:var(--plumlt);border:2px solid var(--plum)} .xclause .role{color:var(--plumdark)}
+  .arrowdown{text-align:center;font-size:26px;color:var(--grammar);margin:-2px 0}
+  .nslot{background:#CDD8E6;color:var(--navy);border-radius:6px;padding:0 5px;box-shadow:inset 0 -2px 0 var(--navy)}
+  .cl{background:#fff;color:var(--plumdark);border-radius:8px;padding:1px 7px;box-shadow:inset 0 -3px 0 var(--plum);display:inline-block;animation:slidein .45s ease}
+  .intro{background:var(--plum);color:#fff;border-radius:6px;padding:0 6px}
+  .mverb,.sv{background:var(--grammarlt);color:var(--grammar);border-radius:6px;padding:0 5px;box-shadow:inset 0 -2px 0 var(--grammar)}
+  .itdum{background:var(--navy);color:#fff;border-radius:6px;padding:0 6px}
+  .intro.masked,.sv.masked{color:transparent;position:relative;cursor:pointer;min-width:58px;display:inline-block}
+  .intro.masked::after,.sv.masked::after{content:"?";position:absolute;inset:0;font-weight:900;display:flex;align-items:center;justify-content:center;color:#fff}
+  .sv.masked::after{color:#B9895A}
+  @keyframes slidein{from{opacity:0;transform:translateX(-18px)} to{opacity:1;transform:none}}
+  .agree{margin-top:8px;background:var(--greenlt);border-left:4px solid var(--green);border-radius:0 10px 10px 0;padding:8px 12px;font-size:14px;font-weight:700;color:#2C5A3F}
+  .changes{list-style:none;margin:10px 0 0} .changes li{position:relative;padding:3px 0 3px 22px;font-size:14px;font-weight:600;color:#555}
+  .changes li::before{content:"→";position:absolute;left:0;top:3px;color:var(--grammar);font-weight:900}
+  .legend{display:flex;gap:10px;flex-wrap:wrap;font-size:12px;font-weight:800;margin-top:10px} .legend span{border-radius:6px;padding:1px 8px}
+
+  /* word-order fixer, dials & extraposition */
+  .tensechips{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+  .tensechips button{border:2px solid var(--rule);background:#fff;border-radius:8px;padding:6px 11px;font:700 13px Lato,sans-serif;cursor:pointer}
+  .tensechips button.on{border-color:var(--navy);background:var(--navylt);color:var(--navy)}
+  .fixrow{border-radius:12px;padding:10px 14px;margin:8px 0;border:2px solid var(--rule);background:#fff}
+  .fixrow .role{font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#888}
+  .fixrow .snt,.tenseout .map{font-size:clamp(16px,2.7vw,21px);font-weight:800;margin-top:2px;line-height:1.6}
+  .fq{background:var(--navylt);border-color:var(--navy)} .fq .role{color:var(--navy)}
+  .fbad{background:var(--thinklt);border-color:var(--think)} .fbad .role{color:var(--think)}
+  .fgood{background:var(--greenlt);border-color:var(--green);animation:pop .3s ease} .fgood .role{color:var(--greendark)}
+  .bw{color:var(--think);text-decoration:line-through;text-decoration-thickness:2px}
+  .gw{background:#D8EFE1;color:var(--greendark);border-radius:6px;padding:0 5px;box-shadow:inset 0 -2px 0 var(--green)}
+  .fxnote,.tenseout .ex{font-size:14px;font-weight:700;color:#555;margin-top:6px}
+  .tenseout{background:var(--soft);border-radius:12px;padding:16px;margin-top:6px;text-align:center}
+
+  /* special cases selector + pitfalls */
+  .seg2{display:flex;border:2px solid var(--rule);border-radius:999px;overflow:hidden;width:max-content;max-width:100%;flex-wrap:wrap}
+  .seg2 button{border:0;background:#fff;padding:7px 14px;font:800 13px Lato,sans-serif;cursor:pointer;color:#777} .seg2 button.on{background:var(--excep);color:#fff}
+  .scout{background:var(--exceplt);border:2px dashed var(--excep);border-radius:12px;padding:14px;margin-top:10px;font-size:15px;font-weight:600;color:#333}
+  .scout b{color:var(--excep)} .shiftgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:6px;margin-top:6px}
+  .shiftgrid div{background:#fff;border:1.5px solid var(--rule);border-radius:8px;padding:6px 10px;font-size:14px;font-weight:700}
+  .pit{border:2px solid var(--rule);border-radius:10px;padding:9px 12px;margin:6px 0;cursor:pointer;font-weight:700;background:#fff}
+  .pit .no{color:var(--think)} .pit .fixline{display:none;margin-top:4px;color:var(--greendark);font-weight:800}
+  .pit .fixline small{color:#777;font-weight:700} .pit.open{border-color:var(--green);background:var(--greenlt)} .pit.open .fixline{display:block}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block;border:0;border-radius:10px;padding:11px 20px;font:900 15px Lato,sans-serif;background:var(--plum);color:#fff;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)} .btn.ghost{background:#fff;color:var(--plumdark);border:2px solid var(--plum)} .btn.small{padding:8px 14px;font-size:14px}
+  .btn[disabled]{opacity:.45;cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex;border:2px solid var(--plum);border-radius:12px;overflow:hidden;width:max-content;margin-bottom:12px}
+  .segbig button{border:0;background:#fff;padding:9px 18px;font:800 15px Lato,sans-serif;cursor:pointer;color:var(--plum)}
+  .segbig button.on{background:var(--plum);color:#fff}
+  .bctx{background:var(--navylt);border:2px solid var(--navy);border-radius:12px;padding:12px 14px;font-weight:800;color:var(--navy);font-size:17px}
+  .bctx small{display:block;color:#777;font-weight:700;margin-top:2px;font-size:13px} .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.04em;color:#888;margin-bottom:5px} .bchips{display:flex;gap:7px;flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule);background:#fff;border-radius:10px;padding:8px 13px;font:700 14px Lato,sans-serif;cursor:pointer}
+  .bchips button.on{border-color:var(--plum);background:var(--plumlt);color:var(--plumdark)}
+  .bchips button.wrongpick{border-color:var(--think);background:var(--thinklt);color:var(--think)}
+  .bresult{font-size:clamp(16px,2.8vw,22px);font-weight:800;text-align:center;padding:16px;border-radius:12px;margin-top:12px;display:none}
+  .bresult.good{background:var(--greenlt);border:2px solid var(--green);display:block}
+  .bresult.bad{background:var(--thinklt);border:2px solid var(--think);display:block;font-size:16px} .bnote{font-size:14px;font-weight:700;color:#555;margin-top:8px}
+  .bfoot{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;align-items:center} .bscore{font-weight:900;color:var(--plumdark);margin-left:auto}
+  .pick{background:#fff;color:var(--plumdark);border-radius:8px;padding:1px 7px;box-shadow:inset 0 -3px 0 var(--plum)}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:10px}
+  .drillhead .sc{font-weight:900;color:var(--plumdark)} .drillhead .st{font-weight:900;color:var(--grammar)}
+  .qbar{height:10px;background:#E7ECE9;border-radius:999px;overflow:hidden;flex:1;min-width:120px}
+  .qbar i{display:block;height:100%;background:var(--plum);transition:width .3s}
+  .diff{display:inline-block;color:#fff;font-weight:900;font-size:11px;padding:3px 9px;border-radius:6px;letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)} .qq{font-size:18px;font-weight:800;margin:6px 0 10px}
+  .qq .tag{display:flex;gap:8px;align-items:center;font-size:12px;color:#888;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;font-weight:900;flex-wrap:wrap}
+  .opts{display:grid;gap:7px}
+  .opts button{text-align:left;border:2px solid var(--rule);background:#fff;border-radius:10px;padding:10px 13px;font:700 15px Lato,sans-serif;cursor:pointer}
+  .opts button.right{border-color:var(--green);background:var(--greenlt)} .opts button.wrong{border-color:var(--think);background:var(--thinklt)}
+  .stn{font-size:clamp(16px,2.7vw,20px);font-weight:800;line-height:1.8;text-align:center;margin:4px 0}
+  .stn .w{cursor:pointer;padding:1px 4px;border-radius:6px;border-bottom:2px dotted transparent;transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt);border-bottom-color:var(--grammar)} .stn .w.wrongpick{background:var(--think); color:#fff}
+  .stn .w.rightpick{background:var(--green); color:#fff}
+  .fillrow{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .fillrow input{flex:1;min-width:160px;padding:10px 12px;border-radius:10px;border:2px solid var(--rule);font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green);background:var(--greenlt)} .fillrow input.no{border-color:var(--think);background:var(--thinklt)}
+  .why{margin-top:10px;border-left:4px solid var(--grammar);background:var(--grammarlt);border-radius:0 10px 10px 0;padding:9px 12px;font-size:14px;font-weight:600;display:none}
+  .why.show{display:block} .why .k{color:var(--green);font-weight:900} .why .fix{display:block;font-size:16px;margin:3px 0}
+  .why .fix .old{color:var(--think);text-decoration:line-through} .why .fix .new{color:var(--green);font-weight:800}
+  .qfoot{display:flex;justify-content:flex-end;margin-top:14px} .medal{font-size:48px;text-align:center} .endbox{text-align:center;padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule);border-radius:12px;background:#fff;margin-top:4px}
+  details.teacher summary{cursor:pointer;padding:10px 14px;font-weight:900;color:var(--plumdark);list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none} details.teacher .inner{padding:0 16px 14px;font-size:14px} details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px;margin:26px auto 0;padding:14px;text-align:center;font-size:13px;color:#555;border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--plum);font-weight:700;text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px;font-size:14px} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">🪆</span>
+  <div class="wrap">
+    <div class="kicker">English 8 · Unit 2 · Clauses Within Clauses</div>
+    <h1>🪆 The Embedding Machine</h1>
+    <div class="sub"><b>Grammar 4</b> — noun clauses: slots, statement order, <i>whether</i>, the subjunctive &amp; extraposition. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🧩 Explore the slots</span><span>🔧 Build the clause</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🧩 Explore<small>watch it embed</small></button>
+    <button data-tab="build">🔧 Build<small>embed it yourself</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>A whole clause in a noun&rsquo;s slot</h2>
+      <p class="muted">A <b>noun clause</b> = <b>connector + subject + verb</b>, doing a noun&rsquo;s job. The connectors are
+        <i>that · what · whatever · when · where · why · how · whether · if · who · whoever · whom · whose · which</i>. Choose a clause type and the slot it fills, and watch it drop in.
+        <span class="es">(Una cláusula entera ocupa la casilla de un sustantivo.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the connector, guess, then reveal</label>
+
+      <h3>1 · Choose the clause type</h3>
+      <div class="chips" id="typeChips"></div>
+      <h3>2 · Choose the slot</h3>
+      <div class="slotseg" id="slotSeg"><button data-s="subject" class="on">Subject</button><button data-s="object">Object</button><button data-s="complement">Complement</button><button data-s="prep">After a preposition</button></div>
+      <div class="frame" id="frameBar"></div>
+
+      <div class="xcard xnoun"><div class="role">With a plain noun phrase in the slot</div><div class="snt" id="nounSnt"></div></div>
+      <div class="arrowdown">⬇</div>
+      <div class="xcard xclause"><div class="role">With a noun clause in the same slot</div><div class="snt" id="clauseSnt"></div></div>
+      <div style="text-align:center"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the connector ✓</button></div>
+      <div class="agree" id="agreeNote">✅ <b>A noun-clause subject takes a singular verb:</b> <i>What we need <b>is</b> more time.</i> Test: replace the clause with <i>It</i> and the sentence still stands.</div>
+
+      <h3>What to notice</h3>
+      <ul class="changes" id="notes"></ul>
+      <div class="legend"><span class="intro">connector</span><span class="cl">noun clause</span><span class="mverb">main verb</span><span class="nslot">plain noun phrase</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">💡 The golden rule</span>
+      <h2>One sentence, one act of asking</h2>
+      <p class="muted">Inversion is the <b>question signal</b> itself. An embedded clause only <b>reports the content</b> of a question,
+        so it never inverts and never takes <i>do/does/did</i>. Pick a question, read the inverted copy, then repair it. <span class="es">(Dentro de la cláusula: orden de enunciado, sin do/does.)</span></p>
+      <div class="tensechips" id="qChips"></div>
+      <div class="fixrow fq"><span class="role">Direct question — inversion allowed</span><div class="snt" id="fxQ"></div></div>
+      <div class="fixrow fbad"><span class="role">✘ Question order copied into the clause</span><div class="snt" id="fxBad"></div></div>
+      <div class="fixrow fgood" id="fxGoodRow" style="display:none"><span class="role">✔ Statement order</span><div class="snt" id="fxGood"></div><div class="fxnote" id="fxNote"></div></div>
+      <div style="text-align:center; margin-top:8px"><button class="btn small" id="fixBtn">Fix it ✓</button></div>
+      <div class="agree" style="background:var(--navylt); border-left-color:var(--navy); color:var(--navy)">❓ The sentence ends with <b>?</b> only if the <b>main</b> clause asks: <i>Do you know where the file is<b>?</b></i> — but still <i>where the file <b>is</b></i> inside.</div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-plum">✨ The subjunctive</span>
+      <h2>The base form after demand, insist, recommend, suggest, require</h2>
+      <p class="muted">After these verbs — and after <i>it is essential / vital / important that</i> — the that-clause takes the <b>base form</b>: no <i>-s</i>, no tense, and <i>be</i> stays <i>be</i>.
+        <span class="es">(Subjuntivo: forma base, aunque el sujeto sea de tercera persona.)</span></p>
+      <label class="predictbar"><input type="checkbox" id="predictChk2"> 🔮 Predict first — hide the subjunctive verb</label>
+      <div class="tensechips" id="subjChips"></div>
+      <div class="tenseout"><div class="map" id="subjMap"></div><div class="ex" id="subjEx"></div></div>
+      <div style="text-align:center; margin-top:8px"><button class="btn ghost small" id="revealBtn2" style="display:none">Reveal the verb ✓</button></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 C1 refinement</span>
+      <h2>Extraposition: <i>It is clear that…</i> vs <i>That … is clear</i></h2>
+      <p class="muted">A clause-subject is correct but front-heavy. English prefers <b>light before heavy</b>: a dummy <b>it</b>
+        takes the subject seat and the clause moves to the end. Some verbs accept <b>only</b> that version. <span class="es">(Sujeto ligero primero, cláusula pesada al final.)</span></p>
+      <div class="tensechips" id="exChips"></div>
+      <div class="xcard xclause"><div class="role">Clause in the subject seat</div><div class="snt" id="exHeavy"></div></div>
+      <div class="arrowdown">⬇</div>
+      <div class="xcard xnoun"><div class="role">Extraposed — dummy <i>it</i> in front</div><div class="snt" id="exLight"></div></div>
+      <div class="fxnote" id="exNote" style="text-align:center"></div>
+      <div class="agree" style="background:var(--grammarlt); border-left-color:var(--grammar); color:#8A4B10">⚠️ <b>Extraposition-only verbs:</b> <i>appear, turn out, seem, happen</i> — ✘ <s>That he lied appears.</s> ✔ <i>It appears that he lied.</i></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Exceptions &amp; special cases</span>
+      <h2>whether vs if, the fact that &amp; the rest of the traps</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="ifwhether" class="on">whether vs if</button><button data-v="factthat">the fact that</button><button data-v="whto">wh- + to</button><button data-v="dropthat">dropping that</button><button data-v="singular">singular verb</button><button data-v="everforms">-ever forms</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">🧠 Why English works this way</span>
+      <h2>Inverting twice would mean asking twice</h2>
+      <p class="muted">Subject–auxiliary inversion is not decoration: it is how English marks <b>&ldquo;I am asking.&rdquo;</b>
+        An embedded clause merely reports the content of a question — nobody is asking inside it. One sentence, one act:
+        if the main clause asks, <b>it</b> inverts and <b>it</b> takes the question mark; the clause inside does neither.
+        That is why <i>I wonder where the file is</i> resists inversion. <span class="es">(Una oración, un acto de preguntar.)</span></p>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">⚠️ Typical mistakes of Spanish speakers</span>
+      <h2>Tap each sentence to see the fix</h2>
+      <p class="muted">Seven traps from the manual. Predict the correction before you tap. <span class="es">(Adivina la corrección antes de tocar.)</span></p>
+      <div id="pitBox"></div>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> is the form-and-function table as a slot visualizer (that / wh- / whether × subject, object, complement, preposition), including the blocked cell <i>preposition + that</i>; then the embedded-question rule, the subjunctive, extraposition, the exceptions box and the pitfall box.</li>
+          <li><b>Build</b> is productive: <i>assemble</i> the pieces (exercise B and the exam items in reverse), then <i>transform</i> questions, pairs of ideas and extraposition flips (exercises A, C, D and Task set 6).</li>
+          <li><b>Drill</b> merges both exam formats into one graded engine — 13 items, ★ 5 · ★★ 4 · ★★★ 4 — with score, streak and best result on this device.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-plum">🔧 Your turn to produce</span>
+      <h2>Build the embedded clause</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the raw material, then choose every piece. The machine builds the sentence and names the rule — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div id="bGroups"></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New item →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Rewrite each item as instructed, then check against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type the full sentence"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next item →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — 13 items, both exam formats</h2>
+      <p class="muted">★ connectors &amp; slots · ★★ statement order, <i>whether</i>, subjunctive · ★★★ extraposition &amp; the hard repairs. Structure = complete the sentence; Written Expression = click the wrong word. <span class="es">(Misma escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> · <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 8 · Unit 2 «Clauses Within Clauses» · Grammar 4 — noun clauses · Level C1 </footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE EMBEDDING MACHINE — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 8 Class Manual (Grammar 4).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE · the slot visualizer
+===================================================================== */
+var TYPES = [{k:"that", lab:"that-clause"},{k:"wh", lab:"wh- clause"},{k:"whether", lab:"whether / if clause"}];
+var FRAME = [{lab:"Subject", s:"subject"},{lab:"Main verb", s:"verb"},{lab:"Object", s:"object"},{lab:"Complement", s:"complement"},{lab:"After prep.", s:"prep"}];
+var MAT = {
+  that:{
+    subject:{noun:'<span class="nslot">The repeated failure</span> <span class="mverb">is</span> worrying.', cl:'<span class="cl"><span class="intro">That</span> the pump failed twice</span> <span class="mverb">is</span> worrying.', notes:["The clause counts as one thing → singular main verb: <b>is</b>."]},
+    object:{noun:'The log <span class="mverb">shows</span> <span class="nslot">the replacement date</span>.', cl:'The log <span class="mverb">shows</span> <span class="cl"><span class="intro">that</span> the seal was replaced in May</span>.', notes:["Object slot: the clause answers <i>shows what?</i>","Here <i>that</i> may be dropped: <i>The log shows the seal was replaced in May.</i>"]},
+    complement:{noun:'The problem <span class="mverb">is</span> <span class="nslot">a disagreement between the datasets</span>.', cl:'The problem <span class="mverb">is</span> <span class="cl"><span class="intro">that</span> the two datasets disagree</span>.', notes:["Complement slot: after <i>be</i>, the clause renames the subject."]},
+    prep:{noun:'The team <span class="mverb">was aware</span> of <span class="nslot">the earlier failure</span>.', cl:'<span class="bw">The team was aware of that the pump had failed.</span><br>✔ aware of <span class="cl"><span class="intro">the fact that</span> the pump had failed</span> &nbsp;·&nbsp; ✔ aware <span class="cl"><span class="intro">that</span> the pump had failed</span>', notes:["✘ A <b>that</b>-clause cannot follow a preposition.","Two repairs: insert <b>the fact</b>, or drop the preposition."]}
+  },
+  wh:{
+    subject:{noun:'<span class="nslot">The sensor reading</span> <span class="mverb">contradicts</span> the log.', cl:'<span class="cl"><span class="intro">What</span> the sensor recorded</span> <span class="mverb">contradicts</span> the log.', notes:["<i>What</i> = <i>the thing that</i> — never ✘ <s>the what</s>.","Singular verb, and no second subject: ✘ <s>What the sensor recorded it contradicts…</s>"]},
+    object:{noun:'Nobody <span class="mverb">knows</span> <span class="nslot">the cause of the failure</span>.', cl:'Nobody <span class="mverb">knows</span> <span class="cl"><span class="intro">why</span> the batch failed</span>.', notes:["Statement order inside: <i>the batch failed</i>, not ✘ <s>did the batch fail</s>.","When <i>did</i> goes, its tense lands on the verb: <b>failed</b>."]},
+    complement:{noun:'The question <span class="mverb">is</span> <span class="nslot">the recovery procedure</span>.', cl:'The question <span class="mverb">is</span> <span class="cl"><span class="intro">how</span> we recover the data</span>.', notes:["Complement slot after <i>be</i>."]},
+    prep:{noun:'The waiver <span class="mverb">depends</span> on <span class="nslot">the director&rsquo;s signature</span>.', cl:'The waiver <span class="mverb">depends</span> on <span class="cl"><span class="intro">who</span> signs the release</span>.', notes:["A wh-clause may follow a preposition — unlike a that-clause."]}
+  },
+  whether:{
+    subject:{noun:'<span class="nslot">The final result</span> <span class="mverb">is</span> another matter.', cl:'<span class="cl"><span class="intro">Whether</span> it works</span> <span class="mverb">is</span> another matter.', notes:["Only <b>whether</b> heads a subject clause: ✘ <s>If it works is another matter.</s>","Singular verb again: <b>is</b>."]},
+    object:{noun:'Nobody <span class="mverb">knows</span> <span class="nslot">their decision</span>.', cl:'Nobody <span class="mverb">knows</span> <span class="cl"><span class="intro">whether</span> they will sign</span>.', notes:["This is the one slot where <b>if</b> also works: <i>knows if they will sign</i>."]},
+    complement:{noun:'The open question <span class="mverb">is</span> <span class="nslot">the renewal of the grant</span>.', cl:'The open question <span class="mverb">is</span> <span class="cl"><span class="intro">whether</span> the grant will be renewed</span>.', notes:["<b>whether … or not</b> is possible here; ✘ <s>if or not</s> is not."]},
+    prep:{noun:'Success <span class="mverb">depends</span> on <span class="nslot">the supplier&rsquo;s punctuality</span>.', cl:'Success <span class="mverb">depends</span> on <span class="cl"><span class="intro">whether</span> the supplier delivers on time</span>.', notes:["After a preposition, only <b>whether</b>: ✘ <s>depends on if</s>.","Same rule in the noun version: <i>the question of whether…</i>"]}
+  }
+};
+var curType="that", curSlot="subject", predictMode=false, revealed=false;
+TYPES.forEach(function(t){
+  var b=document.createElement("button"); b.textContent=t.lab; b.dataset.k=t.k;
+  if(t.k===curType) b.classList.add("on");
+  b.addEventListener("click", function(){ curType=t.k; document.querySelectorAll("#typeChips button").forEach(function(x){ x.classList.toggle("on", x.dataset.k===t.k); }); revealed=false; renderSlot(); });
+  $("typeChips").appendChild(b);
+});
+document.querySelectorAll("#slotSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ curSlot=b.dataset.s; document.querySelectorAll("#slotSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); revealed=false; renderSlot(); });
+});
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; $("predictChk2").checked=this.checked; revealed=false; revealedSubj=false; renderSlot(); renderSubj(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderSlot(); });
+function renderSlot(){
+  var d=MAT[curType][curSlot];
+  var fb=$("frameBar"); fb.innerHTML="";
+  FRAME.forEach(function(f){
+    var sp=document.createElement("span"); sp.textContent=f.lab;
+    if(f.s==="verb") sp.className="fv"; else if(f.s===curSlot) sp.className="on";
+    fb.appendChild(sp);
+  });
+  $("nounSnt").innerHTML=d.noun; $("clauseSnt").innerHTML=d.cl;
+  var ul=$("notes"); ul.innerHTML="";
+  d.notes.forEach(function(n){ var li=document.createElement("li"); li.innerHTML=n; ul.appendChild(li); });
+  $("agreeNote").style.display = curSlot==="subject" ? "block" : "none";
+  var mask = predictMode && !revealed;
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  if(mask){
+    document.querySelectorAll("#clauseSnt .intro").forEach(function(el){ el.classList.add("masked"); el.addEventListener("click", function(){ revealed=true; renderSlot(); }); });
+  }
+}
+renderSlot();
+
+/* the embedded-question fixer */
+var FIX = [
+  {t:"Where is the file?", q:'Where <b>is the file</b>?', bad:'I wonder where <span class="bw">is the file</span>.', good:'I wonder where <span class="gw">the file is</span>.', note:"Subject before verb inside the clause — the inversion belongs to the question only."},
+  {t:"Why did it fail?", q:'Why <b>did it fail</b>?', bad:'We asked why <span class="bw">did it fail</span>.', good:'We asked why <span class="gw">it failed</span>.', note:"<i>did</i> disappears and its tense lands on the verb: failed."},
+  {t:"What time is it?", q:'What time <b>is it</b>?', bad:'I do not know what time <span class="bw">is it</span>.', good:'I do not know what time <span class="gw">it is</span>.', note:"The classic trap of the manual: the clause keeps statement order."},
+  {t:"Will they sign?", q:'<b>Will they sign</b>?', bad:'Nobody knows <span class="bw">will they sign</span>.', good:'Nobody knows <span class="gw">whether they will sign</span>.', note:"A yes/no question needs <b>whether</b> (or <i>if</i> in the object slot)."}
+];
+var curFix=0, fixShown=false;
+FIX.forEach(function(f,i){
+  var b=document.createElement("button"); b.textContent=f.t; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curFix=i; fixShown=false; document.querySelectorAll("#qChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderFix(); });
+  $("qChips").appendChild(b);
+});
+function renderFix(){
+  var f=FIX[curFix];
+  $("fxQ").innerHTML=f.q; $("fxBad").innerHTML=f.bad; $("fxGood").innerHTML=f.good; $("fxNote").innerHTML=f.note;
+  $("fxGoodRow").style.display = fixShown ? "block" : "none";
+  $("fixBtn").style.display = fixShown ? "none" : "inline-block";
+}
+$("fixBtn").addEventListener("click", function(){ fixShown=true; renderFix(); });
+renderFix();
+
+/* subjunctive dial */
+var SUBJ = [
+  {t:"demand", map:'demand that + subject + <span class="sv">base form</span>', ex:'The auditor demanded that access <span class="sv">be</span> revoked immediately. ✘ <s>was revoked</s>'},
+  {t:"insist", map:'insist that + subject + <span class="sv">base form</span>', ex:'The auditor insisted that every log <span class="sv">be</span> preserved. ✘ <s>was preserved</s>'},
+  {t:"recommend", map:'recommend that + subject + <span class="sv">base form</span>', ex:'The panel recommends that the trial <span class="sv">continue</span> another year. ✘ <s>continues</s>'},
+  {t:"suggest", map:'suggest that + subject + <span class="sv">base form</span>', ex:'The report suggests that the committee <span class="sv">reconsider</span> the deadline. ✘ <s>reconsiders</s>'},
+  {t:"require", map:'require that + subject + <span class="sv">base form</span>', ex:'The regulation requires that every visitor <span class="sv">sign</span> the register. ✘ <s>signs</s>'},
+  {t:"it is vital that", map:'It is vital that + subject + <span class="sv">base form</span>', ex:'It is vital that the backup <span class="sv">be tested</span> weekly. ✘ <s>is tested</s>'},
+  {t:"it is essential that", map:'It is essential that + subject + <span class="sv">base form</span>', ex:'It is essential that every visitor <span class="sv">be</span> accompanied. ✘ <s>is accompanied</s>'}
+];
+var curSubj=0, revealedSubj=false;
+SUBJ.forEach(function(d,i){
+  var b=document.createElement("button"); b.textContent=d.t; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curSubj=i; revealedSubj=false; document.querySelectorAll("#subjChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderSubj(); });
+  $("subjChips").appendChild(b);
+});
+$("predictChk2").addEventListener("change", function(){ predictMode=this.checked; $("predictChk").checked=this.checked; revealed=false; revealedSubj=false; renderSlot(); renderSubj(); });
+$("revealBtn2").addEventListener("click", function(){ revealedSubj=true; renderSubj(); });
+function renderSubj(){
+  var d=SUBJ[curSubj];
+  $("subjMap").innerHTML=d.map; $("subjEx").innerHTML=d.ex;
+  var mask = predictMode && !revealedSubj;
+  $("revealBtn2").style.display = mask ? "inline-block" : "none";
+  if(mask){
+    document.querySelectorAll("#subjEx .sv").forEach(function(el){ el.classList.add("masked"); el.addEventListener("click", function(){ revealedSubj=true; renderSubj(); }); });
+  }
+}
+renderSubj();
+
+/* extraposition */
+var EXTRA = [
+  {t:"the bridge", heavy:'<span class="cl"><span class="intro">That</span> the bridge vibrates in strong wind</span> is well documented.', light:'<span class="itdum">It</span> is well documented <span class="cl">that the bridge vibrates in strong wind</span>.', note:"Both are correct; the it-version is the neutral default."},
+  {t:"every visitor", heavy:'<span class="cl"><span class="intro">That</span> every visitor be accompanied</span> is essential.', light:'<span class="itdum">It</span> is essential <span class="cl">that every visitor be accompanied</span>.', note:"The subjunctive travels with the clause: be, never is."},
+  {t:"the grant", heavy:'<span class="cl"><span class="intro">Whether</span> the grant is renewed</span> is still uncertain.', light:'<span class="itdum">It</span> is still uncertain <span class="cl">whether the grant is renewed</span>.', note:"whether-clauses extrapose as freely as that-clauses."},
+  {t:"the sensor (turn out)", heavy:'<span class="bw">That the sensor had never been calibrated turned out.</span>', light:'<span class="itdum">It</span> turned out <span class="cl">that the sensor had never been calibrated</span>.', note:"✘ CANNOT be flipped: turn out works only extraposed."}
+];
+var curEx=0;
+EXTRA.forEach(function(d,i){
+  var b=document.createElement("button"); b.textContent=d.t; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curEx=i; document.querySelectorAll("#exChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderEx(); });
+  $("exChips").appendChild(b);
+});
+function renderEx(){ var d=EXTRA[curEx]; $("exHeavy").innerHTML=d.heavy; $("exLight").innerHTML=d.light; $("exNote").innerHTML=d.note; }
+renderEx();
+
+/* special cases */
+var SC = {
+  ifwhether:'Both introduce a yes/no clause in the <b>object</b> slot, but only <b>whether</b> works:<div class="shiftgrid"><div>as a <b>subject</b>: Whether it works is another matter</div><div>after a <b>preposition</b>: the question of whether…</div><div>before <b>to</b>: We debated whether to continue</div><div>directly before <b>or not</b>: whether or not to continue</div></div>✘ <s>depends on if</s> ✔ depends on <b>whether</b>.',
+  factthat:'A <b>that</b>-clause cannot follow a preposition. Insert <b>the fact</b>, or drop the preposition: ✘ <s>aware of that the pump failed</s> → ✔ aware of <b>the fact that</b> the pump failed · ✔ aware <b>that</b> the pump failed.',
+  whto:'A wh-word (and <b>whether</b>) can be followed by a <b>to</b>-infinitive when the subject is obvious: <i>We debated <b>whether to</b> continue</i> · <i>The protocol does not say <b>how to</b> store the samples</i> · <i>Nobody knew <b>who to</b> contact</i>. ✘ <s>that to continue</s>.',
+  dropthat:'In the <b>object</b> slot <i>that</i> is optional: <i>I think (that) it works.</i> A <b>subject</b> that-clause can never lose it: ✘ <s>It works is obvious.</s> ✔ <b>That</b> it works is obvious.',
+  singular:'A noun-clause subject is <b>one</b> thing → <b>singular</b> verb: ✔ <i>What we need <b>is</b> more time.</i> ✘ <s>What we need are more time.</s> When the complement is clearly plural both are heard, but <b>the exam prefers the singular</b>.',
+  everforms:'The <b>-ever</b> forms add the meaning <i>any</i>: <i><b>Whoever</b> designed this deserves a raise</i> · <i><b>Whatever</b> you decide, document it.</i>'
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.ifwhether;
+
+/* pitfalls */
+var PIT = [
+  {bad:"I do not know what time is it.", good:"I do not know what time it is.", es:"El orden de pregunta no entra en la cláusula."},
+  {bad:"What matters it is the result.", good:"What matters is the result.", es:"Doble sujeto: la cláusula ya es el sujeto."},
+  {bad:"What we need are more time.", good:"What we need is more time.", es:"Cláusula sujeto = verbo singular."},
+  {bad:"It works is obvious.", good:"That it works is obvious.", es:"El that del sujeto no se puede omitir."},
+  {bad:"The decision depends on if the budget is approved.", good:"The decision depends on whether the budget is approved.", es:"Tras preposición solo whether («si» del español cubre los dos)."},
+  {bad:"The team was aware of that the pump failed.", good:"The team was aware of the fact that the pump failed.", es:"Preposición + that está bloqueado; «del hecho de que» = of the fact that."},
+  {bad:"The dean insisted that the defense was public.", good:"The dean insisted that the defense be public.", es:"Subjuntivo: forma base tras insist."}
+];
+PIT.forEach(function(p){
+  var d=document.createElement("div"); d.className="pit";
+  d.innerHTML='<span class="no">✘ '+p.bad+'</span><div class="fixline">✔ '+p.good+' <small>— '+p.es+"</small></div>";
+  d.addEventListener("click", function(){ d.classList.toggle("open"); });
+  $("pitBox").appendChild(d);
+});
+
+/* =====================================================================
+   BUILD · assemble (choose the pieces) + transform (rewrite it)
+===================================================================== */
+var BUILD = [
+  {ctx:'Direct question: <i>Why did the batch fail?</i>', frame:'Nobody knows {0} {1}.', note:"Embedded question: statement order and no <i>did</i> — the tense lands on the verb.", groups:[{lab:"Connector", o:["why","that","whether"], a:"why"},{lab:"Clause body", o:["the batch failed","did the batch fail","the batch fail"], a:"the batch failed"}]},
+  {ctx:'Two ideas: <i>Will the two labs merge?</i> + <i>Nothing has been decided.</i>', frame:'{0} the two labs will merge {1} not been decided.', note:"Only <i>whether</i> heads a subject clause, and a clause subject takes a singular verb.", groups:[{lab:"Connector", o:["Whether","If","That"], a:"Whether"},{lab:"Main verb", o:["has","have"], a:"has"}]},
+  {ctx:'Raw material: <i>Success depends on the supplier&rsquo;s punctuality.</i>', frame:'Success depends on {0} the supplier delivers on time.', note:"After a preposition only <i>whether</i> — ✘ <i>depends on if</i>.", groups:[{lab:"Connector after the preposition", o:["whether","if","that"], a:"whether"}]},
+  {ctx:'The auditor&rsquo;s instruction was: <i>Preserve every log.</i>', frame:'The auditor insisted that every log {0} preserved.', note:"Subjunctive: base form after insist, demand, recommend, suggest, require.", groups:[{lab:"Verb form", o:["be","is","was"], a:"be"}]},
+  {ctx:'A standing requirement: <i>Test the backup weekly.</i>', frame:'It is vital that the backup {0} weekly.', note:"The subjunctive also follows <i>it is vital / essential / important that</i>.", groups:[{lab:"Verb form", o:["be tested","is tested","will be tested"], a:"be tested"}]},
+  {ctx:'Front-heavy source: <i>That the drawings were never updated</i> + <i>appear</i>.', frame:'{0} appears that the drawings were never updated.', note:"<i>appear</i> only works extraposed: the dummy <i>it</i> holds the subject seat.", groups:[{lab:"Subject seat", o:["It","That","What","There"], a:"It"}]},
+  {ctx:'Established fact to be reported: <i>two sensors disagreed</i> — and the report registers it.', frame:'The report is aware {0} two sensors disagreed.', note:"A that-clause cannot follow a preposition: insert <b>the fact</b> (or drop <i>of</i>).", groups:[{lab:"Link", o:["of the fact that","of that","of whether"], a:"of the fact that"}]}
+];
+var bi=0, bPicks=[], bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function renderBuild(){
+  var it=BUILD[bi]; bPicks=it.groups.map(function(){ return null; });
+  $("bctx").innerHTML = it.ctx;
+  var host=$("bGroups"); host.innerHTML="";
+  it.groups.forEach(function(g,gi){
+    var wrap=document.createElement("div"); wrap.className="bgroup";
+    wrap.innerHTML='<div class="glab">'+g.lab+"</div>";
+    var row=document.createElement("div"); row.className="bchips"; row.dataset.g=gi;
+    g.o.forEach(function(op){
+      var b=document.createElement("button"); b.textContent=op;
+      b.addEventListener("click", function(){ bPicks[gi]=op; row.querySelectorAll("button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+      row.appendChild(b);
+    });
+    wrap.appendChild(row); host.appendChild(wrap);
+  });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult"), i;
+  for(i=0;i<bPicks.length;i++){ if(!bPicks[i]){ r.className="bresult bad"; r.innerHTML="Choose every piece first."; return; } }
+  var allOk=true;
+  it.groups.forEach(function(g,gi){
+    if(bPicks[gi]!==g.a){
+      allOk=false;
+      document.querySelectorAll('#bGroups .bchips[data-g="'+gi+'"] button').forEach(function(x){ if(x.textContent===bPicks[gi]) x.classList.add("wrongpick"); });
+    }
+  });
+  if(allOk){
+    var sent=it.frame;
+    it.groups.forEach(function(g,gi){ sent=sent.replace("{"+gi+"}", '<span class="pick">'+g.a+"</span>"); });
+    r.className="bresult good"; r.innerHTML="✅ "+sent+'<div class="bnote">'+it.note+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else {
+    r.className="bresult bad"; r.innerHTML='❌ Not that combination. <span class="bnote">Hint — '+it.note+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:'Embed the question: <i>Where is the master key?</i> — Nobody remembers …', accept:["nobody remembers where the master key is"], model:"Nobody remembers where the master key is."},
+  {ctx:'Embed the question: <i>Why did the sensor drift overnight?</i> — Nobody knows …', accept:["nobody knows why the sensor drifted overnight"], model:"Nobody knows why the sensor drifted overnight."},
+  {ctx:'One sentence with a noun-clause subject: <i>The committee decided something on Friday. It surprised the entire faculty.</i>', accept:["what the committee decided on friday surprised the entire faculty"], model:"What the committee decided on Friday surprised the entire faculty."},
+  {ctx:'One sentence with a noun-clause subject: <i>The alloy will pass certification. This is not yet certain.</i>', accept:["whether the alloy will pass certification is not yet certain","whether the alloy will pass certification isn't yet certain","whether or not the alloy will pass certification is not yet certain","whether or not the alloy will pass certification isn't yet certain"], model:"Whether the alloy will pass certification is not yet certain."},
+  {ctx:'Extrapose it: <i>That the two datasets disagree is troubling.</i>', accept:["it is troubling that the two datasets disagree","it's troubling that the two datasets disagree"], model:"It is troubling that the two datasets disagree."},
+  {ctx:'Reverse the extraposition: <i>It is essential that every visitor be accompanied.</i>', accept:["that every visitor be accompanied is essential"], model:"That every visitor be accompanied is essential."},
+  {ctx:'Rewrite with a subjunctive that-clause: <i>The regulation requires every visitor to sign the register.</i>', accept:["the regulation requires that every visitor sign the register"], model:"The regulation requires that every visitor sign the register."}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML=it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow — 13 items (5 ★ · 4 ★★ · 4 ★★★)
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Structure", q:"____ the two labs will merge has not been decided.", o:["If","Whether","That if","It"], a:1, w:"Only <b>whether</b> can head a subject clause; <i>if</i> is limited to the object slot."},
+  {kind:"mc", diff:1, tag:"Structure", q:"____ caused the delay has finally been documented.", o:["What did","That","What","Which"], a:2, w:"<b>What</b> = <i>the thing that</i>; it is subject of the clause and needs no <i>did</i>."},
+  {kind:"fill", diff:1, tag:"Embed the question", q:"Where is the master key? → Nobody remembers ____. (type the clause: 5 words)", accept:["where the master key is"], w:"Statement order inside the clause: where the master key <b>is</b>."},
+  {kind:"error", diff:1, tag:"Written Expression", words:["What","the","experiment","proved","were","that","the","alloy","fails","under","cyclic","load."], bad:4, fixOld:"were", fixNew:"was", w:"A noun-clause subject counts as one thing → singular verb."},
+  {kind:"fill", diff:1, tag:"Embed the question", q:"Why did the batch fail? → The report explains ____. (type the clause: 4 words)", accept:["why the batch failed"], w:"<i>did</i> disappears and its tense lands on the verb: failed."},
+  {kind:"error", diff:2, tag:"Written Expression", words:["Nobody","could","explain","why","had","the","valve","opened","by","itself."], bad:4, fixOld:"had", fixNew:"… why the valve <b>had</b> opened … (move <i>had</i> behind the subject)", w:"No inversion inside a noun clause: subject before the auxiliary."},
+  {kind:"mc", diff:2, tag:"Structure", q:"It is vital that the backup ____ weekly.", o:["be tested","is tested","tests","will be tested"], a:0, w:"Subjunctive after <i>it is vital that</i>: base form, so <b>be tested</b>."},
+  {kind:"error", diff:2, tag:"Written Expression", words:["The","decision","depends","on","if","the","budget","is","approved","before","December."], bad:4, fixOld:"if", fixNew:"whether", w:"After a preposition only <b>whether</b> is possible."},
+  {kind:"fill", diff:2, tag:"Subjunctive", q:"The regulation requires that every visitor ____ the register. (one word)", accept:["sign"], w:"Base form after <i>require that</i> — no third-person <i>-s</i>."},
+  {kind:"error", diff:3, tag:"Written Expression", words:["It","the","results","are","valid","is","what","we","must","establish","first."], bad:0, fixOld:"It", fixNew:"Whether", w:"A yes/no clause in the subject seat needs <b>whether</b>; dummy <i>it</i> cannot introduce a bare clause."},
+  {kind:"error", diff:3, tag:"Written Expression", words:["What","the","committee","decided","it","surprised","the","entire","faculty."], bad:4, fixOld:"it", fixNew:"(delete it)", w:"Double subject: the what-clause already is the subject."},
+  {kind:"mc", diff:3, tag:"Structure", q:"____ appears that the drawings were never updated.", o:["That","What","It","There"], a:2, w:"<i>appear</i> works only extraposed, so the dummy <b>It</b> takes the subject seat."},
+  {kind:"fill", diff:3, tag:"Extraposition", q:"That the two datasets disagree is troubling. → ____ troubling that the two datasets disagree. (2 words)", accept:["it is","it's"], w:"Light before heavy: dummy <b>It is</b> in front, clause at the end."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("i8_g4_drill_best")||0); if(dscore>best){ store("i8_g4_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Embedded cleanly. Move on to the Unit 2 mixed review." : dscore>=8?"Solid — review the exceptions card and run it again." : "Re-read Grammar 4, work through Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, (ok?'<span class="k">\u2713 Correct.</span> ':'<span class="k">\u2717 Not that one: the green part is the error.</span> ')+'<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer: "+it.accept[0]+".")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE COMPARISON MACHINE · English 8 · Unit 4 "Fine Distinctions"
+  Grammar 10 — parallel structure in comparisons (-er/more … than · as … as ·
+  the … the · that of / those of · than/as + auxiliary · fewer/less ·
+  multiples · superlative + in/of · the C1 comparison intensifiers)
+  Three modes: Explore (match the sides) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Grammar 10 · The Comparison Machine · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --garnet:#8C2F3F; --garnetdark:#5C1E29; --garnetlt:#F4E5E8;   /* Unit 4 identity */
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0} html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--garnet),var(--garnetdark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#F1C9D0; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900} header .sub{color:#F5DDE2; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px} header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--garnetdark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px} section.tab{display:none} section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--garnetdark); margin-bottom:6px} .card h3{font-size:15px; color:var(--garnetdark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px} .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-garnet{background:var(--garnet)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--garnet); background:var(--garnetlt); color:var(--garnetdark)}
+
+  /* ---------- compare-like-with-like visualiser ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .sides{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:10px 0 4px}
+  .side{border-radius:12px; padding:12px 14px; border:2px solid} .sideA{background:var(--navylt); border-color:var(--navy)} .sideB{background:var(--garnetlt); border-color:var(--garnet)}
+  .side .role{font-size:11px; font-weight:900; letter-spacing:.08em; text-transform:uppercase}
+  .sideA .role{color:var(--navy)} .sideB .role{color:var(--garnetdark)}
+  .side .val{font-size:16px; font-weight:800; margin-top:3px} .side .val.no{color:var(--think); text-decoration:line-through} .side .val.yes{color:var(--greendark); margin-top:5px}
+  .verdict{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:2px 9px; border-radius:6px; letter-spacing:.04em; margin-top:7px}
+  .vno{background:var(--think)} .vyes{background:var(--green)} .xcard{border-radius:12px; padding:14px 16px; margin:8px 0; position:relative}
+  .xcard .role{font-size:11px; font-weight:900; letter-spacing:.08em; text-transform:uppercase}
+  .xcard .snt{font-size:clamp(17px,2.9vw,22px); font-weight:800; margin-top:4px; line-height:1.55}
+  .xbad{background:var(--thinklt); border:2px solid var(--think)} .xbad .role{color:var(--think)}
+  .xgood{background:var(--garnetlt); border:2px solid var(--garnet)} .xgood .role{color:var(--garnetdark)}
+  .arrowdown{text-align:center; font-size:26px; color:var(--grammar); margin:-2px 0}
+  .rbad{color:var(--think); text-decoration:line-through; font-weight:900}
+  .rfix{background:#fff; color:var(--garnetdark); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--garnet)}
+  .rhead{background:var(--navylt); color:var(--navy); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--navy)}
+  .rint{background:var(--grammarlt); color:var(--grammar); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--grammar)}
+  .rfix.masked,.rint.masked{color:transparent; position:relative; cursor:pointer; min-width:66px; display:inline-block}
+  .rfix.masked::after,.rint.masked::after{content:"?"; position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .changes{list-style:none; margin:10px 0 0} .changes li{position:relative; padding:3px 0 3px 22px; font-size:14px; font-weight:600; color:#555}
+  .changes li::before{content:"→"; position:absolute; left:0; top:3px; color:var(--grammar); font-weight:900}
+  .legend{display:flex; gap:10px; flex-wrap:wrap; font-size:12px; font-weight:800; margin-top:10px} .legend span{border-radius:6px; padding:1px 8px}
+
+  /* ---------- machine frames & correlative ---------- */
+  .tensechips{display:flex; gap:6px; flex-wrap:wrap; margin:8px 0}
+  .tensechips button{border:2px solid var(--rule); background:#fff; border-radius:8px; padding:6px 11px; font:700 13px Lato,sans-serif; cursor:pointer}
+  .tensechips button.on{border-color:var(--navy); background:var(--navylt); color:var(--navy)}
+  .tenseout{background:var(--soft); border-radius:12px; padding:16px; text-align:center; margin-top:6px}
+  .tenseout .ex{font-size:14px; color:#555; margin-top:10px; font-weight:600}
+  .frame{display:flex; gap:6px; flex-wrap:wrap; justify-content:center; align-items:center; font-size:clamp(13px,2.2vw,16px); font-weight:800}
+  .slot{border-radius:9px; padding:5px 11px; border:2px dashed var(--rule); background:#fff; color:#777}
+  .slot.key{border-style:solid; border-color:var(--garnet); background:var(--garnetlt); color:var(--garnetdark)}
+  .slot.cmp{border-style:solid; border-color:var(--grammar); background:var(--grammarlt); color:var(--grammar)}
+  .halves{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:8px} .half{border:2px solid var(--garnet); background:var(--garnetlt); border-radius:12px; padding:12px; text-align:center}
+  .half .lab{font-size:11px; font-weight:900; letter-spacing:.07em; text-transform:uppercase; color:var(--garnetdark)}
+  .half .txt{font-size:clamp(15px,2.6vw,19px); font-weight:800; margin-top:5px}
+  .irr{display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:6px; margin-top:6px}
+  .irr div{background:#fff; border:1.5px solid var(--rule); border-radius:8px; padding:6px 10px; font-size:14px; font-weight:700} .irr b{color:var(--garnetdark)}
+
+  /* ---------- intensifier slider ---------- */
+  .leverbox{margin:12px 0 4px}
+  input[type=range]{-webkit-appearance:none; appearance:none; width:100%; height:14px; border-radius:999px;
+    background:linear-gradient(90deg,#C0392B 0%,#D9761A 26%,#1F3A5F 48%,#1F7A4D 68%,#124D30 86%,#7A4FB0 100%); outline:none; cursor:pointer}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none; width:32px; height:32px; border-radius:50%; background:#fff; border:4px solid var(--garnetdark); box-shadow:0 2px 8px rgba(0,0,0,.3); cursor:grab}
+  input[type=range]::-moz-range-thumb{width:26px; height:26px; border-radius:50%; background:#fff; border:4px solid var(--garnetdark); box-shadow:0 2px 8px rgba(0,0,0,.3); cursor:grab}
+  .stations{display:grid; grid-template-columns:repeat(6,1fr); gap:3px; margin-top:8px}
+  .stations button{border:0; background:none; font:800 10px Lato,sans-serif; color:#888; cursor:pointer; padding:6px 1px; border-radius:8px; line-height:1.25}
+  .stations button.on{background:#fff; box-shadow:0 1px 4px rgba(0,0,0,.12)} .stations .em{display:block; font-size:17px}
+  .sentence{font-size:clamp(17px,3vw,23px); font-weight:800; text-align:center; padding:18px 12px; background:var(--garnetlt); border-radius:12px; margin:12px 0 8px; min-height:86px; display:flex; align-items:center; justify-content:center; flex-wrap:wrap}
+  .sentence.flip{animation:flip .3s ease} @keyframes flip{from{opacity:0; transform:translateY(8px)} to{opacity:1}}
+  .typerow{display:flex; gap:10px; align-items:center; flex-wrap:wrap; justify-content:center; margin:10px 0 4px}
+  .typebadge{font-size:14px; padding:6px 15px; border-radius:999px; color:#fff; font-weight:900; letter-spacing:.02em}
+  .hostbadge{font-size:13px; padding:5px 13px; border-radius:999px; color:#fff; font-weight:900}
+  .ctx{text-align:center; color:#555; font-size:14px; min-height:22px; font-weight:600; margin-top:6px}
+
+  /* ---------- special cases & error clinic ---------- */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:14px; overflow:hidden; width:max-content; max-width:100%; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 13px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)} .errlist{display:grid; gap:7px; margin-top:6px}
+  .errrow{border:1.5px solid var(--rule); border-left:5px solid var(--think); border-radius:0 10px 10px 0; background:#fff; padding:8px 12px; font-size:14.5px}
+  .errrow .no{color:var(--think); font-weight:800; text-decoration:line-through} .errrow .yes{color:var(--greendark); font-weight:900}
+  .errrow .rl{display:block; color:#666; font-weight:600; font-size:13.5px; margin-top:2px}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--garnet); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)} .btn[disabled]{opacity:.45; cursor:not-allowed}
+  .btn.ghost{background:#fff; color:var(--garnetdark); border:2px solid var(--garnet)} .btn.small{padding:8px 14px; font-size:14px}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--garnet); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--garnet)}
+  .segbig button.on{background:var(--garnet); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px} .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap} .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--garnet); background:var(--garnetlt); color:var(--garnetdark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(16px,2.7vw,21px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px} .bscore{font-weight:900; color:var(--garnetdark); margin-left:auto}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--garnetdark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--garnet); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--navy)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px} .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px} .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)} .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(16px,2.7vw,20px); font-weight:800; line-height:1.9; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick{background:var(--think); color:#fff}
+  .stn .w.rightpick{background:var(--green); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center} .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)} .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block} .why .k{color:var(--green); font-weight:900} .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px} .medal{font-size:48px; text-align:center} .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--garnetdark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px} details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--garnet); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} .sides,.halves{grid-template-columns:1fr} .stations{grid-template-columns:repeat(3,1fr)} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">📏</span>
+  <div class="wrap">
+    <div class="kicker">English 8 · Unit 4 · Fine Distinctions</div>
+    <h1>📏 The Comparison Machine</h1>
+    <div class="sub"><b>Grammar 10</b> — parallel structure in comparisons: <i>-er / more … than</i>, <i>as … as</i>, <i>the … the</i>, and the elegant <i>that of / those of</i>. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>📏 Explore the match</span><span>🔧 Build a comparison</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">📏 Explore<small>match the two sides</small></button>
+    <button data-tab="build">🔧 Build<small>compare it yourself</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>Compare like with like</h2>
+      <p class="muted">A comparison demands parallelism <b>twice</b>: the two sides must be the <b>same kind of thing</b>, in the <b>same form</b>. The machine opens each side and shows what is really being compared. <span class="es">(Compara salidas con salidas, no salidas con fábricas.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the repair, guess, then reveal</label>
+
+      <h3>1 · Choose a comparison</h3>
+      <div class="chips" id="cmpChips"></div>
+
+      <h3>2 · Open the two sides</h3>
+      <div class="sides">
+        <div class="side sideA"><div class="role">Side A holds</div><div class="val" id="sideA"></div></div>
+        <div class="side sideB"><div class="role">Side B holds</div><div class="val no" id="sideBno"></div><div class="val yes" id="sideByes"></div><span class="verdict vno" id="vno"></span> <span class="verdict vyes">✔ Now they match</span></div>
+      </div>
+
+      <div class="xcard xbad"><div class="role" id="badRole">✘ Not comparable</div><div class="snt" id="badSnt"></div></div>
+      <div class="arrowdown">⬇</div>
+      <div class="xcard xgood"><div class="role">✔ Parallel comparison</div><div class="snt" id="goodSnt"></div></div>
+      <div style="text-align:center"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the repair ✓</button></div>
+
+      <h3>Why</h3>
+      <ul class="changes" id="cmpWhy"></ul>
+      <div class="legend"><span class="rhead">head noun (side A)</span><span class="rbad" style="text-decoration:none">✘ wrong side B</span><span class="rfix">that of / those of</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-garnet">⚙️ The three machines</span>
+      <h2>-er / more … than · as … as · the … the</h2>
+      <p class="muted">Each machine has its own parts, and the parts never mix. <span class="es">(Nunca <i>as … than</i> ni <i>more … as</i>.)</span></p>
+      <div class="tensechips" id="machChips"></div>
+      <div class="tenseout"><div class="frame" id="machFrame"></div><div class="ex" id="machEx"></div></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">🔗 The correlative comparative</span>
+      <h2><i>The</i> … <i>the</i> — two halves, two <i>the</i>s</h2>
+      <p class="muted">One change drives another. Both halves open with <b>the + comparative</b>; drop either <i>the</i> and the structure collapses. <span class="es">(Las dos mitades llevan <i>the</i>.)</span></p>
+      <div class="chips" id="corrChips"></div>
+      <div class="halves">
+        <div class="half"><div class="lab">Half 1 — the cause</div><div class="txt" id="corrA"></div></div>
+        <div class="half"><div class="lab">Half 2 — the consequence</div><div class="txt" id="corrB"></div></div>
+      </div>
+      <div class="tenseout" style="margin-top:10px">
+        <div class="frame"><span class="slot key">The</span><span class="slot cmp">comparative</span><span class="slot">+ clause</span><span style="font-weight:900">,</span><span class="slot key">the</span><span class="slot cmp">comparative</span><span class="slot">+ clause</span></div>
+        <div class="ex" id="corrEx"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-grammar">🎚️ C1 refinement</span>
+      <h2>Calibrate the gap — the comparison intensifiers</h2>
+      <p class="muted">A bare comparative states a difference; these tools state its <b>size</b>. Each is fixed to one host: a comparative, a superlative, or <i>as … as</i>. <span class="es">(Cada intensificador elige a su anfitrión.)</span></p>
+      <label class="predictbar"><input type="checkbox" id="predictChk2"> 🔮 Predict first — hide the intensifier, guess, then reveal</label>
+      <div class="leverbox">
+        <input type="range" id="lever" min="0" max="5" step="1" value="1" aria-label="Comparison intensifier dial">
+        <div class="stations" id="stations"></div>
+      </div>
+      <div class="sentence" id="intSnt"></div>
+      <div style="text-align:center"><button class="btn ghost small" id="revealBtn2" style="display:none">Reveal the intensifier ✓</button></div>
+      <div class="typerow"><span class="typebadge" id="intSize"></span><span class="hostbadge" id="intHost"></span></div>
+      <div class="ctx" id="intNote"></div>
+      <div class="scout" style="background:var(--thinklt); border-color:var(--think); margin-top:12px"><b style="color:var(--think)">Trap:</b> <span class="rbad">very cheaper</span>, <span class="rbad">very more durable</span> — <i>very</i> refuses comparatives. Use <b>much</b> or <b>far</b>.</div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Exceptions &amp; refinements</span>
+      <h2>Auxiliaries, <i>fewer/less</i>, multiples, <i>in</i> vs <i>of</i></h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="aux" class="on">than / as + auxiliary</button><button data-v="fewerless">fewer vs less</button><button data-v="mult">multiples</button><button data-v="inof">in vs of</button><button data-v="anyother">any other</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">🚨 Error clinic</span>
+      <h2>What Spanish speakers get wrong here</h2>
+      <div class="errlist">
+        <div class="errrow"><span class="no">more better · more high</span> → <span class="yes">better · higher</span><span class="rl">Never stack <i>more</i> onto a comparative; short adjectives take <i>-er</i>.</span></div>
+        <div class="errrow"><span class="no">as cheap than · more cheap as</span> → <span class="yes">as cheap as · cheaper than</span><span class="rl">The machines never swap parts.</span></div>
+        <div class="errrow"><span class="no">very cheaper</span> → <span class="yes">much / far cheaper</span><span class="rl"><i>Very</i> refuses comparatives. <span class="es">(<i>Muy más barato</i> no existe.)</span></span></div>
+        <div class="errrow"><span class="no">The longer the span, deeper the beam</span> → <span class="yes">…, the deeper the beam</span><span class="rl">Both halves of <i>the … the</i> need <i>the</i>.</span></div>
+        <div class="errrow"><span class="no">higher than Plant B</span> → <span class="yes">higher than that of Plant B</span><span class="rl">An output is not higher than a plant. <span class="es">(Falta <i>el de</i>.)</span></span></div>
+        <div class="errrow"><span class="no">than the one of the department · smaller than the department</span> → <span class="yes">than that of the department</span><span class="rl">Never <i>the one of</i>, and never a bare owner on side B. <span class="es">(No compares un sustantivo con un poseedor.)</span></span></div>
+        <div class="errrow"><span class="no">the tallest building of the city · the most best of all</span> → <span class="yes">in the city · the best of all</span><span class="rl"><i>in</i> for a place, <i>of</i> for a set — and one superlative marker only.</span></div>
+        <div class="errrow"><span class="no">Of the two adhesives, the strongest</span> → <span class="yes">…, the stronger</span><span class="rl">Two items take <i>the</i> + comparative.</span></div>
+      </div>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> is Grammar 10 in four axes: the <i>compare like with like</i> visualiser (the <i>that of / those of</i> box plus the subject + auxiliary refinement), the three machines with the irregular ladder, the correlative <i>the … the</i>, and the intensifier dial with each tool’s host. The last two cards are the exceptbox and the pitfallbox.</li>
+          <li><b>Build</b>: <i>assemble</i> the missing piece, then <i>transform</i> the manual and homework rewrites against a model answer.</li>
+          <li><b>Drill</b>: one graded engine in both exam formats — Structure and Written Expression — 13 items at ★ / ★★ / ★★★, with score, streak and best result on the device. Works <b>offline</b>; reading and writing only.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-garnet">🔧 Your turn to produce</span>
+      <h2>Build a comparison</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the situation, then choose the <b>piece the comparison needs</b>. The machine assembles the sentence and names the rule — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">The missing piece is…</div><div class="bchips" id="pieceChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New item →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Rewrite each item with the pattern in brackets. Type the full sentence and check it against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type the full sentence"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next item →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">Both exam formats: <b>Structure</b> (complete the sentence) and <b>Written Expression</b> (click the faulty part). ★ recognise · ★★ repair · ★★★ the elegant traps. <span class="es">(Misma escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 8 · Unit 4 «Fine Distinctions» · Grammar 10 — parallelism in comparisons · Level C1
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE COMPARISON MACHINE — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 8 Class Manual (Grammar 10).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* EXPLORE 1 · compare like with like */
+var CMP = {
+  output:{label:"🏭 Two plants", badRole:"✘ Output vs. plant", a:'the <span class="rhead">output</span> of Plant A <small>(a quantity)</small>', bno:"Plant B <small>(a factory)</small>", byes:"the <b>output</b> of Plant B",
+    bad:'The output of Plant A is higher than <span class="rbad">Plant B</span>.', good:'The output of Plant A is higher than <span class="rfix">that of</span> Plant B.',
+    why:["Side A is a quantity, side B was a building — not comparable.","<i>output</i> is <b>singular</b> → <b>that of</b>."]},
+  props:{label:"🧪 Alloy vs. titanium", badRole:"✘ Properties vs. metal", a:'the <span class="rhead">properties</span> of the alloy <small>(plural)</small>', bno:"titanium <small>(a metal)</small>", byes:"the <b>properties</b> of titanium",
+    bad:'The properties of the alloy resemble <span class="rbad">titanium</span>.', good:'The properties of the alloy resemble <span class="rfix">those of</span> titanium.',
+    why:["Properties resemble properties, not a metal.","<b>that</b> replaces a singular noun, <b>those</b> a plural one."]},
+  results:{label:"📊 Pilot vs. full study", badRole:"✘ Results vs. study", a:'the <span class="rhead">results</span> of the pilot <small>(plural)</small>', bno:"the full study <small>(a study)</small>", byes:"the <b>results</b> of the full study",
+    bad:'The results of the pilot were more promising than <span class="rbad">the full study</span>.', good:'The results of the pilot were more promising than <span class="rfix">those of</span> the full study.',
+    why:["Results are compared with results, not with the study.","<i>results</i> is plural → <b>those of</b>."]},
+  budget:{label:"💰 Two budgets", badRole:"✘ Budget vs. owner", a:'our lab’s <span class="rhead">budget</span> <small>(an amount)</small>', bno:"the physics department <small>(an owner)</small>", byes:"the <b>budget</b> of the physics department",
+    bad:'Our lab’s budget is smaller than <span class="rbad">the physics department</span>.', good:'Our lab’s budget is smaller than <span class="rfix">that of</span> the physics department.',
+    why:["A possessive on side A needs a matching noun on side B.","✘ <i>than the one of</i> — English uses <b>that of</b>."]},
+  clause:{label:"🔬 Two clauses", badRole:"⚠ The verb is repeated", a:'what <span class="rhead">the test group</span> did <small>(a clause)</small>', bno:"the control group improved <small>(the verb again)</small>", byes:"the control group <b>did</b> <small>(an auxiliary)</small>",
+    bad:'The test group improved more than <span class="rbad">the control group improved</span>.', good:'The test group improved more than the control group <span class="rfix">did</span> — formally, than <span class="rfix">did</span> the control group.',
+    why:["After <i>than / as</i> the second side may be a whole clause. Repeating the full verb is heavy, not ungrammatical.","Formal English carries it with <b>subject + auxiliary</b>, and may invert it: <i>than did the control group</i> (Grammar 12)."]}
+};
+var curCmp = "output", predictMode = false, revealed = false;
+Object.keys(CMP).forEach(function(k){
+  var b = document.createElement("button"); b.innerHTML = CMP[k].label; b.dataset.k = k;
+  if(k===curCmp) b.classList.add("on");
+  b.addEventListener("click", function(){ curCmp=k; document.querySelectorAll("#cmpChips button").forEach(function(x){ x.classList.toggle("on", x.dataset.k===k); }); revealed=false; renderCmp(); });
+  $("cmpChips").appendChild(b);
+});
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderCmp(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderCmp(); });
+function renderCmp(){
+  var s = CMP[curCmp];
+  $("sideA").innerHTML=s.a; $("sideBno").innerHTML=s.bno; $("sideByes").innerHTML="✔ "+s.byes;
+  $("vno").textContent=s.badRole; $("badRole").textContent=s.badRole;
+  $("badSnt").innerHTML=s.bad; $("goodSnt").innerHTML=s.good;
+  var ul=$("cmpWhy"); ul.innerHTML="";
+  s.why.forEach(function(c){ var li=document.createElement("li"); li.innerHTML=c; ul.appendChild(li); });
+  var mask = predictMode && !revealed;
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  if(mask){
+    document.querySelectorAll("#goodSnt .rfix").forEach(function(el){ el.classList.add("masked"); el.addEventListener("click", function(){ revealed=true; renderCmp(); }); });
+  }
+}
+renderCmp();
+
+/* EXPLORE 2 · the three machines */
+var MACH = [
+  {t:"-er / more … than",
+   frame:'<span class="slot">X</span><span class="slot cmp">-er / more + adjective</span><span class="slot key">than</span><span class="slot">Y</span>',
+   ex:'Titanium is <b>lighter than</b> steel. · The new process is <b>more efficient than</b> the old one. <span class="es">(Corta → -er; larga → more.)</span>'},
+  {t:"as … as",
+   frame:'<span class="slot">X</span><span class="slot key">as</span><span class="slot cmp">adjective</span><span class="slot key">as</span><span class="slot">Y</span>',
+   ex:'The copy is <b>as accurate as</b> the original. · Negative: <b>not as / so reliable as</b> we hoped. <span class="es">(Nunca <i>as … than</i>.)</span>'},
+  {t:"the … the",
+   frame:'<span class="slot key">The</span><span class="slot cmp">comparative</span><span class="slot">clause</span><span class="slot key">the</span><span class="slot cmp">comparative</span><span class="slot">clause</span>',
+   ex:'<b>The longer</b> the span, <b>the deeper</b> the beam. · The more you test, the fewer surprises you get.'},
+  {t:"irregulars",
+   frame:'<span class="slot cmp">a few ladders you cannot build with -er</span>',
+   ex:'<div class="irr"><div><b>good</b> / better / best</div><div><b>bad</b> / worse / worst</div><div><b>far</b> / farther · further</div><div><b>little</b> / less / least</div><div><b>many · much</b> / more / most</div></div>'}
+];
+var curMach=0;
+MACH.forEach(function(d,i){
+  var b=document.createElement("button"); b.textContent=d.t; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curMach=i; document.querySelectorAll("#machChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderMach(); });
+  $("machChips").appendChild(b);
+});
+function renderMach(){ var d=MACH[curMach]; $("machFrame").innerHTML=d.frame; $("machEx").innerHTML=d.ex; }
+renderMach();
+
+/* EXPLORE 3 · the correlative comparative */
+var CORR = [
+  {label:"🌉 span &amp; beam", a:'<span class="rfix">The</span> <span class="rint">longer</span> the span,', b:'<span class="rfix">the</span> <span class="rint">deeper</span> the beam.', ex:"Longer span → deeper beam. Both halves open with <i>the</i> + a comparative."},
+  {label:"📡 sensors &amp; calibration", a:'<span class="rfix">The</span> <span class="rint">more</span> sensors you add,', b:'<span class="rfix">the</span> <span class="rint">harder</span> the calibration becomes.', ex:"<i>The more</i> + noun works exactly like <i>the longer</i> + noun."},
+  {label:"🧠 data &amp; model", a:'<span class="rfix">The</span> <span class="rint">more</span> data you collect,', b:'<span class="rfix">the</span> <span class="rint">better</span> your model becomes.', ex:"Irregular ladder inside the pattern: good → <b>better</b>."},
+  {label:"⏳ outage &amp; clients", a:'<span class="rfix">The</span> <span class="rint">longer</span> the outage lasted,', b:'<span class="rfix">the</span> <span class="rint">more anxious</span> the clients became.', ex:"Long adjectives keep <i>more</i>: ✘ <i>the anxious</i> → ✔ <b>the more anxious</b>."},
+  {label:"🧪 testing &amp; surprises", a:'<span class="rfix">The</span> <span class="rint">more</span> you test,', b:'<span class="rfix">the</span> <span class="rint">fewer</span> surprises you get.', ex:"<i>fewer</i> because surprises are counted."}];
+var curCorr=0;
+CORR.forEach(function(d,i){
+  var b=document.createElement("button"); b.innerHTML=d.label; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curCorr=i; document.querySelectorAll("#corrChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderCorr(); });
+  $("corrChips").appendChild(b);
+});
+function renderCorr(){ var d=CORR[curCorr]; $("corrA").innerHTML=d.a; $("corrB").innerHTML=d.b; $("corrEx").innerHTML=d.ex; }
+renderCorr();
+
+/* EXPLORE 4 · the intensifier dial */
+var INT = [
+  {station:"WAY BELOW", em:"📉", size:"huge negative gap", color:"var(--think)", host:"as … as", hostcol:"var(--green)", pre:"The old cell lasts ", mid:"nowhere near as long as", post:" the new one.", note:"Old cell 7 h, new cell 21 h. <b>nowhere near</b> sits <b>in front of</b> an intact <i>as … as</i> — nothing is dropped."},
+  {station:"MARGINAL", em:"🤏", size:"a small difference", color:"var(--grammar)", host:"comparative", hostcol:"var(--grammar)", pre:"The new cell lasts ", mid:"marginally longer than", post:" the old one.", note:"A different pair — 21 h against 20 h 40 min. <b>marginally / slightly</b> + comparative."},
+  {station:"LARGE", em:"📊", size:"a large difference", color:"var(--navy)", host:"comparative", hostcol:"var(--grammar)", pre:"The new cell lasts ", mid:"far longer than", post:" the old one.", note:"<b>considerably / far</b> + comparative — never <i>very</i> + comparative."},
+  {station:"EXACT RATIO", em:"✖️", size:"an exact ratio", color:"var(--green)", host:"as … as", hostcol:"var(--green)", pre:"The new cell lasts ", mid:"three times as long as", post:" the old one.", note:"21 hours against 7. The multiple sits <b>in front of</b> <i>as … as</i>."},
+  {station:"MAXIMUM", em:"🏆", size:"the maximum of the set", color:"var(--greendark)", host:"superlative", hostcol:"var(--navy)", pre:"The new cell is ", mid:"by far the longest-lasting", post:" of the six.", note:"<b>by far</b> boosts a <b>superlative</b>, never a bare comparative."},
+  {station:"BOOSTED", em:"⭐", size:"boosted by a reason", color:"var(--excep)", host:"comparative + because / for", hostcol:"var(--excep)", pre:"The 21-hour figure is ", mid:"all the more impressive", post:" because the cell is cheaper.", note:"<b>all the</b> + comparative + <i>because / for</i> + the reason."}
+];
+var predict2=false, revealed2=false;
+INT.forEach(function(t,i){
+  var b=document.createElement("button"); b.innerHTML='<span class="em">'+t.em+"</span>"+t.station;
+  b.addEventListener("click", function(){ $("lever").value=i; revealed2=false; renderInt(true); });
+  $("stations").appendChild(b);
+});
+$("lever").addEventListener("input", function(){ revealed2=false; renderInt(true); });
+$("predictChk2").addEventListener("change", function(){ predict2=this.checked; revealed2=false; renderInt(false); });
+$("revealBtn2").addEventListener("click", function(){ revealed2=true; renderInt(false); });
+function renderInt(animate){
+  var i=+$("lever").value, t=INT[i], mask = predict2 && !revealed2;
+  var s=$("intSnt");
+  s.innerHTML = "<span>"+t.pre+'<span class="rint'+(mask?" masked":"")+'">'+t.mid+"</span>"+t.post+"</span>";
+  if(animate){ s.classList.remove("flip"); void s.offsetWidth; s.classList.add("flip"); }
+  document.querySelectorAll("#stations button").forEach(function(x,j){ x.classList.toggle("on", j===i); });
+  $("revealBtn2").style.display = mask ? "inline-block" : "none";
+  $("intSize").textContent=t.size; $("intSize").style.background=t.color;
+  $("intHost").textContent="goes with: "+t.host; $("intHost").style.background=t.hostcol;
+  $("intNote").innerHTML = mask ? "Predict the intensifier, then reveal." : t.note;
+  if(mask){ var el=s.querySelector(".rint"); if(el) el.addEventListener("click", function(){ revealed2=true; renderInt(false); }); }
+}
+renderInt(false);
+
+/* EXPLORE 5 · exceptions */
+var SC = {
+  aux:"After <b>than / as</b>, formal English may carry the second side as a <b>clause with subject + auxiliary</b>: <i>fewer defects than the control group <b>did</b></i> — and may even <b>invert</b> it: <i>than <b>did</b> the control group</i> · <i>as <b>does</b> every certified unit</i>. Inversion returns in Grammar 12.",
+  fewerless:"<b>fewer</b> counts, <b>less</b> measures: <i><b>fewer</b> defects, <b>less</b> downtime</i>. And <b>no fewer than / no less than</b> = surprisingly many: <i>failed <b>no fewer than</b> seven times</i>. <span class='es'>(Contables vs. no contables.)</span>",
+  mult:"<b>twice / three times as … as</b> states an <b>exact ratio</b>: <i>The new chip is <b>twice as fast as</b> the old one.</i> ✘ <s>twice faster than</s>.",
+  inof:"Superlative + <b>in</b> for a place or a group: <i>the tallest building <b>in</b> the city</i>. Superlative + <b>of</b> for a set of items: <i>the best <b>of</b> the three designs</i>.",
+  anyother:"One member against its whole class takes <b>comparative + than any other</b>: <i>Alloy 7 is <b>more resistant than any other</b> alloy in the set.</i> With two items only: <b>the + comparative</b> — <i>the epoxy is <b>the stronger</b></i>."
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.aux;
+
+/* =====================================================================
+   BUILD · assemble (the missing piece) + transform (rewrite)
+===================================================================== */
+var BUILD = [
+  {ctx:"Compare rates, not metals.", frame:"The corrosion rate of zinc is lower than {V} iron.", options:["those of","that of","the one of"], correct:"that of", note:"<i>rate</i> is singular → that of."},
+  {ctx:"Compare properties with properties.", frame:"The properties of the blend differ from {V} the pure polymer.", options:["those of","that of","the ones of"], correct:"those of", note:"<i>properties</i> is plural → those of."},
+  {ctx:"More sensors, harder calibration.", frame:"The {V} sensors you add, the harder the calibration becomes.", options:["most","much more","more"], correct:"more", note:"Each half opens with <i>the</i> + comparative."},
+  {ctx:"An exact ratio: two to one.", frame:"This bracket is {V} the printed one.", options:["twice stronger than","twice as strong as","stronger than twice"], correct:"twice as strong as", note:"The multiple goes in front of <i>as … as</i>."},
+  {ctx:"Two adhesives on the bench — not three.", frame:"Of the two adhesives, the epoxy is the {V}.", options:["strongest","most strong","stronger"], correct:"stronger", note:"Two items → the + comparative, not the superlative."},
+  {ctx:"Errors are counted; downtime is measured.", frame:"The new firmware produces {V} errors and causes less downtime.", options:["less","fewer","lesser"], correct:"fewer", note:"<i>fewer</i> counts, <i>less</i> measures."},
+  {ctx:"Nine proposals, and it is not close.", frame:"Proposal 7 is {V} of the nine.", options:["by far better","the most best","by far the best"], correct:"by far the best", note:"<i>by far</i> boosts a superlative only, and a set of nine rules out the comparative."},
+  {ctx:"Promised 40 km; the drone flew 9.", frame:"The range is {V} promised.", options:["nowhere near as long as","nowhere near longer than","not near as long than"], correct:"nowhere near as long as", note:"<i>nowhere near</i> goes in front of <i>as … as</i>, which stays complete."}
+];
+var bi=0, bPick=null, bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function renderBuild(){
+  var it=BUILD[bi]; bPick=null;
+  $("bctx").innerHTML = it.ctx+"<small>"+it.frame.replace("{V}","______")+"</small>";
+  var wrap=$("pieceChips"); wrap.innerHTML="";
+  it.options.forEach(function(op){
+    var b=document.createElement("button"); b.textContent=op; b.dataset.v=op;
+    b.addEventListener("click", function(){ bPick=op; document.querySelectorAll("#pieceChips button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bPick){ r.className="bresult bad"; r.innerHTML="Choose a piece first."; return; }
+  if(bPick===it.correct){
+    var sent=it.frame.replace("{V}", '<span class="rfix">'+it.correct+"</span>");
+    r.className="bresult good"; r.innerHTML="✅ "+sent+'<div class="bnote">'+it.note+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else {
+    document.querySelector('#pieceChips button[data-v="'+bPick+'"]').classList.add("wrongpick");
+    r.className="bresult bad"; r.innerHTML="❌ Not that one. <span class='bnote'>Hint — "+it.note+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:"The thermal conductivity of copper is higher than aluminum. <b>[repair the comparison]</b>", accept:["the thermal conductivity of copper is higher than that of aluminum","the thermal conductivity of copper is higher than that of aluminium","the thermal conductivity of copper is greater than that of aluminum","the thermal conductivity of copper is greater than that of aluminium","the conductivity of copper is higher than that of aluminum","the conductivity of copper is higher than that of aluminium"], model:"The thermal conductivity of copper is higher than that of aluminum."},
+  {ctx:"As altitude increases, air density decreases. <b>[the … the]</b>", accept:["the higher the altitude the lower the air density","the higher the altitude the lower the density","the greater the altitude the lower the air density","the greater the altitude the lower the density","the higher the altitude the lower the air density becomes","the higher the altitude the lower the density becomes","the higher the altitude is the lower the air density is"], model:"The higher the altitude, the lower the air density."},
+  {ctx:"The old motor’s efficiency was 82 %; the new one reaches 91 %. <b>[that of]</b>", accept:["the efficiency of the new motor is higher than that of the old one","the efficiency of the new motor is higher than that of the old motor","the efficiency of the new motor is greater than that of the old one","the efficiency of the new motor is greater than that of the old motor","the new motor's efficiency is higher than that of the old one","the new motors efficiency is higher than that of the old one","the new motor's efficiency is higher than that of the old motor","the new motors efficiency is higher than that of the old motor"], model:"The efficiency of the new motor is higher than that of the old one."},
+  {ctx:"Our lab’s budget against the physics department’s budget — smaller. <b>[that of]</b>", accept:["our lab's budget is smaller than that of the physics department","our labs budget is smaller than that of the physics department","the budget of our lab is smaller than that of the physics department","our lab's budget is smaller than that of the physics dept"], model:"Our lab’s budget is smaller than that of the physics department."},
+  {ctx:"No other course demands as much reading as this one. <b>[comparative + any other]</b>", accept:["this course demands more reading than any other course","this course demands more reading than any other","this course demands more reading than any other course does","this course demands more reading than any other one","this course requires more reading than any other course","this course requires more reading than any other"], model:"This course demands more reading than any other (course)."},
+  {ctx:"The pilot batch and the full batch behaved identically. <b>[as … as]</b>", accept:["the full batch behaved as well as the pilot batch","the full batch behaved as consistently as the pilot batch","the full batch behaved as well as the pilot batch did","the full batch behaved as consistently as the pilot batch did","the pilot batch behaved as well as the full batch","the pilot batch behaved as consistently as the full batch","the pilot batch behaved as well as the full batch did","the pilot batch behaved as consistently as the full batch did"], model:"The full batch behaved as well / as consistently as the pilot batch (did)."},
+  {ctx:"The old vessel withstands 100 bar; the new one withstands 300. <b>[three times]</b>", accept:["the new vessel withstands three times as much pressure as the old one","the new vessel withstands three times as much pressure","the new vessel withstands three times as much pressure as the old vessel","the new vessel can withstand three times as much pressure as the old one","the new vessel can withstand three times as much pressure as the old vessel","the new vessel withstands three times the pressure of the old one"], model:"The new vessel withstands three times as much pressure as the old one."}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML="Rewrite: "+it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow — 13 items (5 ★ / 4 ★★ / 4 ★★★)
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Structure · that / those", q:"The stiffness of the composite exceeds ___ of aluminum.", o:["those","that","the ones","the one"], a:1, w:"<i>stiffness</i> is singular, so the pronoun is <b>that of</b> — and English never says <i>the one of</i>."},
+  {kind:"mc", diff:1, tag:"Structure · the … the", q:"The more the model learns, ___ its predictions become.", o:["better","the best","the better","best"], a:2, w:"Both halves of <i>the … the</i> take <b>the</b> + comparative."},
+  {kind:"fill", diff:1, tag:"Structure · fewer or less", q:"Only 40 people answered: the survey reached ___ respondents than expected. (one word)", accept:["fewer"], w:"Respondents are counted → <b>fewer</b>; <i>less</i> measures."},
+  {kind:"fill", diff:1, tag:"Structure · that of", q:"The corrosion rate of zinc is lower than ___ iron. (two words)", accept:["that of"], w:"Compare rate with rate: <i>rate</i> is singular → <b>that of</b>."},
+  {kind:"error", diff:1, tag:"Written Expression", words:["The output","of the new line","is","more high","than","that of","the old one"], bad:3, fixOld:"more high", fixNew:"higher", w:"A short adjective takes <b>-er</b>: higher — never <i>more high</i>."},
+  {kind:"error", diff:2, tag:"Written Expression", words:["Her thesis","is","as rigorous","than","any","published paper"], bad:3, fixOld:"than", fixNew:"as", w:"The machines do not mix: <i>as … as</i>, <i>more … than</i>."},
+  {kind:"mc", diff:2, tag:"Structure · multiples", q:"This bracket is ___ the printed one.", o:["twice stronger than","stronger than twice","twice as strong as","twice as stronger as"], a:2, w:"The multiple goes in front of an intact frame: <b>twice as + adjective + as</b>."},
+  {kind:"fill", diff:2, tag:"Structure · the … the", q:"Every channel has to be matched by hand: the ___ sensors you add, the harder the calibration becomes. (one word)", accept:["more"], w:"<b>The more</b> + noun opens the first half."},
+  {kind:"error", diff:2, tag:"Written Expression", words:["The longer","the outage lasted,","the anxious","the clients became","about their data"], bad:2, fixOld:"the anxious", fixNew:"the more anxious", w:"The second half needs a comparative: <b>the more anxious</b>."},
+  {kind:"error", diff:3, tag:"Written Expression", words:["The properties","of the blend","differ from","the pure polymer","in three respects"], bad:3, fixOld:"the pure polymer", fixNew:"those of the pure polymer", w:"Properties differ from properties: plural → <b>those of</b>."},
+  {kind:"error", diff:3, tag:"Written Expression", words:["The results of the retest","were cleaner","than","the first run","in every respect"], bad:3, fixOld:"the first run", fixNew:"those of the first run", w:"Results compare with results, not with the run → <b>those of</b>."},
+  {kind:"mc", diff:3, tag:"Structure · intensifier", q:"Alloy 7 outperformed every rival on every test. It is ___ of the nine.", o:["by far the better alloy","the far best alloy","the most better alloy","by far the best alloy"], a:3, w:"Nine candidates rule out the comparative, and <b>by far</b> is the form that boosts a superlative — never a bare <i>far</i> or a doubled marker."},
+  {kind:"fill", diff:3, tag:"Structure · that of", q:"Our lab’s budget is smaller than ___ the physics department. (two words)", accept:["that of"], w:"Budget against budget, never against its owner: <b>that of</b>."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("i8_g10_drill_best")||0); if(dscore>best){ store("i8_g10_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Every side matched. Take the ★★★ task set with confidence." : dscore>=8?"Solid — reread the exceptions card and the error clinic, then run it again." : "Reread Grammar 10, work through Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+" · "+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+"</span></div>"+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+"</button>"; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+" · "+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+"</span></div>Click the part that is wrong.</div>";
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+"</span> "; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, (ok?'<span class="k">\u2713 Correct.</span> ':'<span class="k">\u2717 Not that one: the green part is the error.</span> ')+'<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+"</span></span>"+'<span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+"</span> "+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

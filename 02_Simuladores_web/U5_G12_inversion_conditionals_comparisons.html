@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE IF-LESS MACHINE · English 8 · Unit 5 "Word Order as Power"
+  Grammar 12 — inversion in conditionals & comparisons (Had / Should / Were)
+  Three modes: Explore (if → inverted) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Grammar 12 · The If-less Machine · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --royal:#4B3A8C; --royaldark:#30255C; --royallt:#E9E6F4;
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--royal),var(--royaldark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#CFC6EC; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#DDD6F2; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--royaldark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--royaldark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--royaldark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-royal{background:var(--royal)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--royal); background:var(--royallt); color:var(--royaldark)}
+
+  /* ---------- transformer spotlight ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--grammar); cursor:pointer; margin:-2px 0 6px}
+  .xcard{border-radius:12px; padding:14px 16px; margin:8px 0; position:relative}
+  .xcard .role{font-size:11px; font-weight:900; letter-spacing:.08em; text-transform:uppercase}
+  .xcard .snt{font-size:clamp(18px,3.1vw,24px); font-weight:800; margin-top:4px; line-height:1.55}
+  .xif{background:var(--navylt); border:2px solid var(--navy)}
+  .xif .role{color:var(--navy)}
+  .xinv{background:var(--royallt); border:2px solid var(--royal)}
+  .xinv .role{color:var(--royaldark)}
+  .arrowdown{text-align:center; font-size:26px; color:var(--grammar); margin:-2px 0}
+  .raux{background:var(--royallt); color:var(--royaldark); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--royal)}
+  .rverb{background:var(--grammarlt); color:var(--grammar); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--grammar)}
+  .rsubj{background:#D8EFE1; color:var(--greendark); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--green)}
+  .rmain{background:var(--navylt); color:var(--navy); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--navy)}
+  .rghost{color:#9A9A9A; text-decoration:line-through}
+  .xinv .raux{display:inline-block; animation:hop .55s ease}
+  .xinv .rghost{animation:vanish 1.1s ease forwards}
+  @keyframes hop{0%{transform:translateY(0)} 35%{transform:translateY(-11px)} 70%{transform:translateY(2px)} 100%{transform:translateY(0)}}
+  @keyframes vanish{0%{opacity:1} 100%{opacity:.22}}
+  .raux.masked{color:transparent; box-shadow:inset 0 -2px 0 var(--royal); position:relative; cursor:pointer; min-width:64px; display:inline-block}
+  .raux.masked::after{content:"?"; position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .changes{list-style:none; margin:10px 0 0}
+  .changes li{position:relative; padding:3px 0 3px 22px; font-size:14px; font-weight:600; color:#555}
+  .changes li::before{content:"→"; position:absolute; left:0; top:3px; color:var(--grammar); font-weight:900}
+  .legend{display:flex; gap:10px; flex-wrap:wrap; font-size:12px; font-weight:800; margin-top:10px}
+  .legend span{border-radius:6px; padding:1px 8px}
+
+  /* pattern dial */
+  .tensechips{display:flex; gap:6px; flex-wrap:wrap; margin:8px 0}
+  .tensechips button{border:2px solid var(--rule); background:#fff; border-radius:8px; padding:6px 11px; font:700 13px Lato,sans-serif; cursor:pointer}
+  .tensechips button.on{border-color:var(--navy); background:var(--navylt); color:var(--navy)}
+  .tenseout{background:var(--soft); border-radius:12px; padding:16px; text-align:center; margin-top:6px}
+  .tenseout .map{font-size:clamp(16px,2.6vw,21px); font-weight:800}
+  .tenseout .map .a{color:var(--navy)} .tenseout .map .b{color:var(--royal)}
+  .tenseout .ex{font-size:14px; color:#555; margin-top:8px; font-weight:600}
+
+  /* comparison card */
+  .cmpout{margin-top:8px}
+  .cmpline{border-radius:10px; padding:10px 13px; font-size:clamp(15px,2.4vw,18px); font-weight:700; margin:6px 0}
+  .cmpstd{background:var(--navylt); border-left:5px solid var(--navy); color:var(--navy)}
+  .cmpinv{background:var(--royallt); border-left:5px solid var(--royal); color:var(--royaldark)}
+  .cmpline .lab{display:block; font-size:11px; font-weight:900; letter-spacing:.07em; text-transform:uppercase; opacity:.75}
+
+  /* special cases selector */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)}
+  .shiftgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:6px; margin-top:4px}
+  .shiftgrid div{background:#fff; border:1.5px solid var(--rule); border-radius:8px; padding:6px 10px; font-size:14px; font-weight:700}
+  .shiftgrid .a{color:var(--navy)} .shiftgrid .b{color:var(--excep)}
+  .errlist{list-style:none; margin-top:6px}
+  .errlist li{background:var(--thinklt); border-left:5px solid var(--think); border-radius:0 10px 10px 0; padding:8px 12px; margin:7px 0; font-size:15px; font-weight:700}
+  .errlist .no{color:var(--think)} .errlist .yes{color:var(--green)}
+  .errlist small{display:block; font-weight:600; color:#666; font-size:13px; margin-top:2px}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--royal); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--royaldark); border:2px solid var(--royal)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--royal); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--royal)}
+  .segbig button.on{background:var(--royal); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--royal); background:var(--royallt); color:var(--royaldark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--royaldark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--royaldark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--royal); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)}
+  .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick{background:var(--think); color:#fff}
+  .stn .w.rightpick{background:var(--green); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)}
+  .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--royaldark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--royal); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">🔀</span>
+  <div class="wrap">
+    <div class="kicker">English 8 · Unit 5 · Word Order as Power</div>
+    <h1>🔀 The If-less Machine</h1>
+    <div class="sub"><b>Grammar 12</b> — inversion in conditionals &amp; comparisons: <i>Had</i>, <i>Should</i>, <i>Were</i>, <i>than did</i>. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🔀 Explore the swap</span><span>🔧 Build it without <i>if</i></span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🔀 Explore<small>watch <i>if</i> go</small></button>
+    <button data-tab="build">🔧 Build<small>invert it yourself</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>Delete <i>if</i>, front the auxiliary</h2>
+      <p class="muted">Formal English can delete <b>if</b> and invert — with <b>exactly three verbs</b>:
+        <b>had</b>, <b>should</b> and <b>were</b>. The auxiliary jumps in front of the subject and the comma stays.
+        Pick a pattern and watch the swap. <span class="es">(Se borra <i>if</i> y el auxiliar salta delante del sujeto; solo had, should, were.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the fronted auxiliary, guess, then reveal</label>
+
+      <h3>1 · Choose the pattern</h3>
+      <div class="chips" id="scChips"></div>
+
+      <div class="xcard xif"><div class="role">With <i>if</i> — the everyday version</div><div class="snt" id="ifSnt"></div></div>
+      <div class="arrowdown">⬇</div>
+      <div class="xcard xinv"><div class="role">If-less — inverted, formal</div><div class="snt" id="invSnt"></div></div>
+      <div style="text-align:center"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the fronted auxiliary ✓</button></div>
+
+      <h3>What changed?</h3>
+      <ul class="changes" id="changes"></ul>
+      <div class="legend"><span class="rghost">if (deleted)</span><span class="raux">fronted auxiliary</span><span class="rsubj">subject</span><span class="rverb">verb form</span><span class="rmain">main clause</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">💡 The pattern dial</span>
+      <h2>Three auxiliaries — and the main clause each one needs</h2>
+      <p class="muted">Tap a pattern to see the formula, the main clause it takes, and an example.
+        <span class="es">(Cada patrón exige una forma distinta en la cláusula principal.)</span></p>
+      <div class="tensechips" id="dialChips"></div>
+      <div class="tenseout"><div class="map" id="dialMap"></div><div class="ex" id="dialEx"></div></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-royal">⚖️ After <i>than</i> and <i>as</i></span>
+      <h2>Inversion in comparisons — optional elegance</h2>
+      <p class="muted">After <b>than</b> or <b>as</b>, formal prose may invert subject and auxiliary when the subject is a
+        <b>full noun phrase</b>. It is optional — but the exam lists it among the correct answers, so read it as
+        <b>right</b>, not strange. <span class="es">(Opcional, pero correcta: reconócela en el examen.)</span></p>
+      <div class="chips" id="cmpChips"></div>
+      <div class="cmpout" id="cmpOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Special cases</span>
+      <h2><i>Were it not for</i>, manuals, mixed time &amp; what cannot invert</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="wereto" class="on">were to</button><button data-v="without">were/had it not been for</button><button data-v="manuals">Should in manuals</button><button data-v="mixed">mixed time</button><button data-v="cannot">cannot invert</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">🛑 Error clinic</span>
+      <h2>The seven traps Spanish speakers fall into</h2>
+      <ul class="errlist">
+        <li><span class="no">✘ Had she would have known the cost…</span> → <span class="yes">✔ Had she known the cost, she would have canceled it.</span>
+          <small>The condition never carries <i>would</i>. Only the main clause does. <span class="es">(El <i>would</i> va en la principal, nunca en la condición.)</span></small></li>
+        <li><span class="no">✘ If had she known…</span> → <span class="yes">✔ Had she known… / If she had known…</span>
+          <small>One or the other: keep <i>if</i> or invert, never both.</small></li>
+        <li><span class="no">✘ Hadn’t she known…</span> → <span class="yes">✔ Had she not known…</span>
+          <small>Negatives do <b>not</b> contract in an if-less conditional: <i>Had it not been for the backup, we would have lost everything.</i></small></li>
+        <li><span class="no">✘ Should he will need assistance…</span> → <span class="yes">✔ Should he need assistance, the desk is staffed around the clock.</span>
+          <small><i>Should</i> + subject + <b>base verb</b>. No future form inside the condition.</small></li>
+        <li><span class="no">✘ Knew I the answer, I would tell you.</span> → <span class="yes">✔ If I knew the answer, I would tell you.</span>
+          <small>Only <b>had, were, should</b> can invert. A lexical verb keeps <i>if</i>.</small></li>
+        <li><span class="no">✘ Had we known, had we acted.</span> → <span class="yes">✔ Had we known, we would have acted.</span>
+          <small>After the comma the main clause keeps <b>normal order</b>.</small></li>
+        <li><span class="no">✘ …more faults than did he.</span> → <span class="yes">✔ …more faults than he did.</span>
+          <small>With a pronoun subject there is no inversion after <i>than</i> or <i>as</i>.</small></li>
+      </ul>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> runs Grammar 12 on the three if-less patterns (<i>Should</i> possible future · <i>Were</i> unreal present · <i>Had</i> unreal past), colour-coding the deleted <i>if</i>, the fronted auxiliary, the subject, the verb form and the main clause. The dial adds the negative rule (no contraction), the comma and the main clause each pattern requires; a separate card covers inversion after <i>than</i>/<i>as</i>.</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> the two moving pieces (auxiliary + what follows the subject), then <i>transform</i> the manual and homework rewrites, with validation and a model answer.</li>
+          <li><b>Drill</b> is the graded engine in both exam formats — Structure completions and Written Expression error items (★ pattern recognition · ★★ machinery · ★★★ traps and comparisons) — with score, streak and a saved best.</li>
+          <li>Deliberately the heaviest block of the unit: this is the structure the exam tests most. Works <b>offline</b>. Reading and writing only.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-royal">🔧 Your turn to produce</span>
+      <h2>Build it without <i>if</i></h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the <i>if</i>-sentence, then choose the <b>two pieces</b> the inverted version needs: the auxiliary that
+          moves to the front, and the form that follows the subject. The machine builds it — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">1 · The auxiliary that moves</div><div class="bchips" id="auxChips"></div></div>
+        <div class="bgroup"><div class="glab">2 · What follows the subject</div><div class="bchips" id="verbChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New sentence →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Rewrite each sentence as the instruction says. Type it and check against the model.
+          <span class="es">(Escribe la oración completa, con su coma.)</span></p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type the full sentence"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next sentence →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — 13 items, two exam formats</h2>
+      <p class="muted">★ recognize the pattern · ★★ the machinery · ★★★ traps &amp; comparisons. Structure completions and
+        Written Expression error items, exactly as the exam asks them. Keep your streak alive.
+        <span class="es">(Misma escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 8 · Unit 5 «Word Order as Power» · Grammar 12 — inversion in conditionals and comparisons · Level C1
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE IF-LESS MACHINE — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the Class Manual (Grammar 12).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE · if-clause → inverted clause spotlight
+===================================================================== */
+var SCEN = {
+  should:{label:"⏩ Should · possible future",
+    wif:'<span class="rghost">If</span> the coolant <span class="raux">should</span> <span class="rverb">drop</span> below the line, <span class="rmain">add distilled water</span>.',
+    inv:'<span class="raux">Should</span> <span class="rsubj">the coolant</span> <span class="rverb">drop</span> below the line, <span class="rmain">add distilled water</span>.',
+    changes:['<b>if</b> is deleted — nothing replaces it',
+      '<b>should</b> jumps in front of the subject <i>the coolant</i>',
+      'the subject is followed by the <b>base verb</b>: <i>drop</i> (✘ <i>drops</i>, ✘ <i>will drop</i>)',
+      'main clause: an <b>imperative</b> (or a present / <i>will</i> form) — the condition is a real possibility',
+      'the inverted clause comes first, so it keeps its <b>comma</b>']},
+  were:{label:"🔁 Were · unreal present",
+    wif:'<span class="rghost">If</span> the tower <span class="raux">were</span> <span class="rverb">ten meters taller</span>, <span class="rmain">aviation lights would be mandatory</span>.',
+    inv:'<span class="raux">Were</span> <span class="rsubj">the tower</span> <span class="rverb">ten meters taller</span>, <span class="rmain">aviation lights would be mandatory</span>.',
+    changes:['<b>if</b> is deleted; <b>were</b> moves to the front',
+      '<b>were</b> for every subject — <i>Were I in charge…</i>, not <i>was</i>',
+      'nothing is added after the subject: the complement stays as it was',
+      'main clause: <b>would + base verb</b> — an unreal present situation']},
+  had:{label:"⏮ Had · unreal past",
+    wif:'<span class="rghost">If</span> we <span class="raux">had</span> <span class="rverb">logged</span> the drift, <span class="rmain">the recall would have been avoided</span>.',
+    inv:'<span class="raux">Had</span> <span class="rsubj">we</span> <span class="rverb">logged</span> the drift, <span class="rmain">the recall would have been avoided</span>.',
+    changes:['<b>if</b> is deleted; <b>had</b> moves to the front',
+      'the subject is followed by the <b>past participle</b>: <i>logged</i>',
+      'main clause: <b>would have + past participle</b> — an unreal past situation',
+      'the condition never carries <i>would</i>: ✘ <i>Had we would have logged…</i>']},
+  hadnot:{label:"🚫 Had it not been for…",
+    wif:'<span class="rghost">If</span> it <span class="raux">had</span> <span class="rverb">not been</span> for the checklist, <span class="rmain">the step would have been skipped</span>.',
+    inv:'<span class="raux">Had</span> <span class="rsubj">it</span> <span class="rverb">not been</span> for the checklist, <span class="rmain">the step would have been skipped</span>.',
+    changes:['<b>not</b> stays after the subject — it never joins the auxiliary',
+      '✘ <i>Hadn’t it been for…</i> — negatives do <b>not</b> contract here',
+      '<b>Had it not been for</b> + noun means <b>without</b> (past)',
+      'main clause: <b>would have + past participle</b>']},
+  werenot:{label:"🚫 Were it not for…",
+    wif:'<span class="rghost">If</span> it <span class="raux">were</span> <span class="rverb">not</span> for the sensors, <span class="rmain">the crack would have gone unnoticed</span>.',
+    inv:'<span class="raux">Were</span> <span class="rsubj">it</span> <span class="rverb">not</span> for the sensors, <span class="rmain">the crack would have gone unnoticed</span>.',
+    changes:['<b>Were it not for</b> + noun also means <b>without</b>',
+      '✘ <i>Weren’t it for…</i> — again, no contraction',
+      'the noun after <i>for</i> is what saved (or ruined) the situation',
+      'the main clause states the result that did not happen']}
+};
+var curScen = "should", predictMode = false, revealed = false;
+Object.keys(SCEN).forEach(function(k){
+  var b = document.createElement("button"); b.innerHTML = SCEN[k].label; b.dataset.k = k;
+  if(k===curScen) b.classList.add("on");
+  b.addEventListener("click", function(){ curScen=k; document.querySelectorAll("#scChips button").forEach(function(x){ x.classList.toggle("on", x.dataset.k===k); }); revealed=false; renderScen(); });
+  $("scChips").appendChild(b);
+});
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderScen(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderScen(); });
+function renderScen(){
+  var s = SCEN[curScen];
+  $("ifSnt").innerHTML = s.wif;
+  $("invSnt").innerHTML = s.inv;
+  var ul=$("changes"); ul.innerHTML="";
+  s.changes.forEach(function(c){ var li=document.createElement("li"); li.innerHTML=c; ul.appendChild(li); });
+  var mask = predictMode && !revealed;
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  if(mask){
+    document.querySelectorAll("#invSnt .raux").forEach(function(el){ el.classList.add("masked"); el.addEventListener("click", function(){ revealed=true; renderScen(); }); });
+  }
+}
+renderScen();
+
+/* pattern dial */
+var DIAL = [
+  {t:"Should · possible future", map:'<span class="a">If + S + should + base</span> → <span class="b">Should + S + base</span>', ex:'<b>Should any discrepancy arise, contact the supervisor.</b><br>Main clause: imperative, present or <i>will</i>. <span class="es">(Si llegara a…)</span>'},
+  {t:"Were · unreal present", map:'<span class="a">If + S + were</span> → <span class="b">Were + S</span>', ex:'<b>Were I in charge, the schedule would change.</b><br>Main clause: <i>would</i> + base verb. <i>were</i> for every subject.'},
+  {t:"Were + to · hypothetical", map:'<span class="a">If + S + were to + base</span> → <span class="b">Were + S + to + base</span>', ex:'<b>Were we to redesign the intake, the noise would fall.</b><br>Main clause: <i>would</i> + base verb. A tentative future.'},
+  {t:"Had · unreal past", map:'<span class="a">If + S + had + p.p.</span> → <span class="b">Had + S + p.p.</span>', ex:'<b>Had we known, we would have acted.</b><br>Main clause: <i>would have</i> + past participle.'},
+  {t:"Negatives · no contraction", map:'<span class="a">If it had not been for + noun</span> → <span class="b">Had it not been for + noun</span>', ex:'<b>Had it not been for the backup, we would have lost everything.</b><br>✘ <i>Hadn’t it been…</i> — the <i>not</i> stays after the subject.'},
+  {t:"The comma &amp; the main clause", map:'<span class="b">Inverted clause</span> <span class="a">, + normal order</span>', ex:'<b>Had we known, we would have acted.</b><br>✘ <i>Had we known, had we acted.</i> — after the comma, nothing else inverts.'}
+];
+var curDial=0;
+DIAL.forEach(function(d,i){
+  var b=document.createElement("button"); b.innerHTML=d.t; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curDial=i; document.querySelectorAll("#dialChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderDial(); });
+  $("dialChips").appendChild(b);
+});
+function renderDial(){ var d=DIAL[curDial]; $("dialMap").innerHTML=d.map; $("dialEx").innerHTML=d.ex; }
+renderDial();
+
+/* comparisons */
+var CMP = [
+  {label:"than + noun phrase", std:'The pilot plant consumed more energy <b>than the simulation predicted</b>.', inv:'The pilot plant consumed more energy <b>than did the simulation</b>.', note:'After <b>than</b>, the auxiliary <i>did</i> moves in front of the full noun phrase and the verb is not repeated. Both versions are correct; the inverted one is formal.'},
+  {label:"as + auxiliary", std:'City universities attract more applicants, <b>and the technical institutes do too</b>.', inv:'City universities attract more applicants, <b>as do the technical institutes</b>.', note:'<b>as + auxiliary + noun phrase</b> replaces a whole clause. The auxiliary agrees with the new subject: <i>as do the institutes</i>, <i>as does the control group</i>.'},
+  {label:"which verb moves?", std:'The treated samples have degraded faster <b>than the controls have</b>.', inv:'The treated samples have degraded faster <b>than have the controls</b>.', note:'Only the <b>auxiliary</b> moves (<i>have, did, does, will</i>). With no auxiliary in sight, English supplies <i>do / does / did</i>: <i>than did the simulation</i>.'},
+  {label:"✘ with a pronoun", std:'The night shift logged more faults <b>than he did</b>.', inv:'<s>The night shift logged more faults than did he.</s>', note:'With a <b>pronoun</b> subject there is no inversion: <i>than he did</i>, <i>as we do</i>. Inversion needs a full noun phrase.'}
+];
+var curCmp=0;
+CMP.forEach(function(c,i){
+  var b=document.createElement("button"); b.innerHTML=c.label; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curCmp=i; document.querySelectorAll("#cmpChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderCmp(); });
+  $("cmpChips").appendChild(b);
+});
+function renderCmp(){
+  var c=CMP[curCmp];
+  $("cmpOut").innerHTML = '<div class="cmpline cmpstd"><span class="lab">Standard order</span>'+c.std+'</div>'+
+    '<div class="cmpline cmpinv"><span class="lab">Inverted — formal</span>'+c.inv+'</div>'+
+    '<p class="muted" style="margin-top:8px">'+c.note+'</p>';
+}
+renderCmp();
+
+/* special cases */
+var SC = {
+  wereto:'<b>Were + subject + to + base verb</b> is the tentative future: <i>If we were to redesign the intake…</i> → <b>Were we to redesign the intake, the noise would fall.</b> It sounds more remote than <i>Should we redesign it</i>. Main clause: <b>would</b> + base verb.',
+  without:'<b>Were it not for</b> / <b>Had it not been for</b> + noun = <b>without</b>.<div class="shiftgrid"><div><span class="a">present / unreal now</span> → <span class="b">Were it not for the sensors, the crack would go unnoticed.</span></div><div><span class="a">past</span> → <span class="b">Had it not been for the checklist, the step would have been skipped.</span></div></div>The manual also pairs the <b>present</b> form with a <b>past</b> result when the cause is permanent: <i>Were it not for the sensors, the crack would have gone unnoticed.</i>',
+  manuals:'<b>Should</b> = “if… happen to”. It is the register of <b>letters, manuals and notices</b>, where the writer is polite about an unlikely event: <b>Should any discrepancy arise, contact the supervisor.</b> · <b>Should you decide to withdraw, notify the registrar in writing.</b> Note the main clause is often an <b>imperative</b>.',
+  mixed:'<b>Mixed time.</b> A past condition can produce a present result: <b>Had the firm patented the design, it would control the market today.</b> And with a modal perfect: <b>Had the units been checked, the probe would not have burned.</b> In every case the <b>main clause keeps normal order</b> — only the condition inverts.',
+  cannot:'<b>Only had, were and should can invert.</b> ✘ <i>Knew I the answer…</i> → ✔ <i>If I knew the answer…</i> · You cannot keep <i>if</i> and invert at the same time: ✘ <i>If had we known…</i> · You cannot contract the negative: ✘ <i>Shouldn’t you agree, call us</i> → ✔ <i>Should you not agree, call us.</i> · And after <i>than</i> / <i>as</i>, no inversion with a pronoun: ✘ <i>than did he</i>.'
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.wereto;
+
+/* =====================================================================
+   BUILD · assemble (two pieces) + transform (rewrite)
+===================================================================== */
+var BUILD = [
+  {ctx:'If the coolant should drop below the line, add distilled water.', frame:'{A} the coolant {V} below the line, add distilled water.', aux:["Should","Had","Were"], A:"Should", verbs:["drop","drops","will drop"], V:"drop", note:"Should + subject + base verb: a possible future condition."},
+  {ctx:'If we had logged the drift, the recall would have been avoided.', frame:'{A} we {V} the drift, the recall would have been avoided.', aux:["Had","Were","Should"], A:"Had", verbs:["logged","had logged","would have logged"], V:"logged", note:"Unreal past: Had + subject + past participle. The condition never carries would."},
+  {ctx:'If the tower were ten meters taller, aviation lights would be mandatory.', frame:'{A} the tower {V} taller, aviation lights would be mandatory.', aux:["Were","Had","Should"], A:"Were", verbs:["ten meters","was ten meters","being ten meters"], V:"ten meters", note:"Unreal present: Were + subject, and nothing is added after it."},
+  {ctx:'If it had not been for the spare seals, the line would have stopped.', frame:'{A} it {V} for the spare seals, the line would have stopped.', aux:["Had","Hadn’t","Were"], A:"Had", verbs:["not been","not have been","been not"], V:"not been", note:"Had it not been for + noun = without. Negatives never contract."},
+  {ctx:'If you should require the raw data, write to the archive.', frame:'{A} you {V} the raw data, write to the archive.', aux:["Should","Had","Were"], A:"Should", verbs:["require","required","will require"], V:"require", note:"Should = if you happen to: the register of manuals and letters."},
+  {ctx:'If we were to redesign the intake, the noise would fall.', frame:'{A} we {V} the intake, the noise would fall.', aux:["Were","Had","Should"], A:"Were", verbs:["to redesign","would redesign","redesigning"], V:"to redesign", note:"Were + subject + to + base verb: a tentative, hypothetical future. The condition never carries would."},
+  {ctx:'If the units had been checked, the probe would not have burned.', frame:'{A} the units {V}, the probe would not have burned.', aux:["Had","Were","Should"], A:"Had", verbs:["been checked","would have been checked","had been checked"], V:"been checked", note:"Passive condition: Had + subject + been + participle. The main clause keeps normal order."},
+  {ctx:'The pilot plant consumed more energy than the simulation did. (make it formal)', frame:'The pilot plant consumed more energy than {A} {V}.', aux:["did","had","were"], A:"did", verbs:["the simulation","it","the simulation did"], V:"the simulation", note:"After than, the auxiliary moves in front of a full noun phrase: than did the simulation."}
+];
+var bi=0, bAux=null, bVerb=null, bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function fillChips(boxId, list, setter){
+  var wrap=$(boxId); wrap.innerHTML="";
+  list.forEach(function(op){
+    var b=document.createElement("button"); b.innerHTML=op; b.dataset.v=op;
+    b.addEventListener("click", function(){ setter(op); wrap.querySelectorAll("button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+}
+function renderBuild(){
+  var it=BUILD[bi]; bAux=null; bVerb=null;
+  $("bctx").innerHTML = "Rewrite it: <i>"+it.ctx+"</i>";
+  fillChips("auxChips", it.aux, function(v){ bAux=v; });
+  fillChips("verbChips", it.verbs, function(v){ bVerb=v; });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+function markWrong(boxId, val){
+  var el=document.querySelector("#"+boxId+' button[data-v="'+val+'"]');
+  if(el) el.classList.add("wrongpick");
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bAux || !bVerb){ r.className="bresult bad"; r.innerHTML="Choose <b>both</b> pieces first."; return; }
+  var okA = bAux===it.A, okV = bVerb===it.V;
+  if(okA && okV){
+    var sent=it.frame.replace("{A}", '<span class="raux">'+it.A+'</span>').replace("{V}", '<span class="rverb">'+it.V+'</span>');
+    r.className="bresult good"; r.innerHTML="✅ "+sent+'<div class="bnote">'+it.note+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else {
+    if(!okA) markWrong("auxChips", bAux);
+    if(!okV) markWrong("verbChips", bVerb);
+    var which = (!okA && !okV) ? "Both pieces are wrong." : (!okA ? "The auxiliary is wrong." : "The form after the subject is wrong.");
+    r.className="bresult bad"; r.innerHTML="❌ "+which+" <span class='bnote'>Hint — "+it.note+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:'Rewrite without <i>if</i>: “If the coolant should drop below the line, add distilled water.”', accept:["should the coolant drop below the line add distilled water"], model:"Should the coolant drop below the line, add distilled water."},
+  {ctx:'Rewrite without <i>if</i>: “If the firm had patented the design, it would control the market today.”', accept:["had the firm patented the design it would control the market today"], model:"Had the firm patented the design, it would control the market today."},
+  {ctx:'Rewrite without <i>if</i>: “If the tower were taller, it would need warning lights.”', accept:["were the tower taller it would need warning lights"], model:"Were the tower taller, it would need warning lights."},
+  {ctx:'Rewrite without <i>if</i>: “If it had not been for the checklist, the step would have been skipped.”', accept:["had it not been for the checklist the step would have been skipped"], model:"Had it not been for the checklist, the step would have been skipped."},
+  {ctx:'Rewrite without <i>if</i>: “If you should decide to withdraw, notify the registrar in writing.”', accept:["should you decide to withdraw notify the registrar in writing"], model:"Should you decide to withdraw, notify the registrar in writing."},
+  {ctx:'Rewrite without <i>if</i>: “If the alarm should fail, the sprinklers trigger on heat alone.”', accept:["should the alarm fail the sprinklers trigger on heat alone"], model:"Should the alarm fail, the sprinklers trigger on heat alone."},
+  {ctx:'Rewrite without <i>if</i>: “If we had logged the drift, the recall would have been avoided.”', accept:["had we logged the drift the recall would have been avoided"], model:"Had we logged the drift, the recall would have been avoided."},
+  {ctx:'Rewrite without <i>if</i>: “If it had not been for the spare seals, the line would have stopped.”', accept:["had it not been for the spare seals the line would have stopped"], model:"Had it not been for the spare seals, the line would have stopped."},
+  {ctx:'Rewrite without <i>if</i>, keeping the meaning “without”: “If it were not for the sensors, the crack would have gone unnoticed.”', accept:["were it not for the sensors the crack would have gone unnoticed","had it not been for the sensors the crack would have gone unnoticed"], model:"Were it not for the sensors, the crack would have gone unnoticed. (or: Had it not been for the sensors…)"},
+  {ctx:'Make the comparison formal by inverting: “The pilot plant consumed more energy than the simulation did.”', accept:["the pilot plant consumed more energy than did the simulation"], model:"The pilot plant consumed more energy than did the simulation."},
+  {ctx:'Join with <i>as</i> + inversion: “City universities attract more applicants. The technical institutes do too.”', accept:["city universities attract more applicants as do the technical institutes"], model:"City universities attract more applicants, as do the technical institutes."},
+  {ctx:'Correct and rewrite: “Hadn’t the backup existed, the loss would have been total.”', accept:["had the backup not existed the loss would have been total","had it not been for the backup the loss would have been total"], model:"Had the backup not existed, the loss would have been total. (or: Had it not been for the backup…)"}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML=it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow (5 ★ · 4 ★★ · 4 ★★★)
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Structure", q:"“___ the committee known the true cost, the tender would have been canceled.”", o:["Should","Were","Had","If had"], a:2, w:"Unreal past: drop <i>if</i> and front <b>had</b> — Had the committee known…"},
+  {kind:"mc", diff:1, tag:"Structure", q:"“Should you ___ assistance, the desk is staffed around the clock.”", o:["need","will need","needed","would need"], a:0, w:"<b>Should</b> + subject + <b>base verb</b>. No future form inside the condition."},
+  {kind:"fill", diff:1, tag:"Drop the if", q:"“If the coolant should drop below the line…” → “___ the coolant drop below the line, add distilled water.” (one word)", accept:["should"], w:"<b>Should</b> opens a possible future condition."},
+  {kind:"error", diff:1, tag:"Written Expression · one word too many", words:["If","had","we","known","the","true","cost,","we","would","have","canceled","the","tender."], bad:0, fixOld:"If had we known", fixNew:"Had we known", w:"One or the other: keep <i>if</i> or invert, never both. Here the inversion is already built, so <i>if</i> is the intruder."},
+  {kind:"error", diff:1, tag:"Written Expression", words:["Hadn’t","it","been","for","the","drills,","panic","would","have","spread","quickly."], bad:0, fixOld:"Hadn’t it been", fixNew:"Had it not been", w:"Negatives do not contract in an if-less conditional: <b>Had it not been for…</b>"},
+  {kind:"error", diff:2, tag:"Written Expression", words:["Had","the","valve","would have","been","closed,","the","spill","would have","been","contained."], bad:3, fixOld:"would have been closed", fixNew:"been closed", w:"The condition never carries <i>would</i>: <b>Had the valve been closed</b>. Only the main clause takes <i>would have</i>."},
+  {kind:"mc", diff:2, tag:"Structure", q:"“Were the tower ___ meters taller, aviation lights would be mandatory.”", o:["ten","was ten","being ten","had ten"], a:0, w:"<b>Were</b> + subject + complement — nothing is added after the subject. <i>Were</i> already is the verb, so ✘ <i>Were the tower was ten…</i>"},
+  {kind:"fill", diff:2, tag:"Hypothetical", q:"“If we were to redesign the intake…” → “___ ___ ___ redesign the intake, the noise would fall.” (three words)", accept:["were we to"], w:"<b>Were + subject + to + base verb</b> for a tentative future: the subject stays between the auxiliary and <i>to</i>."},
+  {kind:"fill", diff:2, tag:"Without", q:"“If it had not been for the sensors…” → “___ ___ ___ ___ for the sensors, the crack would have gone unnoticed.” (four words)", accept:["had it not been"], w:"<b>Had it not been for</b> + noun = <i>without</i>, in the past. No contraction."},
+  {kind:"error", diff:3, tag:"Written Expression", words:["Had","we","known","the","risk,","had","we","stopped","the","test."], bad:5, fixOld:"had we stopped", fixNew:"we would have stopped", w:"After the comma the main clause keeps <b>normal order</b>: subject + would have + participle."},
+  {kind:"error", diff:3, tag:"Written Expression", words:["Knew","I","the","answer,","I","would","tell","you","at","once."], bad:0, fixOld:"Knew I", fixNew:"If I knew", w:"Only <b>had, were, should</b> can invert. A lexical verb keeps <i>if</i>."},
+  {kind:"mc", diff:3, tag:"Structure", q:"“The pilot plant consumed more energy than ___.”", o:["did the simulation predicted","the simulation predicted","predicted it","the simulation it predicted"], a:1, w:"Standard order after <i>than</i>. The inverted version drops the verb: <b>than did the simulation</b> — never both."},
+  {kind:"fill", diff:3, tag:"Comparison", q:"Formal inversion after <i>as</i>: “City universities attract more applicants, ___ ___ the technical institutes.” (two words)", accept:["as do"], w:"<b>as + auxiliary + full noun phrase</b>: as do the technical institutes."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("i8_g12_drill_best")||0); if(dscore>best){ store("i8_g12_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Exam-ready. This is the structure the test asks most — keep it that sharp." : dscore>=8?"Solid. Review the pattern dial and the error clinic, then run it again." : "Re-read Grammar 12, work through Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word (or word pair) that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, (ok?'<span class="k">\u2713 Correct.</span> ':'<span class="k">\u2717 Not that one: the green part is the error.</span> ')+'<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

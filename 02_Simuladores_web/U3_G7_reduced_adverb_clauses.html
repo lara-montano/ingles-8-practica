@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE DANGLER DETECTOR · English 8 · Unit 3 "The Economy of Language"
+  Grammar 7 — reduced adverb clauses (same-subject rule, having + p.p.,
+  passive reductions, danglers, the absolute construction)
+  Three modes: Explore (cut it) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Grammar 7 · The Dangler Detector · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --copper:#9C4511; --copperdark:#632B0A; --copperlt:#F6EAE1;
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+  header{background:linear-gradient(135deg,var(--copper),var(--copperdark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#F3CDB4; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#F6E3D6; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px} header .wrap{padding-bottom:0}
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--copperdark)} nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px} section.tab{display:none} section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--copperdark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--copperdark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px} .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-copper{background:var(--copper)} .tag-navy{background:var(--navy)}
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--copper); background:var(--copperlt); color:var(--copperdark)}
+  /* ---------- reduction spotlight ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .xcard{border-radius:12px; padding:14px 16px; margin:8px 0; position:relative}
+  .xcard .role{font-size:11px; font-weight:900; letter-spacing:.08em; text-transform:uppercase}
+  .xcard .snt{font-size:clamp(17px,3vw,23px); font-weight:800; margin-top:4px; line-height:1.6}
+  .xfull{background:var(--navylt); border:2px solid var(--navy)} .xfull .role{color:var(--navy)}
+  .xred{background:var(--copperlt); border:2px solid var(--copper)} .xred .role{color:var(--copperdark)}
+  .xred.bad{background:var(--thinklt); border-color:var(--think)} .xred.bad .role{color:var(--think)}
+  .arrowdown{text-align:center; font-size:26px; color:var(--grammar); margin:-2px 0}
+  .rconn,.rverb,.rsame,.rdiff,.rabs{border-radius:6px; padding:0 5px}
+  .rconn{background:var(--copperlt); color:var(--copperdark); box-shadow:inset 0 -2px 0 var(--copper)}
+  .rverb{background:var(--grammarlt); color:var(--grammar); box-shadow:inset 0 -2px 0 var(--grammar)}
+  .rsame{background:#D8EFE1; color:var(--greendark); box-shadow:inset 0 -2px 0 var(--green)}
+  .rdiff{background:var(--thinklt); color:var(--think); box-shadow:inset 0 -2px 0 var(--think)}
+  .rabs{background:var(--exceplt); color:var(--excep); box-shadow:inset 0 -2px 0 var(--excep)}
+  .rcut{color:#999; text-decoration:line-through}
+  .rverb.masked{color:transparent; box-shadow:inset 0 -2px 0 var(--grammar); position:relative; cursor:pointer; min-width:62px; display:inline-block}
+  .rverb.masked::after{content:"?"; position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .cond{border-radius:10px; padding:9px 12px; font-size:14px; font-weight:700; margin-top:4px}
+  .cond.ok{background:var(--greenlt); border-left:5px solid var(--green); color:var(--greendark)}
+  .cond.no{background:var(--thinklt); border-left:5px solid var(--think); color:var(--think)}
+  .changes{list-style:none; margin:10px 0 0}
+  .changes li{position:relative; padding:3px 0 3px 22px; font-size:14px; font-weight:600; color:#555}
+  .changes li::before{content:"✂"; position:absolute; left:0; top:3px; color:var(--grammar); font-weight:900}
+  .legend{display:flex; gap:10px; flex-wrap:wrap; font-size:12px; font-weight:800; margin-top:10px}
+  .legend span{border-radius:6px; padding:1px 8px}
+  /* forms dial */
+  .tensechips{display:flex; gap:6px; flex-wrap:wrap; margin:8px 0}
+  .tensechips button{border:2px solid var(--rule); background:#fff; border-radius:8px; padding:6px 11px; font:700 13px Lato,sans-serif; cursor:pointer}
+  .tensechips button.on{border-color:var(--navy); background:var(--navylt); color:var(--navy)}
+  .tenseout{background:var(--soft); border-radius:12px; padding:16px; text-align:center; margin-top:6px}
+  .tenseout .map{font-size:clamp(15px,2.5vw,20px); font-weight:800}
+  .tenseout .map .a{color:var(--navy)} .tenseout .map .b{color:var(--grammar)} .tenseout .ex{font-size:14px; color:#555; margin-top:8px; font-weight:600}
+  /* dangler detector */
+  .detsnt{font-size:clamp(17px,2.8vw,22px); font-weight:800; text-align:center; margin:10px 0; line-height:1.6}
+  .rphrase{background:var(--grammarlt); border-bottom:3px solid var(--grammar); border-radius:6px 6px 0 0; padding:0 5px}
+  .whoq{font-size:14px; font-weight:900; text-transform:uppercase; letter-spacing:.05em; color:#888; margin-top:8px}
+  .verdict{border-radius:12px; padding:13px 15px; margin-top:10px; font-size:15px; font-weight:700; display:none}
+  .verdict.show{display:block} .verdict .hd{font-size:17px; font-weight:900; display:block; margin-bottom:4px}
+  .verdict.dang{background:var(--thinklt); border:2px solid var(--think); color:#5A1B14}
+  .verdict.fine{background:var(--greenlt); border:2px solid var(--green); color:var(--greendark)}
+  .repair{background:#fff; border-radius:9px; padding:7px 10px; margin-top:6px; font-size:15px; font-weight:700; color:#333}
+  .repair b{color:var(--green)}
+  .repair .lab{display:block; font-size:11px; font-weight:900; text-transform:uppercase; letter-spacing:.05em; color:#999}
+  /* special cases · absolutes · mistakes */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:18px; overflow:hidden; width:max-content; max-width:100%; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff} .scout b{color:var(--excep)}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .absout{background:var(--soft); border-radius:12px; padding:14px; margin-top:6px; text-align:center}
+  .absout .s{font-size:clamp(16px,2.6vw,21px); font-weight:800}
+  .absout .g{font-size:14px; font-weight:600; color:#555; margin-top:8px}
+  .mistakes{list-style:none} .mistakes b{color:var(--think)} .mistakes .y{color:var(--green); font-weight:800}
+  .mistakes li{position:relative; padding:5px 0 5px 24px; font-size:15px; font-weight:600}
+  .mistakes li::before{content:"✘"; position:absolute; left:0; top:5px; color:var(--think); font-weight:900}
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--copper); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--copperdark); border:2px solid var(--copper)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--copper); border-radius:12px; overflow:hidden; width:max-content; max-width:100%; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--copper)}
+  .segbig button.on{background:var(--copper); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--copper); background:var(--copperlt); color:var(--copperdark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(16px,2.7vw,21px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--copperdark); margin-left:auto}
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--copperdark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--copper); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)} .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(16px,2.7vw,20px); font-weight:800; line-height:1.8; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick{background:var(--think); color:#fff}
+  .stn .w.rightpick{background:var(--green); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)} .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block} .why .k{color:var(--green); font-weight:900} .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center} .endbox{text-align:center; padding:10px 0}
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--copperdark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none} details.teacher li{margin:4px 0 4px 18px}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--copper); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">✂️</span>
+  <div class="wrap">
+    <div class="kicker">English 8 · Unit 3 · The Economy of Language</div>
+    <h1>🔍 The Dangler Detector</h1>
+    <div class="sub"><b>Grammar 7</b> — reduced adverb clauses: the same-subject rule, <i>having</i> + participle, passive reductions, danglers, absolutes. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>✂️ Explore the cut</span><span>🔧 Build a reduction</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">✂️ Explore<small>watch it shrink</small></button>
+    <button data-tab="build">🔧 Build<small>reduce it yourself</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>Cutting an adverb clause down to a phrase</h2>
+      <p class="muted">An adverb clause reduces <b>only when both clauses share the same subject</b>. Delete the subject; convert the verb. <b>-ing</b> = active · <b>-ed</b> = passive · <b>having + participle</b> = earlier action. Pick a sentence and watch the cut. <span class="es">(Solo se reduce si el sujeto es el mismo en las dos cláusulas.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the reduced verb form, guess, then reveal</label>
+
+      <h3>1 · Choose a full sentence</h3>
+      <div class="chips" id="scChips"></div>
+
+      <div class="xcard xfull"><div class="role">Full clause — subject + verb, spelled out</div><div class="snt" id="fullSnt"></div></div>
+      <div class="cond" id="condBox"></div>
+      <div class="arrowdown">⬇</div>
+      <div class="xcard xred" id="redCard"><div class="role" id="redRole">Reduced — same subject, fewer words</div><div class="snt" id="redSnt"></div></div>
+      <div style="text-align:center"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the reduced verb ✓</button></div>
+
+      <h3>What was cut?</h3>
+      <ul class="changes" id="changes"></ul>
+      <div class="legend"><span class="rconn">connector</span><span class="rverb">participle</span><span class="rsame">shared subject</span><span class="rdiff">different subject</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">💡 The reduction dial</span>
+      <h2>Six cuts — and the connectors that stay</h2>
+      <p class="muted">Tap a form to see the clause it replaces. <span class="es">(Cada forma reducida codifica voz y orden temporal.)</span></p>
+      <div class="tensechips" id="dialChips"></div>
+      <div class="tenseout"><div class="map" id="dialMap"></div><div class="ex" id="dialEx"></div></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">🔍 The detector — who does the -ing?</span>
+      <h2>Find the dangling participle</h2>
+      <p class="muted">Say which noun the writer meant the phrase to describe — the doer for an <b>-ing</b> phrase, the receiver for an <b>-ed</b> one. The machine then applies the reader's rule: the participle borrows <b>the subject of the main clause</b>, whatever noun that turns out to be. <span class="es">(El participio toma el sujeto de la principal, no el que tenías en mente.)</span></p>
+      <div class="chips" id="dgChips"></div>
+      <div class="detsnt" id="dgSnt"></div>
+      <div class="whoq">Which noun should the <span style="color:var(--grammar)">highlighted phrase</span> describe?</div>
+      <div class="bchips" id="dgOpts" style="margin-top:6px"></div>
+      <div class="verdict" id="dgOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ The absolute construction</span>
+      <h2>The one reduction that keeps its own subject</h2>
+      <p class="muted">Formal, compact and <b>immune to dangling</b>: the subject travels with the phrase, so it escapes the same-subject rule entirely. Recognize it on the exam; deploy it in reports. <span class="es">(Lleva su propio sujeto, por eso nunca queda colgado.)</span></p>
+      <div class="chips" id="absChips"></div>
+      <div class="absout"><div class="s" id="absSnt"></div><div class="g" id="absGloss"></div></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Exceptions &amp; traps</span>
+      <h2>Frozen formulas, <i>having</i>, <i>being</i>, and the connector that vanishes</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="frozen" class="on">frozen formulas</button><button data-v="having">having</button><button data-v="being">being</button><button data-v="conn">connector</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-copper">🧠 Why English works this way</span>
+      <h2>The participle pawned its subject</h2>
+      <p class="muted">That is the entire reason reductions require shared subjects — and the entire mechanism of the dangler. In <i>Having finished the report, the printer jammed</i>, the rule hands <i>having finished</i> to <b>the printer</b>, and the sentence claims your printer writes reports. The grammar did not fail; it worked perfectly on the wrong noun. Before reducing, always ask: <b>who will the reader's rule pick?</b> <span class="es">(La gramática no falló: se aplicó al sustantivo equivocado.)</span></p>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">🚫 Traps for Spanish speakers</span>
+      <h2>Three ways this goes wrong</h2>
+      <ul class="mistakes">
+        <li><b>The dangler.</b> Spanish tolerates a loose gerund clause; English does not. <b>Having finished the report, the printer jammed.</b> → <span class="y">Having finished the report, I found the printer jammed</span> / <span class="y">After I finished the report, the printer jammed.</span></li>
+        <li><b>Reducing when the subjects differ.</b> <b>While the kiln was cooling, the apprentices while cooling cleaned the molds.</b> → if the subjects differ, <span class="y">keep the full clause.</span></li>
+        <li><b>Active form for a passive meaning.</b> <b>When heating, aluminum melts</b> — aluminum does not heat itself. → <span class="y">When heated, aluminum melts.</span> Same trap in <b>Once calibrating</b> → <span class="y">Once calibrated</span> and <b>While transporting</b> → <span class="y">While being transported</span>.</li>
+      </ul>
+      <p class="muted" style="margin-top:8px"><span class="es">(El español admite gerundios sueltos; el inglés los
+        entrega mecánicamente al sujeto de la principal.)</span></p>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> reproduces Grammar 7's reduction table, the dial of forms, the <i>tipbox</i> on the pawned subject, the four exceptions and the three pitfalls.</li>
+          <li><b>Build</b> is productive: <i>assemble</i> the legal reduction (including "keep full" when the subjects differ), then <i>transform</i> exercises 1–4 of Grammar 7 and Task set 11.</li>
+          <li><b>Drill</b> is one graded engine in both exam formats (★ completion &amp; simple error · ★★ having/being &amp; the first danglers · ★★★ danglers and absolutes), with score, streak and best result on this device.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-copper">🔧 Your turn to produce</span>
+      <h2>Build a reduction</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the full sentence, then choose the opening the reduction needs — or refuse to reduce when the subjects differ. <b>Guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">The reduced opening should be…</div><div class="bchips" id="verbChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New sentence →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Rewrite the whole sentence as the instruction asks. Type it and check against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type the full rewritten sentence"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next sentence →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ legal cuts &amp; voice · ★★ <i>having</i>, <i>being</i> &amp; the first danglers · ★★★ danglers and absolutes. Both exam formats: complete the sentence, or click the word that is wrong. Keep your streak alive. <span class="es">(Misma escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 8 · Unit 3 «The Economy of Language» · Grammar 7 — reduced adverb clauses · Level C1
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE DANGLER DETECTOR — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 8 Class Manual (Grammar 7).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE · reduction spotlight
+===================================================================== */
+var SCEN = [
+  {label:"⏱️ while + -ing", same:true, cond:"✔ Same subject in both clauses (<b>she</b>) → the reduction is legal.",
+   full:'<span class="rconn">While</span> <span class="rsame">she</span> was calibrating the sensor, <span class="rsame">she</span> found a loose wire.',
+   red:'<span class="rconn">While</span> <span class="rverb">calibrating</span> the sensor, <span class="rsame">she</span> found a loose wire.',
+   steps:["delete the clause subject and <i>be</i>: <span class='rcut'>she was</span>", "keep the verb as <b>-ing</b> — she is the doer, so the form is active", "the connector <b>while</b> stays"]},
+  {label:"🔥 when + -ed (passive)", same:true, cond:"✔ <i>it</i> = <i>aluminum</i>: same subject → legal.",
+   full:'<span class="rconn">When</span> <span class="rsame">it</span> is heated above 660 °C, <span class="rsame">aluminum</span> melts.',
+   red:'<span class="rconn">When</span> <span class="rverb">heated</span> above 660 °C, <span class="rsame">aluminum</span> melts.',
+   steps:["delete <span class='rcut'>it is</span>", "the subject <b>receives</b> the action, so the participle is <b>-ed</b>: <b>heated</b>", "<b>When heating</b> would claim aluminum heats itself — a classic trap"]},
+  {label:"😤 although + adjective", same:true, cond:"✔ <i>he</i> = <i>the operator</i> → legal.",
+   full:'<span class="rconn">Although</span> <span class="rsame">he</span> was exhausted, <span class="rsame">the operator</span> finished the shift.',
+   red:'<span class="rconn">Although</span> <span class="rverb">exhausted</span>, <span class="rsame">the operator</span> finished the shift.',
+   steps:["delete <span class='rcut'>he was</span>", "with <i>be</i> + adjective, only the subject and <i>be</i> go: <b>although exhausted</b>", "a noun works the same way: <b>Although the youngest member, she chaired the session.</b>"]},
+  {label:"⏮️ having + participle", same:true, cond:"✔ Same subject (<b>he</b>) → legal, and the order of events matters.",
+   full:'<span class="rconn">After</span> <span class="rsame">he</span> had signed the contract, <span class="rsame">he</span> read it.',
+   red:'<span class="rverb">Having signed</span> the contract, <span class="rsame">he</span> read it. <span style="font-size:.72em; color:#777">(= After signing the contract, he read it.)</span>',
+   steps:["delete <span class='rcut'>he had</span>", "<b>having + participle</b> marks the <b>earlier</b> action: the signing finished first", "<b>After signing</b> is the lighter alternative; both are correct"]},
+  {label:"🧠 cause — no connector", same:true, cond:"✔ Same subject (<b>we</b>) → legal.",
+   full:'<span class="rconn">Because</span> <span class="rsame">we</span> knew the risks, <span class="rsame">we</span> bought insurance.',
+   red:'<span class="rverb">Knowing</span> the risks, <span class="rsame">we</span> bought insurance.',
+   steps:["delete <span class='rcut'>we</span>", "with <b>because / since</b> (cause) the <b>connector itself disappears</b>", "the bare <b>-ing</b> phrase carries the meaning “because…”"]},
+  {label:"❄️ while + being + p.p.", same:true, cond:"✔ <i>they</i> = <i>the samples</i> → legal.",
+   full:'<span class="rconn">While</span> <span class="rsame">they</span> are being transported, <span class="rsame">the samples</span> must stay frozen.',
+   red:'<span class="rconn">While</span> <span class="rverb">being transported</span>, <span class="rsame">the samples</span> must stay frozen.',
+   steps:["delete <span class='rcut'>they are</span>", "the meaning is an <b>ongoing passive</b>, so the reduction keeps <b>being</b>", "<b>While transporting</b> would say the samples transport something"]},
+  {label:"⛔ different subjects", same:false, cond:"✘ Two different subjects (<b>the kiln</b> / <b>the apprentices</b>) → no reduction is possible.",
+   full:'<span class="rconn">While</span> <span class="rdiff">the kiln</span> was cooling, <span class="rsame">the apprentices</span> cleaned the molds.',
+   red:'<b>Keep the full clause.</b> <span style="font-size:.78em; color:#777">The apprentices were not cooling.</span>',
+   steps:["the reduction rule needs <b>one</b> shared subject", "any cut here produces a dangler: <span class='rcut'>While cooling, the apprentices cleaned the molds</span>", "when the subjects differ, write the clause out in full"]}
+];
+var curScen = 0, predictMode = false, revealed = false;
+SCEN.forEach(function(s,i){
+  var b = document.createElement("button"); b.innerHTML = s.label; b.dataset.k = i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curScen=i; document.querySelectorAll("#scChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); revealed=false; renderScen(); });
+  $("scChips").appendChild(b);
+});
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderScen(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderScen(); });
+function renderScen(){
+  var s = SCEN[curScen];
+  $("fullSnt").innerHTML = s.full;
+  $("redSnt").innerHTML = s.red;
+  $("condBox").className = "cond " + (s.same ? "ok" : "no");
+  $("condBox").innerHTML = s.cond;
+  $("redCard").className = "xcard xred" + (s.same ? "" : " bad");
+  $("redRole").textContent = s.same ? "Reduced — same subject, fewer words" : "Not reducible — the subjects differ";
+  var ul=$("changes"); ul.innerHTML="";
+  s.steps.forEach(function(c){ var li=document.createElement("li"); li.innerHTML=c; ul.appendChild(li); });
+  var mask = predictMode && !revealed && s.same;
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  if(mask){
+    document.querySelectorAll("#redSnt .rverb").forEach(function(el){ el.classList.add("masked"); el.addEventListener("click", function(){ revealed=true; renderScen(); }); });
+  }
+}
+renderScen();
+
+/* reduction dial */
+var DIAL = [
+  {t:"-ing (active)", map:'<span class="a">while she was calibrating</span> → <span class="b">while calibrating</span>', ex:'Delete the subject and <i>be</i>; the verb keeps <b>-ing</b>. The shared subject must be the <b>doer</b>.'},
+  {t:"-ed (passive)", map:'<span class="a">when it is heated</span> → <span class="b">when heated</span>', ex:'The shared subject <b>receives</b> the action. <b>When heated above 660 °C, aluminum melts.</b>'},
+  {t:"having + p.p.", map:'<span class="a">after he had signed</span> → <span class="b">having signed / after signing</span>', ex:'Marks the <b>earlier</b> action. <b>Having tested every unit, the team shipped the batch.</b>'},
+  {t:"being + p.p.", map:'<span class="a">while they are being transported</span> → <span class="b">while being transported</span>', ex:'An ongoing passive keeps <b>being</b>. <b>While being transported, the samples must stay frozen.</b>'},
+  {t:"+ adjective / noun", map:'<span class="a">although he was exhausted</span> → <span class="b">although exhausted</span>', ex:'With <i>be</i> + adjective or noun, only the subject and <i>be</i> go: <b>Although the youngest member, she chaired the session.</b>'},
+  {t:"cause: no connector", map:'<span class="a">because we knew the risks</span> → <span class="b">knowing the risks</span>', ex:'With <b>because / since</b> the connector itself <b>disappears</b>: <b>Knowing the risks, we bought insurance.</b>'},
+  {t:"which connectors stay", map:'<span class="a">while · when · before · after · until · once</span> · <span class="b">although · though · if · unless · whether</span>', ex:'These connectors normally <b>stay</b> in the reduced clause; only the cause connectors drop out.'}
+];
+var curDial=0;
+DIAL.forEach(function(d,i){
+  var b=document.createElement("button"); b.textContent=d.t; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curDial=i; document.querySelectorAll("#dialChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderDial(); });
+  $("dialChips").appendChild(b);
+});
+function renderDial(){ var d=DIAL[curDial]; $("dialMap").innerHTML=d.map; $("dialEx").innerHTML=d.ex; }
+renderDial();
+
+/* the dangler detector */
+var DANG = [
+  {label:"🖨️ the printer", snt:'<span class="rphrase">Having finished the report</span>, the printer jammed.', opts:["a person (the writer)","the printer","the report"], meant:0, main:"the printer", dangler:true,
+   note:"The rule hands <i>having finished</i> to <b>the printer</b> — and printers do not write reports.",
+   fixA:'Having finished the report, <b>I</b> found the printer jammed.', fixB:'<b>After I finished the report</b>, the printer jammed.'},
+  {label:"🚗 the radiator", snt:'<span class="rphrase">Driving through the mountains</span>, the radiator began to overheat.', opts:["the radiator","the people in the car","the mountains"], meant:1, main:"the radiator", dangler:true,
+   note:"A radiator cannot drive. The participle borrowed the wrong noun.",
+   fixA:'Driving through the mountains, <b>we noticed</b> the radiator overheating.', fixB:'<b>While we were driving</b> through the mountains, the radiator began to overheat.'},
+  {label:"🎞️ the footage", snt:'<span class="rphrase">While reviewing the footage</span>, several anomalies appeared.', opts:["several anomalies","the inspectors","the footage"], meant:1, main:"several anomalies", dangler:true,
+   note:"Anomalies do not review footage; the reviewers are missing from the main clause.",
+   fixA:'While reviewing the footage, <b>the inspectors found</b> several anomalies.', fixB:'<b>While the footage was being reviewed</b>, several anomalies appeared.'},
+  {label:"📶 the router", snt:'<span class="rphrase">While updating the firmware</span>, the router must stay powered.', opts:["the router","a technician","the firmware"], meant:1, main:"the router", dangler:true,
+   note:"The router does not update its own firmware in this sentence — a technician does.",
+   fixA:'<b>While the firmware is being updated</b>, the router must stay powered.', fixB:'While updating the firmware, <b>keep the router powered</b>.'},
+  {label:"🧪 the powder", snt:'<span class="rphrase">When mixed with water</span>, the powder forms a conductive paste.', opts:["the powder","the water","a chemist"], meant:0, main:"the powder", dangler:false,
+   note:"The powder is the thing mixed, and the powder is the main-clause subject: the passive reduction lands exactly where it should."},
+  {label:"📏 the instrument", snt:'<span class="rphrase">Once calibrated</span>, the instrument holds its accuracy for a year.', opts:["the technician","the instrument","the accuracy"], meant:1, main:"the instrument", dangler:false,
+   note:"The instrument is calibrated and the instrument holds its accuracy: one subject, one legal reduction."}
+];
+var curDang = 0, dangPicked = false;
+DANG.forEach(function(d,i){
+  var b=document.createElement("button"); b.innerHTML=d.label; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curDang=i; document.querySelectorAll("#dgChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderDang(); });
+  $("dgChips").appendChild(b);
+});
+function renderDang(){
+  var d=DANG[curDang]; dangPicked=false;
+  $("dgSnt").innerHTML = d.snt;
+  var wrap=$("dgOpts"); wrap.innerHTML="";
+  d.opts.forEach(function(o,j){
+    var b=document.createElement("button"); b.textContent=o; b.dataset.j=j;
+    b.addEventListener("click", function(){ if(dangPicked) return; dangPicked=true; showDang(j); document.querySelectorAll("#dgOpts button").forEach(function(x){ x.classList.toggle("on", x===b); }); });
+    wrap.appendChild(b);
+  });
+  $("dgOut").className="verdict"; $("dgOut").innerHTML="";
+}
+function showDang(j){
+  var d=DANG[curDang], out=$("dgOut"), html="";
+  html += "<b>You say:</b> " + d.opts[j] + (j===d.meant ? " — that is what the writer means." : " — but re-read: the writer means <b>" + d.opts[d.meant] + "</b>.") + "<br>";
+  html += "<b>The reader's rule takes:</b> the subject of the main clause — <b>" + d.main + "</b>.";
+  if(d.dangler){
+    out.className="verdict show dang";
+    html = '<span class="hd">⚠️ Dangling participle</span>' + html + "<br>" + d.note;
+    html += '<div class="repair"><span class="lab">Repair 1 — name the right subject in the main clause</span>' + d.fixA + "</div>";
+    html += '<div class="repair"><span class="lab">Repair 2 — restore the full clause</span>' + d.fixB + "</div>";
+  } else {
+    out.className="verdict show fine";
+    html = '<span class="hd">✔ Legal reduction</span>' + html + "<br>" + d.note;
+  }
+  out.innerHTML = html;
+}
+renderDang();
+
+/* the absolute construction */
+var ABS = [
+  {label:"🧪 The tests complete", s:'<span class="rabs">The tests</span> <span class="rverb">complete</span>, the team shipped the batch.', g:"= When the tests were complete… The phrase carries its own subject (<i>the tests</i>), so it never borrows the main one."},
+  {label:"🌤️ Weather permitting", s:'<span class="rabs">Weather</span> <span class="rverb">permitting</span>, the crane arrives on Monday.', g:"A fixed formula: = if the weather permits. Its subject is <i>weather</i>, not <i>the crane</i>."},
+  {label:"💰 Its budget exhausted", s:'<span class="rabs">Its budget</span> <span class="rverb">exhausted</span>, the project stalled.', g:"= Because its budget was exhausted… A participle with its own subject and no connector."},
+  {label:"📋 The budget approved", s:'<span class="rabs">The budget</span> <span class="rverb">approved</span>, the department ordered the spectrometer.', g:"= After the budget was approved… Not a dangler, even though <i>the department</i> follows."},
+  {label:"✍️ Her doubts noted", s:'She signed off, <span class="rabs">her doubts</span> <span class="rverb">noted</span> in the margin.', g:"An absolute can also follow the main clause."},
+  {label:"⚖️ All things considered", s:'<span class="rabs">All things</span> <span class="rverb">considered</span>, the launch went smoothly.', g:"Another fixed formula; its own subject is <i>all things</i>."}
+];
+var curAbs=0;
+ABS.forEach(function(a,i){
+  var b=document.createElement("button"); b.innerHTML=a.label; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curAbs=i; document.querySelectorAll("#absChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderAbs(); });
+  $("absChips").appendChild(b);
+});
+function renderAbs(){ var a=ABS[curAbs]; $("absSnt").innerHTML=a.s; $("absGloss").innerHTML=a.g; }
+renderAbs();
+
+/* special cases */
+var SC = {
+  frozen:"<b>Frozen formulas of condition.</b> Reduced clauses so common they became fixed phrases: <b>if necessary · if any · if possible · unless otherwise stated · where applicable · when in doubt</b>. <i>Repeat the test if necessary. · When in doubt, consult the checklist.</i>",
+  having:"<b>Having + participle marks sequence.</b> <i>Having tested every unit, the team shipped the batch.</i> — testing finished before shipping. Use it whenever the order of the two actions is part of the meaning; use a plain <i>-ing</i> when they overlap.",
+  being:"<b>Passive reductions keep <i>being</i> when the meaning is ongoing.</b> <i>While <b>being transported</b>, the samples must stay frozen.</i> Drop <i>being</i> only when the meaning is a finished state: <i>Once calibrated, the instrument holds its accuracy.</i>",
+  conn:"<b>The connector usually stays:</b> while, when, before, after, until, once, although, though, if, unless, whether. <b>With because / since (cause) the connector itself disappears:</b> <i><b>Knowing</b> the risks, we bought insurance.</i> (= Because we knew the risks…)"
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.frozen;
+
+/* =====================================================================
+   BUILD · assemble (choose the reduction) + transform (rewrite it)
+===================================================================== */
+var BUILD = [
+  {full:'<b>Before you enter</b> the clean room, you must remove all jewelry.', frame:'{V} the clean room, you must remove all jewelry.', options:["Before entering","Before entered","Before you entering"], correct:"Before entering", note:"Same subject (you) → delete it and use the -ing form; the connector stays."},
+  {full:'<b>If it is stored</b> below zero, the adhesive loses its strength.', frame:'{V} below zero, the adhesive loses its strength.', options:["If storing","If stored","If it storing"], correct:"If stored", note:"The adhesive is stored by someone else — passive meaning takes -ed."},
+  {full:'<b>After the team had verified</b> the readings, the team released the report.', frame:'{V} the readings, the team released the report.', options:["Having been verified","Having verified","Being verified"], correct:"Having verified", note:"The team did the verifying first: having + participle marks the earlier action."},
+  {full:'<b>Because it was exposed</b> to salt air, the frame corroded within a year.', frame:'{V} to salt air, the frame corroded within a year.', options:["Exposing","Having exposed","Exposed"], correct:"Exposed", note:"Cause → the connector disappears; the frame receives the action, so -ed."},
+  {full:'<b>Although she was the youngest member</b>, she chaired the session.', frame:'{V}, she chaired the session.', options:["Although the youngest member","Although was the youngest member","Although she the youngest"], correct:"Although the youngest member", note:"With be + noun, only the subject and be go; the noun phrase stays after the connector."},
+  {full:'<b>While the solution was cooling</b>, the technician recorded the temperature.', frame:'{V}', options:["While cooling","While being cooled","Keep the full clause"], correct:"Keep the full clause", note:"The solution cools, the technician records: different subjects → no reduction."},
+  {full:'<b>While they are being transported</b>, the samples must stay frozen.', frame:'{V}, the samples must stay frozen.', options:["While transporting","While being transported","Keep the full clause"], correct:"While being transported", note:"Same subject (they = the samples), so the cut is legal; and an ongoing passive keeps being."},
+  {full:'<b>Because he knew</b> the corridor by heart, the guard walked it in the dark.', frame:'{V} the corridor by heart, the guard walked it in the dark.', options:["Known","Knowing","Having been known"], correct:"Knowing", note:"Cause → the connector drops out and the verb becomes -ing."},
+  {full:'<b>When you are in doubt</b>, consult the checklist.', frame:'{V}, consult the checklist.', options:["When doubting","When in doubt","When doubted"], correct:"When in doubt", note:"A frozen formula of condition: when in doubt."}
+];
+var bi=0, bPick=null, bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function renderBuild(){
+  var it=BUILD[bi]; bPick=null;
+  $("bctx").innerHTML = "Full sentence: "+it.full;
+  var wrap=$("verbChips"); wrap.innerHTML="";
+  it.options.forEach(function(op){
+    var b=document.createElement("button"); b.textContent=op; b.dataset.v=op;
+    b.addEventListener("click", function(){ bPick=op; document.querySelectorAll("#verbChips button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bPick){ r.className="bresult bad"; r.innerHTML="Choose the reduced opening first."; return; }
+  if(bPick===it.correct){
+    var sent = it.correct==="Keep the full clause"
+      ? '⛔ Correct — keep it full: '+it.full.replace("<b>",'<span class="rdiff">').replace("</b>","</span>")
+      : "✅ "+it.frame.replace("{V}", '<span class="rverb">'+it.correct+'</span>');
+    r.className="bresult good"; r.innerHTML=sent+'<div class="bnote">'+it.note+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else {
+    document.querySelector('#verbChips button[data-v="'+bPick+'"]').classList.add("wrongpick");
+    r.className="bresult bad"; r.innerHTML="❌ Not that one. <span class='bnote'>Hint — "+it.note+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:'Reduce: “While she was reviewing the logs, she noticed a gap of six minutes.”', accept:["while reviewing the logs she noticed a gap of six minutes"], model:"While reviewing the logs, she noticed a gap of six minutes."},
+  {ctx:'Reduce: “Although they were warned twice, the contractors kept the old procedure.”', accept:["although warned twice the contractors kept the old procedure","though warned twice the contractors kept the old procedure"], model:"Although warned twice, the contractors kept the old procedure."},
+  {ctx:'Reduce: “If it is handled with gloves, the film keeps its coating intact.”', accept:["if handled with gloves the film keeps its coating intact"], model:"If handled with gloves, the film keeps its coating intact."},
+  {ctx:'Reduce with <i>having</i>: “After they had analyzed the fragments, the investigators wrote the report.”', accept:["having analyzed the fragments the investigators wrote the report","having analysed the fragments the investigators wrote the report","after analyzing the fragments the investigators wrote the report","after analysing the fragments the investigators wrote the report"], model:"Having analyzed the fragments, the investigators wrote the report."},
+  {ctx:'Reduce: “Because he knew the corridor by heart, the guard walked it in the dark.”', accept:["knowing the corridor by heart the guard walked it in the dark"], model:"Knowing the corridor by heart, the guard walked it in the dark."},
+  {ctx:'Fix the dangler — <b>the team</b> sealed the chamber: “Having sealed the chamber, the experiment began.”', accept:["having sealed the chamber the team began the experiment","having sealed the chamber the team started the experiment","after sealing the chamber the team began the experiment"], model:"Having sealed the chamber, the team began the experiment."},
+  {ctx:'Fix the dangler — <b>the technician</b> was inspecting, and the verb is <b>found</b>: “While inspecting the wing, a hairline crack appeared.”', accept:["while inspecting the wing the technician found a hairline crack"], model:"While inspecting the wing, the technician found a hairline crack."},
+  {ctx:'Fix the dangler — <b>the operator</b> opened the valve, and the verb is <b>shattered</b>: “Opening the valve too fast, the gauge shattered.”', accept:["opening the valve too fast the operator shattered the gauge"], model:"Opening the valve too fast, the operator shattered the gauge."},
+  {ctx:'Compress (use <b>its predecessor</b>): “When it is compared with the model that came before it, the new pump is more efficient.”', accept:["compared with its predecessor the new pump is more efficient","compared to its predecessor the new pump is more efficient","when compared with its predecessor the new pump is more efficient","when compared to its predecessor the new pump is more efficient"], model:"Compared with its predecessor, the new pump is more efficient."},
+  {ctx:'Rewrite the first clause as an <b>absolute construction</b>: “Because its budget was exhausted, the project stalled.”', accept:["its budget exhausted the project stalled","its budget having been exhausted the project stalled"], model:"Its budget exhausted, the project stalled."}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML=it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow (13 items · 5★ / 4★★ / 4★★★)
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Complete the sentence", q:"When ___ above 660 °C, aluminum melts.", o:["heating","heated","it heating","having heated"], a:1, w:"Aluminum does not heat itself: a passive meaning takes the -ed participle. Having heated would mark an earlier active action."},
+  {kind:"mc", diff:1, tag:"Complete the sentence", q:"___ the clean room, you must remove all jewelry.", o:["Before to enter","Before you entering","Before entering","Before being entered"], a:2, w:"Same subject (you) → delete it and use -ing; the connector before stays. You do the entering, so the form is active."},
+  {kind:"error", diff:1, tag:"Find the error", words:["Once","calibrating,","the","flowmeter","drifts","less","than","one","percent","a","year."], bad:1, fixOld:"Once calibrating", fixNew:"Once calibrated", w:"The flowmeter is calibrated by a technician — passive meaning, so -ed."},
+  {kind:"error", diff:1, tag:"Find the error", words:["While","waited","for","the","results,","the","team","cleaned","the","equipment."], bad:1, fixOld:"While waited", fixNew:"While waiting", w:"The team does the waiting, so the reduction is active: -ing. The -ed form would make the team the thing waited for."},
+  {kind:"fill", diff:1, tag:"Reduce it", q:"“Because he knew the corridor by heart, the guard walked it in the dark.” → ___ the corridor by heart, the guard walked it in the dark. (one word)", accept:["knowing"], w:"With because/since the connector disappears and the verb becomes -ing: Knowing…"},
+  {kind:"mc", diff:2, tag:"Complete the sentence", q:"___ the calculations, the reviewer signed the release.", o:["Checked","Having been checked","To checking","Having checked"], a:3, w:"The reviewer did the checking first: having + participle marks the earlier active action."},
+  {kind:"error", diff:2, tag:"Find the error", words:["While","transporting,","the","cylinders","must","remain","chained","upright."], bad:1, fixOld:"While transporting", fixNew:"While being transported", w:"The cylinders are transported; an ongoing passive keeps being."},
+  {kind:"fill", diff:2, tag:"Earlier action", q:"“After the team had verified the readings, the team released the report.” → ___ the readings, the team released the report. (two words)", accept:["having verified","after verifying"], w:"having + participle (or after + -ing): the verifying finished before the release."},
+  {kind:"error", diff:2, tag:"Find the error", words:["Having","secured","the","scaffolding,","the","hoist","began","lifting","the","beams."], bad:5, fixOld:"the hoist began", fixNew:"the crew began", w:"Dangler: the participle borrows the main-clause subject, and a hoist does not secure its own scaffolding. Name the people who did."},
+  {kind:"error", diff:3, tag:"Find the error", words:["The","budget","approving,","the","department","ordered","the","spectrometer","in","September."], bad:2, fixOld:"The budget approving", fixNew:"The budget approved", w:"Absolute construction: the budget is approved by someone else, so the participle is passive. -ing would claim the budget approves something."},
+  {kind:"mc", diff:3, tag:"Complete the sentence", q:"___, the crane arrives on Monday.", o:["Weather permitted","Weather permitting","Weather is permitting","Permitting the weather"], a:1, w:"Absolute construction: it keeps its own subject (weather) and takes the -ing participle."},
+  {kind:"fill", diff:3, tag:"Fix the dangler", q:"“Having sealed the chamber, the experiment began.” (the team sealed it) → Having sealed the chamber, ___ the experiment. (three words)", accept:["the team began","the team started"], w:"Give the main clause the subject that does the sealing: the team began the experiment."},
+  {kind:"fill", diff:3, tag:"Build an absolute", q:"“Because its budget was exhausted, the project stalled.” → Its budget ___, the project stalled. (one word)", accept:["exhausted"], w:"Absolute construction: its own subject (its budget) + participle, and no connector."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("i8_g7_drill_best")||0); if(dscore>best){ store("i8_g7_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"No danglers left. Ready for the ★★★ tasks in the homework book." : dscore>=8?"Solid cutting — review the exceptions card and the detector, then go again." : "Re-read Grammar 7, work through Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, (ok?'<span class="k">\u2713 Correct.</span> ':'<span class="k">\u2717 Not that one: the green part is the error.</span> ')+'<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

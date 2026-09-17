@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE NESTING MACHINE · English 8 · Unit 2 "Clauses Within Clauses"
+  Grammar 5 — adjective clauses (connector vs. connector/subject, whose,
+  preposition + which/whom, quantifier + of which/whom, the comma rule).
+  Three modes: Explore (nesting) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Grammar 5 · The Nesting Machine · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --plum:#7A3B69; --plumdark:#4F2544; --plumlt:#F2E7EF;
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0} html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--plum),var(--plumdark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#E4C4DA; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900} header .sub{color:#EFD9E8; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px} header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--plumdark)} nav button small{display:block; font-size:11px; font-weight:700; opacity:.8} main{padding-top:18px}
+  section.tab{display:none} section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--plumdark); margin-bottom:6px} .card h3{font-size:15px; color:var(--plumdark); margin:14px 0 6px} .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic} .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-plum{background:var(--plum)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--plum); background:var(--plumlt); color:var(--plumdark)}
+
+  /* ---------- nesting visualizer ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .xcard{border-radius:12px; padding:14px 16px; margin:8px 0; position:relative}
+  .xcard .role{font-size:11px; font-weight:900; letter-spacing:.08em; text-transform:uppercase}
+  .xcard .snt{font-size:clamp(17px,3vw,23px); font-weight:800; margin-top:6px; line-height:1.85} .xmain{background:var(--navylt); border:2px solid var(--navy)}
+  .xmain .role{color:var(--navy)} .xmain.bad{background:var(--thinklt); border-color:var(--think)} .xmain.bad .role{color:var(--think)}
+  .embed{display:inline-block; background:var(--plumlt); border:2px solid var(--plum); border-radius:10px; padding:0 8px; margin:2px 1px}
+  .embed.bad{background:var(--thinklt); border-color:var(--think)}
+  .rcn{background:#fff; color:var(--plumdark); border-radius:6px; padding:0 5px; box-shadow:inset 0 -3px 0 var(--plum)}
+  .rvb{background:var(--grammarlt); color:var(--grammar); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--grammar)}
+  .rsb{background:#D8EFE1; color:var(--greendark); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--green)} .rx{color:var(--think); font-weight:900}
+  .cm{color:var(--think); font-size:1.4em; font-weight:900; line-height:0; padding:0 1px}
+  .rcn.masked{color:transparent; position:relative; cursor:pointer; min-width:60px; display:inline-block}
+  .rcn.masked::after{content:"?"; position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .caption{font-size:12px; color:#888; font-weight:700; text-align:center}
+
+  .anat{display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:12px}
+  .anat .cell{background:#fff; border:2px solid var(--rule); border-radius:10px; padding:9px 11px}
+  .anat .cell .cl{display:block; font-size:10px; font-weight:900; letter-spacing:.07em; text-transform:uppercase; color:#999}
+  .anat .cell b{font-size:15px; color:var(--navy)} .anat .cell.hit{border-color:var(--plum); background:var(--plumlt)} .anat .cell.hit b{color:var(--plumdark)}
+  .counts{display:flex; gap:7px; flex-wrap:wrap; margin-top:10px; font-size:13px; font-weight:800}
+  .counts span{border-radius:999px; padding:3px 11px; border:1.5px solid var(--rule); background:#fff; color:#555}
+  .counts .ok{border-color:var(--green); color:var(--greendark); background:var(--greenlt)}
+  .counts .no{border-color:var(--think); color:var(--think); background:var(--thinklt)}
+  .verdict{margin-top:10px; font-size:15px; font-weight:600; color:#444; background:#fff; border-left:4px solid var(--plum); padding:9px 12px; border-radius:0 10px 10px 0}
+  .verdict b{color:var(--plumdark)} .legend{display:flex; gap:10px; flex-wrap:wrap; font-size:12px; font-weight:800; margin-top:10px}
+  .legend span{border-radius:6px; padding:1px 8px}
+
+  /* comma switch */
+  .cswitch{display:flex; border:2px solid var(--navy); border-radius:12px; overflow:hidden; width:max-content; max-width:100%; margin:6px 0 10px; flex-wrap:wrap}
+  .cswitch button{border:0; background:#fff; padding:9px 16px; font:800 14px Lato,sans-serif; cursor:pointer; color:var(--navy)}
+  .cswitch button.on{background:var(--navy); color:#fff} .cswitch button b{font-size:19px; color:var(--think)} .cswitch button.on b{color:#FFD3CC}
+  .nope{font-size:13px; color:var(--think); font-weight:900; text-transform:uppercase; letter-spacing:.05em; margin-top:6px}
+
+  /* connector selector */
+  .tensechips{display:flex; gap:6px; flex-wrap:wrap; margin:8px 0}
+  .tensechips button{border:2px solid var(--rule); background:#fff; border-radius:8px; padding:6px 11px; font:700 13px Lato,sans-serif; cursor:pointer}
+  .tensechips button.on{border-color:var(--navy); background:var(--navylt); color:var(--navy)}
+  .tenseout{background:var(--soft); border-radius:12px; padding:16px; text-align:center; margin-top:6px} .tenseout .map{font-size:clamp(15px,2.4vw,19px); font-weight:800}
+  .tenseout .map .a{color:var(--navy)} .tenseout .map .b{color:var(--grammar)} .tenseout .ex{font-size:clamp(16px,2.7vw,21px); font-weight:800; margin-top:8px}
+  .tenseout .note{font-size:14px; color:#555; margin-top:8px; font-weight:600} .facts{display:flex; gap:6px; flex-wrap:wrap; justify-content:center; margin-top:9px}
+  .facts span{font-size:12px; font-weight:800; border-radius:6px; padding:2px 9px; background:#fff; border:1.5px solid var(--rule); color:#555}
+  .facts .ok{color:var(--green); border-color:var(--green)} .facts .no{color:var(--think); border-color:var(--think)}
+
+  /* special cases selector (violet = special cases only) */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; max-width:100%; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)}
+
+  /* typical errors */
+  .errlist{margin-top:6px} .err{border:1.5px solid var(--rule); border-radius:10px; padding:9px 12px; margin:6px 0; cursor:pointer; font-weight:700; background:#fff}
+  .err .bad{color:var(--think)} .err .hint{font-size:12px; color:#999; font-weight:800; float:right}
+  .err .fix{display:none; margin-top:5px; color:var(--greendark)} .err.open .fix{display:block} .err.open .hint{display:none}
+  .err .rsn{display:block; font-weight:600; color:#555; font-size:13px; margin-top:2px}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--plum); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)} .btn.ghost{background:#fff; color:var(--plumdark); border:2px solid var(--plum)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--plum); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--plum)}
+  .segbig button.on{background:var(--plum); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--plum); background:var(--plumlt); color:var(--plumdark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(16px,2.7vw,21px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px} .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--plumdark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--plumdark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--plum); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)} .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)} .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)} .stn .w.wrongpick{background:var(--think); color:#fff}
+  .stn .w.rightpick{background:var(--green); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)} .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block} .why .k{color:var(--green); font-weight:900} .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px} .medal{font-size:48px; text-align:center} .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--plumdark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none} details.teacher .inner{padding:0 16px 14px; font-size:14px} details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--plum); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} .anat{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">🪆</span>
+  <div class="wrap">
+    <div class="kicker">English 8 · Unit 2 · Clauses Within Clauses</div>
+    <h1>🪆 The Nesting Machine</h1>
+    <div class="sub"><b>Grammar 5</b> — adjective clauses: connector vs. connector/subject, <i>whose</i>, preposition + <i>which</i>, quantifier + <i>of which</i>. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🪆 Explore the nesting</span><span>🔧 Build a description</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🪆 Explore<small>watch it nest</small></button>
+    <button data-tab="build">🔧 Build<small>describe it yourself</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>A clause folded into a noun phrase</h2>
+      <p class="muted">An adjective (relative) clause follows a noun and describes it. Choose the connector by
+        <b>what it refers to</b> and by <b>the job it does inside its clause</b>. The exam asks the second question
+        again and again: is the connector <b>also the subject</b>?
+        <span class="es">(¿El conector es además el sujeto de su cláusula?)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the connector, guess, then reveal</label>
+
+      <h3>1 · Choose a nest</h3>
+      <div class="chips" id="nestChips"></div>
+
+      <div class="xcard xmain"><div class="role">Main clause — with an adjective clause nested inside</div><div class="snt" id="nestSnt"></div></div>
+      <div class="caption">The boxed part is the adjective clause, right after the noun it describes.</div>
+      <div style="text-align:center; margin-top:8px"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the connector ✓</button></div>
+
+      <h3>2 · Inside the clause</h3>
+      <div class="anat">
+        <div class="cell" id="cConn"><span class="cl">Connector</span><b></b></div>
+        <div class="cell" id="cSubj"><span class="cl">Subject of the clause</span><b></b></div>
+        <div class="cell" id="cVerb"><span class="cl">Verb of the clause</span><b></b></div>
+      </div>
+      <div class="counts" id="nestCounts"></div>
+      <div class="verdict" id="nestVerdict"></div>
+      <div class="legend"><span class="rcn">connector</span><span class="rsb">subject inside the clause</span><span class="rvb">verb inside the clause</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">🔍 The count check</span>
+      <h2>Count the subjects and verbs</h2>
+      <p class="muted">Every clause needs exactly one subject for its verb. Count them and the two classic
+        failures appear. <span class="es">(Un sujeto por verbo, ni más ni menos.)</span></p>
+      <div class="cswitch" id="svSwitch">
+        <button data-v="good" class="on">✔ balanced</button><button data-v="dbl"><b>✘</b> doubled subject</button><button data-v="miss"><b>✘</b> missing connector</button>
+      </div>
+      <div class="xcard xmain" id="svCard"><div class="role" id="svRole"></div><div class="snt" id="svSnt"></div></div>
+      <div class="counts" id="svCounts"></div>
+      <div class="verdict" id="svNote"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-plum">🎛 The connector dial</span>
+      <h2>Which connector, and why</h2>
+      <p class="muted">Tap a connector to see its referent, its job, and whether it may be dropped or follow a
+        comma. <span class="es">(Referente + función en la cláusula.)</span></p>
+      <div class="tensechips" id="dialChips"></div>
+      <div class="tenseout"><div class="map" id="dialMap"></div><div class="ex" id="dialEx"></div><div class="note" id="dialNote"></div><div class="facts" id="dialFacts"></div></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">, , The comma switch</span>
+      <h2>Defining vs. non-defining at C1</h2>
+      <p class="muted"><b>Defining</b> (no commas) picks out which one. <b>Non-defining</b> (commas) adds a side
+        note. After a comma: never <i>that</i>, never omit the connector.
+        <span class="es">(Las comas cambian el significado, no la puntuación.)</span></p>
+      <div class="chips" id="cmChips"></div>
+      <div class="cswitch" id="cmSwitch"><button data-v="def" class="on">no commas</button><button data-v="non"><b>,</b> with commas <b>,</b></button></div>
+      <div class="xcard xmain" id="cmCard"><div class="role" id="cmRole"></div><div class="snt" id="cmSnt"></div><div class="nope" id="cmNope"></div></div>
+      <div class="verdict" id="cmMean"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Special cases</span>
+      <h2>The formal patterns</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="prep" class="on">preposition + which/whom</button><button data-v="quant">quantifier + of which</button><button data-v="whosething">whose for things</button><button data-v="adverbs">where / when / why</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">⚠ Typical errors</span>
+      <h2>What Spanish speakers write</h2>
+      <p class="muted">Tap each line to see the fix. <span class="es">(Toca para ver la corrección.)</span></p>
+      <div class="errlist" id="errList"></div>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> follows Grammar 5: the visualizer marks the connector and says whether it is also the subject; the count check shows the doubled subject and the omitted connector; the dial is the connector table; the comma switch is the defining/non-defining box; the violet card holds the exceptions and the red card the pitfalls.</li>
+          <li><b>Build</b> is productive: <i>assemble</i> a nest by choosing the connector, then <i>transform</i> pairs of sentences into one, with a model answer.</li>
+          <li><b>Drill</b> is one graded flow of 13 items in both exam formats, ★ to ★★★, with score, streak and best result on the device.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-plum">🔧 Your turn to produce</span>
+      <h2>Build a description</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the frame, then choose the <b>connector</b> the nest needs. The machine builds it
+          and names the rule — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">The connector should be…</div><div class="bchips" id="connChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New frame →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Combine the two sentences into one with the pattern in parentheses. Add commas where
+          they are needed, then check against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type the combined sentence"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next pair →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ connector choice &amp; commas · ★★ place, time and possession · ★★★ preposition + which
+        and quantifier + of which. Both exam formats. Keep your streak alive.
+        <span class="es">(Misma escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 8 · Unit 2 · Clauses Within Clauses · Grammar 5 — adjective clauses · Level C1
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE NESTING MACHINE — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 8 Class Manual (Grammar 5).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE 1 · the nesting visualizer
+===================================================================== */
+var CT1 = '<span class="ok">subjects: 1</span><span class="ok">verbs: 1</span>';
+var NEST = [
+  {label:"the bridge that failed", pre:"The bridge", clause:'{C} <span class="rvb">failed</span>', post:"was rebuilt in eighteen months.", conn:"that", subj:"— the connector itself", verb:"failed", hit:"conn", verdict:'<b>Connector = subject.</b> Nothing else does the failing, so <i>that</i> is the subject — and a subject connector is never omitted.'},
+  {label:"the bridge that engineers inspected", pre:"The bridge", clause:'{C} <span class="rsb">engineers</span> <span class="rvb">inspected</span>', post:"was rebuilt in eighteen months.", conn:"that", subj:"engineers", verb:"inspected", hit:"subj", verdict:'<b>Connector = object.</b> The clause has its own subject (<i>engineers</i>), so <i>that</i> is the object — and it may be dropped: <i>the bridge engineers inspected</i>.'},
+  {label:"who designed the truss", pre:"The engineer", clause:'{C} <span class="rvb">designed</span> the truss', post:"now teaches in this program.", conn:"who", subj:"— the connector itself", verb:"designed", hit:"conn", verdict:'<b>Connector = subject</b>, and the noun is a person: <i>who</i> (or <i>that</i>), never omitted.'},
+  {label:"whom the panel preferred", pre:"The candidate", clause:'{C} <span class="rsb">the panel</span> <span class="rvb">preferred</span>', post:"declined the offer.", conn:"whom", subj:"the panel", verb:"preferred", hit:"subj", verdict:'<b>Connector = object</b>, person: <i>whom</i> in formal writing (<i>who</i>/<i>that</i> elsewhere), or omit it.'},
+  {label:"whose structure resists analysis", pre:"A molecule", clause:'{C} structure <span class="rvb">resists</span> analysis', post:"is hard to model.", conn:"whose", subj:"whose structure — connector + noun", verb:"resists", hit:"conn", verdict:'<b>Connector = part of the subject.</b> <i>whose</i> always carries a noun, and it serves things too.'},
+  {label:"where the samples are stored", pre:"The lab", clause:'{C} <span class="rsb">the samples</span> <span class="rvb">are stored</span>', post:"keeps a humidity log.", conn:"where", subj:"the samples", verb:"are stored", hit:"subj", verdict:'<b>Connector = a place expression</b> (<i>where</i> = <i>in which</i>). It replaces neither subject nor object, so the clause keeps both.'},
+  {label:"under which the alloy was tested", pre:"The conditions", clause:'{C} <span class="rsb">the alloy</span> <span class="rvb">was tested</span>', post:"were never published.", conn:"under which", subj:"the alloy", verb:"was tested", hit:"subj", verdict:'<b>Preposition + which</b> — the formal option. It may go to the end instead (<i>the conditions the alloy was tested under</i>), but never in both places at once.'},
+  {label:"most of which converged", pre:"We ran forty simulations,", clause:'{C} <span class="rvb">converged</span>', post:".", conn:"most of which", subj:"most of which — connector phrase", verb:"converged", hit:"conn", verdict:'<b>Quantifier + of which</b> makes a second statement about the same set, always after a comma. People: <i>two of whom</i>.'}
+];
+var curNest = 0, predictMode = false, revealed = false;
+NEST.forEach(function(p,i){
+  var b = document.createElement("button"); b.textContent = p.label; b.dataset.k = i;
+  if(i===curNest) b.classList.add("on");
+  b.addEventListener("click", function(){ curNest=i; document.querySelectorAll("#nestChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); revealed=false; renderNest(); });
+  $("nestChips").appendChild(b);
+});
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderNest(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderNest(); });
+function renderNest(){
+  var p = NEST[curNest], mask = predictMode && !revealed;
+  var connHtml = '<span class="rcn'+(mask?" masked":"")+'">'+p.conn+"</span>";
+  var sep = /^[.,]/.test(p.post) ? "" : " ";
+  $("nestSnt").innerHTML = p.pre+' <span class="embed">'+p.clause.replace("{C}", connHtml)+"</span>"+sep+p.post;
+  $("cConn").querySelector("b").innerHTML = mask ? "?" : p.conn;
+  $("cSubj").querySelector("b").innerHTML = mask ? "?" : p.subj;
+  $("cVerb").querySelector("b").innerHTML = p.verb;
+  $("cConn").classList.toggle("hit", !mask && p.hit==="conn");
+  $("cSubj").classList.toggle("hit", !mask && p.hit==="subj");
+  $("nestCounts").innerHTML = mask ? "" : CT1;
+  $("nestVerdict").innerHTML = mask ? "Guess the connector, then reveal it." : p.verdict;
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  if(mask){ document.querySelectorAll("#nestSnt .rcn").forEach(function(el){ el.addEventListener("click", function(){ revealed=true; renderNest(); }); }); }
+}
+renderNest();
+
+/* EXPLORE 2 · count the subjects and the verbs */
+var SV = {
+  good:{role:"Balanced — one subject for each verb", bad:false, snt:'The turbine <span class="embed"><span class="rcn">that</span> <span class="rvb">failed</span></span> had passed inspection two weeks earlier.', counts:'<span class="ok">clause subjects: 1 (that)</span><span class="ok">clause verbs: 1 (failed)</span>', note:'The connector <b>is</b> the subject of <i>failed</i>: nothing missing, nothing repeated.'},
+  dbl:{role:"Doubled subject — the classic transfer error", bad:true, snt:'The turbine <span class="embed bad"><span class="rcn">that</span> <span class="rsb">it</span> <span class="rvb">failed</span></span> had passed inspection two weeks earlier. <span class="rx">✘</span>', counts:'<span class="no">clause subjects: 2 (that, it)</span><span class="ok">clause verbs: 1 (failed)</span>', note:'Two subjects, one verb. A connector-subject needs no other: delete <i>it</i>. <span class="es">(En español el pronombre se repite; en inglés no.)</span>'},
+  miss:{role:"Missing connector — a verb with no introduction", bad:true, snt:'The technician <span class="embed bad"><span class="rvb">repaired</span> the line</span> is my cousin. <span class="rx">✘</span>', counts:'<span class="no">connector: 0</span><span class="no">main subjects: 1 · verbs: 2</span>', note:'A <b>subject</b> connector is never optional: <i>The technician <b>who</b> repaired the line…</i> Only an <b>object</b> one may disappear.'}
+};
+document.querySelectorAll("#svSwitch button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#svSwitch button").forEach(function(x){ x.classList.toggle("on", x===b); }); renderSV(b.dataset.v); });
+});
+function renderSV(k){
+  var s = SV[k];
+  $("svCard").className = "xcard xmain"+(s.bad?" bad":"");
+  $("svRole").innerHTML = s.role; $("svSnt").innerHTML = s.snt;
+  $("svCounts").innerHTML = s.counts; $("svNote").innerHTML = s.note;
+}
+renderSV("good");
+
+/* EXPLORE 3 · the connector dial */
+var DIAL = [
+  {t:"who", map:'<span class="a">person</span> → <span class="b">subject of the clause</span>', ex:'the technician <b>who</b> restored the backup', note:"Also possible: <i>that</i>; as a subject it is never dropped.", facts:'<span class="no">may be omitted ✘</span><span class="ok">may follow a comma ✔</span>'},
+  {t:"whom", map:'<span class="a">person</span> → <span class="b">object of the clause</span>', ex:'the candidate <b>whom</b> the panel preferred', note:"Formal. <i>who</i>, <i>that</i> or nothing are the everyday options, since the clause has its own subject.", facts:'<span class="ok">may be omitted ✔</span><span class="ok">may follow a comma ✔</span>'},
+  {t:"which", map:'<span class="a">thing</span> → <span class="b">subject or object</span>', ex:'the parameters <b>which</b> the model ignores', note:"It can also comment on a whole clause: <i>…postponed twice, <b>which</b> annoyed the client.</i>", facts:'<span class="ok">omitted as object ✔</span><span class="ok">may follow a comma ✔</span>'},
+  {t:"that", map:'<span class="a">person or thing</span> → <span class="b">subject or object</span>', ex:'the supplier <b>that</b> won the contract', note:"Defining clauses only: never after a comma or a preposition.", facts:'<span class="ok">omitted as object ✔</span><span class="no">after a comma ✘</span>'},
+  {t:"whose", map:'<span class="a">possession</span> → <span class="b">connector + noun</span>', ex:'the engineer <b>whose</b> design won the award', note:"A noun follows it directly, with no article; it serves things too.", facts:'<span class="no">may be omitted ✘</span><span class="ok">may follow a comma ✔</span>'},
+  {t:"where", map:'<span class="a">place</span> → <span class="b">= in / at which</span>', ex:'the warehouse <b>where</b> the spares are kept', note:"The clause after it is complete: it has its own subject and verb.", facts:'<span class="ok">= in which ✔</span><span class="no">replaces a subject ✘</span>'},
+  {t:"when", map:'<span class="a">time</span> → <span class="b">= at / on which</span>', ex:'the day <b>when</b> the license expired', note:"Use it after a time noun: <i>the year</i>, <i>the day</i>.", facts:'<span class="ok">= on which ✔</span><span class="no">replaces a subject ✘</span>'},
+  {t:"preposition + which / whom", map:'<span class="a">formal register</span> → <span class="b">at / by / under + which or whom</span>', ex:'the method <b>by which</b> the samples are labelled', note:"With people: <i>with whom</i>, never <i>with who</i>. The preposition may go to the end instead — but never in both places.", facts:'<span class="no">on that ✘</span><span class="ok">at the end ✔</span><span class="no">both places ✘</span>'},
+  {t:"quantifier + of which / whom", map:'<span class="a">part of a set</span> → <span class="b">most / two / neither + of which</span>', ex:'six experts, <b>two of whom</b> dissented', note:"It links a second statement about the same set; <i>two of them</i> would leave the clauses unjoined.", facts:'<span class="ok">always after a comma ✔</span><span class="no">of them ✘</span>'}
+];
+var curDial=0;
+DIAL.forEach(function(d,i){
+  var b=document.createElement("button"); b.textContent=d.t; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curDial=i; document.querySelectorAll("#dialChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderDial(); });
+  $("dialChips").appendChild(b);
+});
+function renderDial(){ var d=DIAL[curDial]; $("dialMap").innerHTML=d.map; $("dialEx").innerHTML=d.ex; $("dialNote").innerHTML=d.note; $("dialFacts").innerHTML=d.facts; }
+renderDial();
+
+/* EXPLORE 4 · the comma switch */
+var CMS = [
+  {label:"one pump or several?",
+   def:{snt:'The pump <span class="embed">which the contractor installed last year</span> was replaced.', role:"Defining — picks out which one", ok:true, mean:"There is more than one pump. The clause <b>identifies</b> the one meant, so no commas — and <i>that</i> would also work here."},
+   non:{snt:'The pump<span class="cm">,</span> <span class="embed">which the contractor installed last year</span><span class="cm">,</span> was replaced.', role:"Non-defining — adds a side note", ok:true, mean:"There is only <b>one</b> pump, already identified. The clause only adds information, so it takes commas — and then the connector must be <i>which</i>."}},
+  {label:"a name is already unique",
+   def:{snt:'Dr. Reyes <span class="embed bad">who founded the robotics lab</span> retired in March.', role:"Defining — impossible here", ok:false, mean:"A proper name identifies the person on its own, so nothing is left to pick out: the defining version does not exist."},
+   non:{snt:'Dr. Reyes<span class="cm">,</span> <span class="embed">who founded the robotics lab</span><span class="cm">,</span> retired in March.', role:"Non-defining — the only option", ok:true, mean:"With a proper name the clause can only <b>add</b> information, so the commas are required."}},
+  {label:"that after a comma",
+   def:{snt:'The design <span class="embed">that won the prize</span> came from a student team.', role:"Defining — that is welcome", ok:true, mean:"In a defining clause <i>that</i> is normal: it tells us <b>which</b> design."},
+   non:{snt:'The design<span class="cm">,</span> <span class="embed bad">that won the prize</span><span class="cm">,</span> came from a student team.', role:"Non-defining — wrong connector", ok:false, mean:"After a comma, never <i>that</i>. Repair it with <i>which</i>: <i>The design, <b>which</b> won the prize, …</i>"}},
+  {label:"which about a whole clause",
+   def:{snt:'The test was postponed twice <span class="embed bad">which annoyed the client</span>.', role:"Defining — impossible here", ok:false, mean:"Here <i>which</i> refers to the whole event, not to a noun, so it defines nothing. Without the comma the sentence breaks."},
+   non:{snt:'The test was postponed twice<span class="cm">,</span> <span class="embed">which annoyed the client</span>.', role:"Non-defining — comment on the whole clause", ok:true, mean:"<i>which</i> can take the whole preceding clause as its antecedent. This use is <b>always</b> non-defining, so the comma is obligatory."}}
+];
+var curCM=0, curCMv="def";
+CMS.forEach(function(c,i){
+  var b=document.createElement("button"); b.textContent=c.label; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curCM=i; document.querySelectorAll("#cmChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderCM(); });
+  $("cmChips").appendChild(b);
+});
+document.querySelectorAll("#cmSwitch button").forEach(function(b){
+  b.addEventListener("click", function(){ curCMv=b.dataset.v; document.querySelectorAll("#cmSwitch button").forEach(function(x){ x.classList.toggle("on", x===b); }); renderCM(); });
+});
+function renderCM(){
+  var s = CMS[curCM][curCMv];
+  $("cmCard").className = "xcard xmain"+(s.ok?"":" bad");
+  $("cmRole").innerHTML = s.role; $("cmSnt").innerHTML = s.snt;
+  $("cmNope").innerHTML = s.ok ? "" : "✘ not possible as written";
+  $("cmMean").innerHTML = s.mean;
+}
+renderCM();
+
+/* EXPLORE 5 · special cases */
+var SC = {
+  prep:"<b>Preposition + which / whom</b> is the formal pattern: <i>the conditions <b>under which</b> the test ran</i> · <i>the colleague <b>with whom</b> I share the lab</i>. It may also stay at the end (<i>the colleague I share the lab with</i>) — but <b>never in both places</b>. And <i>that</i> never follows a preposition: ✘ <s>on that we agreed</s> → ✔ <b>on which</b>.",
+  quant:"<b>Quantifier + of which / whom</b> joins a second statement about the same set: <i>forty simulations, <b>most of which</b> converged</i> · <i>six experts, <b>two of whom</b> dissented.</i> Use <i>of whom</i> for people, <i>of which</i> for things; a pronoun (<i>most of them</i>) leaves the clauses unjoined.",
+  whosething:"<b>whose works for things too</b> in academic English: <i>a molecule <b>whose</b> structure resists analysis</i> · <i>the module <b>whose</b> documentation no longer matched.</i> A noun always follows it directly, with no article.",
+  adverbs:"<b>where</b> = <i>in which</i> (<i>the lab <b>where</b> the samples are stored</i>) · <b>when</b> = <i>at/on which</i> (<i>the day <b>when</b> the license expired</i>) · <b>why</b> only after the noun <i>reason</i>. Each leaves the clause with its own subject and verb intact."
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.prep;
+
+/* EXPLORE 6 · typical errors */
+var ERRS = [
+  {bad:"the machine that <b>it</b> broke", fix:"the machine that broke", rsn:"Doubled subject: a connector-subject needs no other."},
+  {bad:"the city that I visited <b>it</b> last year", fix:"the city that I visited last year", rsn:"Doubled object: the connector is the object of <i>visited</i>."},
+  {bad:"The design<b>, that</b> won the prize, …", fix:"The design, which won the prize, …", rsn:"After a comma, never <i>that</i>."},
+  {bad:"the terms <b>on that</b> we agreed", fix:"the terms on which we agreed", rsn:"After a preposition, only <i>which</i>/<i>whom</i>."},
+  {bad:"The technician repaired the line is my cousin.", fix:"The technician who repaired the line…", rsn:"A subject connector is never optional; only an object one may go."},
+  {bad:"the report <b>what</b> I read", fix:"the report (that) I read", rsn:"<i>what</i> is never a relative connector."},
+  {bad:"the engineer <b>which</b> designed the truss", fix:"the engineer who designed the truss", rsn:"<i>which</i> never refers to people."},
+  {bad:"the colleague <b>with</b> whom I share the lab <b>with</b>", fix:"the colleague with whom I share the lab", rsn:"One preposition: before the connector or at the end."},
+  {bad:"the molecule <b>which its</b> structure resists analysis", fix:"the molecule whose structure resists analysis", rsn:"Possession is <i>whose</i> + noun, not <i>which its</i>."},
+  {bad:"…both proposals, neither <b>of them</b> met the requirements", fix:"…, neither of which met the requirements", rsn:"A quantifier needs <i>of which/whom</i> to join two clauses."}
+];
+ERRS.forEach(function(e){
+  var d=document.createElement("div"); d.className="err";
+  d.innerHTML='<span class="hint">tap ▸</span><span class="bad">✘ '+e.bad+'</span><span class="fix">✔ '+e.fix+'<span class="rsn">'+e.rsn+"</span></span>";
+  d.addEventListener("click", function(){ d.classList.toggle("open"); });
+  $("errList").appendChild(d);
+});
+
+/* =====================================================================
+   BUILD · assemble (choose the connector) + transform (combine)
+===================================================================== */
+var BUILD = [
+  {frame:"The supplier {C} won the contract missed its first deadline.", options:["that","whom","whose"], correct:"that", note:"Subject of <i>won</i>; a thing takes <i>that</i>/<i>which</i>, and a subject connector stays."},
+  {frame:"The alloy {C} we tested last month is now certified.", options:["which","who","whose"], correct:"which", note:"Object: the clause has a subject (<i>we</i>), so it could even be dropped."},
+  {frame:"The student {C} the committee interviewed got the scholarship.", options:["whom","which","whose"], correct:"whom", note:"Person as object of <i>interviewed</i>: <i>whom</i> in formal writing."},
+  {frame:"The engineer {C} design won the award is a former student of this program.", options:["whose","who","which"], correct:"whose", note:"Possession: <i>whose</i> + noun, with no article."},
+  {frame:"The lab {C} the samples are stored keeps a humidity log.", options:["where","which","when"], correct:"where", note:"<i>where</i> = <i>in which</i>: a place plus a complete clause."},
+  {frame:"The day {C} the license expired is recorded in the log.", options:["when","where","which"], correct:"when", note:"<i>when</i> = <i>on which</i>, after a time noun."},
+  {frame:"The conditions {C} the alloy was tested were never published.", options:["under which","under that","which under"], correct:"under which", note:"Preposition + <i>which</i>; <i>that</i> never follows a preposition."},
+  {frame:"We ran forty simulations, {C} converged.", options:["most of which","most of them","which most"], correct:"most of which", note:"Quantifier + <i>of which</i> joins the two clauses; a pronoun would not."},
+  {frame:"The test was postponed twice, {C} annoyed the client.", options:["which","that","what"], correct:"which", note:"<i>which</i> can comment on a whole clause; <i>that</i> never follows a comma."},
+  {frame:"The reason {C} the test was aborted was never logged.", options:["why","which","what"], correct:"why", note:"<i>why</i> appears only after <i>reason</i>."},
+  {frame:"The panel included six experts, {C} dissented.", options:["two of whom","two of which","two of them"], correct:"two of whom", note:"People take <i>of whom</i>, things <i>of which</i>."}
+];
+var bi=0, bPick=null, bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function renderBuild(){
+  var it=BUILD[bi]; bPick=null;
+  $("bctx").innerHTML = "Frame: "+it.frame.replace("{C}", "<b>_____</b>");
+  var wrap=$("connChips"); wrap.innerHTML="";
+  it.options.forEach(function(op){
+    var b=document.createElement("button"); b.textContent=op; b.dataset.v=op;
+    b.addEventListener("click", function(){ bPick=op; document.querySelectorAll("#connChips button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bPick){ r.className="bresult bad"; r.innerHTML="Choose a connector first."; return; }
+  if(bPick===it.correct){
+    var sent=it.frame.replace("{C}", '<span class="rcn">'+it.correct+"</span>");
+    r.className="bresult good"; r.innerHTML="✅ "+sent+'<div class="bnote">'+it.note+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else {
+    document.querySelector('#connChips button[data-v="'+bPick+'"]').classList.add("wrongpick");
+    r.className="bresult bad"; r.innerHTML="❌ Not that one. <span class='bnote'>Hint — "+it.note+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:"The bridge reopened in May. Its main cable had been replaced. <b>(whose)</b>", accept:["the bridge whose main cable had been replaced reopened in may"], model:"The bridge, whose main cable had been replaced, reopened in May."},
+  {ctx:"We interviewed thirty users. Most of them preferred the old interface. <b>(most of whom)</b>", accept:["we interviewed thirty users most of whom preferred the old interface"], model:"We interviewed thirty users, most of whom preferred the old interface."},
+  {ctx:"The conditions were never published. The alloy was tested under those conditions. <b>(under which)</b>", accept:["the conditions under which the alloy was tested were never published","the conditions the alloy was tested under were never published"], model:"The conditions under which the alloy was tested were never published."},
+  {ctx:"Dr. Reyes retired in March. She founded the robotics lab. <b>(who)</b>", accept:["dr reyes who founded the robotics lab retired in march"], model:"Dr. Reyes, who founded the robotics lab, retired in March."},
+  {ctx:"The prototype failed on day one. That surprised nobody in the workshop. <b>(which)</b>", accept:["the prototype failed on day one which surprised nobody in the workshop"], model:"The prototype failed on day one, which surprised nobody in the workshop."},
+  {ctx:"The firm employs 300 engineers. Most of them are under thirty-five. <b>(most of whom)</b>", accept:["the firm employs 300 engineers most of whom are under thirty-five","the firm employs 300 engineers most of whom are under thirty five","the firm employs 300 engineers most of whom are under 35"], model:"The firm employs 300 engineers, most of whom are under thirty-five."},
+  {ctx:"The building lost power. Its elevators trap people weekly. <b>(whose)</b>", accept:["the building whose elevators trap people weekly lost power"], model:"The building whose elevators trap people weekly lost power."},
+  {ctx:"We rewrote the module. Its documentation no longer matched. <b>(whose)</b>", accept:["we rewrote the module whose documentation no longer matched"], model:"We rewrote the module whose documentation no longer matched."}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML="Combine: "+it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow — 13 items (5★ · 4★★ · 4★★★)
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Choose the connector", q:"The technician ___ restored the backup deserves the credit.", o:["who","whom","whose","which"], a:0, w:"Person and subject of <i>restored</i>: who, never omitted."},
+  {kind:"error", diff:1, tag:"Error identification", words:["The","valve","that","it","controls","the","bypass","was","left","open."], bad:3, fixOld:"it", fixNew:"(delete it)", w:"Doubled subject: <i>that</i> is already the subject of <i>controls</i>."},
+  {kind:"mc", diff:1, tag:"After a comma", q:"The paper, ___ two referees praised, was rejected by the editor.", o:["that","which","what","whom"], a:1, w:"After a comma, never <i>that</i>: a non-defining clause takes <i>which</i>."},
+  {kind:"fill", diff:1, tag:"Place", q:"The warehouse ___ the spares are kept floods every spring.", accept:["where","in which","at which"], w:"A place plus a complete clause: where (= in / at which)."},
+  {kind:"error", diff:1, tag:"Error identification", words:["The","manual","describes","the","process","what","operators","must","follow","during","startup."], bad:5, fixOld:"what", fixNew:"that / which", w:"<i>what</i> is never a relative connector; here it is the object, so it could be omitted."},
+  {kind:"mc", diff:2, tag:"Time", q:"The audit began in March, ___ the plant was already behind schedule.", o:["which","when","that","whose"], a:1, w:"A complete clause follows, so the connector must be a time expression: when = at/on which. Bare <i>which</i> has no job inside that clause; it would need a preposition (<i>during which</i>)."},
+  {kind:"error", diff:2, tag:"Error identification", words:["The","site","which","the","accident","occurred","has","been","closed."], bad:2, fixOld:"which", fixNew:"where / at which", w:"The clause is already complete, so the connector must be a place word."},
+  {kind:"fill", diff:2, tag:"Possession", q:"The engineer ___ design won the award is a former student of this program.", accept:["whose"], w:"Possession inside the clause: whose + noun, for people and things alike."},
+  {kind:"error", diff:2, tag:"Error identification", words:["The","technician","repaired","the","line","is","my","cousin."], bad:2, fixOld:"repaired", fixNew:"who repaired", w:"A subject connector is never optional: without <i>who</i> the sentence has two verbs and one subject."},
+  {kind:"mc", diff:3, tag:"Formal pattern", q:"The pressure ___ the vessel was certified must never be exceeded.", o:["at which","which","at that","where"], a:0, w:"Preposition + which is the formal option; <i>that</i> never follows one, and <i>where</i> is for places."},
+  {kind:"error", diff:3, tag:"Error identification", words:["The","colleague","with","who","I","share","the","lab","has","moved","to","Lisbon."], bad:3, fixOld:"who", fixNew:"whom", w:"After a preposition only <i>whom</i> (people) or <i>which</i> (things): <b>with whom</b>. The informal option strands the preposition instead: <i>the colleague I share the lab with</i>."},
+  {kind:"fill", diff:3, tag:"Quantifier", q:"“The panel included six experts. Two of them dissented.” → The panel included six experts, ___ dissented. (3 words)", accept:["two of whom"], w:"Quantifier + of whom after a comma; a pronoun joins nothing."},
+  {kind:"error", diff:3, tag:"Error identification", words:["Both","proposals,","neither","of","them","met","the","formal","requirements,","were","rejected","by","the","committee."], bad:4, fixOld:"them", fixNew:"which", w:"Between the commas only a relative clause fits: <i>neither of which</i>. A pronoun leaves the sentence with two verbs and no connector."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("i8_g5_drill_best")||0); if(dscore>best){ store("i8_g5_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Nested cleanly. Ready for the ★★★ task set." : dscore>=8?"Solid — review the special cases and run it again." : "Re-read Grammar 5, work through Explore and Build, then return.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, (ok?'<span class="k">\u2713 Correct.</span> ':'<span class="k">\u2717 Not that one: the green part is the error.</span> ')+'<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+"</span> "+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

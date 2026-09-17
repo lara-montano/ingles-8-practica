@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE TIME AND CAUSE MACHINE · English 8 · Unit 1 "Load-Bearing Structures"
+  Grammar 2 — adverb clauses of time & cause (connectors, tense in time
+  clauses, punctuation, the double agents since / as / while).
+  Three modes: Explore (the subordinate joint) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Grammar 2 · The Time and Cause Machine · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --steel:#2C5F8C; --steeldark:#1B3B58; --steellt:#E4EDF4;   /* Unit 1 identity */
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#142741; --navylt:#E5E9EF;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--steel),var(--steeldark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#BFD6E8; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#D8E6F1; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--steeldark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--steeldark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--steeldark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-steel{background:var(--steel)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:7px; flex-wrap:wrap; margin:4px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:6px 13px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--steel); background:var(--steellt); color:var(--steeldark)}
+  .chips.causegrp button.on{border-color:var(--grammar); background:var(--grammarlt); color:var(--grammar)}
+  .glab{font-size:11px; font-weight:900; text-transform:uppercase; letter-spacing:.05em; color:#888; margin:10px 0 4px}
+
+  /* ---------- the subordinate joint ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .posseg{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; margin:4px 0 2px}
+  .posseg button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .posseg button.on{background:var(--steel); color:#fff}
+  .joint{margin:10px 0 4px}
+  .beam{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:11px 14px}
+  .beam .role{font-size:11px; font-weight:900; letter-spacing:.08em; text-transform:uppercase; color:var(--navy)}
+  .beam .txt{font-size:clamp(16px,2.7vw,21px); font-weight:800; margin-top:3px}
+  .hangrow{display:flex; padding:0 30px}
+  .joint.pend .hangrow{justify-content:flex-end}
+  .hangline{width:4px; height:20px; background:var(--rule); border-radius:2px}
+  .depbox{border-radius:12px; padding:10px 14px; border:2px solid; max-width:100%}
+  .depbox.time{background:var(--steellt); border-color:var(--steel)}
+  .depbox.cause{background:var(--grammarlt); border-color:var(--grammar)}
+  .depbox .role{font-size:11px; font-weight:900; letter-spacing:.08em; text-transform:uppercase}
+  .depbox.time .role{color:var(--steeldark)} .depbox.cause .role{color:var(--grammar)}
+  .depbox .txt{font-size:clamp(16px,2.7vw,21px); font-weight:800; margin-top:3px}
+  .fullsnt{background:var(--soft); border-radius:12px; padding:14px; text-align:center; font-size:clamp(17px,2.9vw,23px); font-weight:800; margin-top:12px; line-height:1.65}
+  .conn{border-radius:6px; padding:0 6px; font-weight:900}
+  .conn.time{background:var(--steellt); color:var(--steeldark); box-shadow:inset 0 -2px 0 var(--steel)}
+  .conn.cause{background:var(--grammarlt); color:var(--grammar); box-shadow:inset 0 -2px 0 var(--grammar)}
+  .cm{color:var(--think); font-weight:900; font-size:1.3em}
+  .dverb{background:var(--exceplt); color:var(--excep); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--excep)}
+  .mverb{background:var(--navylt); color:var(--navy); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--navy)}
+  .dverb.masked{color:transparent; position:relative; cursor:pointer; min-width:66px; display:inline-block}
+  .dverb.masked::after{content:"?"; position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .rail{display:flex; gap:6px; flex-wrap:wrap; margin-top:10px}
+  .rail span{border:2px solid var(--rule); border-radius:999px; padding:5px 12px; font-size:12.5px; font-weight:800; color:#aaa; background:#fff}
+  .rail span.on{border-color:var(--excep); background:var(--exceplt); color:var(--excep)}
+  .punct{margin-top:9px; border-left:4px solid var(--think); background:var(--thinklt); border-radius:0 10px 10px 0; padding:8px 12px; font-size:14px; font-weight:700}
+  .rulebox{margin-top:8px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14.5px; font-weight:600}
+  .legend{display:flex; gap:10px; flex-wrap:wrap; font-size:12px; font-weight:800; margin-top:10px}
+  .legend span{border-radius:6px; padding:1px 8px}
+
+  /* special cases selector */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 13px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)}
+  .shiftgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:6px; margin-top:6px}
+  .shiftgrid div{background:#fff; border:1.5px solid var(--rule); border-radius:8px; padding:6px 10px; font-size:14px; font-weight:700}
+  .shiftgrid .a{color:var(--steeldark)} .shiftgrid .b{color:var(--grammar)}
+  .errlist{list-style:none; margin-top:4px}
+  .errlist li{padding:8px 0; border-bottom:1px dashed var(--rule); font-size:14.5px; font-weight:600}
+  .errlist li:last-child{border:0}
+  .errlist .no{color:var(--think); font-weight:900} .errlist .yes{color:var(--green); font-weight:900}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--steel); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--steeldark); border:2px solid var(--steel)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--steel); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--steel)}
+  .segbig button.on{background:var(--steel); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--steel); background:var(--steellt); color:var(--steeldark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--steeldark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--steeldark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--steel); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)}
+  .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted var(--rule); transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick{background:var(--think); color:#fff}
+  .stn .w.rightpick{background:var(--green); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)}
+  .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--steeldark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--steel); font-weight:700; text-decoration:none}
+  @media (max-width:640px){ .seg2{width:auto; max-width:100%; border-radius:14px} }
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} .hangrow{padding:0 16px} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">🏗️</span>
+  <div class="wrap">
+    <div class="kicker">English 8 · Unit 1 · Load-Bearing Structures</div>
+    <h1>🏗️ The Time and Cause Machine</h1>
+    <div class="sub"><b>Grammar 2</b> — adverb clauses of time &amp; cause: the connectors, the tense inside a time clause, the comma. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🔩 Explore the joint</span><span>🔧 Build a clause</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🔩 Explore<small>see the joint</small></button>
+    <button data-tab="build">🔧 Build<small>subordinate it yourself</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>The subordinate joint</h2>
+      <p class="muted">An <b>adverb clause</b> is a full clause (subject + verb) that modifies the main clause. A
+        subordinating connector hangs it from the beam. Pick the connector, then slide the clause to the front or to
+        the end and watch the comma and the tense react.
+        <span class="es">(La cláusula adverbial cuelga de la principal; el conector es la junta.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the verb of the dependent clause, guess, then reveal</label>
+
+      <div class="glab">Time connectors</div>
+      <div class="chips" id="timeChips"></div>
+      <div class="glab">Cause connectors</div>
+      <div class="chips causegrp" id="causeChips"></div>
+
+      <div class="glab">Position of the adverb clause</div>
+      <div class="posseg" id="posSeg"><button data-p="front" class="on">⬅ clause first</button><button data-p="end">clause second ➡</button></div>
+
+      <div class="joint" id="jointWrap">
+        <div class="beam"><div class="role">Main clause — independent, carries the tense of the sentence</div><div class="txt" id="beamTxt"></div></div>
+        <div class="hangrow"><div class="hangline"></div></div>
+        <div class="hangrow"><div class="depbox time" id="depBox"><div class="role" id="depRole"></div><div class="txt" id="depTxt"></div></div></div>
+      </div>
+
+      <div class="fullsnt" id="fullSnt"></div>
+      <div style="text-align:center; margin-top:8px"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the verb ✓</button></div>
+
+      <h3>Tense inside the clause</h3>
+      <div class="rail" id="tenseRail"></div>
+      <div class="rulebox" id="ruleBox"></div>
+      <div class="punct" id="punctBox"></div>
+      <div class="legend"><span class="conn time">time connector</span><span class="conn cause">cause connector</span><span class="dverb">verb of the clause</span><span class="mverb">verb of the main clause</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">🧠 Why English works this way</span>
+      <h2>No <i>will</i> inside a time clause</h2>
+      <p class="muted">The time clause is not a prediction — it only <b>names the trigger event</b>. The main clause
+        carries the future for the whole sentence, so marking the future twice would be redundant, and English deletes
+        the redundancy.</p>
+      <div class="shiftgrid" style="margin-top:8px">
+        <div><span class="yes" style="color:var(--green); font-weight:900">✔</span> We will start when the client <b>arrives</b>.</div>
+        <div><span class="no" style="color:var(--think); font-weight:900">✘</span> <s>… when the client will arrive.</s></div>
+        <div><span class="yes" style="color:var(--green); font-weight:900">✔</span> Call me after you <b>have finished</b>.</div>
+        <div><span class="no" style="color:var(--think); font-weight:900">✘</span> <s>… after you will have finished.</s></div>
+      </div>
+      <div class="rulebox">Spanish does exactly the same thing with a different tool: you say <i>cuando <b>llegue</b></i>
+        (subjunctive), never <i>cuando llegará</i>. Same logic, different uniform — <b>if you would use the subjunctive
+        after <i>cuando</i>, use the present after <i>when</i></b>.
+        <span class="es">(Mismo mecanismo, otra herramienta: subjuntivo en español, presente en inglés.)</span></div>
+      <p class="muted" style="margin-top:8px">The rule covers the whole family: <i>until, before, after, once, as soon
+        as, as long as, by the time</i>.</p>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Special cases &amp; double agents</span>
+      <h2>One connector, two jobs</h2>
+      <p class="muted">At C1 the exam rarely asks what a connector means; it asks <b>which of its meanings</b> is in
+        play. Read the whole sentence before you decide.</p>
+      <div class="seg2" id="scSeg">
+        <button data-v="since" class="on">since</button><button data-v="as">as</button><button data-v="while">while</button><button data-v="until">until vs by the time</button><button data-v="aslongas">as long as</button><button data-v="comma">punctuation</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">🚨 Where Spanish speakers lose the point</span>
+      <h2>The five traps of Grammar 2</h2>
+      <ul class="errlist">
+        <li><b>1 · during vs while.</b> <i>During</i> is a preposition (+ noun); <i>while</i> takes a clause.
+          <span class="yes">✔</span> during the test · <span class="yes">✔</span> while the test was running ·
+          <span class="no">✘</span> <s>during the test was running</s></li>
+        <li><b>2 · because vs because of.</b> Clause vs noun.
+          <span class="yes">✔</span> because the pump failed · <span class="yes">✔</span> because of the pump failure ·
+          <span class="no">✘</span> <s>because of the pump failed</s></li>
+        <li><b>3 · An adverb clause is not a sentence.</b>
+          <span class="no">✘</span> <s>Because the results were inconclusive.</s> (fragment) — the exam loves to offer
+          fragments as answer options.</li>
+        <li><b>4 · The <i>cuando</i> reflex.</b> Spanish uses a subjunctive after <i>cuando</i> and learners translate
+          it as a future. English forbids it: <span class="no">✘</span> <s>when he will arrive</s> ·
+          <span class="yes">✔</span> when he <b>arrives</b>.</li>
+        <li><b>5 · The <i>hasta que no</i> reflex.</b> Same family as trap 4: Spanish inserts a negative that English
+          does not carry. <span class="no">✘</span> <s>until he does not come</s> ·
+          <span class="yes">✔</span> until he <b>comes</b>.
+          <span class="es">(Calco de «hasta que no llegue».)</span></li>
+      </ul>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> is Grammar 2's machinery box made interactive: the eighteen connectors of the manual in
+            their two groups, the clause moving front/end with the comma rule, and the live tense rail (present with no
+            <i>will</i>, present perfect for a finished action, past simple after <i>since</i> of time, future perfect
+            in the main clause after <i>by the time</i>). The tip box "Why English works this way" and the whole
+            exception and pitfall list are reproduced as cards.</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> the thirteen choice items of the manual and the
+            Homework Book (tense, connector, <i>during/while</i>, <i>because/because of</i>), then <i>transform</i> the
+            nine combining items, with validation and a model answer.</li>
+          <li><b>Drill</b> is one graded flow in the two exam formats — Structure (complete the sentence) and Written
+            Expression (click the wrong underlined part) — plus two recognition items on the comma and on the double
+            agents, with a score, a streak and a best result stored on the device.</li>
+          <li>Works <b>offline</b>. Reading and writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-steel">🔧 Your turn to produce</span>
+      <h2>Build the clause</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the sentence, then choose the piece the joint needs. The machine assembles it and names
+          the rule — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab" id="bLab">The gap needs…</div><div class="bchips" id="pieceChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Assemble it 🔧</button><button class="btn ghost" id="bNext">New sentence →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Join the two ideas with the connector in brackets. Watch the tense in the time clause and the
+          comma, then check against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type the combined sentence"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next pair →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ the core rule, the comma and the two prepositions (<i>during</i>, <i>because of</i>) ·
+        ★★ tense after <i>since</i>, <i>when</i>, <i>now that</i> and the double agents ·
+        ★★★ <i>by the time</i>, the future perfect and the connectors that demand a clause. Both exam formats:
+        Structure (complete it) and Written Expression (click the wrong part). Keep your streak alive.
+        <span class="es">(Misma escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 8 · Unit 1 «Load-Bearing Structures» · Grammar 2 — adverb clauses of time and cause · Level C1
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE TIME AND CAUSE MACHINE — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 8 Class Manual (Grammar 2).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+function cap(s){ return s.charAt(0).toUpperCase()+s.slice(1); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE · the subordinate joint
+   rail keys: pres · perf · past · bytime · free
+===================================================================== */
+var CONN = {
+  when:{g:"time", lab:"when", dep:"the client {V}", dv:"arrives", main:"we {M} the installation", mv:"will start", rail:"pres",
+    rule:"The main clause carries the future (<i>will start</i>); the time clause only names the trigger, so it stays present. ✘ <s>when the client will arrive</s>."},
+  whenever:{g:"time", lab:"whenever", dep:"the load {V} the limit", dv:"exceeds", main:"the controller {M} the event", mv:"logs", rail:"pres",
+    rule:"<i>whenever</i> = every time that. A repeated event keeps both clauses in the present."},
+  wwhile:{g:"time", lab:"while", dep:"the storm {V} over the plant", dv:"passed", main:"the team {M} the reactor", mv:"monitored", rail:"free",
+    rule:"<i>while</i> = during the time that, and it takes a <b>clause</b>. In a past narrative the tense just follows the story; in a future sentence the ban on <i>will</i> applies as usual (<i>I will wait while you finish</i>). A noun after it needs <i>during</i> instead."},
+  as_t:{g:"time", lab:"as", dep:"the temperature {V}", dv:"rises", main:"the metal {M}", mv:"expands", rail:"pres",
+    rule:"<i>as</i> of time: two processes running in parallel — as one rises, the other follows."},
+  before:{g:"time", lab:"before", dep:"the audit {V}", dv:"begins", main:"we {M} the logs", mv:"will archive", rail:"pres",
+    rule:"<i>before</i> follows the same rule as <i>when</i>: future meaning, present form."},
+  after:{g:"time", lab:"after", dep:"you {V} the calibration", dv:"have finished", main:"you {M} me", mv:"can call", rail:"perf",
+    rule:"A <b>finished</b> action inside a time clause takes the present perfect, never <i>will have</i>. ✘ <s>after you will have finished</s>."},
+  since_t:{g:"time", lab:"since", dep:"the technician {V} last Friday", dv:"left", main:"nobody {M} the settings", mv:"has touched", rail:"past",
+    rule:"<i>since</i> of time: past simple in the clause, <b>present perfect</b> in the main clause. That pairing is the clue."},
+  until:{g:"time", lab:"until", dep:"the chamber {V} completely dry", dv:"is", main:"we {M} the sensor", mv:"cannot calibrate", rail:"pres",
+    rule:"<i>until</i> marks the end point. Present form — ✘ <s>until the chamber will be dry</s>."},
+  till:{g:"time", lab:"till", dep:"the pressure {V} below 2 bar", dv:"drops", main:"the crew {M} the valve closed", mv:"keeps", rail:"pres",
+    rule:"<i>till</i> is the informal twin of <i>until</i>: same meaning, same tense rule."},
+  once:{g:"time", lab:"once", dep:"the coolant {V} 90 °C", dv:"reaches", main:"the controller {M} the bypass", mv:"opens", rail:"pres",
+    rule:"<i>once</i> = as soon as. It introduces a clause, and the clause stays present."},
+  assoonas:{g:"time", lab:"as soon as", dep:"the director {V} it", dv:"signs", main:"we {M} the report", mv:"will release", rail:"pres",
+    rule:"The most-tested item of the whole topic: ✘ <s>as soon as the director will sign</s>."},
+  aslongas:{g:"time", lab:"as long as", dep:"the process {V} unchanged", dv:"stays", main:"the certification {M} valid", mv:"remains", rail:"pres",
+    rule:"<i>as long as</i> = for the whole time that — a double agent: time (duration) or condition."},
+  bythetime:{g:"time", lab:"by the time", dep:"the part {V}", dv:"arrives", main:"we {M} the assembly", mv:"will have redesigned", rail:"bytime",
+    rule:"<i>by the time</i> + present → <b>future perfect</b> in the main clause: <i>will have redesigned</i>."},
+  because:{g:"cause", lab:"because", dep:"a single part {V} missing", dv:"was", main:"production {M}", mv:"stopped", rail:"free",
+    rule:"The plain reason connector. It takes a <b>clause</b>; <i>because of</i> takes a noun."},
+  since_c:{g:"cause", lab:"since", dep:"nobody {V} to the schedule", dv:"objected", main:"we {M} it", mv:"adopted", rail:"free",
+    rule:"<i>since</i> of cause = because. Reason-result logic and no time reference at all."},
+  as_c:{g:"cause", lab:"as", dep:"the parts {V} still in customs", dv:"were", main:"the demo {M} mockups", mv:"used", rail:"free",
+    rule:"<i>as</i> of cause: formal, and the exam's favourite ambiguity with <i>as</i> of time."},
+  nowthat:{g:"cause", lab:"now that", dep:"the license {V}", dv:"has been approved", main:"production {M}", mv:"can begin", rail:"perf",
+    rule:"<i>now that</i> = because now. The cause is a completed change, so the present perfect fits. ✘ <s>now that the license will be approved</s>."},
+  inasmuchas:{g:"cause", lab:"inasmuch as", dep:"the data {V} incomplete", dv:"were", main:"the conclusion {M}", mv:"was withdrawn", rail:"free",
+    rule:"<i>inasmuch as</i> — very formal. You will read it in the exam texts; you will rarely write it."}
+};
+var RAIL = [
+  {k:"pres",   t:"present — never <i>will</i>"},
+  {k:"perf",   t:"present perfect — finished action"},
+  {k:"past",   t:"past simple — <i>since</i> + a point"},
+  {k:"bytime", t:"main clause: <b>will have</b> + p.p."},
+  {k:"free",   t:"the tense the sense needs — past narrative · cause"}
+];
+var curConn="when", curPos="front", predictMode=false, revealed=false;
+
+function buildDial(){
+  Object.keys(CONN).forEach(function(k){
+    var c=CONN[k], b=document.createElement("button");
+    b.textContent=c.lab; b.dataset.k=k;
+    if(k===curConn) b.classList.add("on");
+    b.addEventListener("click", function(){
+      curConn=k; revealed=false;
+      document.querySelectorAll("#timeChips button, #causeChips button").forEach(function(x){ x.classList.toggle("on", x.dataset.k===k); });
+      renderJoint();
+    });
+    $(c.g==="time"?"timeChips":"causeChips").appendChild(b);
+  });
+}
+buildDial();
+document.querySelectorAll("#posSeg button").forEach(function(b){
+  b.addEventListener("click", function(){
+    curPos=b.dataset.p;
+    document.querySelectorAll("#posSeg button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    renderJoint();
+  });
+});
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderJoint(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderJoint(); });
+
+function depPieces(c, mask){
+  return c.dep.replace("{V}", '<span class="dverb'+(mask?" masked":"")+'">'+c.dv+"</span>");
+}
+function renderJoint(){
+  var c=CONN[curConn], mask=predictMode && !revealed;
+  var connSpan='<span class="conn '+c.g+'">', depTxt=depPieces(c, mask);
+  var mainTxt=c.main.replace("{M}", '<span class="mverb">'+c.mv+"</span>");
+  $("beamTxt").innerHTML=cap(c.main).replace("{M}", '<span class="mverb">'+c.mv+"</span>")+".";
+  $("depBox").className="depbox "+c.g;
+  $("depRole").innerHTML="Adverb clause of "+(c.g==="time"?"time":"cause")+" — dependent, hangs from <b>"+c.lab+"</b>";
+  $("depTxt").innerHTML=connSpan+c.lab+"</span> "+depTxt;
+  $("jointWrap").className="joint "+(curPos==="end"?"pend":"pfront");
+  var full;
+  if(curPos==="front"){
+    full=connSpan+cap(c.lab)+"</span> "+depTxt+'<span class="cm">,</span> '+mainTxt+".";
+  } else {
+    full=cap(c.main).replace("{M}", '<span class="mverb">'+c.mv+"</span>")+" "+connSpan+c.lab+"</span> "+depTxt+".";
+  }
+  $("fullSnt").innerHTML=full;
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  if(mask){
+    document.querySelectorAll(".dverb.masked").forEach(function(el){ el.addEventListener("click", function(){ revealed=true; renderJoint(); }); });
+  }
+  var rail=$("tenseRail"); rail.innerHTML="";
+  RAIL.forEach(function(r){
+    var s=document.createElement("span"); s.innerHTML=r.t;
+    if(r.k===c.rail) s.classList.add("on");
+    rail.appendChild(s);
+  });
+  $("ruleBox").innerHTML="<b>Tense rule · "+c.lab+":</b> "+c.rule;
+  $("punctBox").innerHTML = curPos==="front"
+    ? "<b>Punctuation:</b> adverb clause <b>first</b> → put a <b style='color:var(--think)'>comma</b> after it. <i>When the alarm sounded<b style='color:var(--think)'>,</b> everyone left.</i>"
+    : "<b>Punctuation:</b> adverb clause <b>second</b> → <b>no comma</b>. <i>Everyone left when the alarm sounded.</i>";
+}
+renderJoint();
+
+/* special cases — the manual's exception box */
+var SC = {
+  since:"<b>since</b> has two jobs. <b>Time</b>: <i>Since the merger, the plant <b>has doubled</b> its output.</i> — a point in the past plus a <b>present perfect</b> in the main clause. <b>Cause</b>: <i>Since nobody objected, we proceeded.</i> — pure reason-result logic, no date, no present perfect. Read the whole sentence before you decide.",
+  as:'<b>as</b> has three jobs. <div class="shiftgrid"><div><span class="a">time</span> → <span class="b">As the temperature rose, the readings stabilized.</span></div><div><span class="a">cause</span> → <span class="b">As the data were incomplete, the run was repeated.</span></div><div><span class="a">manner</span> → <span class="b">covered in Grammar 3</span></div></div>At C1, ambiguity with <i>as</i> is a favourite exam distractor: decide from the second clause, not from the first word.',
+  "while":"<b>while</b> = during the time that (time), <b>but also contrast</b> (Grammar 3): <i>While the north tower survived, the south tower did not.</i> The test is substitution: if <i>whereas</i> fits, it is contrast; if <i>during the time that</i> fits, it is time. And remember trap 1 — <i>while</i> takes a clause, <i>during</i> takes a noun.",
+  until:"<b>until</b> marks the moment an action <b>stops</b>: <i>We cannot calibrate the sensor until the chamber <b>is</b> dry.</i> <b>by the time</b> marks a deadline that something else beats, so the main clause goes to the <b>future perfect</b>: <i>By the time the part arrives, we <b>will have redesigned</b> the assembly.</i> When the frame is past instead of future, the main clause takes the past perfect: <i>By the time the part arrived, we <b>had redesigned</b> the assembly.</i> The clause introduced by <i>until</i> or <i>by the time</i> always stays free of <i>will</i> — the future lives in the main clause, never in both.",
+  aslongas:"<b>as long as</b> is another double agent: <b>time</b> (duration) — <i>The reactor ran as long as the coolant held</i> — or <b>condition</b> — <i>The certification remains valid as long as the process stays unchanged.</i> Either way, no <i>will</i> in the clause.",
+  comma:'<b>The comma is positional, not optional.</b><div class="shiftgrid"><div><span class="a">clause first</span> → <span class="b">comma: <i>When the alarm sounded, everyone left.</i></span></div><div><span class="a">clause second</span> → <span class="b">no comma: <i>Everyone left when the alarm sounded.</i></span></div></div>And an adverb clause on its own is <b>not a sentence</b>: <i>Because the results were inconclusive.</i> is a fragment — the exam offers fragments as answer options on purpose.'
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.since;
+
+/* =====================================================================
+   BUILD · assemble (choose the piece) + transform (join the two ideas)
+===================================================================== */
+var BUILD = [
+  {ctx:"We will release the report as soon as the director ___ it.", lab:"The time clause needs…", options:["signs","will sign","will have signed"], correct:"signs", frame:"We will release the report as soon as the director {P} it.", note:"No <i>will</i> inside a time clause: the present form names the trigger event."},
+  {ctx:"Nobody has touched the settings since the technician ___ last Friday.", lab:"The since-clause needs…", options:["left","leaves","will leave"], correct:"left", frame:"Nobody has touched the settings since the technician {P} last Friday.", note:"<i>since</i> of time: past simple in the clause, present perfect in the main clause."},
+  {ctx:"By the time the permit ___, the season will have ended.", lab:"The time clause needs…", options:["is issued","will be issued","will have been issued"], correct:"is issued", frame:"By the time the permit {P}, the season will have ended.", note:"<i>by the time</i> takes a present form; the main clause carries the future perfect."},
+  {ctx:"___ the outage, the servers ran on batteries.", lab:"Choose the connector…", options:["During","While","Because"], correct:"During", frame:"{P} the outage, the servers ran on batteries.", note:"<i>During</i> is a preposition (+ noun); <i>while</i> would need a clause."},
+  {ctx:"___ the update was installing, the kiosks were offline.", lab:"Choose the connector…", options:["While","During","Because of"], correct:"While", frame:"{P} the update was installing, the kiosks were offline.", note:"A full clause follows, so it must be <i>while</i>, not <i>during</i>."},
+  {ctx:"The metal expands ___ the temperature rises.", lab:"Choose the connector…", options:["as","because of","during"], correct:"as", frame:"The metal expands {P} the temperature rises.", note:"<i>as</i> of time: two processes running in parallel."},
+  {ctx:"Now that the license ___, production can begin.", lab:"The cause clause needs…", options:["has been approved","will be approved","is approving"], correct:"has been approved", frame:"Now that the license {P}, production can begin.", note:"<i>now that</i> states a completed change: present perfect, never <i>will</i>."},
+  {ctx:"We cannot calibrate the sensor until the chamber ___ completely dry.", lab:"The time clause needs…", options:["is","will be","will have been"], correct:"is", frame:"We cannot calibrate the sensor until the chamber {P} completely dry.", note:"<i>until</i> belongs to the same family as <i>when</i>: present form only."},
+  {ctx:"The certification remains valid ___ the process stays unchanged.", lab:"Choose the connector…", options:["as long as","during","because of","by the time"], correct:"as long as", frame:"The certification remains valid {P} the process stays unchanged.", note:"<i>as long as</i> = for the whole time that / on condition that; it introduces a clause."},
+  {ctx:"___ the coolant reaches 90 °C, the controller opens the bypass.", lab:"Choose the connector…", options:["Once","During","Despite","Because of"], correct:"Once", frame:"{P} the coolant reaches 90 °C, the controller opens the bypass.", note:"<i>Once</i> = as soon as; the other three cannot take a clause."},
+  {ctx:"We postponed the pour ___ the forecast.", lab:"Choose the connector…", options:["because of","because","as","since"], correct:"because of", frame:"We postponed the pour {P} the forecast.", note:"A noun follows, so it must be <i>because of</i>; <i>because</i> would need a clause."},
+  {ctx:"You can call me after you ___ the calibration.", lab:"The time clause needs…", options:["have finished","will finish","will have finished"], correct:"have finished", frame:"You can call me after you {P} the calibration.", note:"A finished action inside a time clause takes the present perfect."},
+  {ctx:"Call me as soon as the readings ___.", lab:"The time clause needs…", options:["stabilize","will stabilize","would stabilize"], correct:"stabilize", frame:"Call me as soon as the readings {P}.", note:"Same rule again: the trigger event stays present."}
+];
+var bi=0, bPick=null, bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function renderBuild(){
+  var it=BUILD[bi]; bPick=null;
+  $("bctx").innerHTML=it.ctx;
+  $("bLab").textContent=it.lab;
+  var wrap=$("pieceChips"); wrap.innerHTML="";
+  it.options.forEach(function(op){
+    var b=document.createElement("button"); b.textContent=op; b.dataset.v=op;
+    b.addEventListener("click", function(){ bPick=op; document.querySelectorAll("#pieceChips button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bPick){ r.className="bresult bad"; r.innerHTML="Choose a piece first."; return; }
+  if(bPick===it.correct){
+    var sent=it.frame.replace("{P}", '<span class="dverb">'+it.correct+"</span>");
+    r.className="bresult good"; r.innerHTML="✅ "+sent+'<div class="bnote">'+it.note+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else {
+    document.querySelector('#pieceChips button[data-v="'+bPick+'"]').classList.add("wrongpick");
+    r.className="bresult bad"; r.innerHTML="❌ Not that one. <span class='bnote'>Hint — "+it.note+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:"The cement will harden. Then we will remove the molds. <b>(once)</b>", accept:["once the cement hardens we will remove the molds","once the cement hardens we'll remove the molds","once the cement has hardened we will remove the molds","once the cement has hardened we'll remove the molds","we will remove the molds once the cement hardens","we'll remove the molds once the cement hardens","we will remove the molds once the cement has hardened","we'll remove the molds once the cement has hardened"], model:"Once the cement hardens / has hardened, we will remove the molds. (Or with the clause second: We will remove the molds once the cement hardens.)"},
+  {ctx:"The team monitored the reactor. At the same time, the storm passed over the plant. <b>(while)</b>", accept:["the team monitored the reactor while the storm passed over the plant","while the storm passed over the plant the team monitored the reactor","the storm passed over the plant while the team monitored the reactor","while the team monitored the reactor the storm passed over the plant"], model:"The team monitored the reactor while the storm passed over the plant. / While the storm passed over the plant, the team monitored the reactor."},
+  {ctx:"Nobody objected to the schedule. We adopted it. <b>(since — cause)</b>", accept:["since nobody objected to the schedule we adopted it","we adopted it since nobody objected to the schedule"], model:"Since nobody objected to the schedule, we adopted it."},
+  {ctx:"The warranty expired. The machine has broken down three times. <b>(since — time)</b>", accept:["the machine has broken down three times since the warranty expired","since the warranty expired the machine has broken down three times"], model:"The machine has broken down three times since the warranty expired."},
+  {ctx:"You will receive the password. Immediately after, you must change it. <b>(as soon as)</b>", accept:["as soon as you receive the password you must change it","as soon as you have received the password you must change it","you must change it as soon as you receive the password","you must change it as soon as you have received the password"], model:"As soon as you receive the password, you must change it."},
+  {ctx:"The tank empties. Then the sensors recalibrate automatically. <b>(once — clause first)</b>", accept:["once the tank empties the sensors recalibrate automatically","once the tank has emptied the sensors recalibrate automatically"], model:"Once the tank empties, the sensors recalibrate automatically."},
+  {ctx:"Nobody claimed the prototype. It was donated to the museum. <b>(since — cause, clause first)</b>", accept:["since nobody claimed the prototype it was donated to the museum"], model:"Since nobody claimed the prototype, it was donated to the museum."},
+  {ctx:"You finish the safety course. You may not enter the site before that. <b>(until — clause first)</b>", accept:["until you finish the safety course you may not enter the site","until you have finished the safety course you may not enter the site"], model:"Until you finish the safety course, you may not enter the site."},
+  {ctx:"The firmware was updated. The battery life doubled afterwards. <b>(after — clause first)</b>", accept:["after the firmware was updated the battery life doubled","after the firmware had been updated the battery life doubled"], model:"After the firmware was updated, the battery life doubled."}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML="Join them: "+it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow — 13 items (5★ / 4★★ / 4★★★)
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Structure", q:"We will release the report as soon as the director ___ it.", o:["signs","will sign","will have signed","is going to sign"], a:0, w:"No <i>will</i> inside a time clause: the present form names the trigger event."},
+  {kind:"mc", diff:1, tag:"Punctuation", q:"Which sentence is punctuated correctly?", o:["When the alarm sounded, everyone left.","When the alarm sounded everyone left.","Everyone left, when the alarm sounded.","When the alarm sounded; everyone left."], a:0, w:"Adverb clause first → comma after it. Adverb clause second → no comma, and never a semicolon."},
+  {kind:"error", diff:1, tag:"Written Expression", words:["During","the engine was cooling,","the crew inspected","the landing gear."], bad:0, fixOld:"During", fixNew:"While", w:"<i>During</i> is a preposition (+ noun); a full clause needs <i>while</i>."},
+  {kind:"fill", diff:1, tag:"Structure — one word", q:"We cannot calibrate the sensor until the chamber ___ completely dry. <span class='muted'>(be)</span>", accept:["is","'s"], w:"<i>until</i> follows the <i>when</i> rule: present form, never <i>will be</i>."},
+  {kind:"error", diff:1, tag:"Written Expression", words:["Because of the schedule","was delayed,","the launch window","moved to October."], bad:0, fixOld:"Because of the schedule", fixNew:"Because the schedule", w:"<i>because of</i> takes a noun; a clause (<i>the schedule was delayed</i>) needs <i>because</i>."},
+  {kind:"error", diff:2, tag:"Written Expression", words:["The bridge will reopen","when the inspection","will be","complete."], bad:2, fixOld:"will be", fixNew:"is", w:"The main clause keeps <i>will reopen</i>; the time clause after <i>when</i> drops the future."},
+  {kind:"fill", diff:2, tag:"Structure — one word", q:"The lab has used the same protocol since it ___ in 2015. <span class='muted'>(open)</span>", accept:["opened"], w:"<i>since</i> of time takes the past simple for the starting point; the main clause carries the present perfect."},
+  {kind:"mc", diff:2, tag:"Double agent", q:"<b>Since</b> nobody volunteered, the task was assigned by lottery. — Here <i>since</i> expresses:", o:["time","cause","contrast","manner"], a:1, w:"Reason-result logic and no time reference: this is <i>since</i> of cause (= because)."},
+  {kind:"error", diff:2, tag:"Written Expression", words:["Production","can begin","now that the license","will be approved."], bad:3, fixOld:"will be approved.", fixNew:"has been approved.", w:"<i>now that</i> states a cause that is already complete: present perfect, not <i>will</i>. The clause sits second here, so there is no comma."},
+  {kind:"mc", diff:3, tag:"Structure", q:"By the time the auditors arrive, the archive ___.", o:["is going to be reorganized","will have reorganized","will have been reorganized","has been reorganized"], a:2, w:"<i>by the time</i> + present → future perfect in the main clause, and here it must be <b>passive</b>: the archive does not reorganize itself. <i>Is going to be</i> and <i>has been</i> never express the idea of finishing <b>before</b> that point."},
+  {kind:"error", diff:3, tag:"Written Expression", words:["We will ship the unit","after the coating","will have dried","completely."], bad:2, fixOld:"will have dried", fixNew:"has dried", w:"A future-perfect idea inside a time clause becomes the present perfect."},
+  {kind:"fill", diff:3, tag:"Structure — three words", q:"By the time the part arrives, we ___ the assembly. <span class='muted'>(redesign — finished before that point)</span>", accept:["will have redesigned","'ll have redesigned","will've redesigned","shall have redesigned"], w:"<i>by the time</i> + present → <i>will have redesigned</i> in the main clause."},
+  {kind:"mc", diff:3, tag:"Structure", q:"The certification remains valid ___ the process stays unchanged.", o:["during","as long as","because of","by the time"], a:1, w:"A clause follows, and the meaning is duration/condition: <i>as long as</i>. <i>During</i> and <i>because of</i> need nouns."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("i8_g2_drill_best")||0); if(dscore>best){ store("i8_g2_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"The joint holds. You are ready for the ★★★ task set." : dscore>=8?"Solid, but the double agents still cost you. Re-read the special-cases card and go again." : "Re-read Grammar 2, work through Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the part that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">✗ Not that part — the green one is the error.</span> ')+'<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer: "+it.accept[0]+".")+"</span> "+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>
