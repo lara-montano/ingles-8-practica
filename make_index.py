@@ -126,7 +126,7 @@ html = f"""<!DOCTYPE html>
   <div class="wrap">
     <div class="kicker">Inglés 8 · C1 · preparación SELLI</div>
     <h1>Material de práctica</h1>
-    <p class="sub">Simuladores de gramática, uno por tema del manual (Grammar 1–12), y el simulacro tipo SELLI de las Units 1–2 con su audio. Todo se abre desde aquí.</p>
+    <p class="sub">Una página interactiva por cada tema del manual, de gramática (Grammar 1–12) y de vocabulario (Structure 1–7), más el simulacro tipo SELLI de las Units 1–2 con su audio. Todo se abre desde aquí.</p>
     <div class="chipline">
       <span>Prof. Daniel Lara</span>
       <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a>
