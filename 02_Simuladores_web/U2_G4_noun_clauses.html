@@ -569,18 +569,18 @@ renderTrans();
    DRILL · one graded flow — 13 items (5 ★ · 4 ★★ · 4 ★★★)
 ===================================================================== */
 var DRILL = [
-  {kind:"mc", diff:1, tag:"Structure", q:"____ the two labs will merge has not been decided.", o:["If","Whether","That if","It"], a:1, w:"Only <b>whether</b> can head a subject clause; <i>if</i> is limited to the object slot."},
-  {kind:"mc", diff:1, tag:"Structure", q:"____ caused the delay has finally been documented.", o:["What did","That","What","Which"], a:2, w:"<b>What</b> = <i>the thing that</i>; it is subject of the clause and needs no <i>did</i>."},
+  {kind:"mc", diff:1, tag:"Structure", q:"____ the two labs will merge has not been decided.", o:["Whether", "If", "That if", "It"], a:0, w:"Only <b>whether</b> can head a subject clause; <i>if</i> is limited to the object slot."},
+  {kind:"mc", diff:1, tag:"Structure", q:"____ caused the delay has finally been documented.", o:["What did", "What", "That", "Which"], a:1, w:"<b>What</b> = <i>the thing that</i>; it is subject of the clause and needs no <i>did</i>."},
   {kind:"fill", diff:1, tag:"Embed the question", q:"Where is the master key? → Nobody remembers ____. (type the clause: 5 words)", accept:["where the master key is"], w:"Statement order inside the clause: where the master key <b>is</b>."},
   {kind:"error", diff:1, tag:"Written Expression", words:["What","the","experiment","proved","were","that","the","alloy","fails","under","cyclic","load."], bad:4, fixOld:"were", fixNew:"was", w:"A noun-clause subject counts as one thing → singular verb."},
   {kind:"fill", diff:1, tag:"Embed the question", q:"Why did the batch fail? → The report explains ____. (type the clause: 4 words)", accept:["why the batch failed"], w:"<i>did</i> disappears and its tense lands on the verb: failed."},
   {kind:"error", diff:2, tag:"Written Expression", words:["Nobody","could","explain","why","had","the","valve","opened","by","itself."], bad:4, fixOld:"had", fixNew:"… why the valve <b>had</b> opened … (move <i>had</i> behind the subject)", w:"No inversion inside a noun clause: subject before the auxiliary."},
-  {kind:"mc", diff:2, tag:"Structure", q:"It is vital that the backup ____ weekly.", o:["be tested","is tested","tests","will be tested"], a:0, w:"Subjunctive after <i>it is vital that</i>: base form, so <b>be tested</b>."},
+  {kind:"mc", diff:2, tag:"Structure", q:"It is vital that the backup ____ weekly.", o:["tests", "is tested", "be tested", "will be tested"], a:2, w:"Subjunctive after <i>it is vital that</i>: base form, so <b>be tested</b>."},
   {kind:"error", diff:2, tag:"Written Expression", words:["The","decision","depends","on","if","the","budget","is","approved","before","December."], bad:4, fixOld:"if", fixNew:"whether", w:"After a preposition only <b>whether</b> is possible."},
   {kind:"fill", diff:2, tag:"Subjunctive", q:"The regulation requires that every visitor ____ the register. (one word)", accept:["sign"], w:"Base form after <i>require that</i> — no third-person <i>-s</i>."},
   {kind:"error", diff:3, tag:"Written Expression", words:["It","the","results","are","valid","is","what","we","must","establish","first."], bad:0, fixOld:"It", fixNew:"Whether", w:"A yes/no clause in the subject seat needs <b>whether</b>; dummy <i>it</i> cannot introduce a bare clause."},
   {kind:"error", diff:3, tag:"Written Expression", words:["What","the","committee","decided","it","surprised","the","entire","faculty."], bad:4, fixOld:"it", fixNew:"(delete it)", w:"Double subject: the what-clause already is the subject."},
-  {kind:"mc", diff:3, tag:"Structure", q:"____ appears that the drawings were never updated.", o:["That","What","It","There"], a:2, w:"<i>appear</i> works only extraposed, so the dummy <b>It</b> takes the subject seat."},
+  {kind:"mc", diff:3, tag:"Structure", q:"____ appears that the drawings were never updated.", o:["That", "What", "There", "It"], a:3, w:"<i>appear</i> works only extraposed, so the dummy <b>It</b> takes the subject seat."},
   {kind:"fill", diff:3, tag:"Extraposition", q:"That the two datasets disagree is troubling. → ____ troubling that the two datasets disagree. (2 words)", accept:["it is","it's"], w:"Light before heavy: dummy <b>It is</b> in front, clause at the end."}
 ];
 var di=0, dscore=0, dstreak=0, ddone=false;

@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE SOURCE AND THE FEELER · English 8 · Unit 5 "Word Order as Power"
+  Structure 7 — -ed vs. -ing adjectives (cause vs. experiencer, the pairs,
+  promising/promised, collocations, the participle bridge to Unit 3)
+  Three modes: Explore (switch the participle) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Structure 7 · The Source and the Feeler · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --royal:#4B3A8C; --royaldark:#30255C; --royallt:#E9E6F4;   /* Unit 5 identity */
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0} html{-webkit-text-size-adjust:100%} body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--royal),var(--royaldark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none} header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#C9C0E8; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900} header .sub{color:#DCD6EF; font-size:clamp(13px,2.3vw,16px)} .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700} .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px} header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--royaldark)} nav button small{display:block; font-size:11px; font-weight:700; opacity:.8} main{padding-top:18px}
+  section.tab{display:none} section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--royaldark); margin-bottom:6px} .card h3{font-size:15px; color:var(--royaldark); margin:14px 0 6px} .muted{color:#666; font-size:14px} .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-royal{background:var(--royal)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0} .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--royal); background:var(--royallt); color:var(--royaldark)}
+
+  /* ---------- the paper switch ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .switchrow{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:10px 0 4px} .fig{border:2px solid var(--rule); background:#fff; border-radius:14px; padding:12px 10px; text-align:center; cursor:pointer; font:inherit}
+  .fig .ico{font-size:34px; line-height:1.1; display:block; filter:grayscale(1); opacity:.5} .fig .nm{font-size:11px; letter-spacing:.07em; text-transform:uppercase; font-weight:900; color:#999}
+  .fig .who{font-size:clamp(14px,2.4vw,17px); font-weight:800; color:#999; margin-top:1px}
+  .fig.on{border-color:var(--royal); background:var(--royallt)} .fig.on .ico{filter:none; opacity:1} .fig.on .nm{color:var(--royal)} .fig.on .who{color:var(--royaldark)}
+  .lever{display:flex; justify-content:center; margin:6px 0 2px} .lever .tr{display:flex; border:2px solid var(--royal); border-radius:999px; overflow:hidden}
+  .lever .tr button{border:0; background:#fff; color:var(--royal); font:900 13px Lato,sans-serif; padding:7px 15px; cursor:pointer} .lever .tr button.on{background:var(--royal); color:#fff}
+  .xcard{border-radius:12px; padding:14px 16px; margin:8px 0; background:var(--royallt); border:2px solid var(--royal)}
+  .xcard .role{font-size:11px; font-weight:900; letter-spacing:.08em; text-transform:uppercase; color:var(--royaldark)} .xcard .snt{font-size:clamp(18px,3.1vw,24px); font-weight:800; margin-top:4px; line-height:1.55}
+  .pa{background:#fff; color:var(--royaldark); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--royal)} .pa.masked{color:transparent; position:relative; cursor:pointer; min-width:66px; display:inline-block}
+  .pa.masked::after{content:"?"; position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .changes{list-style:none; margin:10px 0 0} .changes li{position:relative; padding:3px 0 3px 22px; font-size:14px; font-weight:600; color:#555}
+  .changes li::before{content:"→"; position:absolute; left:0; top:3px; color:var(--grammar); font-weight:900}
+
+  /* ---------- pair dial ---------- */
+  .tensechips{display:flex; gap:6px; flex-wrap:wrap; margin:8px 0} .tensechips button{border:2px solid var(--rule); background:#fff; border-radius:8px; padding:6px 11px; font:700 13px Lato,sans-serif; cursor:pointer}
+  .tensechips button.on{border-color:var(--navy); background:var(--navylt); color:var(--navy)} .halves{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:6px}
+  .half{border-radius:12px; padding:12px; background:var(--soft); border:2px solid var(--rule)}
+  .half .hh{font-size:12px; font-weight:900; letter-spacing:.05em; text-transform:uppercase} .half.ing .hh{color:var(--grammar)} .half.ed .hh{color:var(--green)}
+  .half.ing{border-color:var(--grammar); background:var(--grammarlt)} .half.ed{border-color:var(--green); background:var(--greenlt)}
+  .half .wd{font-size:clamp(17px,2.7vw,21px); font-weight:900; margin:2px 0 4px} .half .ex{font-size:14px; font-weight:600; color:#444} .dnote{margin-top:8px; font-size:14px; font-weight:700; color:#555}
+
+  /* ---------- nonsense detector (tap to select, tap the target) ---------- */
+  .bank{display:flex; gap:8px; flex-wrap:wrap; margin:8px 0 12px} .bank button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 12px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .bank button.sel{border-color:var(--royal); background:var(--royallt); color:var(--royaldark); box-shadow:0 0 0 3px rgba(75,58,140,.20)} .zones{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+  .zone{border:2px dashed var(--rule); border-radius:14px; padding:11px; min-height:96px; background:#fff; cursor:pointer} .zone.armed{border-color:var(--royal); background:var(--royallt)}
+  .zone .zh{font-size:12px; font-weight:900; letter-spacing:.06em; text-transform:uppercase; color:var(--royaldark)}
+  .zone .zs{font-size:12px; font-weight:700; color:#777; margin-bottom:6px} .drop{display:flex; gap:6px; flex-wrap:wrap}
+  .drop span{border-radius:8px; padding:4px 9px; font-size:13px; font-weight:800; background:var(--greenlt); border:1.5px solid var(--green); color:var(--greendark)}
+  .verdict{margin-top:10px; border-radius:12px; padding:12px 14px; font-size:15px; font-weight:700; display:none} .verdict.good{display:block; background:var(--greenlt); border:2px solid var(--green); color:var(--greendark)}
+  .verdict.bad{display:block; background:var(--thinklt); border:2px solid var(--think); color:var(--think)} .verdict .lit{display:block; font-weight:800; margin-top:3px; color:var(--ink)}
+
+  /* ---------- bridge & special cases ---------- */
+  .bridge{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:14px; margin-top:6px}
+  .bridge .map{font-size:clamp(15px,2.5vw,19px); font-weight:800; text-align:center} .bridge .map .a{color:var(--navy)} .bridge .map .b{color:var(--grammar)}
+  .bridge .ex{font-size:14px; color:#555; margin-top:8px; font-weight:600; text-align:center} .seg2{display:flex; border:2px solid var(--rule); border-radius:14px; overflow:hidden; width:max-content; max-width:100%; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777} .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)} .shiftgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:6px; margin-top:6px}
+  .shiftgrid div{background:#fff; border:1.5px solid var(--rule); border-radius:8px; padding:6px 10px; font-size:14px; font-weight:700}
+  .shiftgrid .a{color:var(--navy)} .shiftgrid .b{color:var(--excep)} .errlist{list-style:none; margin-top:4px}
+  .errlist li{border-left:4px solid var(--think); background:var(--thinklt); border-radius:0 10px 10px 0; padding:8px 12px; margin-bottom:7px; font-size:14px; font-weight:600}
+  .errlist .no{color:var(--think); font-weight:900; text-decoration:line-through} .errlist .yes{color:var(--green); font-weight:900}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--royal); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)} .btn.ghost{background:#fff; color:var(--royaldark); border:2px solid var(--royal)} .btn.small{padding:8px 14px; font-size:14px} .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--royal); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--royal)} .segbig button.on{background:var(--royal); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px} .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px} .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--royal); background:var(--royallt); color:var(--royaldark)} .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block} .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px} .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center} .bscore{font-weight:900; color:var(--royaldark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px} .drillhead .sc{font-weight:900; color:var(--royaldark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px} .qbar i{display:block; height:100%; background:var(--royal); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)} .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap} .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)} .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.rightpick{background:var(--green); color:#fff}
+  .stn .w.wrongpick{background:var(--think); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)} .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block} .why .k{color:var(--green); font-weight:900} .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px} .medal{font-size:48px; text-align:center} .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px} details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--royaldark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none} details.teacher .inner{padding:0 16px 14px; font-size:14px} details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)} footer.credits a{color:var(--royal); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} .switchrow{grid-template-columns:1fr} .zones{grid-template-columns:1fr} .halves{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">⚡</span>
+  <div class="wrap">
+    <div class="kicker">English 8 · Unit 5 · Word Order as Power</div>
+    <h1>⚡ The Source and the Feeler</h1>
+    <div class="sub"><b>Structure 7</b> — <i>-ed</i> vs. <i>-ing</i> adjectives: who causes the feeling, who feels it. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🔀 Explore the switch</span><span>🔧 Build the adjective</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🔀 Explore<small>who feels what</small></button>
+    <button data-tab="build">🔧 Build<small>choose the ending</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>Cause wears <i>-ing</i>; experiencer wears <i>-ed</i></h2>
+      <p class="muted">One verb, two adjectives. <b>-ing</b> = producing the effect; <b>-ed</b> = experiencing it.
+        Pick a verb, then throw the switch: the same feeling changes owner and the sentence changes ending.
+        <span class="es">(El que causa lleva -ing; el que siente lleva -ed.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the adjective, guess, then reveal</label>
+
+      <h3>1 · Choose the verb</h3>
+      <div class="chips" id="scChips"></div>
+
+      <h3>2 · Throw the switch</h3>
+      <div class="switchrow">
+        <button class="fig" id="figSrc" data-s="src"><span class="ico">⚡</span><span class="nm">The source</span><span class="who" id="whoSrc"></span></button>
+        <button class="fig" id="figFee" data-s="fee"><span class="ico">🙂</span><span class="nm">The feeler</span><span class="who" id="whoFee"></span></button>
+      </div>
+      <div class="lever"><div class="tr" id="lever"><button data-s="src" class="on">⚡ -ING</button><button data-s="fee">🙂 -ED</button></div></div>
+
+      <div class="xcard"><div class="role" id="sntRole"></div><div class="snt" id="sntOut"></div></div>
+      <div style="text-align:center"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the adjective ✓</button></div>
+
+      <h3>What the ending says</h3>
+      <ul class="changes" id="changes"></ul>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">🎛️ The pair dial</span>
+      <h2>Every pair in the manual, half by half</h2>
+      <p class="muted">Tap a pair: the <b>-ing</b> half goes to the thing that causes it, the <b>-ed</b> half to the
+        person who feels it. <span class="es">(Cada mitad se aplica a su figura.)</span></p>
+      <div class="tensechips" id="dialChips"></div>
+      <div class="halves">
+        <div class="half ing"><div class="hh">⚡ -ing → the source</div><div class="wd" id="dIng"></div><div class="ex" id="dIngEx"></div></div>
+        <div class="half ed"><div class="hh">🙂 -ed → the feeler</div><div class="wd" id="dEd"></div><div class="ex" id="dEdEx"></div></div>
+      </div>
+      <div class="dnote" id="dNote"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">🚨 The nonsense detector</span>
+      <h2>Put each one where it belongs — then read what you said</h2>
+      <p class="muted"><b>Tap a card, then tap a box.</b> If you send it to the wrong figure, the machine prints what the
+        sentence <i>really</i> claims. <span class="es">(Toca la tarjeta y luego la caja: sin arrastrar, funciona con el dedo.)</span></p>
+      <div class="bank" id="nBank"></div>
+      <div class="zones">
+        <div class="zone" id="zIng" data-z="src"><div class="zh">⚡ -ing</div><div class="zs">it produces the effect</div><div class="drop" id="dropIng"></div></div>
+        <div class="zone" id="zEd" data-z="fee"><div class="zh">🙂 -ed</div><div class="zs">it experiences the effect</div><div class="drop" id="dropEd"></div></div>
+      </div>
+      <div class="verdict" id="nVerdict"></div>
+      <div class="bfoot"><button class="btn ghost small" id="nReset">Reset ↺</button><span class="bscore" id="nScore">Placed: 0 / 10</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">🌉 The participle bridge</span>
+      <h2>This is Unit 3 wearing feelings</h2>
+      <p class="muted">The manual is explicit: <b>-ing does, -ed is done to</b>. An <i>-ing</i> adjective is the active
+        participle of a reduced clause; an <i>-ed</i> adjective is the passive one. Expand it back and the answer appears.
+        <span class="es">(Misma regla de las cláusulas reducidas de la Unit 3.)</span></p>
+      <div class="tensechips" id="brChips"></div>
+      <div class="bridge"><div class="map" id="brMap"></div><div class="ex" id="brEx"></div></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Special cases &amp; traps</span>
+      <h2>promising/promised, things that cannot feel, prepositions</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="promise" class="on">promising / promised</button><button data-v="things">things don’t feel</button><button data-v="preps">prepositions</button><button data-v="beyond">beyond feelings</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">⚠️ Errors Spanish speakers make</span>
+      <h2>The classics, straight from your manual</h2>
+      <ul class="errlist" id="errList"></ul>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> is Structure 7's box made interactive: the switch shows cause (<i>-ing</i>) against experiencer (<i>-ed</i>) on the manual's own examples; the dial holds the nine pairs listed in the manual; the nonsense detector turns the wrong choice into an absurd claim instead of a red mark; the bridge card is the manual's closing tip (this is Unit 3's participle rule wearing feelings).</li>
+          <li><b>Build</b> is productive: <i>Assemble</i> uses the manual's "Choose the ending" items, <i>Transform</i> the homework participle gaps and the correction items of the Unit 5 Check.</li>
+          <li><b>Drill</b> is one graded flow in the two SELLI formats — Structure (complete the sentence) and Written Expression (click the wrong part) — with score, streak and best result on this device.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-royal">🔧 Your turn to produce</span>
+      <h2>Build the adjective</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the situation, then choose the ending the sentence needs. The machine builds it — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">The adjective should be…</div><div class="bchips" id="formChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New item →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Write the missing participle, the preposition, or the whole corrected sentence. Then check against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type your answer"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next item →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ source or feeler · ★★ both halves &amp; things that cannot feel · ★★★ reduced participles &amp; collocations.
+        Keep your streak alive. <span class="es">(Misma escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 8 · Unit 5 «Word Order as Power» · Structure 7 — -ed vs. -ing adjectives · Level C1
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE SOURCE AND THE FEELER — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 8 Class Manual (Structure 7).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE 1 · the paper switch: source (-ing) vs feeler (-ed)
+===================================================================== */
+var SCEN = {
+  alarm:{label:"alarm", src:"the results", fee:"the engineers",
+    s:'The results were <span class="pa">alarming</span>.', f:'The engineers were <span class="pa">alarmed</span>.',
+    sw:["<b>-ing</b> = producing the effect: the results <i>alarm</i> people.","Expand it: <b>alarming results</b> = results that alarm."],
+    fw:["<b>-ed</b> = experiencing the effect: the engineers <i>feel</i> it.","Expand it: <b>alarmed engineers</b> = engineers who are alarmed."]},
+  confuse:{label:"confuse", src:"the instructions", fee:"the veterans",
+    s:'The instructions were so <span class="pa">confusing</span> that even the veterans asked for help.', f:'Even the veterans were <span class="pa">confused</span> by the instructions.',
+    sw:["The instructions produce the effect, so they take <b>-ing</b>.","Expand it: <b>confusing instructions</b> = instructions that confuse."],
+    fw:["The veterans receive the effect, so they take <b>-ed</b>.","Expand it: <b>confused veterans</b> = veterans who are confused."]},
+  exhaust:{label:"exhaust", src:"three night shifts", fee:"the crew",
+    s:'Three night shifts were <span class="pa">exhausting</span>.', f:'After three night shifts, the crew was completely <span class="pa">exhausted</span>.',
+    sw:["The shifts drain people: the source takes <b>-ing</b>.","An <b>exhausting</b> week of testing…"],
+    fw:["The crew feels the drain: the feeler takes <b>-ed</b>.","…left an <b>exhausted</b> crew."]},
+  bore:{label:"bore", src:"the safety briefing", fee:"the crew",
+    s:'The safety briefing was <span class="pa">boring</span>.', f:'The crew left the room <span class="pa">bored</span>.',
+    sw:["The briefing causes the feeling, so it is <b>boring</b>.","Expand it: a <b>boring</b> briefing = a briefing that bores people."],
+    fw:["The crew has the feeling, so they are <b>bored</b>.","Collocation: <b>bored with</b> the briefing."]},
+  encourage:{label:"encourage", src:"the pilot results", fee:"the sponsors",
+    s:'The pilot results were <span class="pa">encouraging</span>.', f:'The sponsors were <span class="pa">encouraged</span> and extended the grant.',
+    sw:["The results do the encouraging: <b>-ing</b>.","Expand it: <b>encouraging results</b> = results that encourage."],
+    fw:["The sponsors are encouraged by them: <b>-ed</b>.","Reduced clause: <b>Encouraged</b> by the pilot data, the sponsors extended the grant."]},
+  fascinate:{label:"fascinate", src:"the talk", fee:"the audience",
+    s:'The talk was <span class="pa">fascinating</span>.', f:'The audience was <span class="pa">fascinated</span>.',
+    sw:["The talk fascinates the room: <b>-ing</b>.","The failure analysis was <b>fascinating</b> reading."],
+    fw:["The audience feels it: <b>-ed</b>.","Swap them and the sentence collapses: a fascinated talk feels nothing."]}
+};
+var curScen="alarm", curSide="src", predictMode=false, revealed=false;
+Object.keys(SCEN).forEach(function(k){
+  var b=document.createElement("button"); b.textContent=SCEN[k].label; b.dataset.k=k;
+  if(k===curScen) b.classList.add("on");
+  b.addEventListener("click", function(){ curScen=k; document.querySelectorAll("#scChips button").forEach(function(x){ x.classList.toggle("on", x.dataset.k===k); }); revealed=false; renderScen(); });
+  $("scChips").appendChild(b);
+});
+function setSide(s){ curSide=s; revealed=false; renderScen(); }
+$("figSrc").addEventListener("click", function(){ setSide("src"); });
+$("figFee").addEventListener("click", function(){ setSide("fee"); });
+document.querySelectorAll("#lever button").forEach(function(b){ b.addEventListener("click", function(){ setSide(b.dataset.s); }); });
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderScen(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderScen(); });
+function renderScen(){
+  var s=SCEN[curScen], src=curSide==="src";
+  $("whoSrc").textContent=s.src; $("whoFee").textContent=s.fee;
+  $("figSrc").classList.toggle("on", src); $("figFee").classList.toggle("on", !src);
+  document.querySelectorAll("#lever button").forEach(function(x){ x.classList.toggle("on", (x.dataset.s==="src")===src); });
+  $("sntRole").textContent = src ? "The source speaks — it causes the feeling" : "The feeler speaks — it receives the feeling";
+  $("sntOut").innerHTML = src ? s.s : s.f;
+  var ul=$("changes"); ul.innerHTML="";
+  (src?s.sw:s.fw).forEach(function(c){ var li=document.createElement("li"); li.innerHTML=c; ul.appendChild(li); });
+  var mask = predictMode && !revealed;
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  if(mask){
+    document.querySelectorAll("#sntOut .pa").forEach(function(el){ el.classList.add("masked"); el.addEventListener("click", function(){ revealed=true; renderScen(); }); });
+  }
+}
+renderScen();
+
+/* =====================================================================
+   EXPLORE 2 · the pair dial (the nine pairs of the manual)
+===================================================================== */
+var PAIRS = [
+  {p:"fascinating / fascinated", ing:"fascinating", ed:"fascinated", ingEx:"The failure analysis was <b>fascinating</b> reading.", edEx:"The audience was <b>fascinated</b>.", note:"Swap them and you get the manual’s favorite error: a fascinated talk, a fascinating audience."},
+  {p:"confusing / confused", ing:"confusing", ed:"confused", ingEx:"The instructions were <b>confusing</b>.", edEx:"Even the veterans were <b>confused</b>.", note:"A diagram can be confusing; it can never be confused — paper does not feel."},
+  {p:"exhausting / exhausted", ing:"exhausting", ed:"exhausted", ingEx:"An <b>exhausting</b> week of testing…", edEx:"…left an <b>exhausted</b> crew.", note:"Both halves fit in one sentence, one per figure."},
+  {p:"satisfying / satisfied", ing:"satisfying", ed:"satisfied", ingEx:"The outcome was <b>satisfying</b>.", edEx:"The client was <b>satisfied</b>.", note:"Collocation: <b>satisfied with</b> (never “satisfied of”)."},
+  {p:"boring / bored", ing:"boring", ed:"bored", ingEx:"The safety briefing was <b>boring</b>.", edEx:"The crew left <b>bored</b>.", note:"Collocation: <b>bored with</b>. This pair is the classic self-description trap."},
+  {p:"alarming / alarmed", ing:"alarming", ed:"alarmed", ingEx:"The results were <b>alarming</b>.", edEx:"The clients were <b>alarmed</b> by the recall notice.", note:"Collocation: <b>alarmed at / by</b>."},
+  {p:"overwhelming / overwhelmed", ing:"overwhelming", ed:"overwhelmed", ingEx:"An <b>overwhelming</b> majority approved the reform.", edEx:"The team was <b>overwhelmed</b> by the workload.", note:"Note the attributive use: the majority overwhelms the vote, it does not feel anything."},
+  {p:"promising / promised", ing:"promising", ed:"promised", ingEx:"Early trials produced <b>promising</b> results.", edEx:"The <b>promised</b> upgrade never arrived.", note:"The odd pair: <b>promised</b> is a true passive participle (that was promised), not a feeling."},
+  {p:"encouraging / encouraged", ing:"encouraging", ed:"encouraged", ingEx:"The results were <b>encouraging</b>.", edEx:"The sponsors were <b>encouraged</b>.", note:"Whole sentence from your homework: the results were encouraging, and the sponsors were encouraged."}
+];
+var curPair=0;
+PAIRS.forEach(function(d,i){
+  var b=document.createElement("button"); b.textContent=d.p; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curPair=i; document.querySelectorAll("#dialChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderPair(); });
+  $("dialChips").appendChild(b);
+});
+function renderPair(){
+  var d=PAIRS[curPair];
+  $("dIng").textContent=d.ing; $("dIngEx").innerHTML=d.ingEx;
+  $("dEd").textContent=d.ed; $("dEdEx").innerHTML=d.edEx;
+  $("dNote").innerHTML="⭐ "+d.note;
+}
+renderPair();
+
+/* =====================================================================
+   EXPLORE 3 · nonsense detector — tap a card, tap a box
+===================================================================== */
+var NON = [
+  {t:"the diagram", v:"confuse", role:"src", good:"a <b>confusing</b> diagram — a diagram that confuses the reader.", bad:"a <b>confused</b> diagram = a diagram that feels confusion. A thing cannot feel, unless you personify it."},
+  {t:"the veterans", v:"confuse", role:"fee", good:"the <b>confused</b> veterans — even they cannot follow the instructions.", bad:"the <b>confusing</b> veterans = veterans who confuse everybody else. A different — and rude — claim."},
+  {t:"the briefing", v:"bore", role:"src", good:"a <b>boring</b> briefing — it bores the room.", bad:"a <b>bored</b> briefing = a briefing that is fed up. Meetings have no feelings."},
+  {t:"the crew", v:"bore", role:"fee", good:"the <b>bored</b> crew — they left with nothing to do.", bad:"the <b>boring</b> crew = a crew that bores other people. This is the “I am boring” trap."},
+  {t:"the results", v:"alarm", role:"src", good:"<b>alarming</b> results — they alarm the review board.", bad:"<b>alarmed</b> results = numbers sitting in fear of something."},
+  {t:"the engineers", v:"alarm", role:"fee", good:"<b>alarmed</b> engineers — they are alarmed at the data.", bad:"<b>alarming</b> engineers = engineers who frighten other people."},
+  {t:"the night shift", v:"exhaust", role:"src", good:"an <b>exhausting</b> night shift — it drains whoever works it.", bad:"an <b>exhausted</b> night shift = the shift itself is worn out."},
+  {t:"the talk", v:"fascinate", role:"src", good:"a <b>fascinating</b> talk — it holds the room.", bad:"a <b>fascinated</b> talk = a talk spellbound by something else."},
+  {t:"the audience", v:"fascinate", role:"fee", good:"a <b>fascinated</b> audience — the talk holds them.", bad:"a <b>fascinating</b> audience = an audience that fascinates the speaker."},
+  {t:"the sponsors", v:"encourage", role:"fee", good:"<b>encouraged</b> sponsors — the pilot data lifted them.", bad:"<b>encouraging</b> sponsors = sponsors who cheer other people on."}
+];
+var nSel=null, nPlaced=0;
+function renderNon(){
+  var bank=$("nBank"); bank.innerHTML="";
+  NON.forEach(function(it,i){
+    if(it.done) return;
+    var b=document.createElement("button"); b.innerHTML=it.t+" <span style='color:#888;font-weight:700'>("+it.v+")</span>"; b.dataset.i=i;
+    b.addEventListener("click", function(){ nSel=(nSel===i?null:i); paintSel(); });
+    bank.appendChild(b);
+  });
+  if(!bank.children.length) bank.innerHTML='<span class="muted">All ten placed. Reset to run it again.</span>';
+  paintSel();
+  $("nScore").textContent="Placed: "+nPlaced+" / "+NON.length;
+}
+function paintSel(){
+  document.querySelectorAll("#nBank button").forEach(function(x){ x.classList.toggle("sel", +x.dataset.i===nSel); });
+  $("zIng").classList.toggle("armed", nSel!==null); $("zEd").classList.toggle("armed", nSel!==null);
+}
+function dropInto(zone){
+  var v=$("nVerdict");
+  if(nSel===null){ v.className="verdict bad"; v.innerHTML="Tap a card first, then tap a box."; return; }
+  var it=NON[nSel], ok=(it.role===zone);
+  if(ok){
+    it.done=true; nPlaced++;
+    var sp=document.createElement("span"); sp.innerHTML=it.t;
+    $(zone==="src"?"dropIng":"dropEd").appendChild(sp);
+    v.className="verdict good"; v.innerHTML="✓ Right. <span class='lit'>"+it.good+"</span>";
+  } else {
+    v.className="verdict bad"; v.innerHTML="✗ Read what you just wrote: <span class='lit'>"+it.bad+"</span>";
+  }
+  nSel=null; renderNon();
+}
+$("zIng").addEventListener("click", function(){ dropInto("src"); });
+$("zEd").addEventListener("click", function(){ dropInto("fee"); });
+$("nReset").addEventListener("click", function(){
+  NON.forEach(function(it){ it.done=false; }); nPlaced=0; nSel=null;
+  $("dropIng").innerHTML=""; $("dropEd").innerHTML=""; $("nVerdict").className="verdict"; renderNon();
+});
+renderNon();
+
+/* =====================================================================
+   EXPLORE 4 · the participle bridge (Unit 3)
+===================================================================== */
+var BRIDGE = [
+  {t:"alarming results", map:'<span class="a">results that alarm the board</span> → <span class="b">alarming results</span>', ex:"Active participle: the noun <b>does</b> the alarming. Same move as <i>the team leading the project</i>."},
+  {t:"alarmed engineers", map:'<span class="a">engineers who were alarmed</span> → <span class="b">alarmed engineers</span>', ex:"Passive participle: the noun <b>is done to</b>. Same move as <i>the project led by the team</i>."},
+  {t:"the crew installing…", map:'<span class="a">the crew that is installing the mast</span> → <span class="b">the crew installing the mast</span>', ex:"Unit 3 reduction: delete <i>be</i>, keep the <b>-ing</b>. The crew acts."},
+  {t:"the parts damaged…", map:'<span class="a">the parts that were damaged in transit</span> → <span class="b">the parts damaged in transit</span>', ex:"Unit 3 reduction: delete <i>be</i>, keep the <b>-ed</b>. The parts received the damage."},
+  {t:"the test that tires you", map:'<span class="a">a test that tires the candidates</span> → <span class="b">a tiring test</span> · <span class="b">tired candidates</span>', ex:"If you hesitate, expand the participle back into its clause and the ending appears."}
+];
+var curBr=0;
+BRIDGE.forEach(function(d,i){
+  var b=document.createElement("button"); b.textContent=d.t; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curBr=i; document.querySelectorAll("#brChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderBr(); });
+  $("brChips").appendChild(b);
+});
+function renderBr(){ var d=BRIDGE[curBr]; $("brMap").innerHTML=d.map; $("brEx").innerHTML=d.ex; }
+renderBr();
+
+/* =====================================================================
+   EXPLORE 5 · special cases + common errors
+===================================================================== */
+var SC = {
+  promise:"<b>promising</b> vs <b>promised</b> — the pair that breaks the pattern. <i>A <b>promising</b> junior engineer</i> (she shows promise) vs <i>the <b>promised</b> upgrade</i> (the one that was promised). Here <b>-ed</b> is a true passive participle, not a feeling at all.",
+  things:"<b>A thing cannot feel.</b> <i>a <b>confusing</b> diagram</i> (it confuses) but never <s>a confused diagram</s> — unless you personify it on purpose. The same test kills <s>alarmed results</s>, <s>bored briefing</s> and <s>exhausted night shift</s>.",
+  preps:'The collocations the manual asks you to memorize:<div class="shiftgrid"><div><span class="a">interested</span> <span class="b">in</span></div><div><span class="a">satisfied</span> <span class="b">with</span></div><div><span class="a">alarmed</span> <span class="b">at / by</span></div><div><span class="a">bored</span> <span class="b">with</span></div></div>',
+  beyond:"<b>Not every -ed/-ing adjective is an emotion</b> — the same rule still decides. <i>a carefully <b>rehearsed</b> presentation</i> (it was rehearsed) · <i>the <b>remaining</b> brackets</i> (they remain) · <i><b>stunned</b> silence</i> (people were stunned) · <i>the <b>sleeping</b> monitoring system</i> (it sleeps)."
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.promise;
+
+var ERRS = [
+  'The self-description trap: <span class="no">I am boring.</span> → <span class="yes">I am bored.</span> <span class="es">(“Estoy aburrido”, no “soy aburrido”.)</span>',
+  '<span class="no">The safety briefing was bored.</span> → <span class="yes">…was boring.</span> The briefing causes it.',
+  '<span class="no">The talk was fascinated, and the audience was fascinating.</span> → <span class="yes">a fascinating talk, a fascinated audience.</span> Both halves swapped.',
+  '<span class="no">The evidence was alarmed.</span> → <span class="yes">The evidence was alarming.</span> Evidence has no nerves.',
+  '<span class="no">a confused diagram</span> → <span class="yes">a confusing diagram.</span> A thing cannot feel.',
+  '<span class="no">the promised student</span> → <span class="yes">the promising student.</span> Keep <i>promised</i> for what was promised.',
+  '<span class="no">satisfied of · interested on</span> → <span class="yes">satisfied with · interested in.</span> Learn the preposition with the adjective.'
+];
+ERRS.forEach(function(e){ var li=document.createElement("li"); li.innerHTML=e; $("errList").appendChild(li); });
+
+/* =====================================================================
+   BUILD · assemble (choose the ending) + transform (write it)
+===================================================================== */
+var BUILD = [
+  {ctx:"The instructions confuse even the veterans.", frame:"The instructions were so {A} that even the veterans asked for help.", options:["confused","confusing"], correct:"confusing", note:"The instructions produce the effect: source = -ing."},
+  {ctx:"Three night shifts have drained the crew.", frame:"After three night shifts, the crew was completely {A}.", options:["exhausted","exhausting"], correct:"exhausted", note:"The crew experiences the effect: feeler = -ed."},
+  {ctx:"The early trials show promise.", frame:"Early trials produced {A} results.", options:["promised","promising"], correct:"promising", note:"promising = showing promise."},
+  {ctx:"Someone promised an upgrade. It never came.", frame:"The {A} upgrade never arrived.", options:["promised","promising"], correct:"promised", note:"promised = that was promised — a true passive participle."},
+  {ctx:"Almost everybody voted in favour.", frame:"An {A} majority approved the reform.", options:["overwhelmed","overwhelming"], correct:"overwhelming", note:"The majority overwhelms the vote; it feels nothing."},
+  {ctx:"Our presentation sent the auditors to sleep.", frame:"The auditors seemed {A} by our carefully rehearsed presentation.", options:["bored","boring"], correct:"bored", note:"The auditors receive the feeling: -ed."},
+  {ctx:"The recall notice frightened the clients.", frame:"The clients were {A} by the recall notice.", options:["alarmed","alarming"], correct:"alarmed", note:"The clients feel it: -ed. Collocation: alarmed at / by."},
+  {ctx:"Nobody could stop reading the failure analysis.", frame:"The failure analysis was {A} reading.", options:["fascinated","fascinating"], correct:"fascinating", note:"The analysis does the fascinating: -ing."},
+  {ctx:"The demo convinced everybody in the room.", frame:"Everyone left the demo {A}.", options:["convinced","convincing"], correct:"convinced", note:"The people were convinced: -ed."},
+  {ctx:"The results fell short, but everybody expected that.", frame:"The results were {A}, but nobody was surprised.", options:["disappointed","disappointing"], correct:"disappointing", note:"The results cause the disappointment: -ing."},
+  {ctx:"The final demo felt good to watch.", frame:"We were surprised at how {A} the final demo felt.", options:["satisfying","satisfied"], correct:"satisfying", note:"The demo produces the satisfaction: -ing."}
+];
+var bi=0, bPick=null, bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function renderBuild(){
+  var it=BUILD[bi]; bPick=null;
+  $("bctx").innerHTML = it.frame.replace("{A}","______")+"<small>Situation: "+it.ctx+"</small>";
+  var wrap=$("formChips"); wrap.innerHTML="";
+  it.options.forEach(function(op){
+    var b=document.createElement("button"); b.textContent=op; b.dataset.v=op;
+    b.addEventListener("click", function(){ bPick=op; document.querySelectorAll("#formChips button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bPick){ r.className="bresult bad"; r.innerHTML="Choose an ending first."; return; }
+  if(bPick===it.correct){
+    var sent=it.frame.replace("{A}", '<span class="pa">'+it.correct+'</span>');
+    r.className="bresult good"; r.innerHTML="✅ "+sent+'<div class="bnote">'+it.note+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else {
+    document.querySelector('#formChips button[data-v="'+bPick+'"]').classList.add("wrongpick");
+    r.className="bresult bad"; r.innerHTML="❌ Not that one. <span class='bnote'>Hint — "+it.note+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:"The diagram was so ______ (confuse) that even the author hesitated. — write the adjective.", accept:["confusing"], model:"confusing — the diagram produces the effect."},
+  {ctx:"______ (encourage) by the pilot data, the sponsors extended the grant. — write the adjective.", accept:["encouraged"], model:"Encouraged — a reduced clause: Because they were encouraged…"},
+  {ctx:"The team found the audit process ______ (frustrate). — write the adjective.", accept:["frustrating"], model:"frustrating — the process causes the feeling."},
+  {ctx:"______ (interest) parties may request the full dataset. — write the adjective.", accept:["interested"], model:"Interested — the parties feel the interest. Collocation: interested in."},
+  {ctx:"Fix it: “The talk was fascinated, and the audience was fascinating.”", accept:["the talk was fascinating and the audience was fascinated","the talk was fascinating the audience was fascinated","the talk was fascinating; the audience was fascinated"], model:"The talk was fascinating, and the audience was fascinated."},
+  {ctx:"Fix one word: “The clients were alarming at the recall notice.”", accept:["the clients were alarmed at the recall notice","the clients were alarmed by the recall notice"], model:"The clients were alarmed at the recall notice — the feeler takes -ed, and the manual gives alarmed at / by."},
+  {ctx:"Fix it: “The evidence was alarmed.”", accept:["the evidence was alarming"], model:"The evidence was alarming."},
+  {ctx:"Fix the classic trap: “I am boring.” (you mean the class has left you with nothing to do)", accept:["i am bored","i'm bored"], model:"I am bored."},
+  {ctx:"Complete with one preposition: The client was satisfied ______ the outcome.", accept:["with"], model:"with — satisfied with."}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML=it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow — 13 items (5★ / 4★★ / 4★★★)
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Source or feeler?", q:"The instructions were so ___ that even the veterans asked for help.", o:["confusing","confused","confuse","confusion"], a:0, w:"The instructions produce the effect, so the source takes -ing."},
+  {kind:"mc", diff:1, tag:"Source or feeler?", q:"After three night shifts, the crew was completely ___.", o:["exhausting","exhausted","exhaustive","exhaust"], a:1, w:"The crew experiences the effect, so the feeler takes -ed."},
+  {kind:"fill", diff:1, tag:"Complete the participle", q:"The failure analysis was fascinating reading, and the engineers were ___ . (fascinate)", accept:["fascinated"], w:"The engineers feel it: -ed for the feeler."},
+  {kind:"fill", diff:1, tag:"promising or promised?", q:"A ___ junior engineer led the redesign. (she shows promise)", accept:["promising"], w:"promising = showing promise; promised = that was promised."},
+  {kind:"error", diff:1, tag:"Fix the error", words:["The","safety","briefing","was","bored,","but","the","evacuation","drill","woke","everyone","up."], bad:4, fixOld:"bored", fixNew:"boring", w:"The briefing causes the feeling: the source takes -ing."},
+  {kind:"mc", diff:2, tag:"Both halves", q:"The results were ___, and the sponsors were ___.", o:["encouraged / encouraging","encouraging / encouraging","encouraging / encouraged","encouraged / encouraged"], a:2, w:"Results cause it (-ing); sponsors feel it (-ed)."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["The","demo","was","fascinated,","yet","the","sales","team","looked","bored."], bad:3, fixOld:"fascinated", fixNew:"fascinating", w:"The demo produces the feeling; only the team can feel it."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["The","confused","diagram","misled","three","teams","in","one","morning."], bad:1, fixOld:"confused", fixNew:"confusing", w:"A thing cannot feel: the diagram confuses, so it is confusing."},
+  {kind:"fill", diff:2, tag:"Complete the participle", q:"The team found the audit process ___ . (frustrate)", accept:["frustrating"], w:"The process causes the feeling: -ing."},
+  {kind:"mc", diff:3, tag:"Reduced participle", q:"___ by the pilot data, the sponsors extended the grant.", o:["Encouraging","To encourage","Encourage","Encouraged"], a:3, w:"The sponsors are the ones encouraged: -ed. It is a Unit 3 reduction of “Because they were encouraged…”."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["The","keynote","ran","well","past","the","hour,","yet","the","audience","was","still","fascinating","by","every","example."], bad:12, fixOld:"fascinating", fixNew:"fascinated", w:"The agent phrase “by every example” only fits the passive participle: the audience was fascinated by it."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["The","sponsors","were","satisfied","of","the","pilot","data","and","renewed","the","grant."], bad:4, fixOld:"of", fixNew:"with", w:"Collocation from the manual: satisfied with."},
+  {kind:"fill", diff:3, tag:"Collocation", q:"Anyone interested ___ the full dataset may write to the lab. (one preposition)", accept:["in"], w:"interested in — with satisfied with, alarmed at/by and bored with."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("i8_s7_drill_best")||0); if(dscore>best){ store("i8_s7_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Source and feeler never confused. Ready for the ★★★ homework." : dscore>=8?"Solid — review the pair dial and the special-cases card, then go again." : "Re-read Structure 7, run Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, (ok?'<span class="k">✓ Correct.</span> ':'<span class="k">✗ Not that one: the green part is the error.</span> ')+'<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

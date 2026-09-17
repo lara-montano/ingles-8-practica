@@ -1,7 +1,7 @@
 # Inglés 8 · Material de práctica (C1 · preparación SELLI)
 
 Ejercicios de práctica de **Inglés 8** (nivel C1, preparación para el examen SELLI en formato
-TOEFL ITP): doce **simuladores web** de gramática, uno por tema del manual (Grammar 1–12, el curso completo), y el
+TOEFL ITP): diecinueve **páginas web interactivas**, una por tema del manual (**Grammar 1–12** y **Structure 1–7**, el curso completo), y el
 **simulacro tipo SELLI de las Units 1–2** con su audio. Todo es material original de práctica;
 **no incluye exámenes ni claves de respuesta** (las claves se revisan en clase).
 
@@ -18,7 +18,7 @@ TOEFL ITP): doce **simuladores web** de gramática, uno por tema del manual (Gra
 | Carpeta | Qué es | Cómo se usa |
 |---|---|---|
 | `01_SELLI_Mock_U1-U2/` | **Simulacro tipo SELLI** de las Units 1–2: 81 reactivos, 85 min (Listening 16 · Structure 20 · Written Expression 25 · Reading 20). Cuadernillo de 11 págs. + audio de 11:45. | Reproduce el audio **una sola vez y sin pausar**: trae las instrucciones, el ejemplo y los 12 s de respuesta de cada reactivo. Después resuelve las Secciones B–D en unos 70 min. Al final llena la hoja de perfil: lo que importa es qué fila salió baja. |
-| `02_Simuladores_web/` | **12 simuladores interactivos** de gramática (Grammar 1–12, el curso completo): conectores coordinantes, cláusulas adverbiales de tiempo y causa, condición/contraste/manera/lugar, noun clauses, adjective clauses, reducciones de cláusulas adjetivas y adverbiales, la pasiva C1, paralelismo simple y en comparaciones, e inversión (lugar/negativos y condicionales/comparaciones). | Descarga el `.html` y ábrelo con doble clic: funciona **sin internet**, en computadora o celular. Tres modos: *Explore* (ver la regla en acción) → *Build* (armar oraciones) → *Drill* (práctica graduada con marcador, en los dos formatos del examen). |
+| `02_Simuladores_web/` | **19 páginas interactivas** (Grammar 1–12 y Structure 1–7, el curso completo): conectores, cláusulas adverbiales y nominales, adjective clauses, reducciones, la pasiva C1, paralelismo e inversión; más concordancia bajo presión, sufijos de papel, *make/do*, *like/as*, *other/another*, adjetivos en -ly y de predicado, y adjetivos en -ed/-ing. |
 
 ## Simuladores
 

@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE LIKENESS MACHINE · English 8 · Unit 4 "Fine Distinctions"
+  Structure 4 — like, alike & unlike; like vs. as (slots, clause test, roles)
+  Three modes: Explore (slots + like/as) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Structure 4 · The Likeness Machine · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --garnet:#8C2F3F; --garnetdark:#5C1E29; --garnetlt:#F4E5E8;   /* Unit 4 identity */
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--garnet),var(--garnetdark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#EFC9D0; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#F3DDE1; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--garnetdark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--garnetdark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--garnetdark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-garnet{background:var(--garnet)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--garnet); background:var(--garnetlt); color:var(--garnetdark)}
+
+  /* ---------- the two slots ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .slots{display:grid; grid-template-columns:repeat(auto-fit,minmax(255px,1fr)); gap:12px; margin-top:10px}
+  .slot{border-radius:12px; padding:14px; border:2px solid var(--rule); background:#fff}
+  .slot .lab{font-size:11px; font-weight:900; letter-spacing:.07em; text-transform:uppercase; color:#888}
+  .slot .frame{font-size:13px; font-weight:800; color:#aaa} .slot .verdict{float:right; font-size:24px; font-weight:900; line-height:1}
+  .slot .snt{font-size:clamp(16px,2.6vw,20px); font-weight:800; line-height:1.55; margin-top:6px; clear:both}
+  .slot .fixline{font-size:clamp(15px,2.4vw,19px); font-weight:800; margin-top:4px} .slot .note{font-size:13px; font-weight:600; color:#555; margin-top:8px}
+  .slot.yes{border-color:var(--green); background:var(--greenlt)} .slot.no{border-color:var(--think); background:var(--thinklt)}
+  .hw{background:var(--garnetlt); color:var(--garnetdark); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--garnet)}
+  .xw{color:var(--think); text-decoration:line-through}
+  .hw.masked{color:transparent; box-shadow:inset 0 -2px 0 var(--garnet); position:relative; cursor:pointer; min-width:62px; display:inline-block}
+  .hw.masked::after{content:"?"; position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+
+  /* ---------- like vs as selector · unlike balance ---------- */
+  .laout{background:var(--soft); border-radius:12px; padding:16px; margin-top:8px}
+  .labadge{display:inline-block; background:var(--garnet); color:#fff; font-weight:900; border-radius:8px; padding:3px 13px; font-size:14px; letter-spacing:.04em}
+  .lasnt{font-size:clamp(17px,2.9vw,23px); font-weight:800; margin:9px 0; line-height:1.55}
+  .larule{border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:8px 12px; font-size:14px; font-weight:600}
+  .latest{margin-top:8px; border-left:4px solid var(--navy); background:var(--navylt); border-radius:0 10px 10px 0; padding:8px 12px; font-size:14px; font-weight:700; color:#333}
+  .pairbar{display:flex; gap:10px; align-items:center; justify-content:center; flex-wrap:wrap; margin:12px 0 6px} .pairbar .vs{font-weight:900; color:#999}
+  .pairbar .side{background:var(--navylt); border:2px solid var(--navy); color:var(--navy); border-radius:10px; padding:8px 14px; font-weight:900}
+  .pairbar.bad .side{background:var(--thinklt); border-color:var(--think); color:var(--think)} .pairbar.ok .side{background:var(--greenlt); border-color:var(--green); color:var(--greendark)}
+
+  /* ---------- tap-to-sort classifier (no drag & drop) ---------- */
+  .sorthelp{font-size:13px; font-weight:800; color:var(--excep); margin:6px 0 8px} .frags{display:flex; gap:7px; flex-wrap:wrap; margin-bottom:10px}
+  .frags button{border:2px dashed var(--rule); background:#fff; border-radius:10px; padding:8px 12px; font:700 14px Lato,sans-serif; cursor:pointer; text-align:left; color:var(--ink)}
+  .frags button.sel{border-style:solid; border-color:var(--garnet); background:var(--garnetlt); color:var(--garnetdark); box-shadow:0 0 0 3px rgba(140,47,63,.18)}
+  .bins{display:grid; grid-template-columns:repeat(auto-fit,minmax(155px,1fr)); gap:8px}
+  .bin{border:2px solid var(--rule); border-radius:12px; background:#fff; padding:10px; cursor:pointer; min-height:88px}
+  .bin .bname{font-weight:900; color:var(--garnetdark); font-size:16px; text-align:center; border-bottom:1.5px dashed var(--rule); padding-bottom:5px}
+  .bin .bsub{display:block; font-size:11px; font-weight:700; color:#999} .bin ul{list-style:none; margin-top:6px}
+  .bin.armed{border-color:var(--garnet); background:var(--garnetlt)} .bin.nope{border-color:var(--think); background:var(--thinklt)}
+  .bin li{font-size:13px; font-weight:700; color:var(--greendark); padding:3px 0; border-bottom:1px dotted var(--rule)}
+  .bin li::before{content:"\2714 "; color:var(--green)} .sortmsg{margin-top:10px; font-size:14px; font-weight:800; min-height:22px}
+  .sortmsg.good{color:var(--green)} .sortmsg.bad{color:var(--think)}
+
+  /* special cases selector */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; max-width:100%; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)}
+
+  /* errors card */
+  .errlist{list-style:none; margin-top:6px}
+  .errlist li{display:flex; gap:10px; align-items:center; flex-wrap:wrap; padding:8px 0; border-bottom:1px dashed var(--rule); font-size:15px; font-weight:700}
+  .errlist .bad{color:var(--think)} .errlist .bad::before{content:"\2718 "}
+  .errlist .good{color:var(--green); display:none} .errlist .good::before{content:"\2714 "}
+  .errlist .why{display:none; margin:0; flex-basis:100%; font-size:13px; padding:6px 10px}
+  .errlist li.open .good,.errlist li.open .why{display:block} .errlist li.open .fixbtn{display:none}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--garnet); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)} .btn[disabled]{opacity:.45; cursor:not-allowed}
+  .btn.ghost{background:#fff; color:var(--garnetdark); border:2px solid var(--garnet)} .btn.small{padding:8px 14px; font-size:14px}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--garnet); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--garnet)} .segbig button.on{background:var(--garnet); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .bchips button.on{border-color:var(--garnet); background:var(--garnetlt); color:var(--garnetdark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--garnetdark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--garnetdark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--garnet); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)}
+  .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick{background:var(--think); color:#fff}
+  .stn .w.rightpick{background:var(--green); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)}
+  .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--garnetdark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--garnet); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">🪞</span>
+  <div class="wrap">
+    <div class="kicker">English 8 · Unit 4 · Fine Distinctions</div>
+    <h1>🪞 The Likeness Machine</h1>
+    <div class="sub"><b>Structure 4</b> — <i>like</i>, <i>alike</i> &amp; <i>unlike</i>; <i>like</i> vs. <i>as</i>. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🪞 Explore the slots</span><span>🔧 Build the phrase</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🪞 Explore<small>see the slots</small></button>
+    <button data-tab="build">🔧 Build<small>choose the word</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>Three words, three grammars — two slots</h2>
+      <p class="muted">The sentence offers two openings: <b>before a noun</b> (a preposition slot) and <b>after the verb</b> (a predicate slot, with nothing following). Each word fits one of them. Pick a word and the machine ticks the slot it can take and crosses out the other. <span class="es">(Alike solo va después del verbo; like y unlike piden un sustantivo.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the word, guess, then reveal</label>
+      <h3>1 · Choose a word</h3>
+      <div class="chips" id="wordChips"></div>
+
+      <div class="slots"><div class="slot" id="slot1"></div><div class="slot" id="slot2"></div></div>
+      <div style="text-align:center; margin-top:10px"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the word ✓</button></div>
+      <p class="muted" style="margin-top:10px">✘ <b>an alike design</b> → ✔ <b>a similar design</b>. <i>Alike</i> only after the verb.</p>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">💡 The like / as switch</span>
+      <h2>What comes after the gap decides the word</h2>
+      <p class="muted">Change the complement and the machine changes the word. Ask one question: <b>is there a subject + verb after the gap?</b> <span class="es">(Con sustantivo, like; con cláusula, as; «en calidad de», as.)</span></p>
+      <div class="chips" id="laChips"></div>
+      <div class="laout"><span class="labadge" id="laWord"></span>
+        <div class="lasnt" id="laSnt"></div><div class="larule" id="laRule"></div><div class="latest" id="laTest"></div></div>
+      <div style="text-align:center; margin-top:10px"><button class="btn ghost small" id="revealBtn2" style="display:none">Reveal the word ✓</button></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-garnet">🧲 Sort them into their slots</span>
+      <h2>Tap a fragment, then tap its word</h2>
+      <p class="sorthelp">👆 Tap to select · 👆 tap the box to file it. <span class="es">(Toca el fragmento y luego la caja — funciona con dedo y con ratón.)</span></p>
+      <div class="frags" id="frags"></div>
+      <div class="bins" id="bins"></div>
+      <div class="sortmsg" id="sortMsg"></div>
+      <div class="bfoot"><button class="btn ghost small" id="sortReset">Start again ↺</button><span class="bscore" id="sortScore">Filed: 0/8</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">⚖️ Unlike — the balance</span>
+      <h2><i>Unlike</i> must contrast comparable things</h2>
+      <p class="muted"><i>Unlike</i> is a preposition: <b>unlike + noun</b>. And the noun it takes must belong to the same category as the noun it is contrasted with. <span class="es">(Compara peras con peras.)</span></p>
+      <div class="chips" id="unlChips"></div>
+      <div class="lasnt" id="unlSnt" style="text-align:center"></div>
+      <div class="pairbar" id="unlPair"></div>
+      <div class="larule" id="unlWhy"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Special cases</span>
+      <h2>Six details the exam tests</h2>
+      <div class="seg2" id="scSeg"><button data-v="adverb" class="on">alike = both</button><button data-v="role">as = in the role of</button><button data-v="suchas">such as</button><button data-v="fixed">fixed phrases</button><button data-v="register">register</button><button data-v="pairs">comparable pairs</button></div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">⚠️ Common errors</span>
+      <h2>Errors Spanish speakers make</h2>
+      <p class="muted">Read the sentence, find the problem, then tap <b>Fix</b> to check. <span class="es">(Errores típicos: adivina la corrección antes de verla.)</span></p>
+      <ul class="errlist" id="errList"></ul>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> is Structure 4 in four widgets: the <i>two-slot</i> machine (before a noun vs after the verb) for like / alike / unlike, the <i>like vs as</i> switch (noun · clause · role · fixed phrase · such as), a tap-to-sort classifier, and the <i>unlike</i> balance for comparable pairs. The special-cases card and the error clinic are the manual's own boxes.</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> the sentence by choosing the word <b>and</b> the reason (exercise A of the manual + Task set 17), then <i>transform</i> sentences with the word in parentheses (exercise B), with validation and a model answer.</li>
+          <li><b>Drill</b> is one graded engine in the two SELLI formats — Structure (complete the sentence) and Written Expression (click the wrong part): ★ word choice · ★★ clause vs noun &amp; the predicate slot · ★★★ such as, comparable pairs, rewriting.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio. No drag and drop: everything is tap to select.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-garnet">🔧 Your turn to produce</span>
+      <h2>Build the phrase</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the sentence, then choose the <b>word</b> and the <b>reason</b> it fits. The machine builds it — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">The word is…</div><div class="bchips" id="wordOpts"></div></div>
+        <div class="bgroup"><div class="glab">…because the gap is followed by</div><div class="bchips" id="whyOpts"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New sentence →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Rewrite each sentence with the word in parentheses, or repair the error. Type it and check against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type the full sentence"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next sentence →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ word choice · ★★ noun vs clause &amp; the predicate slot · ★★★ such as, comparable pairs, rewriting. Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 8 · Unit 4 «Fine Distinctions» · Structure 4 — like, alike and unlike; like vs as · Level C1
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE LIKENESS MACHINE — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 8 Class Manual (Structure 4).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+var predictMode = false, revealed = false;
+function maskIn(el){
+  if(!(predictMode && !revealed)) return;
+  el.querySelectorAll(".hw").forEach(function(sp){
+    sp.classList.add("masked");
+    sp.addEventListener("click", function(){ revealed=true; renderAll(); });
+  });
+}
+function chipRow(host, keys, labeller, onPick){
+  var wrap=$(host);
+  keys.forEach(function(k,i){
+    var b=document.createElement("button"); b.textContent=labeller(k);
+    if(i===0) b.classList.add("on");
+    b.addEventListener("click", function(){ wrap.querySelectorAll("button").forEach(function(x){ x.classList.toggle("on", x===b); }); onPick(k); });
+    wrap.appendChild(b);
+  });
+}
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderAll(); });
+["revealBtn","revealBtn2"].forEach(function(id){ $(id).addEventListener("click", function(){ revealed=true; renderAll(); }); });
+
+/* EXPLORE 1 · the two slots (before a noun / after the verb) */
+var WORDS = {
+  like:{lab:"like",
+    s1:{ok:true, snt:'The new casing looks <span class="hw">like</span> the old one.', note:"Preposition + noun = similar to. The casing is <b>not</b> the old one; it only resembles it."},
+    s2:{ok:false, snt:'The two casings are <span class="xw">like</span>.', fix:'The two casings are <span class="hw">alike</span>.', note:"Nothing can follow here, and <i>like</i> always needs a noun. The predicate word is <i>alike</i>."}},
+  alike:{lab:"alike",
+    s1:{ok:false, snt:'The team proposed an <span class="xw">alike</span> design.', fix:'The team proposed a <span class="hw">similar</span> design.', note:"<i>Alike</i> never goes before a noun. Use <i>similar</i> or <i>identical</i> there."},
+    s2:{ok:true, snt:'The two casings are <span class="hw">alike</span>.', note:"Predicate adjective — and also an adverb meaning <i>both equally</i>: It treats staff and students <b>alike</b>."}},
+  unlike:{lab:"unlike",
+    s1:{ok:true, snt:'<span class="hw">Unlike</span> steel, aluminum resists rust.', note:"Preposition + noun = in contrast with. The two nouns must be comparable (metal vs metal)."},
+    s2:{ok:false, snt:'The two alloys are <span class="xw">unlike</span>.', fix:'The two alloys are <span class="hw">not alike</span>.', note:"In this register <i>unlike</i> works as a preposition: give it a noun. For the predicate slot, negate <i>alike</i>."}}
+};
+var SLOTLAB = {s1:{lab:"① Before a noun", frame:"___ + noun  (preposition slot)"}, s2:{lab:"② After the verb", frame:"be / look / seem + ___  (nothing follows)"}};
+var curWord = "like";
+chipRow("wordChips", Object.keys(WORDS), function(k){ return WORDS[k].lab; }, function(k){ curWord=k; revealed=false; renderAll(); });
+function paintSlot(id, key, d){
+  var box=$(id), L=SLOTLAB[key];
+  box.className = "slot " + (d.ok ? "yes" : "no");
+  box.innerHTML = '<span class="verdict">'+(d.ok?"✔":"✘")+'</span><div class="lab">'+L.lab+'</div><div class="frame">'+L.frame+'</div><div class="snt">'+d.snt+"</div>"+
+    (d.ok ? "" : '<div class="fixline">→ '+d.fix+"</div>")+'<div class="note">'+d.note+"</div>";
+  maskIn(box);
+}
+function renderSlots(){
+  paintSlot("slot1","s1",WORDS[curWord].s1); paintSlot("slot2","s2",WORDS[curWord].s2);
+  $("revealBtn").style.display = (predictMode && !revealed) ? "inline-block" : "none";
+}
+
+/* EXPLORE 2 · like vs as switch */
+var LA = [
+  {lab:"a noun — a spring", word:"like", snt:'It behaves <span class="hw">like</span> a spring.', rule:"<b>like + noun</b> = similar to. The part is <b>not</b> a spring; it only behaves that way.", test:"A noun after the gap and the meaning is “similar to” → <b>like</b>."},
+  {lab:"a clause — the diagram shows", word:"as", snt:'Assemble it <span class="hw">as</span> the diagram shows.', rule:"<b>as + clause</b> (subject + verb) = in the way that. Formal English uses <i>as</i>, never <i>like</i>, before a clause.", test:"Is there a subject + verb after the gap? → <b>as</b>."},
+  {lab:"a role — a consultant", word:"as", snt:'She works <span class="hw">as</span> a consultant.', rule:"<b>as + noun</b> = in the role of. She really <b>is</b> one — that is what separates it from <i>like</i>.", test:"A noun after the gap, and the person or thing really is it → <b>as</b>."},
+  {lab:"a fixed phrase — expected", word:"as", snt:'The yield fell, <span class="hw">as</span> expected.', rule:"Fixed academic phrases take <i>as</i>: <b>as expected · as shown in Figure 2 · as follows</b>.", test:"A set phrase of academic register → <b>as</b>."},
+  {lab:"examples — copper and silver", word:"such as", snt:'Metals <span class="hw">such as</span> copper and silver conduct well.', rule:"<b>such as</b> = for example. Plain <i>as</i> before that noun would mean “in the role of”.", test:"You are giving examples → <b>such as</b>."}
+];
+var curLA = 0;
+chipRow("laChips", [0,1,2,3,4], function(i){ return LA[i].lab; }, function(i){ curLA=i; revealed=false; renderAll(); });
+function renderLA(){
+  var d=LA[curLA], mask = predictMode && !revealed;
+  $("laWord").textContent = mask ? "?" : d.word;
+  $("laSnt").innerHTML = d.snt; $("laRule").innerHTML = d.rule; $("laTest").innerHTML = "🔎 " + d.test;
+  maskIn($("laSnt"));
+  $("revealBtn2").style.display = mask ? "inline-block" : "none";
+}
+function renderAll(){ renderSlots(); renderLA(); }
+renderAll();
+
+/* EXPLORE 3 · tap-to-sort classifier (no drag & drop — phone friendly) */
+var BINS = [{k:"like", sub:"+ noun · similar to"}, {k:"alike", sub:"after the verb"}, {k:"unlike", sub:"+ noun · contrast"}, {k:"as", sub:"+ clause · in the role of"}];
+var SORT = [
+  {t:"___ a spring (it is not one)", a:"like", w:"like + noun = similar to."},
+  {t:"Install it ___ the diagram shows", a:"as", w:"A clause follows → as."},
+  {t:"The two files are ___", a:"alike", w:"Nothing follows the verb → alike."},
+  {t:"She works ___ a consultant", a:"as", w:"In the role of → as."},
+  {t:"___ steel, aluminum resists rust", a:"unlike", w:"Contrast + noun → unlike."},
+  {t:"It treats staff and students ___", a:"alike", w:"alike as an adverb = both equally."},
+  {t:"___ the manual says, torque matters", a:"as", w:"A clause follows → as (exam register)."},
+  {t:"___ the slow beta, the release build starts in seconds", a:"unlike", w:"Contrast between two builds → unlike (slow vs seconds)."}
+];
+var placed = SORT.map(function(){ return null; }), selFrag = null;
+function renderSort(){
+  var fr=$("frags"); fr.innerHTML="";
+  SORT.forEach(function(it,i){
+    if(placed[i]) return;
+    var b=document.createElement("button"); b.textContent=it.t;
+    if(selFrag===i) b.classList.add("sel");
+    b.addEventListener("click", function(){ selFrag=(selFrag===i?null:i); $("sortMsg").className="sortmsg"; $("sortMsg").textContent = selFrag===null?"":"Selected — now tap its word."; renderSort(); });
+    fr.appendChild(b);
+  });
+  var bn=$("bins"); bn.innerHTML="";
+  BINS.forEach(function(B){
+    var d=document.createElement("div"); d.className="bin"+(selFrag!==null?" armed":"");
+    var inner='<div class="bname">'+B.k+'<span class="bsub">'+B.sub+"</span></div><ul>";
+    SORT.forEach(function(it,i){ if(placed[i]===B.k) inner+="<li>"+it.t+"</li>"; });
+    d.innerHTML = inner+"</ul>";
+    d.addEventListener("click", function(){ dropIn(B.k, d); });
+    bn.appendChild(d);
+  });
+  var done=placed.filter(function(x){ return x; }).length;
+  $("sortScore").textContent = "Filed: "+done+"/"+SORT.length;
+  if(done===SORT.length){ $("sortMsg").className="sortmsg good"; $("sortMsg").textContent="✔ All eight filed. Every slot is now visible at a glance."; }
+}
+function dropIn(k, node){
+  if(selFrag===null){ $("sortMsg").className="sortmsg"; $("sortMsg").textContent="Tap a fragment first."; return; }
+  var it=SORT[selFrag];
+  if(it.a===k){ placed[selFrag]=k; selFrag=null; $("sortMsg").className="sortmsg good"; $("sortMsg").innerHTML="✔ "+it.w; renderSort(); }
+  else { node.classList.add("nope"); $("sortMsg").className="sortmsg bad"; $("sortMsg").innerHTML="✘ Not there. "+it.w;
+         setTimeout(function(){ node.classList.remove("nope"); }, 600); }
+}
+$("sortReset").addEventListener("click", function(){ placed=SORT.map(function(){ return null; }); selFrag=null; $("sortMsg").className="sortmsg"; $("sortMsg").textContent=""; renderSort(); });
+renderSort();
+
+/* EXPLORE 4 · unlike, the balance of comparable pairs */
+var UNL = [
+  {lab:"budget", snt:'<span class="xw">Unlike last year</span>, the budget grew.', a:"last year", b:"the budget", ok:false, why:"✘ A <b>year</b> is not a <b>budget</b>. Contrast budget with budget: ✔ <b>Unlike last year’s budget</b>, this year’s grew."},
+  {lab:"metals", snt:'<span class="hw">Unlike steel</span>, aluminum resists rust.', a:"steel", b:"aluminum", ok:true, why:"✔ Two metals — comparable. This is the model sentence of the manual."},
+  {lab:"builds", snt:'<span class="hw">Unlike the beta</span>, the release build starts in seconds.', a:"the beta", b:"the release build", ok:true, why:"✔ Two builds of the same product — comparable."}
+];
+var curUnl=0;
+chipRow("unlChips", [0,1,2], function(i){ return UNL[i].lab; }, function(i){ curUnl=i; renderUnl(); });
+function renderUnl(){
+  var d=UNL[curUnl];
+  $("unlSnt").innerHTML=d.snt; $("unlWhy").innerHTML=d.why;
+  $("unlPair").className="pairbar "+(d.ok?"ok":"bad");
+  $("unlPair").innerHTML='<span class="side">'+d.a+'</span><span class="vs">'+(d.ok?"= same category =":"≠ different categories ≠")+'</span><span class="side">'+d.b+"</span>";
+}
+renderUnl();
+
+/* special cases */
+var SC = {
+  adverb:"<b>alike</b> is also an <b>adverb</b> meaning <i>both equally</i>, and it still sits after the verb: “It treats staff and students <b>alike</b>.” · “The controller treats large and small errors <b>alike</b>.”",
+  role:"<b>as + noun = in the role of</b>: “She returned <b>as director</b> of the plant.” (she <i>is</i> the director). Compare with <b>like + noun</b> = similar to: “She spoke <b>like a director</b>.” (she is not one).",
+  suchas:"<b>such as</b> = for example: “Metals <b>such as</b> copper and silver conduct well.” Plain <i>as</i> there would say those metals act in the role of metals.",
+  fixed:"Fixed academic phrases always take <i>as</i>: <b>as expected · as shown in Figure 2 · as follows</b>. Learn them as blocks — no <i>like</i> version exists in this register.",
+  register:"Before a <b>clause</b>, the exam register is <i>as</i>: ✘ “<s>Like</s> the manual says…” → ✔ “<b>As</b> the manual says…”. <i>Like</i> + clause is spoken, informal English.",
+  pairs:"<b>Unlike</b> must contrast <b>comparable</b> things: ✘ “Unlike last year, the budget grew.” (year vs budget) → ✔ “<b>Unlike last year’s budget</b>, this year’s grew.”"
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.adverb;
+
+/* common errors */
+var ERR = [
+  {bad:"Like the manual says, torque matters.", good:"As the manual says, torque matters.", why:"A clause follows (<i>the manual says</i>). Formal English uses <b>as</b> before a clause."},
+  {bad:"The twins are like.", good:"The twins are alike.", why:"After the verb, with nothing following, the word is <b>alike</b>."},
+  {bad:"They compared the two alike twins.", good:"They compared the two identical twins.", why:"<b>Alike</b> never goes before a noun: use <i>identical</i> or <i>similar</i> there."},
+  {bad:"Unlike last year, the budget grew.", good:"Unlike last year’s budget, this year’s grew.", why:"<b>Unlike</b> must contrast comparable things — a year is not a budget."},
+  {bad:"Alike most polymers, this one softens near 80 °C.", good:"Like most polymers, this one softens near 80 °C.", why:"Before a noun you need the preposition <b>like</b> (or <b>unlike</b>, if you mean contrast)."},
+  {bad:"He speaks about turbines like a poet speaks about the sea.", good:"He speaks about turbines as a poet speaks about the sea.", why:"A second clause follows (<i>a poet speaks</i>) → <b>as</b>."},
+  {bad:"The rovers are so like that spare wheels fit either.", good:"The rovers are so alike that spare wheels fit either.", why:"Predicate position again: <b>alike</b>, not <i>like</i>."}
+];
+ERR.forEach(function(e){
+  var li=document.createElement("li");
+  li.innerHTML='<span class="bad">'+e.bad+'</span><button class="btn ghost small fixbtn">Fix ✓</button><span class="good">'+e.good+'</span><div class="why">'+e.why+"</div>";
+  li.querySelector(".fixbtn").addEventListener("click", function(){ li.classList.add("open"); });
+  $("errList").appendChild(li);
+});
+
+/* =====================================================================
+   BUILD · assemble (word + reason) + transform (rewrite it)
+===================================================================== */
+var REASON = {contrast:"a noun — contrast", compare:"a noun — comparison", role:"a noun — in the role of", clause:"a clause — subject + verb", nothing:"nothing — it ends the verb phrase", examples:"a list of examples"};
+var BUILD = [
+  {ctx:"___ its predecessor, the new engine runs on two fuels.", hint:"Two engines are set against each other.", words:["Alike","Unlike","Like"], wOk:"Unlike", whys:["compare","contrast","nothing"], yOk:"contrast", frame:"{W} its predecessor, the new engine runs on two fuels.", note:"unlike + noun = in contrast with, and both nouns are engines — comparable."},
+  {ctx:"The two proposals are remarkably ___.", hint:"Nothing follows the gap.", words:["like","alike","likely"], wOk:"alike", whys:["compare","clause","nothing"], yOk:"nothing", frame:"The two proposals are remarkably {W}.", note:"After the verb with nothing following, English uses alike."},
+  {ctx:"The polymer behaves ___ rubber at room temperature.", hint:"The polymer is not rubber.", words:["as","like","alike"], wOk:"like", whys:["role","compare","clause"], yOk:"compare", frame:"The polymer behaves {W} rubber at room temperature.", note:"like + noun = similar to; the polymer only resembles rubber."},
+  {ctx:"Proceed ___ the checklist indicates.", hint:"Look for a subject and a verb after the gap.", words:["like","alike","as"], wOk:"as", whys:["compare","role","clause"], yOk:"clause", frame:"Proceed {W} the checklist indicates.", note:"A clause follows (the checklist indicates) → as, never like, in this register."},
+  {ctx:"After ten years abroad, she returned ___ director of the plant.", hint:"She really holds the post.", words:["like","as","alike"], wOk:"as", whys:["compare","role","clause"], yOk:"role", frame:"After ten years abroad, she returned {W} director of the plant.", note:"as + noun = in the role of; like would say she only resembles a director."},
+  {ctx:"The controller treats large and small errors ___.", hint:"Both groups get the same treatment.", words:["like","as","alike"], wOk:"alike", whys:["compare","nothing","examples"], yOk:"nothing", frame:"The controller treats large and small errors {W}.", note:"alike as an adverb after the verb = both equally."},
+  {ctx:"Metals ___ copper and silver conduct well.", hint:"You are giving two examples.", words:["as","alike","such as"], wOk:"such as", whys:["role","examples","compare"], yOk:"examples", frame:"Metals {W} copper and silver conduct well.", note:"such as = for example."},
+  {ctx:"___ the beta, the release build starts in seconds.", hint:"Two versions of the same product.", words:["Alike","As","Unlike"], wOk:"Unlike", whys:["nothing","contrast","clause"], yOk:"contrast", frame:"{W} the beta, the release build starts in seconds.", note:"unlike + noun, and beta and release build are comparable."},
+  {ctx:"Install it ___ the diagram shows.", hint:"Something follows with its own verb.", words:["like","such as","as"], wOk:"as", whys:["examples","clause","compare"], yOk:"clause", frame:"Install it {W} the diagram shows.", note:"as + clause = in the way that."}
+];
+var bi=0, bWord=null, bWhy=null, bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function fillChips(id, list, labeller, onPick){
+  var wrap=$(id); wrap.innerHTML="";
+  list.forEach(function(v){
+    var b=document.createElement("button"); b.textContent=labeller(v); b.dataset.v=v;
+    b.addEventListener("click", function(){ onPick(v); wrap.querySelectorAll("button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+}
+function renderBuild(){
+  var it=BUILD[bi]; bWord=null; bWhy=null;
+  $("bctx").innerHTML = it.ctx + "<small>" + it.hint + "</small>";
+  fillChips("wordOpts", it.words, function(v){ return v; }, function(v){ bWord=v; });
+  fillChips("whyOpts", it.whys, function(v){ return REASON[v]; }, function(v){ bWhy=v; });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bWord || !bWhy){ r.className="bresult bad"; r.innerHTML="Choose a word <b>and</b> a reason first."; return; }
+  var wOk = bWord===it.wOk, yOk = bWhy===it.yOk;
+  if(wOk && yOk){
+    r.className="bresult good";
+    r.innerHTML="✅ "+it.frame.replace("{W}", '<span class="hw">'+it.wOk+"</span>")+'<div class="bnote">'+it.note+"</div>";
+    bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+  } else {
+    if(!wOk) document.querySelector('#wordOpts button[data-v="'+bWord+'"]').classList.add("wrongpick");
+    if(!yOk) document.querySelector('#whyOpts button[data-v="'+bWhy+'"]').classList.add("wrongpick");
+    r.className="bresult bad";
+    r.innerHTML = (wOk ? "❌ Right word, wrong reason." : "❌ Not that word.") + '<span class="bnote">Hint — '+it.hint+"</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:"The two interfaces are similar. <b>(alike)</b>", accept:["the two interfaces are alike","the two interfaces are very much alike","the two interfaces are much alike","the two interfaces are quite alike","the two interfaces are very alike","the two interfaces are remarkably alike"], model:"The two interfaces are (very much) alike."},
+  {ctx:"Steel rusts; aluminum does not. <b>(unlike)</b>", accept:["unlike steel aluminum does not rust","unlike steel aluminium does not rust","unlike steel aluminum doesn't rust","unlike steel aluminium doesn't rust","unlike aluminum steel rusts","unlike aluminium steel rusts","unlike aluminum steel does rust","unlike aluminium steel does rust"], model:"Unlike steel, aluminum does not rust. — or: Unlike aluminum, steel rusts."},
+  {ctx:"She was hired to be the project auditor. <b>(as)</b>", accept:["she was hired as the project auditor","she was hired as project auditor"], model:"She was hired as the project auditor."},
+  {ctx:"The engine sounds similar to a sewing machine. <b>(like)</b>", accept:["the engine sounds like a sewing machine"], model:"The engine sounds like a sewing machine."},
+  {ctx:"Fix the register: “<b>Like</b> the manual says, torque matters.”", accept:["as the manual says torque matters"], model:"As the manual says, torque matters."},
+  {ctx:"Fix the error: “The twins work in the same lab, but they are not very <b>like</b>.”", accept:["the twins work in the same lab but they are not very alike"], model:"The twins work in the same lab, but they are not very alike."},
+  {ctx:"Fix the error: “The team proposed an <b>alike</b> design for the second unit.”", accept:["the team proposed a similar design for the second unit","the team proposed an identical design for the second unit"], model:"The team proposed a similar design for the second unit."},
+  {ctx:"Fix the contrast: “<b>Unlike last year</b>, the budget grew.”", accept:["unlike last year's budget this year's grew","unlike last years budget this years grew","unlike last year's budget this year's budget grew","unlike last years budget this years budget grew"], model:"Unlike last year’s budget, this year’s grew."}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML=it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">\u2713 Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow (SELLI formats: Structure mc/fill · Written Expression error)
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Choose the word", q:"“___ its predecessor, the new engine runs on two fuels.”", o:["Unlike", "Alike", "Dislike"], a:0, w:"A noun follows, and the meaning is contrast: unlike + noun. Alike never opens a phrase."},
+  {kind:"mc", diff:1, tag:"Choose the word", q:"“The two proposals are remarkably ___.”", o:["like", "alike", "likely"], a:1, w:"Nothing follows the gap, so the predicate word is alike."},
+  {kind:"mc", diff:1, tag:"Choose the word", q:"“The polymer behaves ___ rubber at room temperature.” (it is not rubber)", o:["as", "alike", "like"], a:2, w:"like + noun = similar to: the polymer is not rubber."},
+  {kind:"error", diff:1, tag:"Fix the error", words:["The","twins","work","in","the","same","lab,","but","they","are","not","very","like."], bad:12, fixOld:"like", fixNew:"alike", w:"After the verb, with nothing following, English uses alike."},
+  {kind:"mc", diff:1, tag:"like or as?", q:"“She joined the project ___ an external advisor.” (she really is one)", o:["as", "alike", "like"], a:0, w:"as + noun = in the role of; like would mean she only resembles an advisor."},
+  {kind:"mc", diff:2, tag:"like or as?", q:"“Install it ___ the diagram shows.”", o:["like", "such as", "alike", "as"], a:3, w:"A clause follows (the diagram shows), and formal English uses as before a clause."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["Alike","most","polymers,","this","one","softens","near","80 °C."], bad:0, fixOld:"Alike", fixNew:"Like", w:"Before a noun use the preposition like (or unlike, if you mean contrast); alike never goes before a noun."},
+  {kind:"fill", diff:2, tag:"alike as an adverb", q:"“The controller treats large and small errors ___.” (one word — <b>like</b>, <b>as</b> or <b>alike</b>?)", accept:["alike"], w:"alike also works after the verb as an adverb = both equally."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["He","speaks","about","turbines","like","a","poet","speaks","about","the","sea."], bad:4, fixOld:"like", fixNew:"as", w:"A second clause follows (a poet speaks), so the exam register is as, not like."},
+  {kind:"mc", diff:3, tag:"Giving examples", q:"“Metals ___ copper and silver conduct well.”", o:["as", "such as", "alike", "like as"], a:1, w:"such as = for example; plain as before that noun would mean in the role of."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["Unlike","last","year,","this","year’s","budget","grew","sharply."], bad:2, fixOld:"last year", fixNew:"last year’s budget", w:"unlike must contrast comparable things, and a year is not a budget. Only the first half can be repaired: Unlike last year’s budget, this year’s budget grew sharply."},
+  {kind:"fill", diff:3, tag:"Rewrite with UNLIKE", q:"“Steel rusts; aluminum does not.” → Rewrite the contrast with <b>unlike</b> (full sentence).", accept:["unlike steel aluminum does not rust","unlike steel aluminium does not rust","unlike steel aluminum doesn't rust","unlike steel aluminium doesn't rust","unlike aluminum steel rusts","unlike aluminium steel rusts","unlike aluminum steel does rust","unlike aluminium steel does rust"], w:"Unlike steel, aluminum does not rust — unlike + noun, and both nouns are metals."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["The","team","proposed","two","alike","designs","for","the","second","unit."], bad:4, fixOld:"alike", fixNew:"similar", w:"alike cannot modify a noun: two similar designs, never two alike designs."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("i8_s4_drill_best")||0); if(dscore>best){ store("i8_s4_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Fine distinctions mastered. Ready for the ★★★ homework." : dscore>=8?"Solid — review the special-cases card and go again." : "Re-read Structure 4, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the part that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, (ok?'<span class="k">\u2713 Correct.</span> ':'<span class="k">\u2717 Not that one: the green part is the error.</span> ')+'<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer:")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

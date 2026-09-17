@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE AGREEMENT INSPECTOR · English 8 · Unit 1 "Load-Bearing Structures"
+  Structure 1 — noun number: agreement under pressure
+  Three modes: Explore (inspect the subject) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Structure 1 · The Agreement Inspector · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --steel:#2C5F8C; --steeldark:#1B3B58; --steellt:#E4EDF4;   /* Unit 1 identity */
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --gray:#8A8F94; --graylt:#EDEFF1;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0} html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--steel),var(--steeldark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#BFD6E8; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900} header .sub{color:#D8E6F1; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px} header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--steeldark)} nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px} section.tab{display:none} section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--steeldark); margin-bottom:6px} .card h3{font-size:15px; color:var(--steeldark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px} .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-steel{background:var(--steel)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--steel); background:var(--steellt); color:var(--steeldark)}
+
+  /* ---------- the inspector ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .xcard{border-radius:12px; padding:14px 16px; margin:8px 0; position:relative; background:var(--steellt); border:2px solid var(--steel)}
+  .xcard .role{font-size:11px; font-weight:900; letter-spacing:.08em; text-transform:uppercase; color:var(--steeldark)}
+  .xcard .snt{font-size:clamp(17px,3vw,23px); font-weight:800; margin-top:4px; line-height:1.7}
+  .rsubj{background:#fff; color:var(--steeldark); border-radius:6px; padding:0 5px; box-shadow:inset 0 -3px 0 var(--steel)}
+  .rmid{color:var(--gray); background:var(--graylt); border-radius:6px; padding:0 5px; font-weight:600; font-style:italic}
+  .rverb{background:var(--grammarlt); color:var(--grammar); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--grammar)}
+  /* nota: la marca de acierto y la de fallo van en DOS reglas separadas (ver .stn .w.rightpick / .stn .w.wrongpick) */
+  .rverb.masked{color:transparent; box-shadow:inset 0 -2px 0 var(--grammar); position:relative; cursor:pointer; min-width:56px; display:inline-block}
+  .rverb.masked::after{content:"?"; position:absolute; inset:0; color:#999; font-weight:900; display:flex; align-items:center; justify-content:center}
+  .verdict{background:var(--navylt); border-left:4px solid var(--navy); border-radius:0 10px 10px 0; padding:9px 12px; font-size:15px; font-weight:700; color:var(--navy); margin-top:6px}
+  .trap{margin-top:9px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600}
+  .legend{display:flex; gap:10px; flex-wrap:wrap; font-size:12px; font-weight:800; margin-top:10px} .legend span{border-radius:6px; padding:1px 8px}
+
+  /* segmented switches, tiles & tables */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; flex-wrap:wrap; max-width:100%}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff} .seg2.steel button.on{background:var(--steel); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)}
+  .outbox{background:var(--soft); border-radius:12px; padding:14px; margin-top:8px}
+  .outbox .big{font-size:clamp(16px,2.6vw,20px); font-weight:800; text-align:center} .outbox .ex{font-size:14px; color:#555; margin-top:8px; font-weight:600}
+  .pairgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(168px,1fr)); gap:6px; margin-top:6px}
+  .pairgrid .pr{background:#fff; border:1.5px solid var(--rule); border-radius:8px; padding:6px 10px; font-size:14px; font-weight:700; cursor:pointer}
+  .pairgrid .pr .a{color:var(--navy)} .pairgrid .pr .b{color:var(--steel)}
+  .pairgrid.hid .pr:not(.show) .b{color:transparent; background:var(--rule); border-radius:5px}
+  .tiles{display:flex; gap:6px; flex-wrap:wrap; margin:8px 0}
+  .tiles button{border:2px solid var(--rule); background:#fff; border-radius:8px; padding:6px 11px; font:700 13px Lato,sans-serif; cursor:pointer} .tiles button.on{border-color:var(--steel); background:var(--steellt); color:var(--steeldark)}
+
+  /* ---------- tap-to-sort classifier (no drag: tap the chip, then tap the column) ---------- */
+  .pool{display:flex; gap:7px; flex-wrap:wrap; margin:8px 0 12px; min-height:44px}
+  .pool button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:8px 14px; font:800 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .pool button.sel{border-color:var(--steel); background:var(--steellt); color:var(--steeldark); box-shadow:0 0 0 3px rgba(44,95,140,.25)}
+  .zones{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+  .zone{border:2px dashed var(--rule); border-radius:12px; padding:12px; min-height:104px; background:#fff; cursor:pointer}
+  .zone h4{font-size:14px; color:var(--steeldark)} .zone small{color:#888; font-weight:700; font-size:12px}
+  .zone.hot{border-color:var(--steel); background:var(--steellt)} .zone.bad{border-color:var(--think); background:var(--thinklt)}
+  .zone .in{display:flex; gap:6px; flex-wrap:wrap; margin-top:8px}
+  .zone .in span{background:var(--greenlt); border:1.5px solid var(--green); color:var(--greendark); border-radius:999px; padding:4px 10px; font-size:13px; font-weight:800}
+  .qgmsg{font-size:14px; font-weight:700; color:#555; margin-top:10px; min-height:22px}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--steel); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--steeldark); border:2px solid var(--steel)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--steel); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--steel)} .segbig button.on{background:var(--steel); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px} .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--steel); background:var(--steellt); color:var(--steeldark)} .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(16px,2.7vw,21px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center} .bscore{font-weight:900; color:var(--steeldark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--steeldark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px} .qbar i{display:block; height:100%; background:var(--steel); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)} .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(16px,2.7vw,20px); font-weight:800; line-height:1.8; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick{background:var(--think); color:#fff}
+  .stn .w.rightpick{background:var(--green); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)} .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block} .why .k{color:var(--green); font-weight:900} .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center} .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--steeldark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px} details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--steel); font-weight:700; text-decoration:none}
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} .zones{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">🔎</span>
+  <div class="wrap">
+    <div class="kicker">English 8 · Unit 1 · Load-Bearing Structures</div>
+    <h1>🔎 The Agreement Inspector</h1>
+    <div class="sub"><b>Structure 1</b> — noun number: agreement under pressure. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🔎 Inspect the subject</span><span>🔧 Build the form</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🔎 Explore<small>find the real subject</small></button>
+    <button data-tab="build">🔧 Build<small>choose the form</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span> <h2>Find the real subject, then read the verb</h2>
+      <p class="muted">The exam separates the subject from its verb with a long phrase and waits for you to agree with the wrong noun.
+        The inspector paints the <b>real subject</b> in blue and everything that merely gets in the way in <b>grey</b>. Switch the number
+        of the head noun and watch the verb follow it. <span class="es">(El verbo obedece al núcleo del sujeto, no al sustantivo más cercano.)</span></p>
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the verb, guess, then reveal</label>
+      <h3>1 · Choose the sentence under pressure</h3>
+      <div class="chips" id="inspChips"></div>
+      <h3>2 · Switch the number of the head noun</h3>
+      <div class="seg2 steel" id="numSeg"></div>
+      <div class="xcard"><div class="role">Inspection</div><div class="snt" id="inspSnt"></div></div>
+      <div style="text-align:center"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the verb ✓</button></div>
+      <div class="verdict" id="inspVerdict"></div>
+      <div class="trap" id="inspTrap"></div>
+      <div class="legend"><span class="rsubj">real subject</span><span class="rmid">in the way</span><span class="rverb">verb that agrees</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-steel">📦 Academic uncountables</span> <h2>No <i>a/an</i>, no plural, singular verb</h2>
+      <p class="muted">These nouns are uncountable in English even though Spanish pluralises them. Tap one to see its verb and how to count it.
+        <span class="es">(Para contarlos se usa un partitivo: <i>a piece of…</i>)</span></p>
+      <div class="tiles" id="uncTiles"></div>
+      <div class="outbox"><div class="big" id="uncEx"></div><div class="ex" id="uncHow"></div></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-steel">🏛️ Irregular plurals of academic English</span> <h2>Latin and Greek endings</h2>
+      <p class="muted">Tap <b>Hide the plurals</b> and test yourself: tap any cell to reveal it.
+        <span class="es">(-is → -es · -on/-um → -a · -ix/-ex → -ices · -us → -i)</span></p>
+      <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-bottom:6px">
+        <button class="btn ghost small" id="prToggle">🙈 Hide the plurals</button><span class="muted" id="prHint">singular → plural</span></div>
+      <div class="pairgrid" id="prGrid"></div>
+      <div class="trap"><b>On formal exams treat <i>data, criteria, phenomena, media</i> as plurals</b> (<i>the data <b>show</b></i>). Everyday
+        professional English also says <i>the data shows</i> — pick one register and stay in it. <i>series</i> and <i>species</i> do not change;
+        <i>index</i> and <i>formula</i> accept two plurals (<i>indices/indexes</i>, <i>formulas/formulae</i>).</div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-grammar">🧮 The quantifier grid</span> <h2>Counting vs. measuring — sort every quantifier</h2>
+      <p class="muted">Every quantifier belongs to one column, and mixing columns is the error the exam plants.
+        <b>Tap a quantifier, then tap the column it belongs to.</b> <span class="es">(Toca la palabra y después la columna; no hay que arrastrar.)</span></p>
+      <div class="pool" id="qgPool"></div>
+      <div class="zones">
+        <div class="zone" data-z="c"><h4>Countable — <i>how many?</i></h4><small>trials, items, parts, applicants</small><div class="in" id="zoneC"></div></div>
+        <div class="zone" data-z="u"><h4>Uncountable — <i>how much?</i></h4><small>evidence, waste, time, energy</small><div class="in" id="zoneU"></div></div>
+      </div>
+      <div class="qgmsg" id="qgMsg">Sorted: 0 / 13</div>
+      <div style="text-align:right"><button class="btn ghost small" id="qgReset">Reset ↺</button></div>
+      <div class="trap"><b>Two subtleties.</b> <i>few</i> = almost none (bad news) vs. <i>a few</i> = some (mild good news); the same contrast holds
+        for <i>little / a little</i>. And supermarket English (<i>less items</i>) is counted wrong on the exam: ✔ <b>fewer items</b>.</div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">📊 Collectives, percentages, fractions · <i>or / nor</i></span> <h2>Which noun gives the order?</h2>
+      <p class="muted">After a percentage or a fraction, the verb agrees with the noun <b>after <i>of</i></b>. With <i>or</i> and <i>nor</i>,
+        the <b>nearest</b> element wins. Tap a case. <span class="es">(El sustantivo tras <i>of</i> manda; con <i>or/nor</i> manda el más cercano.)</span></p>
+      <div class="tiles" id="ofTiles"></div>
+      <div class="outbox"><div class="big" id="ofSnt"></div><div class="ex" id="ofWhy"></div></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Special cases &amp; traps</span> <h2>The six special cases the exam loves</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="oneof" class="on">one of the…</button><button data-v="each">each / every</button><button data-v="number">the / a number of</button><button data-v="amounts">amounts</button><button data-v="people">people</button><button data-v="data">data</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">🚨 Typical errors of Spanish speakers</span> <h2>Error clinic</h2>
+      <ul class="changes" id="errList" style="list-style:none"></ul>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner"><ul>
+        <li><b>Explore</b> reproduces Structure 1 in order: agreement at a distance (inspector), the uncountables table, the irregular-plurals
+          table, the quantifier grid as a tap-to-sort classifier, the <i>of</i>-rule for percentages, fractions and collectives, the exception box and the pitfall box.</li>
+        <li><b>Build</b> is productive: <i>Assemble</i> is exercise A of the manual plus the quantifier exercise (choose the form, the machine
+          writes the sentence and names the rule); <i>Transform</i> is exercises B and C (correct the noun, or write the singular/plural the sentence requires).</li>
+        <li><b>Drill</b> is graded in three formats — multiple choice and error identification (the two SELLI formats) plus a typed gap —
+          across the usual ladder (★ identify · ★★ fix the noun · ★★★ agreement at a distance, percentages, <i>or/nor</i>), with score,
+          streak and best result on this device. Works <b>offline</b>; reading and writing only — no audio.</li>
+        <li><b>Beyond Structure 1:</b> the <i>as well as / along with</i> card and the <i>or / nor</i> proximity rule are not in the manual's
+          Structure 1; they are standard SELLI agreement items added here. Everything else follows the manual's lists word for word.</li>
+      </ul></div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-steel">🔧 Your turn to produce</span> <h2>Build the agreement</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Read the sentence, choose the form that fits, and the machine writes it out with the rule behind it —
+          <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">The sentence needs…</div><div class="bchips" id="formChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New sentence →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Repair the noun, or write the singular/plural the sentence requires. Type it and check against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type your answer"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next sentence →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span> <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ uncountables &amp; plurals · ★★ repair the noun &amp; the quantifier · ★★★ agreement at a distance,
+        percentages, <i>or / nor</i>. Keep your streak alive. <span class="es">(Misma escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 8 · Unit 1 «Load-Bearing Structures» · Structure 1 — noun number: agreement under pressure · Level C1
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE AGREEMENT INSPECTOR — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 8 Class Manual (Structure 1).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE 1 · the inspector: real subject vs. what gets in the way
+   seg = [text, role]  ·  s = subject · m = in the way · v = verb · "" = plain
+===================================================================== */
+var INSP = [
+  {label:"🧱 A long modifier", trap:"The noun sitting next to the verb is <i>proposal</i> — singular, and irrelevant. Cover the grey block and the sentence answers itself.",
+   a:{lab:"singular head", num:"singular", seg:[["The criterion","s"],["used to select the winning proposal","m"],["was","v"],["never published.",""]]},
+   b:{lab:"plural head", num:"plural", seg:[["The criteria","s"],["used to select the winning proposal","m"],["were","v"],["never published.",""]]}},
+  {label:"1️⃣ one of the…", trap:"<b>one of the</b> + plural noun keeps a <b>singular</b> verb: the head of the subject is <i>one</i>, not <i>sensors</i>.",
+   a:{lab:"one of…", num:"singular", seg:[["One","s"],["of the backup sensors","m"],["is","v"],["still uncalibrated.",""]]},
+   b:{lab:"several of…", num:"plural", seg:[["Several","s"],["of the backup sensors","m"],["are","v"],["still uncalibrated.",""]]}},
+  {label:"🔢 the number / a number", trap:"<b>The number of</b> + plural noun → singular verb. <b>A number of</b> + plural noun → plural verb. One word, opposite agreement.",
+   a:{lab:"the number of", num:"singular", seg:[["The number","s"],["of reported faults","m"],["has","v"],["fallen sharply.",""]]},
+   b:{lab:"a number of", num:"plural", seg:[["A number","s"],["of reported faults","m"],["are","v"],["still open.",""]]}},
+  {label:"📦 An uncountable head", trap:"<i>equipment</i> is uncountable → singular verb, even with <i>laboratories</i> standing right beside it.",
+   a:{lab:"uncountable head", num:"singular", seg:[["The equipment","s"],["for the two new laboratories","m"],["has","v"],["finally arrived.",""]]},
+   b:{lab:"plural head", num:"plural", seg:[["The instruments","s"],["for the two new laboratories","m"],["have","v"],["finally arrived.",""]]}},
+  {label:"➕ as well as / along with", trap:"<b>as well as, along with, together with, in addition to</b> add information, not a second subject. Only <b>and</b> builds a plural subject.",
+   a:{lab:"singular head", num:"singular", seg:[["The main compressor,","s"],["as well as the two spare pumps,","m"],["was","v"],["shipped on Monday.",""]]},
+   b:{lab:"plural head", num:"plural", seg:[["The main compressors,","s"],["as well as the two spare pumps,","m"],["were","v"],["shipped on Monday.",""]]}},
+  {label:"📊 percent / fraction of…", trap:"Here the rule flips: with a percentage or a fraction the real subject is the noun <b>after <i>of</i></b>, so that noun sets the verb.",
+   a:{lab:"singular after of", num:"singular", seg:[["Sixty percent of the","m"],["budget","s"],["was","v"],["spent before the audit.",""]]},
+   b:{lab:"plural after of", num:"plural", seg:[["Sixty percent of the","m"],["samples","s"],["were","v"],["contaminated.",""]]}}
+];
+var curI = 0, curV = "a", predictMode = false, revealed = false;
+INSP.forEach(function(s,i){
+  var b = document.createElement("button"); b.innerHTML = s.label; b.dataset.k = i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curI=i; curV="a"; revealed=false;
+    document.querySelectorAll("#inspChips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderInsp(); });
+  $("inspChips").appendChild(b);
+});
+function segHtml(seg){
+  return seg.map(function(p){ var c = p[1]==="s" ? "rsubj" : p[1]==="m" ? "rmid" : p[1]==="v" ? "rverb" : "";
+    return c ? '<span class="'+c+'">'+p[0]+"</span>" : p[0]; }).join(" ");
+}
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderInsp(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderInsp(); });
+function renderInsp(){
+  var s = INSP[curI], v = s[curV], seg2 = $("numSeg"); seg2.innerHTML = "";
+  ["a","b"].forEach(function(k){
+    var b=document.createElement("button"); b.textContent=s[k].lab; b.dataset.v=k;
+    if(k===curV) b.classList.add("on");
+    b.addEventListener("click", function(){ curV=k; revealed=false; renderInsp(); }); seg2.appendChild(b);
+  });
+  $("inspSnt").innerHTML = segHtml(v.seg);
+  var subj="", verb="";
+  v.seg.forEach(function(p){ if(p[1]==="s") subj=p[0]; if(p[1]==="v") verb=p[0]; });
+  subj = subj.replace(/,$/,"");
+  var mask = predictMode && !revealed;
+  $("inspVerdict").innerHTML = "🔎 Real subject: <b>"+subj+"</b> — "+v.num+(mask ? " → which verb does it demand?" : " → the verb must be <b>"+verb+"</b>");
+  $("inspTrap").innerHTML = "⚠️ "+s.trap;
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  if(mask) document.querySelectorAll("#inspSnt .rverb").forEach(function(el){ el.classList.add("masked"); el.addEventListener("click", function(){ revealed=true; renderInsp(); }); });
+}
+renderInsp();
+
+/* EXPLORE 2 · academic uncountables */
+var UNC = {
+  research:["Current <b>research</b> <b>suggests</b> a different mechanism.","count it: a line of research · a research project · two studies · ✘ <s>a research</s>, <s>researches</s>"], equipment:["The <b>equipment</b> <b>was</b> delivered on Friday.","count it: a piece of equipment · three items of equipment · ✘ <s>equipments</s>"],
+  information:["The <b>information</b> <b>is</b> in Appendix B.","count it: three items of information · ✘ <s>informations</s>"], evidence:["The <b>evidence</b> <b>points</b> to a relay fault.","count it: a body of evidence · a piece of evidence · ✘ <s>evidences</s>"],
+  advice:["Her <b>advice</b> <b>was</b> to repeat the test.","count it: a piece of advice · three pieces of advice · ✘ <s>an advice</s>, <s>advices</s>"], feedback:["The <b>feedback</b> from the reviewers <b>was</b> harsh.","count it: a piece of feedback · ✘ <s>feedbacks</s>"],
+  knowledge:["Existing <b>knowledge</b> <b>is</b> incomplete here.","count it: a body of knowledge · ✘ <s>knowledges</s>"], progress:["<b>Progress</b> <b>has</b> been slow this term.","no partitive: we <b>make</b> progress · ✘ <s>a progress</s>, <s>progresses</s>"],
+  software:["The <b>software</b> <b>runs</b> on any laptop.","count it: a piece of software · two programs · ✘ <s>softwares</s>"], machinery:["The <b>machinery</b> <b>needs</b> recalibration.","count it: a piece of machinery · two machines · ✘ <s>machineries</s>"],
+  training:["<b>Training</b> <b>takes</b> six weeks.","count it: a training course · two sessions · ✘ <s>trainings</s>"], homework:["The <b>homework</b> <b>is</b> due on Monday.","count it: a piece of homework · two assignments · ✘ <s>homeworks</s>"]
+};
+var curUnc = "equipment";
+Object.keys(UNC).forEach(function(k){
+  var b=document.createElement("button"); b.textContent=k; b.dataset.k=k;
+  if(k===curUnc) b.classList.add("on");
+  b.addEventListener("click", function(){ curUnc=k; document.querySelectorAll("#uncTiles button").forEach(function(x){ x.classList.toggle("on", x.dataset.k===k); }); renderUnc(); });
+  $("uncTiles").appendChild(b);
+});
+function renderUnc(){ $("uncEx").innerHTML=UNC[curUnc][0]; $("uncHow").innerHTML=UNC[curUnc][1]; }
+renderUnc();
+
+/* EXPLORE 3 · irregular plurals */
+var PAIRS = [["analysis","analyses"],["criterion","criteria"],["hypothesis","hypotheses"],["phenomenon","phenomena"],
+  ["thesis","theses"],["datum","data"],["basis","bases"],["medium","media"],["axis","axes"],["curriculum","curricula"],
+  ["crisis","crises"],["spectrum","spectra"],["index","indices / indexes"],["appendix","appendices"],
+  ["matrix","matrices"],["radius","radii"],["formula","formulas / formulae"],["vertex","vertices"],
+  ["series","series"],["species","species"]];
+PAIRS.forEach(function(p){
+  var d=document.createElement("div"); d.className="pr";
+  d.innerHTML='<span class="a">'+p[0]+'</span> → <span class="b">'+p[1]+"</span>";
+  d.addEventListener("click", function(){ d.classList.add("show"); }); $("prGrid").appendChild(d);
+});
+$("prToggle").addEventListener("click", function(){
+  var g=$("prGrid"), hid=g.classList.toggle("hid");
+  if(hid) g.querySelectorAll(".pr").forEach(function(x){ x.classList.remove("show"); });
+  this.innerHTML = hid ? "👀 Show them all" : "🙈 Hide the plurals";
+  $("prHint").textContent = hid ? "tap a cell to check your answer" : "singular → plural";
+});
+
+/* EXPLORE 4 · the quantifier grid as a tap-to-sort classifier (tap chip, then tap column) */
+var QGRID = [
+  ["many","c","large quantity, things you count"], ["much","u","large quantity, things you measure"],
+  ["a large number of","c","the countable twin of a large amount of"], ["a great deal of","u","formal, uncountable only"],
+  ["a large amount of","u","never with countables: ✘ a large amount of parts"], ["few","c","= almost none (bad news)"],
+  ["a few","c","= some (mild good news)"], ["little","u","= almost none (bad news)"],
+  ["a little","u","= some (mild good news)"], ["fewer","c","✔ fewer items — never less items"],
+  ["less","u","less waste, less evidence"], ["How many…?","c","How many trials?"], ["How much…?","u","How much evidence?"]
+];
+var qgPlaced = 0, qgSel = null;
+function renderPool(){
+  var pool=$("qgPool"); pool.innerHTML=""; qgSel=null;
+  QGRID.forEach(function(q,i){
+    if(q[3]) return;
+    var b=document.createElement("button"); b.textContent=q[0]; b.dataset.i=i;
+    b.addEventListener("click", function(){
+      qgSel = (qgSel===i) ? null : i;
+      pool.querySelectorAll("button").forEach(function(x){ x.classList.toggle("sel", +x.dataset.i===qgSel); });
+      document.querySelectorAll(".zone").forEach(function(z){ z.classList.toggle("hot", qgSel!==null); });
+      $("qgMsg").innerHTML = qgSel===null ? "Sorted: "+qgPlaced+" / "+QGRID.length : "Selected <b>"+QGRID[qgSel][0]+"</b> — now tap a column.";
+    });
+    pool.appendChild(b);
+  });
+  if(qgPlaced===QGRID.length) pool.innerHTML='<span class="muted">Grid complete — every quantifier is in its column. ✅</span>';
+}
+document.querySelectorAll(".zone").forEach(function(z){
+  z.addEventListener("click", function(){
+    if(qgSel===null){ $("qgMsg").textContent="Tap a quantifier first, then tap a column."; return; }
+    var q=QGRID[qgSel], want=z.dataset.z;
+    if(q[1]!==want){ z.classList.add("bad"); setTimeout(function(){ z.classList.remove("bad"); }, 600);
+      $("qgMsg").innerHTML="❌ <b>"+q[0]+"</b> belongs to the other column — "+q[2]+"."; return; }
+    q[3]=true; qgPlaced++;
+    var s=document.createElement("span"); s.textContent=q[0]; (want==="c"?$("zoneC"):$("zoneU")).appendChild(s);
+    $("qgMsg").innerHTML="✅ <b>"+q[0]+"</b> — "+(want==="c"?"countable":"uncountable")+" · "+q[2]+" &nbsp;(Sorted: "+qgPlaced+" / "+QGRID.length+")";
+    renderPool(); document.querySelectorAll(".zone").forEach(function(x){ x.classList.remove("hot"); });
+  });
+});
+$("qgReset").addEventListener("click", function(){
+  QGRID.forEach(function(q){ q[3]=false; }); qgPlaced=0;
+  $("zoneC").innerHTML=""; $("zoneU").innerHTML=""; $("qgMsg").textContent="Sorted: 0 / "+QGRID.length; renderPool();
+});
+renderPool();
+
+/* EXPLORE 5 · what decides the verb after "of", and or / nor */
+var OFC = [
+  ["60 % of the samples","Sixty percent of the <b>samples</b> <b>were</b> contaminated.","A percentage agrees with the noun after <i>of</i>: <b>samples</b> is plural."], ["60 % of the budget","Sixty percent of the <b>budget</b> <b>was</b> spent.","Same rule, other noun: <b>budget</b> is singular → singular verb."],
+  ["half of the equipment","Half of the <b>equipment</b> <b>is</b> obsolete.","Fractions follow the noun after <i>of</i>, and <b>equipment</b> is uncountable."], ["the committee","The evaluation <b>committee</b> <b>has</b> decided.","American English treats collective nouns (committee, team, staff, government, faculty) as one singular body. British English often uses the plural."],
+  ["the police","The <b>police</b> <b>are</b> investigating the failure.","<i>police</i> is always plural — there is no <i>the police is</i>."], ["nor + plural nearest","Neither the manager nor the <b>engineers</b> <b>are</b> available.","With <i>or</i> / <i>nor</i> the nearest element rules, and <b>engineers</b> is plural."],
+  ["nor + singular nearest","Neither the engineers nor the <b>manager</b> <b>is</b> available.","Same rule, order reversed: the nearest element is now <b>manager</b>."], ["either… or","Either the pump or the <b>valves</b> <b>are</b> leaking.","<i>or</i> works like <i>nor</i>: the element closest to the verb decides."]
+];
+var curOf = 0;
+OFC.forEach(function(o,i){
+  var b=document.createElement("button"); b.textContent=o[0]; b.dataset.k=i;
+  if(i===0) b.classList.add("on");
+  b.addEventListener("click", function(){ curOf=i; document.querySelectorAll("#ofTiles button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); }); renderOf(); }); $("ofTiles").appendChild(b);
+});
+function renderOf(){ $("ofSnt").innerHTML=OFC[curOf][1]; $("ofWhy").innerHTML=OFC[curOf][2]; }
+renderOf();
+
+/* EXPLORE 6 · special cases */
+var SC = {
+  oneof:"<b>one of the</b> + plural noun + <b>singular</b> verb: ✔ One of the pumps <b>is</b> leaking. The head of the subject is <i>one</i>. The same applies to <b>each of / every one of</b>: ✔ Each of the three prototypes <b>was</b> tested.",
+  each:"<b>each</b> and <b>every</b> force the singular, even in a chain of nouns: ✔ Every valve, pipe, and joint <b>was</b> inspected. ✔ Every bolt and weld <b>was</b> tested twice.",
+  number:"<b>The number of</b> + plural noun → <b>singular</b>: ✔ The number of errors <b>has</b> dropped. <b>A number of</b> + plural noun → <b>plural</b>: ✔ A number of errors <b>remain</b>.",
+  amounts:"An amount seen as <b>one unit</b> takes a singular verb: ✔ Five years <b>is</b> a long time · ✔ 30 kilometers <b>is</b> nothing for this vehicle · ✔ Three hundred pesos <b>is</b> too much for that cable · ✔ Two hundred kilograms <b>is</b> the rated limit.",
+  people:"<b>people</b> is the plural of <i>person</i>: ✔ The people <b>are</b> waiting · ✘ <s>The people is</s>, ✘ <s>persons</s> in ordinary use. <b>peoples</b> exists only for ethnic groups: ✔ the indigenous peoples of Mexico.",
+  data:"<b>data</b> is formally plural (<i>datum</i> → <i>data</i>): ✔ The data <b>show</b> a clear trend. Everyday professional English says <i>the data shows</i>. Never mix: ✘ <s>this data are</s> → ✔ these data <b>are</b> (formal) or this data <b>is</b> (informal). In this course, <b>data, criteria, phenomena, media</b> are plurals."
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.oneof;
+
+/* EXPLORE 7 · error clinic */
+var ERRS = [
+  "✘ <s>a research</s> · <s>researches</s> → ✔ <b>a study</b>, <b>a research project</b>, <b>research</b>, <b>studies</b>.", "✘ <s>an advice</s> · <s>advices</s> → ✔ <b>a piece of advice</b>, <b>advice</b>. Spanish pluralises it; English does not.",
+  "✘ <s>equipments</s> · <s>machineries</s> · <s>informations</s> → ✔ <b>equipment</b>, <b>machinery</b>, <b>information</b> (always singular).", "✘ <s>criterions</s> · <s>this criteria</s> → ✔ <b>criteria</b> (plural) and <b>this criterion</b> (singular).",
+  "✘ <s>phenomenons</s> · <s>matrixes</s> · <s>both hypothesis</s> → ✔ <b>phenomena</b>, <b>matrices</b>, <b>both hypotheses</b>.", "✘ <s>the medias</s> · <s>many datas</s> → ✔ <b>the media</b>, <b>many data</b> (formal) or <b>much data</b> (informal).",
+  "✘ <s>this data are</s> → ✔ <b>these data are</b> (formal) or <b>this data is</b> (informal). Be consistent.", "✘ <s>less items</s> → ✔ <b>fewer items</b>. Supermarket English is counted wrong on the exam.",
+  "⚠️ Agreement at a distance: ✔ The <b>criteria</b> used to select the winning proposal <b>were</b> never published. Find the true subject; ignore the words in between."
+];
+ERRS.forEach(function(t){ var li=document.createElement("li"); li.style.cssText="padding:5px 0 5px 24px; position:relative; font-size:14px; font-weight:600";
+  li.innerHTML='<span style="position:absolute;left:0;color:var(--think);font-weight:900">•</span>'+t; $("errList").appendChild(li); });
+
+/* =====================================================================
+   BUILD · assemble (choose the form) + transform (repair the noun)
+===================================================================== */
+var BUILD = [
+  {ctx:"The data from both sensors ___ recorded at 100 Hz.", reg:"formal register", options:["were","was"], correct:"were", note:"On formal exams <i>data</i> is plural: the data <b>were</b> recorded."},
+  {ctx:"One of the criteria ___ cost per unit.", options:["is","are"], correct:"is", note:"<i>one of the</i> + plural noun → singular verb; the head is <i>one</i>."},
+  {ctx:"The number of applicants ___ doubled since 2024.", options:["has","have"], correct:"has", note:"<i>the number of</i> + plural noun → singular verb."},
+  {ctx:"A number of components ___ missing from the kit.", options:["were","was"], correct:"were", note:"<i>a number of</i> + plural noun → plural verb. One article changes everything."},
+  {ctx:"Every bolt and weld ___ tested twice.", options:["was","were"], correct:"was", note:"<i>every</i> forces the singular, even in a chain of nouns."},
+  {ctx:"The equipment for the new laboratories ___ finally arrived.", options:["has","have"], correct:"has", note:"<i>equipment</i> is uncountable; <i>laboratories</i> only sits in the way."},
+  {ctx:"Three hundred pesos ___ too much for that cable.", options:["is","are"], correct:"is", note:"An amount seen as one unit takes a singular verb."},
+  {ctx:"The phenomena described in the report ___ unexplained.", options:["remain","remains"], correct:"remain", note:"<i>phenomena</i> is the plural of <i>phenomenon</i>."},
+  {ctx:"The evaluation committee ___ approved the new curriculum.", reg:"US English", options:["has","have"], correct:"has", note:"Collective nouns are singular bodies in American English."},
+  {ctx:"Forty percent of the wiring ___ replaced.", options:["was","were"], correct:"was", note:"A percentage agrees with the noun after <i>of</i>: <i>wiring</i> is uncountable."},
+  {ctx:"___ evidence supports the second hypothesis?", options:["How much","How many"], correct:"How much", note:"<i>evidence</i> is uncountable → <i>how much</i>."},
+  {ctx:"The redesign produced ___ parts.", options:["fewer","less"], correct:"fewer", note:"Countable → <i>fewer</i>. <i>less</i> belongs to the uncountable column."},
+  {ctx:"We have ___ time before the window closes — use it.", options:["a little","a few"], correct:"a little", note:"<i>time</i> is uncountable, and the meaning is positive → <i>a little</i>."},
+  {ctx:"A large ___ of energy is lost in the first stage.", options:["amount","number"], correct:"amount", note:"<i>energy</i> is uncountable → <i>a large amount of</i>."},
+  {ctx:"___ is known about the alloy's fatigue behavior.", options:["Little","Few"], correct:"Little", note:"The idea is uncountable knowledge → <i>little</i> (= almost none)."}
+];
+var bi=0, bPick=null, bBuilt=0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function renderBuild(){
+  var it=BUILD[bi]; bPick=null;
+  $("bctx").innerHTML = it.ctx + (it.reg ? "<small>"+it.reg+"</small>" : "");
+  var wrap=$("formChips"); wrap.innerHTML="";
+  it.options.forEach(function(op){
+    var b=document.createElement("button"); b.textContent=op; b.dataset.v=op;
+    b.addEventListener("click", function(){ bPick=op; wrap.querySelectorAll("button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+  $("bresult").className="bresult"; $("bresult").innerHTML="";
+}
+$("bBuild").addEventListener("click", function(){
+  var it=BUILD[bi], r=$("bresult");
+  if(!bPick){ r.className="bresult bad"; r.innerHTML="Choose a form first."; return; }
+  if(bPick!==it.correct){
+    document.querySelector('#formChips button[data-v="'+bPick+'"]').classList.add("wrongpick");
+    r.className="bresult bad"; r.innerHTML="❌ Not that one. <span class='bnote'>Hint — "+it.note+"</span>"; return;
+  }
+  r.className="bresult good"; r.innerHTML="✅ "+it.ctx.replace("___", '<span class="rverb">'+it.correct+"</span>")+'<div class="bnote">'+it.note+"</div>";
+  bBuilt++; $("bScore").textContent="Built: "+bBuilt;
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:"The professor gave us <b>three advices</b> about the thesis defense.", ask:"Rewrite the part in bold.", accept:["three pieces of advice"], model:"three pieces of advice"}, {ctx:"<b>Both hypothesis</b> were rejected at the 5 % level.", ask:"Rewrite the part in bold.", accept:["both hypotheses","hypotheses"], model:"both hypotheses"},
+  {ctx:"The lab bought <b>new equipments</b> for the materials course.", ask:"Rewrite the part in bold.", accept:["new equipment","equipment","new pieces of equipment"], model:"new equipment"}, {ctx:"<b>Several phenomenons</b> of this kind have been reported.", ask:"Rewrite the part in bold.", accept:["several phenomena","phenomena"], model:"several phenomena"},
+  {ctx:"<b>The two main criterions</b> were safety and cost.", ask:"Rewrite the part in bold.", accept:["the two main criteria","two main criteria","criteria"], model:"the two main criteria"}, {ctx:"<b>The matrixes</b> in Appendix B contain the raw values.", ask:"Rewrite the part in bold.", accept:["the matrices","matrices"], model:"the matrices"},
+  {ctx:"<b>The medias</b> covered the launch extensively.", ask:"Rewrite the part in bold.", accept:["the media","media"], model:"The media"}, {ctx:"<b>This criteria</b> excludes half the candidates.", ask:"Rewrite the part in bold.", accept:["this criterion"], model:"This criterion"},
+  {ctx:"The consultant gave us <b>several useful advices</b>.", ask:"Rewrite the part in bold.", accept:["several useful pieces of advice","several pieces of useful advice","useful advice","several pieces of advice"], model:"several useful pieces of advice"}, {ctx:"Each ___ (analysis) took two days; all five ___ (analysis) confirmed the fault.", ask:"Type the two missing forms, separated by a comma.", accept:["analysis analyses","analysis and analyses"], model:"analysis, analyses"},
+  {ctx:"The main ___ (axis) shows time; the other two ___ (axis) show load and strain.", ask:"Type the two missing forms, separated by a comma.", accept:["axis axes","axis and axes"], model:"axis, axes"}, {ctx:"That ___ (phenomenon) is rare, but the other ___ (phenomenon) in our data are common.", ask:"Type the two missing forms, separated by a comma.", accept:["phenomenon phenomena","phenomenon and phenomena"], model:"phenomenon, phenomena"},
+  {ctx:"One ___ (criterion) is efficiency; the remaining ___ (criterion) concern maintenance.", ask:"Type the two missing forms, separated by a comma.", accept:["criterion criteria","criterion and criteria"], model:"criterion, criteria"}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML=it.ctx+"<small>"+it.ask+"</small>"; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no"; $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok){ tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow — 13 items (5★ / 4★★ / 4★★★)
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"Uncountable", q:"The equipment ___ insured before shipping.", o:["was","were"], a:0, w:"<i>equipment</i> is uncountable → singular verb."},
+  {kind:"mc", diff:1, tag:"Irregular plural", q:"These phenomena ___ only under vacuum.", o:["occurs", "occur"], a:1, w:"<i>phenomena</i> is the plural of <i>phenomenon</i> → plural verb."},
+  {kind:"fill", diff:1, tag:"Singular &amp; plural", q:"One ___ is efficiency; the remaining ___ concern maintenance. (criterion) — type both forms, separated by a comma.", accept:["criterion criteria","criterion and criteria"], w:"criterion (one) → criteria (more than one)."},
+  {kind:"error", diff:1, tag:"Fix the error", words:["The","lab","ordered","three","new","equipments","last","week."], bad:5, fixOld:"three new equipments", fixNew:"three new pieces of equipment", w:"<i>equipment</i> has no plural; count it with a partitive."},
+  {kind:"mc", diff:1, tag:"Quantifier grid", q:"How ___ evidence supports the second hypothesis?", o:["much","many"], a:0, w:"<i>evidence</i> is uncountable → <i>how much</i>."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["The","consultant","gave","us","several","useful","advices."], bad:6, fixOld:"several useful advices.", fixNew:"several useful pieces of advice.", w:"<i>advice</i> is uncountable: pieces of advice, never <s>advices</s>."},
+  {kind:"fill", diff:2, tag:"fewer / less", q:"The redesign produced ___ parts and ___ waste. — type both quantifiers, separated by a comma.", accept:["fewer less","fewer and less"], w:"<i>parts</i> is countable → fewer; <i>waste</i> is uncountable → less."},
+  {kind:"mc", diff:2, tag:"Collective noun", q:"The evaluation committee ___ approved the new curriculum. (US English)", o:["have", "has"], a:1, w:"American English treats a collective noun as one singular body."},
+  {kind:"error", diff:2, tag:"Fix the error", words:["The","number","of","certified","welders","have","fallen","below","fifty","since","2020."], bad:5, fixOld:"have fallen", fixNew:"has fallen", w:"<i>the number of</i> + plural noun → singular verb (<i>a number of</i> would take the plural)."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["The","three","criteria","used","to","select","the","winning","proposal","was","never","published."], bad:9, fixOld:"was never published", fixNew:"were never published", w:"The true subject is <i>criteria</i>, and <i>three</i> fixes it as plural, so only the verb can be repaired; the modifier in between does not decide it."},
+  {kind:"error", diff:3, tag:"Fix the error", words:["Each","of","the","three","prototypes","were","tested","until","failure","occurred."], bad:5, fixOld:"were tested", fixNew:"was tested", w:"<i>each of</i> + plural noun keeps the singular verb."},
+  {kind:"fill", diff:3, tag:"Percentages", q:"Sixty percent of the budget ___ spent before the audit. (past simple of <i>be</i>)", accept:["was"], w:"A percentage agrees with the noun after <i>of</i>: <i>budget</i> is singular → was."},
+  {kind:"fill", diff:3, tag:"or / nor", q:"Neither the supervisor nor the technicians ___ available on Friday. (present of <i>be</i>)", accept:["are"], w:"With <i>or</i> / <i>nor</i> the nearest element decides: <i>technicians</i> is plural → are."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("i8_s1_drill_best")||0); if(dscore>best){ store("i8_s1_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Inspection passed. Agreement holds under pressure — go to the ★★★ homework." : dscore>=8?"Solid, but the traps still catch you — review the exception card and run it again." : "Re-read Structure 1, work through Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di], bodyHtml=""; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+"</button>"; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the part that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+"</span> "; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, (ok?'<span class="k">✓ Correct.</span> ':'<span class="k">✗ Not that one: the green part is the error.</span> ')+'<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer: "+it.accept[0]+".")+"</span> "+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml; $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

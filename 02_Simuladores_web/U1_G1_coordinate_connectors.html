@@ -572,10 +572,10 @@ renderTrans();
    DRILL · one graded flow
 ===================================================================== */
 var DRILL = [
-  {kind:"mc", diff:1, tag:"Complete the joint", q:"The gasket held under vacuum, ___ it failed under vibration.", o:["nor","yet","for","so"], a:1, w:"yet = unexpected contrast between two independent clauses."},
-  {kind:"mc", diff:1, tag:"Complete the joint", q:"Recheck the torque, ___ the wheel may loosen at speed.", o:["yet","nor","or","and"], a:2, w:"or = alternative: do this, or the bad result follows."},
-  {kind:"mc", diff:1, tag:"Complete the joint", q:"The bridge closed at noon, ___ inspectors had found a crack in a main cable.", o:["so","for","or","nor"], a:1, w:"for = because, used only between clauses."},
-  {kind:"mc", diff:1, tag:"Complete the joint", q:"The alloy resists heat, ___ it costs less than titanium.", o:["and","nor","for","or"], a:0, w:"and = addition: a second advantage of equal weight."},
+  {kind:"mc", diff:1, tag:"Complete the joint", q:"The gasket held under vacuum, ___ it failed under vibration.", o:["yet", "nor", "for", "so"], a:0, w:"yet = unexpected contrast between two independent clauses."},
+  {kind:"mc", diff:1, tag:"Complete the joint", q:"Recheck the torque, ___ the wheel may loosen at speed.", o:["yet", "or", "nor", "and"], a:1, w:"or = alternative: do this, or the bad result follows."},
+  {kind:"mc", diff:1, tag:"Complete the joint", q:"The bridge closed at noon, ___ inspectors had found a crack in a main cable.", o:["so", "or", "for", "nor"], a:2, w:"for = because, used only between clauses."},
+  {kind:"mc", diff:1, tag:"Complete the joint", q:"The alloy resists heat, ___ it costs less than titanium.", o:["or", "nor", "for", "and"], a:3, w:"and = addition: a second advantage of equal weight."},
   {kind:"error", diff:1, tag:"Fix the error", words:["Although","the","deadline","was","close,","but","the","team","stayed","calm."], bad:5, fixOld:"close, but the team", fixNew:"close, the team", w:"One joint needs one connector: although already joins the clauses."},
   {kind:"error", diff:2, tag:"Fix the error", words:["The","generator","started, the","lights","stayed","off."], bad:2, fixOld:"started, the lights", fixNew:"started, but the lights", w:"Comma splice: two independent clauses need a connector after the comma (or a semicolon)."},
   {kind:"error", diff:2, tag:"Fix the error", words:["The","committee","rejected","the","proposal,","however","it","praised","the","method."], bad:5, fixOld:"proposal, however it", fixNew:"proposal; however, it", w:"however is an adverb, not a coordinate connector: it cannot join clauses with just a comma (or write: proposal, but it)."},

@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE HACER DIVIDER · English 8 · Unit 4 "Fine Distinctions"
+  Structure 3 — make vs do (division of labor, C1 shelf, Spanish interference)
+  Three modes: Explore (sort the collocations) · Build (produce) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Structure 3 · The Hacer Divider · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --garnet:#8C2F3F; --garnetdark:#5C1E29; --garnetlt:#F4E5E8;   /* Unit 4 identity */
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--garnet),var(--garnetdark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#F0C9D1; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#EDD8DC; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--garnetdark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--garnetdark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--garnetdark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-garnet{background:var(--garnet)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--garnet); background:var(--garnetlt); color:var(--garnetdark)}
+
+  /* ---------- the criterion ---------- */
+  .split{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:10px; margin:10px 0 4px}
+  .half{border-radius:12px; padding:12px 14px}
+  .half .role{font-size:11px; font-weight:900; letter-spacing:.08em; text-transform:uppercase}
+  .half .big{font-size:clamp(20px,3.4vw,26px); font-weight:900; margin:2px 0}
+  .half .def{font-size:14px; font-weight:700; color:#444}
+  .hmake{background:var(--garnetlt); border:2px solid var(--garnet)} .hmake .role,.hmake .big{color:var(--garnetdark)}
+  .hdo{background:var(--navylt); border:2px solid var(--navy)} .hdo .role,.hdo .big{color:var(--navy)}
+
+  /* ---------- tap classifier (tap a chip, then tap a box) ---------- */
+  .pool{display:flex; gap:7px; flex-wrap:wrap; margin:8px 0 12px; min-height:44px}
+  .tok{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:8px 14px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .tok.sel{border-color:var(--grammar); background:var(--grammarlt); color:var(--grammar); box-shadow:0 0 0 3px rgba(217,118,26,.22)}
+  .bins{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+  .bin{border-radius:12px; padding:12px; cursor:pointer; min-height:120px; border:2px dashed var(--rule); background:#fff; transition:background .15s}
+  .bin .bh{font-size:19px; font-weight:900; text-align:center}
+  .bin .bs{font-size:12px; font-weight:700; text-align:center; color:#777; margin-bottom:6px}
+  .binmake{border-color:var(--garnet)} .binmake .bh{color:var(--garnetdark)} .binmake:hover{background:var(--garnetlt)}
+  .bindo{border-color:var(--navy)} .bindo .bh{color:var(--navy)} .bindo:hover{background:var(--navylt)}
+  .binlist{display:flex; gap:5px; flex-wrap:wrap; justify-content:center}
+  .binlist span{background:var(--greenlt); border:1.5px solid var(--green); color:var(--greendark); border-radius:999px; padding:3px 9px; font-size:13px; font-weight:800}
+  .clhint{font-size:14px; font-weight:800; color:var(--grammar); margin-bottom:4px; min-height:22px}
+  .clfeed{border-radius:10px; padding:10px 12px; font-size:14.5px; font-weight:700; margin-top:10px; display:none}
+  .clfeed.good{display:block; background:var(--greenlt); border:2px solid var(--green); color:var(--greendark)}
+  .clfeed.bad{display:block; background:var(--thinklt); border:2px solid var(--think); color:var(--think)}
+  .clfoot{display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin-top:12px}
+  .clcount{font-weight:900; color:var(--garnetdark); margin-left:auto}
+
+  /* ---------- C1 shelf ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .shelf{display:grid; grid-template-columns:repeat(auto-fit,minmax(218px,1fr)); gap:8px; margin-top:6px}
+  .sblk{border:1.5px solid var(--rule); border-left-width:5px; border-radius:10px; padding:9px 11px; background:#fff; cursor:default}
+  .sblk.mk{border-left-color:var(--garnet)} .sblk.dd{border-left-color:var(--navy)}
+  .sblk .head{font-size:16px; font-weight:900}
+  .sblk.mk .vv{color:var(--garnet)} .sblk.dd .vv{color:var(--navy)}
+  .vv.masked{color:transparent; position:relative; cursor:pointer; min-width:52px; display:inline-block; border-bottom:2px dotted var(--excep)}
+  .vv.masked::after{content:"?"; position:absolute; inset:0; color:var(--excep); font-weight:900; display:flex; align-items:center; justify-content:center}
+  .sblk small{display:block; color:#777; font-style:italic; font-size:12.5px}
+  .sblk em{display:block; font-size:13px; color:#555; margin-top:4px; font-style:normal}
+
+  /* ---------- Spanish interference ---------- */
+  .trap{display:grid; grid-template-columns:repeat(auto-fit,minmax(252px,1fr)); gap:7px; margin-top:8px}
+  .trap div{background:#fff; border:1.5px solid var(--rule); border-radius:9px; padding:7px 10px; font-size:14px; font-weight:600}
+  .trap .sp{color:var(--navy); font-weight:800} .trap .ok{color:var(--green); font-weight:900} .trap .no{color:var(--think); text-decoration:line-through}
+
+  /* ---------- special cases + error clinic ---------- */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)}
+  .errlist{list-style:none; margin-top:4px}
+  .errlist li{position:relative; padding:7px 0 7px 24px; font-size:14.5px; font-weight:600; border-bottom:1px dashed var(--rule)}
+  .errlist li::before{content:"✗"; position:absolute; left:0; top:7px; color:var(--think); font-weight:900}
+  .errlist .no{color:var(--think); text-decoration:line-through} .errlist .ok{color:var(--green); font-weight:900}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--garnet); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--garnetdark); border:2px solid var(--garnet)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder ---------- */
+  .segbig{display:flex; border:2px solid var(--garnet); border-radius:12px; overflow:hidden; width:max-content; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--garnet)}
+  .segbig button.on{background:var(--garnet); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .bctx small{display:block; color:#777; font-weight:700; margin-top:2px; font-size:13px}
+  .bgroup{margin-top:12px}
+  .bgroup .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin-bottom:5px}
+  .bchips{display:flex; gap:7px; flex-wrap:wrap}
+  .bchips button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:700 14px Lato,sans-serif; cursor:pointer}
+  .bchips button.on{border-color:var(--garnet); background:var(--garnetlt); color:var(--garnetdark)}
+  .bchips button.wrongpick{border-color:var(--think); background:var(--thinklt); color:var(--think)}
+  .bresult{font-size:clamp(17px,2.9vw,23px); font-weight:800; text-align:center; padding:16px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--garnetdark); margin-left:auto}
+  .vpick{background:var(--garnetlt); color:var(--garnetdark); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--garnet)}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--garnetdark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--garnet); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)}
+  .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick{background:var(--think); color:#fff}
+  .stn .w.rightpick{background:var(--green); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)}
+  .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--garnetdark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--garnet); font-weight:700; text-decoration:none}
+  @media (max-width:560px){
+    nav button{padding:9px 12px; font-size:14px}
+    .bins{grid-template-columns:1fr}
+    /* width:max-content would keep these pills unwrapped and push the page sideways on a phone */
+    .seg2{width:auto; border-radius:14px} .seg2 button{flex:1 1 46%; padding:8px 10px}
+    .segbig{width:auto} .segbig button{flex:1 1 50%}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">⚖️</span>
+  <div class="wrap">
+    <div class="kicker">English 8 · Unit 4 · Fine Distinctions</div>
+    <h1>⚖️ The Hacer Divider</h1>
+    <div class="sub"><b>Structure 3</b> — <i>make</i> vs <i>do</i>: the division of labor, the C1 shelf, and the traps the exam loves. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🗂️ Sort the collocations</span><span>🔧 Build the phrase</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🗂️ Explore<small>sort them out</small></button>
+    <button data-tab="build">🔧 Build<small>produce it yourself</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>The division of labor</h2>
+      <p class="muted">One Spanish verb, two English verbs. Ask one question: <b>does something new exist afterwards?</b>
+        If yes, it is <i>make</i>. If an activity simply gets carried out, it is <i>do</i>.
+        <span class="es">(Si al final hay algo nuevo, es make; si solo se ejecuta una actividad, es do.)</span></p>
+
+      <div class="split">
+        <div class="half hmake"><div class="role">Something new exists</div><div class="big">MAKE</div><div class="def">create · produce · decide</div></div>
+        <div class="half hdo"><div class="role">An activity is carried out</div><div class="big">DO</div><div class="def">perform · work · deal with</div></div>
+      </div>
+
+      <h3>Sort the collocations — tap a phrase, then tap a box</h3>
+      <div class="clhint" id="clHint"></div>
+      <div class="pool" id="pool"></div>
+      <div class="bins">
+        <div class="bin binmake" id="binBoxMake"><div class="bh">MAKE</div><div class="bs">create · produce · decide</div><div class="binlist" id="bin-make"></div></div>
+        <div class="bin bindo" id="binBoxDo"><div class="bh">DO</div><div class="bs">perform · work · deal with</div><div class="binlist" id="bin-do"></div></div>
+      </div>
+      <div class="clfeed" id="clFeed"></div>
+      <div class="clfoot"><button class="btn ghost small" id="clReset">Start over ↺</button><span class="clcount" id="clCount"></span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-garnet">⭐ The C1 shelf</span>
+      <h2>Fixed blocks — memorise them whole</h2>
+      <p class="muted">The criterion will not decide these for you: they are single units, and they decide exam points. Learn the verb <b>inside</b> the block.
+        <span class="es">(Bloques fijos: se memorizan enteros, con su verbo.)</span></p>
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the verb, guess, then tap to reveal</label>
+      <div class="shelf" id="shelf"></div>
+      <div style="text-align:center; margin-top:10px"><button class="btn ghost small" id="revealAll" style="display:none">Reveal every verb ✓</button></div>
+      <p class="muted" style="margin-top:10px">The crossover pair: <b>make do</b> (arreglárselas) is MAKE; <b>do without</b> (prescindir) is DO. The exam loves putting them side by side.</p>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-navy">🧭 Why <i>hacer</i> betrays you</span>
+      <h2>One verb in Spanish, two in English</h2>
+      <p class="muted">Spanish uses <i>hacer</i> for both jobs, so the interference is predictable: the exam writes the sentence that a Spanish speaker
+        would translate word for word. These are the pairs that fail most.
+        <span class="es">(El español no distingue; el examen ataja justo ahí.)</span></p>
+      <div class="trap" id="trapGrid"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Special cases</span>
+      <h2>Four places where the rule is not enough</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="causative" class="on">make + person</button><button data-v="substitute">do = substitute verb</button><button data-v="pairs">the exam pairs</button><button data-v="crossover">make do / do without</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">🚨 Typical mistakes</span>
+      <h2>The error hunt from your manual</h2>
+      <p class="muted">Every line below is a real answer key from Structure 3 or Task set 16. Read the wrong version once, then the fix.</p>
+      <ul class="errlist" id="errList"></ul>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> turns the MAKE/DO table of Structure 3 into a tap classifier (no HTML5 drag, so it works on a phone), then shows the C1 shelf as fixed blocks with a <i>Predict first</i> mask, the Spanish-interference pairs, the four exceptions of the manual, and the error-hunt key.</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> the verb and its form (Task set 16, drill A) and then <i>transform</i> the C1-shelf expressions and the cross-out items (Task set 16, drills B and D).</li>
+          <li><b>Drill</b> is one graded flow in the two SELLI formats — Written Expression (click the wrong part) and Structure (complete the sentence) — with a score, a streak and a best score kept on this device.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-garnet">🔧 Your turn to produce</span>
+      <h2>Build the phrase</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted">Choose the <b>verb</b> and its <b>form</b>. The machine writes the sentence and names the rule — <b>guess before you check.</b></p>
+        <div class="bctx" id="bctx"></div>
+        <div class="bgroup"><div class="glab">1 · Which verb?</div><div class="bchips" id="verbChips"></div></div>
+        <div class="bgroup"><div class="glab">2 · Which form?</div><div class="bchips" id="formChips"></div></div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn" id="bBuild">Build it 🔧</button><button class="btn ghost" id="bNext">New sentence →</button><span class="bscore" id="bScore">Built: 0</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Write the missing expression, or rewrite the sentence with the right collocation. Check against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type your answer"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next item →</button><span class="bscore" id="tScore">Done: 0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ the basic split · ★★ the exam pairs &amp; the substitute verb · ★★★ the C1 shelf.
+        Keep your streak alive. <span class="es">(Igual escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 8 · Unit 4 · Fine Distinctions · Structure 3 — make vs do · Level C1
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE HACER DIVIDER — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 8 Class Manual (Structure 3).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE · tap classifier (tap a collocation, then tap MAKE or DO)
+===================================================================== */
+var SORT = [
+  {n:"a decision",    v:"make", w:"The decision did not exist before you produced it."},
+  {n:"research",      v:"do",   w:"Research is work carried out over time — never “make research”."},
+  {n:"progress",      v:"make", w:"Progress is created, not performed. Pair it with “do research” and keep them apart."},
+  {n:"an experiment", v:"do",   w:"An experiment is carried out: do / run / conduct one. “Make an experiment” is wrong."},
+  {n:"a mistake",     v:"make", w:"An error is produced by you, so it comes out of MAKE."},
+  {n:"a favor",       v:"do",   w:"A favor is performed for somebody: do someone a favor."},
+  {n:"a discovery",   v:"make", w:"After the discovery, new knowledge exists: MAKE."},
+  {n:"damage",        v:"do",   w:"Damage happens to something that already exists: do damage / harm."},
+  {n:"an offer",      v:"make", w:"An offer is produced and put on the table: MAKE."},
+  {n:"your best",     v:"do",   w:"Your best is an effort you perform: do your best, do your duty."},
+  {n:"a proposal",    v:"make", w:"A proposal is a new document or idea: make a proposal, make a prediction."},
+  {n:"a job",         v:"do",   w:"A job is work carried out: do a good job, do the work."},
+  {n:"an effort",     v:"make", w:"An effort is produced by you: make an effort, make an attempt."},
+  {n:"the analysis",  v:"do",   w:"An analysis is performed: do (or run) an analysis, do a test."}
+];
+var selTok = null, sorted = 0, slips = 0;
+function clFeed(ok, html){ var f=$("clFeed"); f.className = "clfeed " + (ok?"good":"bad"); f.innerHTML = html; }
+function renderSort(){
+  var pool = $("pool"); pool.innerHTML = "";
+  SORT.forEach(function(t,i){
+    if(t.done) return;
+    var b = document.createElement("button");
+    b.className = "tok" + (selTok===i ? " sel" : ""); b.textContent = t.n; b.dataset.i = i;
+    b.addEventListener("click", function(){ selTok = (selTok===i ? null : i); renderSort(); });
+    pool.appendChild(b);
+  });
+  if(!pool.children.length) pool.innerHTML = '<span class="muted">Every collocation is sorted. Tap “Start over” to shuffle your memory again.</span>';
+  ["make","do"].forEach(function(v){
+    var el = $("bin-"+v); el.innerHTML = "";
+    SORT.forEach(function(t){ if(t.done && t.v===v){ var s=document.createElement("span"); s.textContent = v+" "+t.n; el.appendChild(s); } });
+  });
+  $("clHint").textContent = selTok===null
+    ? "1 · Tap a collocation.   2 · Tap the MAKE box or the DO box."
+    : "Now tap a box: does “" + SORT[selTok].n + "” go with MAKE or with DO?";
+  $("clCount").textContent = "Sorted: " + sorted + "/" + SORT.length + " · slips: " + slips;
+}
+function drop(v){
+  if(selTok===null){ clFeed(false, "Tap a collocation first, then tap the box."); return; }
+  var t = SORT[selTok];
+  if(t.v===v){ t.done=true; sorted++; selTok=null; clFeed(true, "✓ <b>"+v+" "+t.n+"</b> — "+t.w); }
+  else { slips++; clFeed(false, "✗ Not <b>"+v.toUpperCase()+"</b>. "+t.w); }
+  renderSort();
+}
+$("binBoxMake").addEventListener("click", function(){ drop("make"); });
+$("binBoxDo").addEventListener("click", function(){ drop("do"); });
+$("clReset").addEventListener("click", function(){
+  SORT.forEach(function(t){ t.done=false; }); sorted=0; slips=0; selTok=null;
+  $("clFeed").className="clfeed"; $("clFeed").innerHTML=""; renderSort();
+});
+renderSort();
+
+/* C1 shelf — fixed blocks, with the Predict first mask */
+var SHELF = [
+  {v:"make", x:"sense",            g:"tener sentido",       e:"The schedule never <b>made sense</b>, and everyone knew it."},
+  {v:"do",   x:"the math",         g:"echar cuentas",       e:"These numbers make no sense — <b>do the math</b> again."},
+  {v:"make", x:"sure",             g:"asegurarse de",       e:"<b>Make sure</b> you read their report."},
+  {v:"do",   x:"justice to",       g:"hacer justicia a",    e:"Their report <b>does justice to</b> what they found."},
+  {v:"make", x:"a difference",     g:"marcar la diferencia",e:"One good mentor <b>makes a difference</b>."},
+  {v:"do",   x:"without",          g:"prescindir de",       e:"We learned to <b>do without</b> the consultants."},
+  {v:"make", x:"room for",         g:"hacer sitio a",       e:"We can do without the crane if we <b>make room for</b> the hoist near the dock."},
+  {v:"do",   x:"wonders for",      g:"hacer maravillas por",e:"The whole experience <b>did wonders for</b> our humility."},
+  {v:"make", x:"up for",           g:"compensar",           e:"We tried to <b>make up for</b> the late start."},
+  {v:"do",   x:"(5 years) of research", g:"hacer N años de investigación", e:"She <b>did</b> five years <b>of research</b> on catalysts."},
+  {v:"make", x:"it",               g:"lograrlo · llegar",   e:"Somehow we <b>made it</b> to the deadline."},
+  {v:"do",   x:"damage control",   g:"controlar los daños", e:"After the leak, the team spent a week <b>doing damage control</b>."},
+  {v:"make", x:"do with",          g:"arreglárselas con",   e:"In the end we <b>made do with</b> half the budget."},
+  {v:"do",   x:"a good / poor job",g:"hacer un buen/mal trabajo", e:"The interns <b>did a heroic job</b> with the testing."}
+];
+var predictMode = false, shown = {};
+function renderShelf(){
+  var box = $("shelf"); box.innerHTML = "";
+  SHELF.forEach(function(s,i){
+    var mask = predictMode && !shown[i];
+    var d = document.createElement("div");
+    d.className = "sblk " + (s.v==="make" ? "mk" : "dd");
+    d.innerHTML = '<div class="head"><span class="vv' + (mask?" masked":"") + '">' + s.v + '</span> ' + s.x + '</div>' +
+                  '<small>' + s.g + '</small>' + (mask ? "" : "<em>" + s.e + "</em>");
+    if(mask){ d.style.cursor="pointer"; d.addEventListener("click", function(){ shown[i]=true; renderShelf(); }); }
+    box.appendChild(d);
+  });
+  $("revealAll").style.display = predictMode ? "inline-block" : "none";
+}
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; shown={}; renderShelf(); });
+$("revealAll").addEventListener("click", function(){ SHELF.forEach(function(s,i){ shown[i]=true; }); renderShelf(); });
+renderShelf();
+
+/* Spanish interference */
+var TRAPS = [
+  ["hacer investigación","do research","make research"],
+  ["hacer un experimento","do / run an experiment","make an experiment"],
+  ["hacer progresos","make progress","do progress"],
+  ["hacer un favor","do someone a favor","make someone a favor"],
+  ["hacer lo posible","do your best","make your best"],
+  ["hacer un descubrimiento","make a discovery","do a discovery"],
+  ["hacer un buen trabajo","do a good job","make a good job"],
+  ["hacer una propuesta","make a proposal","do a proposal"],
+  ["hacer daño","do damage / harm","make damage"],
+  ["arreglárselas / prescindir","make do vs do without","make without"]
+];
+(function(){
+  var g = $("trapGrid");
+  TRAPS.forEach(function(t){
+    var d = document.createElement("div");
+    d.innerHTML = '<span class="sp">' + t[0] + '</span> → <span class="ok">' + t[1] + '</span> · <span class="no">' + t[2] + '</span>';
+    g.appendChild(d);
+  });
+})();
+
+/* special cases */
+var SC = {
+  causative:"<b>make + someone + adjective or base verb</b> = cause them to be or to do something. ✔ The delay <b>made us nervous</b>. · ✔ The demo <b>made everyone laugh</b> (no <i>to</i> before the verb). <span class='es'>(Aquí make no es una colocación: es causativo.)</span>",
+  substitute:"<b>do</b> can stand in for a verb already used, so you do not repeat it. ✔ She works harder than I <b>do</b>. · ✔ They tested it more carefully than we <b>did</b>. <span class='es'>(do como verbo sustituto, no como colocación.)</span>",
+  pairs:"<b>The pairs the exam loves.</b> ✔ <b>make progress</b> but ✔ <b>do research</b>. ✘ <i>make an experiment</i> — the correct forms are <b>do / run / conduct an experiment</b>. Learn them as a pair, not one at a time.",
+  crossover:"<b>make do (with)</b> = manage with less: ✔ We <b>made do with</b> one oscilloscope. <b>do without</b> = prescindir de: ✔ We learned to <b>do without</b> the consultants. Same idea, opposite verbs — and the exam prints them side by side."
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.causative;
+
+/* error clinic */
+var ERRORS = [
+  ["The team <span class='no'>did an important discovery</span> while doing routine maintenance.","made an important discovery","a discovery is new knowledge → MAKE"],
+  ["We must <span class='no'>make more research</span> before making any promises.","do more research","research is work carried out → DO (but <i>make a promise</i> is right)"],
+  ["He <span class='no'>made his best</span>, but the deadline was impossible.","did his best","your best is an effort you perform → DO"],
+  ["The consultants did a thorough analysis and <span class='no'>did several proposals</span>.","made several proposals","a proposal is produced → MAKE"],
+  ["The auditors <span class='no'>made a thorough job</span> of the review.","did a thorough job","a job is carried out → DO"],
+  ["He <span class='no'>did a promise</span> he could not keep.","made a promise","a promise is produced → MAKE"],
+  ["Please <span class='no'>make me a favor</span> and check the wiring.","do me a favor","a favor is performed for someone → DO"],
+  ["The company <span class='no'>made research</span> on solid-state batteries for a decade.","did / conducted research","research is never MAKE"]
+];
+(function(){
+  var ul = $("errList");
+  ERRORS.forEach(function(e){
+    var li = document.createElement("li");
+    li.innerHTML = e[0] + '<br>✓ <span class="ok">' + e[1] + '</span> — <span class="muted">' + e[2] + "</span>";
+    ul.appendChild(li);
+  });
+})();
+
+/* =====================================================================
+   BUILD · assemble (verb + form) + transform (write the expression)
+===================================================================== */
+var BUILD = [
+  {ctx:"Last month the team ___ progress after the full teardown.", frame:"Last month the team {V} progress after the full teardown.", v:"make", f:"past", note:"Progress is created → MAKE; <i>last month</i> forces the past → made."},
+  {ctx:"Who ___ the maintenance on these compressors now?", frame:"Who {V} the maintenance on these compressors now?", v:"do", f:"-s", note:"Maintenance is work carried out → DO; <i>who</i> + <i>now</i> → present simple, so does."},
+  {ctx:"Stop ___ noise and finish your part of the report.", frame:"Stop {V} noise and finish your part of the report.", v:"make", f:"-ing", note:"Noise is produced → MAKE; after <i>stop</i>, use the -ing form."},
+  {ctx:"Last night the storm ___ serious damage to the antennas.", frame:"Last night the storm {V} serious damage to the antennas.", v:"do", f:"past", note:"Damage happens to something that exists → DO; <i>last night</i> forces the past → did."},
+  {ctx:"These days we ___ business with a firm that builds precision gears.", frame:"These days we {V} business with a firm that builds precision gears.", v:"do", f:"base", note:"<i>do business (with)</i> is fixed → DO; <i>these days</i> + <i>we</i> → present simple base form."},
+  {ctx:"She ___ three attempts before the valve sealed.", frame:"She {V} three attempts before the valve sealed.", v:"make", f:"past", note:"An attempt is produced → MAKE (make an attempt, make a discovery)."},
+  {ctx:"They are ___ the stress analysis this week.", frame:"They are {V} the stress analysis this week.", v:"do", f:"-ing", note:"An analysis is performed → DO; after <i>are</i>, use -ing."},
+  {ctx:"You will ___ well on the exam if you have studied.", frame:"You will {V} well on the exam if you have studied.", v:"do", f:"base", note:"<i>do well / badly on an exam</i> is fixed → DO; after <i>will</i>, base form."}
+];
+var FORMS = {"base":{make:"make", do:"do"}, "-s":{make:"makes", do:"does"}, "past":{make:"made", do:"did"}, "-ing":{make:"making", do:"doing"}};
+var bi=0, bVerb=null, bForm=null, bBuilt=0, bScored=false;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m = b.dataset.m;
+    $("assembleBox").style.display = m==="assemble" ? "block" : "none";
+    $("transformBox").style.display = m==="transform" ? "block" : "none";
+  });
+});
+function chipRow(id, list, pick){
+  var wrap = $(id); wrap.innerHTML = "";
+  list.forEach(function(op){
+    var b = document.createElement("button"); b.textContent = op; b.dataset.v = op;
+    b.addEventListener("click", function(){ pick(op); document.querySelectorAll("#"+id+" button").forEach(function(x){ x.classList.toggle("on", x===b); x.classList.remove("wrongpick"); }); });
+    wrap.appendChild(b);
+  });
+}
+function renderBuild(){
+  var it = BUILD[bi]; bVerb=null; bForm=null; bScored=false;
+  $("bctx").innerHTML = it.ctx + "<small>Choose the verb, then its form.</small>";
+  chipRow("verbChips", ["make","do"], function(v){ bVerb=v; });
+  chipRow("formChips", ["base","-s","past","-ing"], function(v){ bForm=v; });
+  $("bresult").className = "bresult"; $("bresult").innerHTML = "";
+}
+$("bBuild").addEventListener("click", function(){
+  var it = BUILD[bi], r = $("bresult");
+  if(!bVerb || !bForm){ r.className="bresult bad"; r.innerHTML="Choose a verb <b>and</b> a form first."; return; }
+  var vOk = bVerb===it.v, fOk = bForm===it.f;
+  if(vOk && fOk){
+    var word = FORMS[it.f][it.v];
+    r.className = "bresult good";
+    r.innerHTML = "✅ " + it.frame.replace("{V}", '<span class="vpick">'+word+'</span>') + '<div class="bnote">' + it.note + "</div>";
+    if(!bScored){ bScored=true; bBuilt++; $("bScore").textContent = "Built: " + bBuilt; }
+  } else {
+    if(!vOk) document.querySelector('#verbChips button[data-v="'+bVerb+'"]').classList.add("wrongpick");
+    if(!fOk) document.querySelector('#formChips button[data-v="'+bForm+'"]').classList.add("wrongpick");
+    r.className = "bresult bad";
+    r.innerHTML = "❌ " + (!vOk ? "Wrong verb." : "Right verb, wrong form.") + ' <span class="bnote">Hint — ' + it.note + "</span>";
+  }
+});
+$("bNext").addEventListener("click", function(){ bi=(bi+1)%BUILD.length; renderBuild(); });
+renderBuild();
+
+var TRANS = [
+  {ctx:"«Nos las arreglamos con la mitad del presupuesto.» → In the end we ___ half the budget. <i>(3 words)</i>", accept:["made do with","in the end we made do with half the budget"], model:"In the end we made do with half the budget."},
+  {ctx:"«Aprendimos a prescindir de los consultores.» → We learned to ___ the consultants. <i>(2 words)</i>", accept:["do without","we learned to do without the consultants"], model:"We learned to do without the consultants."},
+  {ctx:"«Asegúrate de leer el informe.» → ___ you read the report. <i>(2 words)</i>", accept:["make sure","make sure you read the report"], model:"Make sure you read the report."},
+  {ctx:"«El resumen hace justicia a los datos.» → The summary ___ the data. <i>(3 words)</i>", accept:["does justice to","the summary does justice to the data"], model:"The summary does justice to the data."},
+  {ctx:"«Un buen mentor marca la diferencia.» → One good mentor ___ . <i>(3 words)</i>", accept:["makes a difference","one good mentor makes a difference"], model:"One good mentor makes a difference."},
+  {ctx:"«Intentamos compensar el arranque tardío.» → We tried to ___ the late start. <i>(3 words)</i>", accept:["make up for","we tried to make up for the late start"], model:"We tried to make up for the late start."},
+  {ctx:"Rewrite the whole sentence, fixing the collocation: “The lab did a major discovery about the catalyst.”", accept:["the lab made a major discovery about the catalyst"], model:"The lab made a major discovery about the catalyst."},
+  {ctx:"Rewrite the whole sentence, fixing the collocation: “The auditors made a thorough job of the review.”", accept:["the auditors did a thorough job of the review"], model:"The auditors did a thorough job of the review."}
+];
+var ti=0, tDone=0, tScored=false;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML=it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; tScored=false; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok && !tScored){ tScored=true; tDone++; $("tScore").textContent="Done: "+tDone; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow (SELLI formats: Structure + Written Expression)
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"make or do?", q:"Before we ___ an offer, we should check the numbers.", o:["make","do"], a:0, w:"An offer is produced and put on the table → MAKE an offer."},
+  {kind:"mc", diff:1, tag:"make or do?", q:"The storm ___ serious damage to the antennas.", o:["made", "did"], a:1, w:"Damage happens to something that already exists → DO damage."},
+  {kind:"error", diff:1, tag:"Written Expression", words:["He","made","his","best,","but","the","deadline","was","impossible."], bad:1, fixOld:"made his best", fixNew:"did his best", w:"Your best is an effort you perform → DO your best."},
+  {kind:"fill", diff:1, tag:"Complete it", q:"The team ___ progress after the full teardown. <i>(past form of make or do)</i>", accept:["made"], w:"Progress is created, not performed → MAKE progress."},
+  {kind:"mc", diff:1, tag:"make or do?", q:"Who ___ the maintenance on these compressors?", o:["does","makes"], a:0, w:"Maintenance is work carried out → DO the maintenance."},
+  {kind:"error", diff:2, tag:"Written Expression", words:["We","must","make","more","research","before","making","any","promises."], bad:2, fixOld:"make more research", fixNew:"do more research", w:"Research is work carried out → DO research. Note that <i>make a promise</i> is correct."},
+  {kind:"error", diff:2, tag:"Written Expression", words:["The","team","did","an","important","discovery","during","routine","maintenance."], bad:2, fixOld:"did an important discovery", fixNew:"made an important discovery", w:"A discovery is new knowledge that exists afterwards → MAKE a discovery."},
+  {kind:"mc", diff:2, tag:"The exam pair", q:"The consultants ___ a thorough analysis and ___ three proposals.", o:["did … did", "made … did", "did … made", "made … made"], a:2, w:"An analysis is carried out (DO); a proposal is produced (MAKE)."},
+  {kind:"fill", diff:2, tag:"Substitute verb", q:"She works harder than I ___ . <i>(one word)</i>", accept:["do"], w:"DO replaces a verb already used, so you do not repeat it: than I do."},
+  {kind:"error", diff:3, tag:"Written Expression", words:["Please","make","me","a","favor","and","check","the","wiring."], bad:1, fixOld:"make me a favor", fixNew:"do me a favor", w:"A favor is performed for someone → DO someone a favor."},
+  {kind:"error", diff:3, tag:"Written Expression", words:["We","made","without","the","consultants","for","a","whole","month."], bad:1, fixOld:"made without", fixNew:"did without", w:"<i>do without</i> = prescindir de. The MAKE member of the pair is <i>make do (with)</i>."},
+  {kind:"fill", diff:3, tag:"The crossover pair", q:"We had one oscilloscope, so we ___ it. <i>(3 words — arreglárselas)</i>", accept:["made do with"], w:"make do (with) = manage with less; its partner do without = prescindir de."},
+  {kind:"fill", diff:3, tag:"C1 shelf", q:"The schedule never ___ — everyone knew it. <i>(2 words, past — tener sentido)</i>", accept:["made sense"], w:"<i>make sense</i> is a fixed block: the verb inside it is MAKE."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("i8_s3_drill_best")||0); if(dscore>best){ store("i8_s3_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"You have divorced hacer. Ready for the ★★★ homework." : dscore>=8?"Solid — review the C1 shelf and the exam pairs, then go again." : "Re-read Structure 3, sort the collocations in Explore, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the word that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, (ok?'<span class="k">✓ Correct.</span> ':'<span class="k">✗ Not that one: the green part is the error.</span> ')+'<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer: "+it.accept[0]+".")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

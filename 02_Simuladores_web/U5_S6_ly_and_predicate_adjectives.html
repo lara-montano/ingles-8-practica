@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+  THE POSITION DETECTOR · English 8 · Unit 5 "Word Order as Power"
+  Structure 6 — -ly adjectives & predicate-only (a-) adjectives
+  Three modes: Explore (position detector) · Build (sort & rewrite) · Drill (graded).
+  Companion to the Class Manual & Homework Book (Prof. Daniel Lara).
+  Autor: Prof. Daniel Lara · Instagram y Google Scholar: profe.daniellara
+  Página autocontenida (funciona sin internet). No elimines los créditos.
+====================================================================== -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prof. Daniel Lara (@profe.daniellara)">
+<meta name="copyright" content="© Prof. Daniel Lara — Instagram/Google Scholar: profe.daniellara">
+<title>Structure 6 · The Position Detector · Prof. Daniel Lara</title>
+<style>
+  :root{
+    --royal:#4B3A8C; --royaldark:#30255C; --royallt:#E9E6F4;   /* Unit 5 identity */
+    --green:#1F7A4D; --greendark:#124D30; --greenlt:#E4F1EA;
+    --grammar:#D9761A; --grammarlt:#FBEEDF;
+    --excep:#7A4FB0; --exceplt:#EEE8F6;
+    --think:#C0392B; --thinklt:#F9E7E4;
+    --navy:#1F3A5F; --navylt:#E8ECF3;
+    --ink:#262626; --soft:#F4F6F5; --rule:#CBD3CE;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:Lato,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.55}
+
+  header{background:linear-gradient(135deg,var(--royal),var(--royaldark)); color:#fff; padding:24px 20px 20px; position:relative; overflow:hidden}
+  header .deco{position:absolute; right:16px; top:-16px; font-size:118px; opacity:.13; pointer-events:none}
+  header .kicker{font-size:12px; letter-spacing:.13em; font-weight:800; color:#C9C2E8; text-transform:uppercase}
+  header h1{font-size:clamp(24px,4.6vw,37px); margin:4px 0 3px; font-weight:900}
+  header .sub{color:#DED9F0; font-size:clamp(13px,2.3vw,16px)}
+  .chipline{margin-top:9px; display:flex; gap:6px; flex-wrap:wrap}
+  .chipline span{background:rgba(255,255,255,.16); border-radius:999px; padding:3px 11px; font-size:12px; font-weight:700}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 14px 96px}
+  header .wrap{padding-bottom:0}
+
+  nav{display:flex; gap:7px; flex-wrap:wrap; margin:15px auto 0; max-width:1000px; padding:0 14px; position:relative; z-index:2}
+  nav button{border:0; border-radius:12px 12px 0 0; padding:11px 18px; font:800 15px Lato,sans-serif; background:rgba(255,255,255,.15); color:#fff; cursor:pointer}
+  nav button.on{background:var(--soft); color:var(--royaldark)}
+  nav button small{display:block; font-size:11px; font-weight:700; opacity:.8}
+  main{padding-top:18px}
+  section.tab{display:none}
+  section.tab.on{display:block; animation:pop .25s ease}
+  @keyframes pop{from{opacity:0; transform:translateY(6px)} to{opacity:1}}
+
+  .card{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:18px; margin-bottom:16px; box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .card h2{font-size:20px; color:var(--royaldark); margin-bottom:6px}
+  .card h3{font-size:15px; color:var(--royaldark); margin:14px 0 6px}
+  .muted{color:#666; font-size:14px}
+  .es{color:#777; font-style:italic}
+  .boxtag{display:inline-block; color:#fff; font-weight:800; font-size:12px; padding:3px 10px; border-radius:7px; margin-bottom:8px}
+  .tag-grammar{background:var(--grammar)} .tag-excep{background:var(--excep)} .tag-think{background:var(--think)} .tag-royal{background:var(--royal)} .tag-navy{background:var(--navy)}
+
+  .chips{display:flex; gap:8px; flex-wrap:wrap; margin:6px 0}
+  .chips button{border:2px solid var(--rule); background:#fff; border-radius:999px; padding:7px 14px; font:700 14px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .chips button.on{border-color:var(--royal); background:var(--royallt); color:var(--royaldark)}
+
+  /* ---------- position detector ---------- */
+  .predictbar{display:flex; align-items:center; gap:8px; justify-content:flex-end; font-weight:800; font-size:13px; color:var(--excep); cursor:pointer; margin:-2px 0 6px}
+  .glab{font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.04em; color:#888; margin:10px 0 4px}
+  .slots{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:10px}
+  .slot{border:2px solid var(--rule); background:var(--soft); border-radius:12px; padding:13px 14px; cursor:pointer}
+  .slot .lab{font-size:11px; font-weight:900; letter-spacing:.07em; text-transform:uppercase; color:#777}
+  .slot .verdict{font-size:20px; font-weight:900; color:#999; margin-top:2px}
+  .slot .ex{font-size:clamp(15px,2.5vw,19px); font-weight:800; margin-top:3px; line-height:1.5}
+  .slot .rz{font-size:13px; font-weight:600; color:#555; margin-top:5px}
+  .slot.fit{border-color:var(--green); background:var(--greenlt)} .slot.fit .verdict{color:var(--greendark)}
+  .slot.blk{border-color:var(--think); background:var(--thinklt)} .slot.blk .verdict{color:var(--think)}
+  .advrow{margin-top:10px; border-left:4px solid var(--navy); background:var(--navylt); border-radius:0 10px 10px 0; padding:8px 12px; font-size:14px; font-weight:700; color:var(--navy)}
+  .hw{background:var(--royallt); color:var(--royaldark); border-radius:6px; padding:0 5px; box-shadow:inset 0 -2px 0 var(--royal)}
+  .strike{color:var(--think); text-decoration:line-through}
+  .fixarrow{color:var(--green); font-weight:900}
+  .legend{display:flex; gap:10px; flex-wrap:wrap; font-size:12px; font-weight:800; margin-top:10px}
+  .legend span{border-radius:6px; padding:1px 8px}
+
+  .shiftgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(168px,1fr)); gap:6px; margin-top:4px}
+  .shiftgrid div{background:#fff; border:1.5px solid var(--rule); border-radius:8px; padding:6px 10px; font-size:14px; font-weight:700}
+  .shiftgrid .a{color:var(--think)} .shiftgrid .b{color:var(--green)}
+  .wordrow{background:var(--royallt); border:1.5px solid var(--royal); border-radius:10px; padding:10px 12px; font-size:15px; font-weight:800; color:var(--royaldark); text-align:center; line-height:1.9}
+
+  /* special cases selector */
+  .seg2{display:flex; border:2px solid var(--rule); border-radius:999px; overflow:hidden; width:max-content; max-width:100%; flex-wrap:wrap}
+  .seg2 button{border:0; background:#fff; padding:7px 14px; font:800 13px Lato,sans-serif; cursor:pointer; color:#777}
+  .seg2 button.on{background:var(--excep); color:#fff}
+  .scout{background:var(--exceplt); border:2px solid var(--excep); border-radius:12px; padding:14px; margin-top:10px; font-size:15px; font-weight:600; color:#333}
+  .scout b{color:var(--excep)}
+
+  .errlist{list-style:none; margin-top:6px}
+  .errlist li{display:flex; gap:10px; align-items:center; flex-wrap:wrap; padding:8px 0; border-bottom:1px dashed var(--rule); font-size:15px; font-weight:700}
+  .errlist .bad{color:var(--think)} .errlist .bad::before{content:"✘ "}
+  .errlist .good{color:var(--green); display:none} .errlist .good::before{content:"✔ "}
+  .errlist .why{display:none; margin:0; flex-basis:100%; font-size:13px; padding:6px 10px}
+  .errlist li.open .good,.errlist li.open .why{display:block}
+  .errlist li.open .fixbtn{display:none}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-block; border:0; border-radius:10px; padding:11px 20px; font:900 15px Lato,sans-serif; background:var(--royal); color:#fff; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .btn:active{transform:translateY(1px)}
+  .btn.ghost{background:#fff; color:var(--royaldark); border:2px solid var(--royal)} .btn.small{padding:8px 14px; font-size:14px}
+  .btn[disabled]{opacity:.45; cursor:not-allowed}
+
+  /* ---------- builder / classifier ---------- */
+  .segbig{display:flex; flex-wrap:wrap; border:2px solid var(--royal); border-radius:12px; overflow:hidden; width:max-content; max-width:100%; margin-bottom:12px}
+  .segbig button{border:0; background:#fff; padding:9px 18px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--royal)}
+  .segbig button.on{background:var(--royal); color:#fff}
+  .bctx{background:var(--navylt); border:2px solid var(--navy); border-radius:12px; padding:12px 14px; font-weight:800; color:var(--navy); font-size:17px}
+  .pool{display:flex; gap:7px; flex-wrap:wrap; margin:6px 0 4px}
+  .pool button{border:2px solid var(--rule); background:#fff; border-radius:10px; padding:8px 13px; font:800 15px Lato,sans-serif; cursor:pointer; color:var(--ink)}
+  .pool button.sel{border-color:var(--royal); background:var(--royallt); color:var(--royaldark); box-shadow:0 0 0 3px rgba(75,58,140,.22)}
+  .bins{display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:10px}
+  .bin{border:2px dashed var(--rule); background:#fff; border-radius:12px; padding:10px; min-height:104px; cursor:pointer}
+  .bin.armed{border-color:var(--royal); border-style:solid; background:var(--royallt)}
+  .bin .bh{font-size:11px; font-weight:900; text-transform:uppercase; letter-spacing:.05em; color:var(--royaldark)}
+  .bin .bf{font-size:12px; font-weight:700; color:#888; margin-bottom:4px}
+  .bin .placed{background:var(--greenlt); border:1.5px solid var(--green); border-radius:8px; padding:5px 8px; margin-top:6px; font-size:13px; font-weight:700; color:var(--greendark)}
+  .bresult{font-size:clamp(16px,2.6vw,20px); font-weight:800; text-align:center; padding:14px; border-radius:12px; margin-top:12px; display:none}
+  .bresult.good{background:var(--greenlt); border:2px solid var(--green); display:block}
+  .bresult.bad{background:var(--thinklt); border:2px solid var(--think); display:block; font-size:16px}
+  .bnote{font-size:14px; font-weight:700; color:#555; margin-top:8px}
+  .bfoot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; align-items:center}
+  .bscore{font-weight:900; color:var(--royaldark); margin-left:auto}
+
+  /* ---------- drill ---------- */
+  .drillhead{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:10px}
+  .drillhead .sc{font-weight:900; color:var(--royaldark)} .drillhead .st{font-weight:900; color:var(--grammar)}
+  .qbar{height:10px; background:#E7ECE9; border-radius:999px; overflow:hidden; flex:1; min-width:120px}
+  .qbar i{display:block; height:100%; background:var(--royal); transition:width .3s}
+  .diff{display:inline-block; color:#fff; font-weight:900; font-size:11px; padding:3px 9px; border-radius:6px; letter-spacing:.03em}
+  .d1{background:var(--green)} .d2{background:var(--grammar)} .d3{background:var(--think)}
+  .qq{font-size:18px; font-weight:800; margin:6px 0 10px}
+  .qq .tag{display:flex; gap:8px; align-items:center; font-size:12px; color:#888; text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; font-weight:900; flex-wrap:wrap}
+  .opts{display:grid; gap:7px}
+  .opts button{text-align:left; border:2px solid var(--rule); background:#fff; border-radius:10px; padding:10px 13px; font:700 15px Lato,sans-serif; cursor:pointer}
+  .opts button.right{border-color:var(--green); background:var(--greenlt)}
+  .opts button.wrong{border-color:var(--think); background:var(--thinklt)}
+  .stn{font-size:clamp(17px,2.8vw,21px); font-weight:800; line-height:1.7; text-align:center; margin:4px 0}
+  .stn .w{cursor:pointer; padding:1px 4px; border-radius:6px; border-bottom:2px dotted transparent; transition:background .15s}
+  .stn .w:hover{background:var(--grammarlt); border-bottom-color:var(--grammar)}
+  .stn .w.wrongpick{background:var(--think); color:#fff}
+  .stn .w.rightpick{background:var(--green); color:#fff}
+  .fillrow{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .fillrow input{flex:1; min-width:160px; padding:10px 12px; border-radius:10px; border:2px solid var(--rule); font:15px Lato,sans-serif}
+  .fillrow input.ok{border-color:var(--green); background:var(--greenlt)}
+  .fillrow input.no{border-color:var(--think); background:var(--thinklt)}
+  .why{margin-top:10px; border-left:4px solid var(--grammar); background:var(--grammarlt); border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; font-weight:600; display:none}
+  .why.show{display:block}
+  .why .k{color:var(--green); font-weight:900}
+  .why .fix{display:block; font-size:16px; margin:3px 0}
+  .why .fix .old{color:var(--think); text-decoration:line-through} .why .fix .new{color:var(--green); font-weight:800}
+  .qfoot{display:flex; justify-content:flex-end; margin-top:14px}
+  .medal{font-size:48px; text-align:center}
+  .endbox{text-align:center; padding:10px 0}
+
+  details.teacher{border:1.5px solid var(--rule); border-radius:12px; background:#fff; margin-top:4px}
+  details.teacher summary{cursor:pointer; padding:10px 14px; font-weight:900; color:var(--royaldark); list-style:none}
+  details.teacher summary::-webkit-details-marker{display:none}
+  details.teacher .inner{padding:0 16px 14px; font-size:14px}
+  details.teacher li{margin:4px 0 4px 18px}
+  footer.credits{max-width:1000px; margin:26px auto 0; padding:14px; text-align:center; font-size:13px; color:#555; border-top:1.5px solid var(--rule)}
+  footer.credits a{color:var(--royal); font-weight:700; text-decoration:none}
+  @media (max-width:620px){ .slots{grid-template-columns:1fr} .bins{grid-template-columns:1fr} .seg2{border-radius:12px} }
+  @media (max-width:560px){ nav button{padding:9px 12px; font-size:14px} }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="deco">🧭</span>
+  <div class="wrap">
+    <div class="kicker">English 8 · Unit 5 · Word Order as Power</div>
+    <h1>🧭 The Position Detector</h1>
+    <div class="sub"><b>Structure 6</b> — <i>-ly</i> adjectives &amp; predicate-only adjectives. <span style="opacity:.85">Companion to your Class Manual.</span></div>
+    <div class="chipline"><span>🧭 Explore the slots</span><span>🔧 Sort &amp; rewrite</span><span>🎯 Drill &amp; score</span></div>
+  </div>
+  <nav>
+    <button class="on" data-tab="explore">🧭 Explore<small>where it fits</small></button>
+    <button data-tab="build">🔧 Build<small>sort it yourself</small></button>
+    <button data-tab="drill">🎯 Drill<small>graded practice</small></button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== EXPLORE ===================== -->
+  <section class="tab on" id="tab-explore">
+    <div class="card">
+      <span class="boxtag tag-grammar">💡 How it works</span>
+      <h2>Two slots, one verdict</h2>
+      <p class="muted">An English adjective normally has two homes: <b>before the noun</b> (attributive) and
+        <b>after a linking verb</b> (predicative). Some words are locked out of one of them. Tap a word and the
+        detector lights the slot it fits and crosses the one it cannot enter, with the reason.
+        <span class="es">(Cada palabra se prueba en dos posiciones: antes del sustantivo y después del verbo.)</span></p>
+
+      <label class="predictbar"><input type="checkbox" id="predictChk"> 🔮 Predict first — hide the verdict, guess, then reveal</label>
+
+      <div id="bank"></div>
+
+      <div class="slots">
+        <div class="slot" id="slotA"><div class="lab">Slot 1 · before the noun <span style="color:#aaa">the ___ report</span></div><div class="verdict" id="vA">?</div><div class="ex" id="eA"></div><div class="rz" id="rA"></div></div>
+        <div class="slot" id="slotB"><div class="lab">Slot 2 · after the verb <span style="color:#aaa">The report was ___</span></div><div class="verdict" id="vB">?</div><div class="ex" id="eB"></div><div class="rz" id="rB"></div></div>
+      </div>
+      <div style="text-align:center; margin-top:10px"><button class="btn ghost small" id="revealBtn" style="display:none">Reveal the verdict ✓</button></div>
+      <div class="advrow" id="advRow"></div>
+      <div class="legend"><span style="background:var(--greenlt); color:var(--greendark)">✔ fits</span><span style="background:var(--thinklt); color:var(--think)">✘ blocked</span><span class="hw">the tested word</span></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-royal">🎭 Disguise 1</span>
+      <h2><i>-ly</i> words that are adjectives, not adverbs</h2>
+      <p class="muted">Not everything in <i>-ly</i> is an adverb. These eleven are <b>adjectives</b>, and English
+        <b>builds no manner adverb on top of them</b> (✘ <i>friendlily</i>, ✘ <i>costily</i>), so for the adverb
+        meaning you <b>paraphrase</b>. <span class="es">(Son adjetivos; para el adverbio hay que parafrasear.)</span></p>
+      <div class="wordrow">friendly · lovely · lonely · likely · lively · elderly · costly · deadly · silly · orderly · cowardly</div>
+      <p class="muted" style="margin-top:8px">✔ a <b>costly</b> mistake · The failure is <b>likely</b>. —
+        To get the adverb meaning, <b>paraphrase</b>: <i>in a friendly way / in a friendly manner</i>.</p>
+      <h3>The trap</h3>
+      <div class="shiftgrid">
+        <div><span class="a">He behaved friendly.</span> <span class="fixarrow">→</span> <span class="b">in a friendly way</span></div>
+        <div><span class="a">She spoke very friendly.</span> <span class="fixarrow">→</span> <span class="b">in a very friendly way</span></div>
+        <div><span class="a">He behaved cowardly.</span> <span class="fixarrow">→</span> <span class="b">in a cowardly way</span></div>
+        <div><span class="a">costily / sillily / fastly</span> <span class="fixarrow">→</span> <span class="b">not standard English</span></div>
+      </div>
+      <h3>Double agents — adjective <b>and</b> adverb</h3>
+      <div class="wordrow" style="background:var(--navylt); border-color:var(--navy); color:var(--navy)">daily · weekly · monthly · yearly · early · fast · hard · late</div>
+      <p class="muted" style="margin-top:8px">a <b>daily</b> report (adjective) · reported <b>daily</b> (adverb).
+        The deadline is close, so work <b>fast</b>.</p>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-royal">🚫 Disguise 2</span>
+      <h2>The <i>a-</i> family: after the verb only</h2>
+      <p class="muted">These eight appear <b>only after a verb</b>, never before a noun. When you need the
+        attributive position, swap in the equivalent. <span class="es">(Predicativos: van después del verbo; antes del sustantivo se usa el equivalente.)</span></p>
+      <div class="wordrow">afraid · alike · alive · alone · asleep · awake · ashamed · aware</div>
+      <h3>Swap it for the attributive equivalent</h3>
+      <div class="shiftgrid">
+        <div><span class="a">the asleep operator</span> <span class="fixarrow">→</span> <span class="b">the sleeping operator</span></div>
+        <div><span class="a">an alive specimen</span> <span class="fixarrow">→</span> <span class="b">a living specimen</span></div>
+        <div><span class="a">the afraid intern</span> <span class="fixarrow">→</span> <span class="b">the frightened intern</span></div>
+        <div><span class="a">an ashamed performance</span> <span class="fixarrow">→</span> <span class="b">a shameful performance</span></div>
+        <div><span class="a">the alone technician</span> <span class="fixarrow">→</span> <span class="b">the solitary technician</span></div>
+        <div><span class="a">the aware employees</span> <span class="fixarrow">→</span> <span class="b">the employees who were aware</span></div>
+      </div>
+      <h3>The reverse club — attributive-only</h3>
+      <p class="muted">Mirror image: these appear <b>only before the noun</b> and never after a verb —
+        the <b>main</b> reason, a <b>mere</b> formality, an <b>utter</b> failure, the <b>former</b> director,
+        the <b>principal</b> cause. ✘ <i>The report was utter.</i></p>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-excep">⭐ Special cases</span>
+      <h2>Six things that decide the position</h2>
+      <div class="seg2" id="scSeg">
+        <button data-v="para" class="on">adverb paraphrase</button><button data-v="dbl">double agents</button><button data-v="hard">hard vs hardly</button><button data-v="late">late vs lately</button><button data-v="attr">attributive-only</button><button data-v="swap">a- swaps</button>
+      </div>
+      <div class="scout" id="scOut"></div>
+    </div>
+
+    <div class="card">
+      <span class="boxtag tag-think">⚠️ Common errors</span>
+      <h2>Errors Spanish speakers make</h2>
+      <p class="muted">Read the sentence, find the problem, then tap <b>Fix</b> to check. <span class="es">(Errores típicos: adivina la corrección antes de verla.)</span></p>
+      <ul class="errlist" id="errList"></ul>
+    </div>
+
+    <details class="teacher">
+      <summary>👩‍🏫 For the teacher — how this page maps to the manual</summary>
+      <div class="inner">
+        <ul>
+          <li><b>Explore</b> is Structure 6 as a two-slot detector: every word on the manual's lists is tested before the noun and after the verb, with a third line for adverb use. The two disguise cards are the manual's word lists (the eleven <i>-ly</i> adjectives, the eight double agents, the eight <i>a-</i> adjectives and the attributive-only club) plus the swap table; the special-cases card covers the paraphrase, <i>hard/hardly</i> and <i>late/lately</i>; the errors card is the manual's pitfall list plus the homework clinic.</li>
+          <li><b>Build</b> is productive: students <i>assemble</i> by sorting words into the three position classes (tap the word, then tap the bin — no dragging, so it works on a phone), then <i>transform</i> the manual's and the homework book's faulty sentences, with validation and a model answer.</li>
+          <li><b>Drill</b> is one graded engine in the two SELLI formats — Structure (complete the sentence) and Written Expression (click the wrong part) — ★ recognise the class · ★★ fix the position and the paraphrase · ★★★ rephrase what has no one-word equivalent.</li>
+          <li>Works <b>offline</b>. Reading/writing only — no audio.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== BUILD ===================== -->
+  <section class="tab" id="tab-build">
+    <div class="card">
+      <span class="boxtag tag-royal">🔧 Your turn to produce</span>
+      <h2>Sort the words, then repair the sentences</h2>
+      <div class="segbig" id="buildMode"><button data-m="assemble" class="on">🧩 Assemble</button><button data-m="transform">✍️ Transform</button></div>
+
+      <div id="assembleBox">
+        <p class="muted"><b>Tap a word</b>, then <b>tap the box</b> where it belongs. The machine builds the example
+          and states the rule. <span class="es">(Toca la palabra y luego la caja; no hay que arrastrar.)</span></p>
+        <div class="pool" id="pool"></div>
+        <div class="bins">
+          <div class="bin" data-b="attr"><div class="bh">Before the noun only</div><div class="bf">the ___ reason</div></div>
+          <div class="bin" data-b="both"><div class="bh">Both positions</div><div class="bf">a ___ report · It is ___</div></div>
+          <div class="bin" data-b="pred"><div class="bh">After the verb only</div><div class="bf">The operator was ___</div></div>
+        </div>
+        <div class="bresult" id="bresult"></div>
+        <div class="bfoot"><button class="btn ghost" id="bReset">Reset the pool ↺</button><span class="bscore" id="bScore">Sorted: 0 / 9</span></div>
+      </div>
+
+      <div id="transformBox" style="display:none">
+        <p class="muted">Each sentence puts a word in a slot it cannot enter. Rewrite the whole sentence and check it
+          against the model.</p>
+        <div class="bctx" id="tctx" style="background:var(--grammarlt); border-color:var(--grammar); color:var(--grammar)"></div>
+        <div class="fillrow" style="margin-top:12px"><input type="text" id="tInput" placeholder="type the corrected sentence"><button class="btn small" id="tCheck">Check</button></div>
+        <div class="why" id="tWhy"></div>
+        <div class="bfoot"><button class="btn ghost" id="tNext">Next sentence →</button><span class="bscore" id="tScore">Done: 0 / 8</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DRILL ===================== -->
+  <section class="tab" id="tab-drill">
+    <div class="card">
+      <span class="boxtag tag-navy">🎯 Graded practice</span>
+      <h2>Drill — one flow, three levels</h2>
+      <p class="muted">★ recognise the class · ★★ fix the position &amp; the paraphrase · ★★★ rephrase what has no
+        one-word equivalent. Both SELLI formats: complete the sentence, and click the wrong part.
+        <span class="es">(Misma escalera que tu Cuaderno de tareas.)</span></p>
+      <div class="drillhead"><div class="qbar"><i id="dFill" style="width:0%"></i></div><span class="sc" id="dScore">Score: 0</span><span class="st" id="dStreak">🔥 0</span></div>
+      <div id="drillBody"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  Material creado por <b>Prof. Daniel Lara</b> ·
+  <a href="https://www.instagram.com/profe.daniellara/" target="_blank" rel="noopener">Instagram @profe.daniellara</a> ·
+  <a href="https://scholar.google.com/citations?user=ifG2_hwAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+  English 8 · Unit 5 «Word Order as Power» · Structure 6 — -ly adjectives and predicate-only adjectives · Level C1
+</footer>
+
+<script>
+"use strict";
+/* =====================================================================
+   THE POSITION DETECTOR — Prof. Daniel Lara (profe.daniellara)
+   Explore · Build · Drill. Companion to the English 8 Class Manual (Structure 6).
+===================================================================== */
+var $ = function(id){ return document.getElementById(id); };
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function norm(s){ return (s||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[.,!?]/g," ").replace(/\s+/g," ").trim(); }
+
+var navBtns = document.querySelectorAll("nav button");
+function openTab(name){
+  navBtns.forEach(function(b){ b.classList.toggle("on", b.dataset.tab===name); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id==="tab-"+name); });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+navBtns.forEach(function(b){ b.addEventListener("click", function(){ openTab(b.dataset.tab); }); });
+
+/* =====================================================================
+   EXPLORE · the position detector
+   a = fits before the noun · p = fits after the verb · av = adverb line
+===================================================================== */
+var GROUPS = ["-ly words that are adjectives","Double agents (adjective + adverb)","The a- family","Attributive-only"];
+var WORDS = [
+  {w:"friendly", g:0, a:1, p:1, ae:"a <span class='hw'>friendly</span> technician", pe:"The staff were <span class='hw'>friendly</span>.", av:"✘ Never an adverb → <b>in a friendly way</b>."},
+  {w:"lovely",   g:0, a:1, p:1, ae:"a <span class='hw'>lovely</span> design", pe:"The design was <span class='hw'>lovely</span>.", av:"✘ No adverb form."},
+  {w:"lonely",   g:0, a:1, p:1, ae:"a <span class='hw'>lonely</span> outpost", pe:"The technician felt <span class='hw'>lonely</span>.", av:"✘ No adverb form."},
+  {w:"likely",   g:0, a:1, p:1, ae:"the <span class='hw'>likely</span> outcome", pe:"The failure is <span class='hw'>likely</span>.", av:"✘ No adverb is built from it (✘ likelily); US English uses <b>likely</b> itself: the seal will <b>likely</b> fail."},
+  {w:"lively",   g:0, a:1, p:1, ae:"the <span class='hw'>lively</span> Q&amp;A", pe:"The debate was <span class='hw'>lively</span>.", av:"✘ No adverb form (✘ livelily)."},
+  {w:"elderly",  g:0, a:1, p:1, ae:"the <span class='hw'>elderly</span> turbine", pe:"The engineer is <span class='hw'>elderly</span>.", av:"✘ No adverb form."},
+  {w:"costly",   g:0, a:1, p:1, ae:"a <span class='hw'>costly</span> mistake", pe:"The redesign proved <span class='hw'>costly</span>.", av:"✘ No adverb form (✘ costily)."},
+  {w:"deadly",   g:0, a:1, p:1, ae:"a <span class='hw'>deadly</span> error", pe:"The leak was <span class='hw'>deadly</span>.", av:"✘ No manner adverb (✘ deadlily) → <b>in a deadly way</b>; only the fixed intensifier <i>deadly serious</i>."},
+  {w:"silly",    g:0, a:1, p:1, ae:"a <span class='hw'>silly</span> mistake", pe:"That was <span class='hw'>silly</span>.", av:"✘ No adverb form (✘ sillily) → <b>in a silly way</b>."},
+  {w:"orderly",  g:0, a:1, p:1, ae:"an <span class='hw'>orderly</span> shutdown", pe:"The queue was <span class='hw'>orderly</span>.", av:"✘ No adverb form → <b>in an orderly way</b>."},
+  {w:"cowardly", g:0, a:1, p:1, ae:"a <span class='hw'>cowardly</span> decision", pe:"His silence was <span class='hw'>cowardly</span>.", av:"✘ Never an adverb → <b>in a cowardly way</b>."},
+  {w:"daily",    g:1, a:1, p:1, ae:"a <span class='hw'>daily</span> report", pe:"The backups are <span class='hw'>daily</span>.", av:"✔ Also an adverb: reported <b>daily</b>."},
+  {w:"weekly",   g:1, a:1, p:1, ae:"a <span class='hw'>weekly</span> review", pe:"The checks are <span class='hw'>weekly</span>.", av:"✔ Also an adverb: the committee meets <b>weekly</b>."},
+  {w:"monthly",  g:1, a:1, p:1, ae:"a <span class='hw'>monthly</span> invoice", pe:"The audits are <span class='hw'>monthly</span>.", av:"✔ Also an adverb: billed <b>monthly</b>."},
+  {w:"yearly",   g:1, a:1, p:1, ae:"a <span class='hw'>yearly</span> inspection", pe:"The service is <span class='hw'>yearly</span>.", av:"✔ Also an adverb: inspected <b>yearly</b>."},
+  {w:"early",    g:1, a:1, p:1, ae:"an <span class='hw'>early</span> draft", pe:"The delivery was <span class='hw'>early</span>.", av:"✔ Also an adverb: it arrived <b>early</b>."},
+  {w:"fast",     g:1, a:1, p:1, ae:"a <span class='hw'>fast</span> turbine", pe:"The link is <span class='hw'>fast</span>.", av:"✔ Also an adverb: work <b>fast</b> (✘ fastly)."},
+  {w:"hard",     g:1, a:1, p:1, ae:"a <span class='hw'>hard</span> deadline", pe:"The exam was <span class='hw'>hard</span>.", av:"✔ Also an adverb: she works <b>hard</b> — <i>hardly</i> means almost not."},
+  {w:"late",     g:1, a:1, p:1, ae:"a <span class='hw'>late</span> revision", pe:"The train was <span class='hw'>late</span>.", av:"✔ Also an adverb: he arrived <b>late</b> — <i>lately</i> means recently."},
+  {w:"afraid",   g:2, a:0, p:1, ae:"the <span class='strike'>afraid</span> intern", pe:"The intern was <span class='hw'>afraid</span>.", av:"✘ Not an adverb.", eq:"the <b>frightened</b> intern"},
+  {w:"alike",    g:2, a:0, p:1, ae:"two <span class='strike'>alike</span> reports", pe:"The two reports look <span class='hw'>alike</span>.", av:"✘ Not an adverb.", eq:"two <b>similar</b> reports"},
+  {w:"alive",    g:2, a:0, p:1, ae:"an <span class='strike'>alive</span> specimen", pe:"The cultures are still <span class='hw'>alive</span>.", av:"✘ Not an adverb.", eq:"a <b>living</b> specimen"},
+  {w:"alone",    g:2, a:0, p:1, ae:"the <span class='strike'>alone</span> technician", pe:"The technician worked <span class='hw'>alone</span>.", av:"✘ Not an adverb.", eq:"the <b>solitary</b> technician"},
+  {w:"asleep",   g:2, a:0, p:1, ae:"the <span class='strike'>asleep</span> operator", pe:"The operator was <span class='hw'>asleep</span>.", av:"✘ Not an adverb.", eq:"the <b>sleeping</b> operator"},
+  {w:"awake",    g:2, a:0, p:1, ae:"the <span class='strike'>awake</span> operators", pe:"The operators stayed <span class='hw'>awake</span>.", av:"✘ Not an adverb.", eq:"the operators <b>who were awake</b> (no one-word swap)"},
+  {w:"ashamed",  g:2, a:0, p:1, ae:"an <span class='strike'>ashamed</span> performance", pe:"The committee was <span class='hw'>ashamed</span>.", av:"✘ Not an adverb.", eq:"a <b>shameful</b> performance"},
+  {w:"aware",    g:2, a:0, p:1, ae:"the <span class='strike'>aware</span> employees", pe:"The employees were <span class='hw'>aware</span>.", av:"✘ Not an adverb.", eq:"the employees <b>who were aware</b> / the <b>informed</b> employees"},
+  {w:"main",     g:3, a:1, p:0, ae:"the <span class='hw'>main</span> reason", pe:"The reason was <span class='strike'>main</span>.", av:"✘ Not an adverb.", eq:"The <b>main thing</b> is that nobody was injured."},
+  {w:"mere",     g:3, a:1, p:0, ae:"a <span class='hw'>mere</span> formality", pe:"The formality was <span class='strike'>mere</span>.", av:"✘ Not an adverb.", eq:"It was <b>a mere formality</b>."},
+  {w:"utter",    g:3, a:1, p:0, ae:"an <span class='hw'>utter</span> failure", pe:"The report was <span class='strike'>utter</span>.", av:"✘ Not an adverb.", eq:"The report was <b>a complete disaster</b>."},
+  {w:"former",   g:3, a:1, p:0, ae:"the <span class='hw'>former</span> director", pe:"The director is <span class='strike'>former</span>.", av:"✘ Not an adverb.", eq:"She is <b>the former director</b>."},
+  {w:"principal",g:3, a:1, p:0, ae:"the <span class='hw'>principal</span> cause", pe:"The cause was <span class='strike'>principal</span>.", av:"✘ Not an adverb.", eq:"That was <b>the principal cause</b>."}
+];
+var RZ = {
+  a1:"It is a full adjective, so it can modify the noun directly.",
+  a0g2:"The <i>a-</i> family is predicate-only: it cannot sit before a noun.",
+  p1:"After a linking verb (be, seem, prove, stay, remain) the adjective is fine.",
+  p0g3:"Attributive-only: this word needs its noun and cannot stand after the verb."
+};
+var curW = 0, predictMode = false, revealed = false;
+(function buildBank(){
+  var host = $("bank");
+  GROUPS.forEach(function(g,gi){
+    var lab = document.createElement("div"); lab.className="glab"; lab.textContent = g; host.appendChild(lab);
+    var row = document.createElement("div"); row.className="chips";
+    WORDS.forEach(function(it,i){
+      if(it.g!==gi) return;
+      var b = document.createElement("button"); b.textContent = it.w; b.dataset.k = i;
+      if(i===curW) b.classList.add("on");
+      b.addEventListener("click", function(){
+        curW = i; revealed = false;
+        document.querySelectorAll("#bank .chips button").forEach(function(x){ x.classList.toggle("on", +x.dataset.k===i); });
+        renderDet();
+      });
+      row.appendChild(b);
+    });
+    host.appendChild(row);
+  });
+})();
+$("predictChk").addEventListener("change", function(){ predictMode=this.checked; revealed=false; renderDet(); });
+$("revealBtn").addEventListener("click", function(){ revealed=true; renderDet(); });
+$("slotA").addEventListener("click", function(){ if(predictMode&&!revealed){ revealed=true; renderDet(); } });
+$("slotB").addEventListener("click", function(){ if(predictMode&&!revealed){ revealed=true; renderDet(); } });
+function renderDet(){
+  var it = WORDS[curW], mask = predictMode && !revealed;
+  $("revealBtn").style.display = mask ? "inline-block" : "none";
+  $("slotA").className = "slot" + (mask ? "" : (it.a ? " fit" : " blk"));
+  $("slotB").className = "slot" + (mask ? "" : (it.p ? " fit" : " blk"));
+  $("vA").innerHTML = mask ? "?" : (it.a ? "✔ It fits here" : "✘ Blocked here");
+  $("vB").innerHTML = mask ? "?" : (it.p ? "✔ It fits here" : "✘ Blocked here");
+  $("eA").innerHTML = mask ? "<span style='color:#aaa'>guess first…</span>" : it.ae;
+  $("eB").innerHTML = mask ? "<span style='color:#aaa'>guess first…</span>" : it.pe;
+  var ra = it.a ? RZ.a1 : RZ.a0g2, rb = it.p ? RZ.p1 : RZ.p0g3;
+  if(!it.a && it.eq) ra += " Say <b>" + it.eq + "</b>.";
+  if(!it.p && it.eq) rb += " Say <b>" + it.eq + "</b>.";
+  $("rA").innerHTML = mask ? "" : ra;
+  $("rB").innerHTML = mask ? "" : rb;
+  $("advRow").innerHTML = mask ? "As an adverb? <span style='color:#aaa'>guess first…</span>" : ("As an adverb? " + it.av);
+}
+renderDet();
+
+/* special cases */
+var SC = {
+  para:"<b>-ly adjectives have no adverb.</b> When you need the adverb meaning, paraphrase with <b>in a … way / in a … manner</b>: ✘ <i>He behaved friendly</i> → ✔ <b>in a friendly way</b> · ✘ <i>He behaved cowardly</i> → ✔ <b>in a cowardly way</b>. Students invent ✘ <i>costily</i>, ✘ <i>sillily</i>, ✘ <i>likelily</i>; standard English uses the paraphrase instead.",
+  dbl:"<b>Double agents work in both classes without changing shape:</b> <i>daily, weekly, monthly, yearly, early, fast, hard, late</i>. ✔ a <b>daily</b> report (adjective) · ✔ reported <b>daily</b> (adverb). And <b>fast</b> never takes -ly: ✘ <i>he drives too fastly</i> → ✔ <b>fast</b>.",
+  hard:"<b>hardly ≠ hard.</b> <i>She works <b>hard</b></i> = intensely. <i>She <b>hardly</b> works</i> = almost not at all. They are two different words, not two forms of one. <i>hardly</i> is also one of the negative words that trigger inversion when it is fronted (Grammar 11).",
+  late:"<b>lately ≠ late.</b> <i>He arrived <b>late</b></i> = after the time. <i>Have you seen him <b>lately</b>?</i> = recently. So: <i>The negotiations have been going badly <b>lately</b></i>.",
+  attr:"<b>The reverse club — attributive-only.</b> <i>main, mere, utter, former, principal</i> appear only before the noun: ✔ the <b>main</b> reason · a <b>mere</b> formality · an <b>utter</b> failure · the <b>former</b> director · the <b>principal</b> cause. ✘ <i>The report was utter.</i> ✘ <i>The main is that nobody was injured</i> → ✔ The <b>main thing</b> is…",
+  swap:"<b>a- adjectives never sit before the noun</b> — swap them: <i>asleep</i> → <b>sleeping</b> · <i>alive</i> → <b>living</b> · <i>afraid</i> → <b>frightened</b> · <i>ashamed</i> → <b>shameful</b> (of the thing) · <i>alone</i> → <b>solitary</b> · <i>aware</i> → the employees <b>who were aware</b>. ✔ The operator was <b>asleep</b>, but ✔ the <b>sleeping</b> operator."
+};
+document.querySelectorAll("#scSeg button").forEach(function(b){
+  b.addEventListener("click", function(){ document.querySelectorAll("#scSeg button").forEach(function(x){ x.classList.toggle("on", x===b); }); $("scOut").innerHTML=SC[b.dataset.v]; });
+});
+$("scOut").innerHTML = SC.para;
+
+var ERR = [
+  {bad:"He behaved friendly.", good:"He behaved in a friendly way.", why:"<i>friendly</i> is an adjective; it cannot work as an adverb."},
+  {bad:"She greeted the auditors very friendly.", good:"She greeted the auditors in a very friendly way.", why:"Same trap with a degree word: the paraphrase carries <i>very</i>."},
+  {bad:"He drives too fastly for the service road.", good:"He drives too fast for the service road.", why:"<i>fast</i> is already the adverb; ✘ <i>fastly</i> does not exist."},
+  {bad:"She works hardly to finish the audit.", good:"She works hard to finish the audit.", why:"<i>hardly</i> means almost not; the intensity word is <i>hard</i>."},
+  {bad:"He arrived lately to the briefing.", good:"He arrived late to the briefing.", why:"<i>lately</i> means recently; the time word is <i>late</i>."},
+  {bad:"The alive samples must be refrigerated.", good:"The living samples must be refrigerated.", why:"<i>alive</i> is predicate-only; before a noun use <i>living</i>."},
+  {bad:"The asleep city knew nothing of the blackout.", good:"The sleeping city knew nothing of the blackout.", why:"<i>asleep</i> cannot sit before the noun; swap in <i>sleeping</i>."},
+  {bad:"That was an ashamed performance by the committee.", good:"That was a shameful performance by the committee.", why:"<i>ashamed</i> describes a person after the verb; the thing is <i>shameful</i>."},
+  {bad:"The aware employees said nothing.", good:"The employees who were aware said nothing.", why:"<i>aware</i> has no attributive form: rephrase with a relative clause."},
+  {bad:"The report was utter.", good:"The report was an utter failure.", why:"<i>utter</i> is attributive-only: it needs its noun."},
+  {bad:"The main is that nobody was injured.", good:"The main thing is that nobody was injured.", why:"Attributive-only adjectives cannot stand alone as a noun."},
+  {bad:"She reads blueprints very good.", good:"She reads blueprints very well.", why:"The verb needs an adverb: <i>well</i>, not the adjective <i>good</i>."}
+];
+ERR.forEach(function(e){
+  var li=document.createElement("li");
+  li.innerHTML='<span class="bad">'+e.bad+'</span><button class="btn ghost small fixbtn">Fix ✓</button><span class="good">'+e.good+'</span><div class="why">'+e.why+'</div>';
+  li.querySelector(".fixbtn").addEventListener("click", function(){ li.classList.add("open"); });
+  $("errList").appendChild(li);
+});
+
+/* =====================================================================
+   BUILD · assemble = tap-to-sort classifier · transform = rewrite
+===================================================================== */
+var SORT = [
+  {w:"asleep",  bin:"pred", ex:"The operator was <b>asleep</b>. — but the <b>sleeping</b> operator.", note:"a- family: after the verb only."},
+  {w:"costly",  bin:"both", ex:"a <b>costly</b> mistake · The redesign proved <b>costly</b>.", note:"-ly adjective: both slots, but never an adverb."},
+  {w:"utter",   bin:"attr", ex:"an <b>utter</b> failure — ✘ The report was utter.", note:"Attributive-only: it needs its noun."},
+  {w:"alive",   bin:"pred", ex:"The cultures are still <b>alive</b>. — but a <b>living</b> specimen.", note:"a- family: after the verb only."},
+  {w:"likely",  bin:"both", ex:"the <b>likely</b> outcome · The failure is <b>likely</b>.", note:"-ly adjective, with no -ly adverb of its own (✘ likelily)."},
+  {w:"mere",    bin:"attr", ex:"a <b>mere</b> formality — ✘ The formality was mere.", note:"Attributive-only: it needs its noun."},
+  {w:"aware",   bin:"pred", ex:"The employees were <b>aware</b>. — but the employees <b>who were aware</b>.", note:"a- family: no attributive form at all."},
+  {w:"daily",   bin:"both", ex:"a <b>daily</b> report · The backups are <b>daily</b> · reported <b>daily</b>.", note:"Double agent: adjective and adverb."},
+  {w:"former",  bin:"attr", ex:"the <b>former</b> director — ✘ The director is former.", note:"Attributive-only: it needs its noun."}
+];
+var BINLAB = {attr:"before the noun only", both:"both positions", pred:"after the verb only"};
+var sel = null, sorted = 0;
+document.querySelectorAll("#buildMode button").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("#buildMode button").forEach(function(x){ x.classList.toggle("on", x===b); });
+    var m=b.dataset.m;
+    $("assembleBox").style.display = m==="assemble"?"block":"none";
+    $("transformBox").style.display = m==="transform"?"block":"none";
+  });
+});
+function armBins(on){ document.querySelectorAll(".bin").forEach(function(x){ x.classList.toggle("armed", on); }); }
+function renderPool(){
+  var host=$("pool"); host.innerHTML=""; sel=null; armBins(false);
+  SORT.forEach(function(it,i){
+    if(it.done) return;
+    var b=document.createElement("button"); b.textContent=it.w; b.dataset.k=i;
+    b.addEventListener("click", function(){
+      sel = (sel===i) ? null : i;
+      document.querySelectorAll("#pool button").forEach(function(x){ x.classList.toggle("sel", sel!==null && +x.dataset.k===sel); });
+      armBins(sel!==null);
+    });
+    host.appendChild(b);
+  });
+  if(!host.children.length) host.innerHTML='<span class="muted">All nine words are sorted. Tap <b>Reset the pool</b> to go again.</span>';
+}
+document.querySelectorAll(".bin").forEach(function(bin){
+  bin.addEventListener("click", function(){
+    var r=$("bresult");
+    if(sel===null){ r.className="bresult bad"; r.innerHTML="Tap a word first, then tap a box."; return; }
+    var it=SORT[sel], b=bin.dataset.b;
+    if(b===it.bin){
+      it.done=true; sorted++; $("bScore").textContent="Sorted: "+sorted+" / "+SORT.length;
+      var tile=document.createElement("div"); tile.className="placed"; tile.innerHTML="<b>"+it.w+"</b> — "+it.note;
+      bin.appendChild(tile);
+      r.className="bresult good"; r.innerHTML="✅ "+it.ex+'<div class="bnote">'+it.note+"</div>";
+      renderPool();
+    } else {
+      r.className="bresult bad"; r.innerHTML="❌ <b>"+it.w+"</b> does not go in “"+BINLAB[b]+"”. <span class='bnote'>Hint — try the other boxes: "+it.note+"</span>";
+    }
+  });
+});
+$("bReset").addEventListener("click", function(){
+  SORT.forEach(function(it){ it.done=false; }); sorted=0; $("bScore").textContent="Sorted: 0 / "+SORT.length;
+  document.querySelectorAll(".bin .placed").forEach(function(x){ x.remove(); });
+  $("bresult").className="bresult"; $("bresult").innerHTML=""; renderPool();
+});
+renderPool();
+
+var TRANS = [
+  {ctx:"The alive samples must be refrigerated.", accept:["the living samples must be refrigerated"], model:"The living samples must be refrigerated."},
+  {ctx:"She spoke to the clients very friendly.", accept:["she spoke to the clients in a very friendly way","she spoke to the clients in a very friendly manner"], model:"She spoke to the clients in a very friendly way."},
+  {ctx:"The asleep city knew nothing of the blackout.", accept:["the sleeping city knew nothing of the blackout"], model:"The sleeping city knew nothing of the blackout."},
+  {ctx:"That was an ashamed performance by the committee.", accept:["that was a shameful performance by the committee"], model:"That was a shameful performance by the committee."},
+  {ctx:"The afraid technician would not touch the panel.", accept:["the frightened technician would not touch the panel"], model:"The frightened technician would not touch the panel."},
+  {ctx:"He drives too fastly for the service road.", accept:["he drives too fast for the service road"], model:"He drives too fast for the service road."},
+  {ctx:"He behaved cowardly during the audit.", accept:["he behaved in a cowardly way during the audit","he behaved in a cowardly manner during the audit"], model:"He behaved in a cowardly way during the audit."},
+  {ctx:"The main is that nobody was injured.", accept:["the main thing is that nobody was injured","the main point is that nobody was injured"], model:"The main thing is that nobody was injured."}
+];
+var ti=0, tDone=0;
+function renderTrans(){ var it=TRANS[ti]; $("tctx").innerHTML="Repair it: "+it.ctx; $("tInput").value=""; $("tInput").className=""; $("tWhy").className="why"; $("tWhy").innerHTML=""; }
+$("tCheck").addEventListener("click", function(){
+  var it=TRANS[ti], val=norm($("tInput").value), ok=it.accept.map(norm).indexOf(val)>=0;
+  $("tInput").className = ok?"ok":"no";
+  $("tWhy").className="why show";
+  $("tWhy").innerHTML = (ok?'<span class="k">✓ Correct.</span> ':'<span class="k" style="color:var(--think)">Model answer:</span> ')+"<b>"+it.model+"</b>";
+  if(ok && !it.solved){ it.solved=true; tDone++; $("tScore").textContent="Done: "+tDone+" / "+TRANS.length; }
+});
+$("tNext").addEventListener("click", function(){ ti=(ti+1)%TRANS.length; renderTrans(); });
+renderTrans();
+
+/* =====================================================================
+   DRILL · one graded flow — 13 items (5 ★ / 4 ★★ / 4 ★★★)
+===================================================================== */
+var DRILL = [
+  {kind:"mc", diff:1, tag:"-ly adjective", q:"Rebuilding the interface proved a ___ decision.", o:["costly", "costily", "costfully", "costing"], a:0, w:"<i>costly</i> is an adjective, so it modifies <i>decision</i> directly; ✘ <i>costily</i> does not exist."},
+  {kind:"mc", diff:1, tag:"Double agent", q:"The committee meets ___ to review incidents.", o:["weekfully", "weekly", "weekliest", "week"], a:1, w:"<i>weekly</i> is a double agent: a weekly review (adjective) · it meets weekly (adverb)."},
+  {kind:"error", diff:1, tag:"Written Expression", words:["We","found","the","asleep","guard","at","his","post."], bad:3, fixOld:"the asleep guard", fixNew:"the sleeping guard", w:"<i>asleep</i> is predicate-only; before a noun use <i>sleeping</i>."},
+  {kind:"error", diff:1, tag:"Written Expression", words:["The","alive","cultures","must","be","moved","before","the","freezer","is","defrosted."], bad:1, fixOld:"the alive cultures", fixNew:"the living cultures", w:"<i>alive</i> never sits before the noun; use <i>living</i>."},
+  {kind:"fill", diff:1, tag:"-ly adjective", q:"Reusing the seal makes failure probable. → Failure is ___ if the seal is reused. (one -ly adjective)", accept:["likely"], w:"<i>likely</i> is an adjective after a linking verb: the failure is likely."},
+  {kind:"error", diff:2, tag:"Written Expression", words:["She","greeted","the","auditors","very","friendly."], bad:5, fixOld:"very friendly", fixNew:"in a very friendly way", w:"<i>friendly</i> cannot be an adverb: paraphrase it."},
+  {kind:"mc", diff:2, tag:"Adverb form", q:"The deadline is close, so the crew drives too ___ for the service road.", o:["fastily", "fasted", "fast", "fastly"], a:2, w:"<i>fast</i> is already the adverb; ✘ <i>fastly</i> does not exist."},
+  {kind:"fill", diff:2, tag:"hard vs hardly", q:"Choose between <i>hard</i> and <i>hardly</i>: “She ___ works” means she almost never works. (one word)", accept:["hardly"], w:"<i>hardly</i> = almost not; <i>hard</i> = intensely. They are two words, not two forms of one."},
+  {kind:"error", diff:2, tag:"Written Expression", words:["The","report","was","utter."], bad:3, fixOld:"was utter", fixNew:"was an utter failure", w:"<i>utter</i> is attributive-only: it needs its noun."},
+  {kind:"error", diff:3, tag:"Written Expression", words:["The","aware","employees","said","nothing","about","the","transfer."], bad:1, fixOld:"the aware employees", fixNew:"the employees who were aware", w:"<i>aware</i> has no attributive form: rephrase with a relative clause."},
+  {kind:"mc", diff:3, tag:"a- family", q:"The operators stayed ___ through the double shift.", o:["wakefully", "waking", "awaken", "awake"], a:3, w:"<i>awake</i> is an a- adjective: it works after <i>stay</i>, but never before the noun (✘ the awake operators)."},
+  {kind:"fill", diff:3, tag:"Adverb paraphrase", q:"✘ “He behaved friendly.” → He behaved ___ during the audit. (4 words)", accept:["in a friendly way","in a friendly manner"], w:"No adverb exists: paraphrase with <i>in a … way / manner</i>."},
+  {kind:"fill", diff:3, tag:"Attributive-only", q:"✘ “The main is that nobody was injured.” → The ___ is that nobody was injured. (2 words)", accept:["main thing","main point"], w:"<i>main</i> is attributive-only, so it needs a noun to modify."}
+];
+var di=0, dscore=0, dstreak=0, ddone=false;
+function diffChip(d){ return d===1?'<span class="diff d1">★ MODERATE</span>':d===2?'<span class="diff d2">★★ CHALLENGING</span>':'<span class="diff d3">★★★ EXPERT</span>'; }
+function renderDrill(){
+  var body=$("drillBody");
+  $("dFill").style.width=(di/DRILL.length*100)+"%";
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  if(di>=DRILL.length){
+    var best=+(load("i8_s6_drill_best")||0); if(dscore>best){ store("i8_s6_drill_best", dscore); best=dscore; }
+    var medal=dscore>=11?"🥇":dscore>=8?"🥈":"🔁";
+    var msg=dscore>=11?"Every position detected. Ready for Task set 21 at ★★★." : dscore>=8?"Solid — review the a- swap table and the paraphrase card, then go again." : "Re-read Structure 6, use Explore and Build, then come back.";
+    body.innerHTML='<div class="endbox"><div class="medal">'+medal+'</div><h3 style="font-size:22px">'+dscore+" / "+DRILL.length+"</h3><p style='margin:6px 0 4px; font-weight:700'>"+msg+"</p><p class='muted'>Best on this device: "+best+"/"+DRILL.length+"</p><p style='margin-top:12px'><button class='btn' id='dRetry'>Try again ↺</button></p></div>";
+    $("dFill").style.width="100%";
+    $("dRetry").addEventListener("click", function(){ di=0; dscore=0; dstreak=0; renderDrill(); });
+    return;
+  }
+  var it=DRILL[di]; ddone=false;
+  var head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>'+(it.q||"")+"</div>";
+  var bodyHtml="";
+  if(it.kind==="mc"){
+    bodyHtml='<div class="opts" id="dopts">'; it.o.forEach(function(o,j){ bodyHtml+='<button data-j="'+j+'">'+o+'</button>'; }); bodyHtml+="</div>";
+  } else if(it.kind==="error"){
+    head='<div class="qq"><div class="tag">'+diffChip(it.diff)+' · '+it.tag+' · <span style="color:#aaa">Q'+(di+1)+"/"+DRILL.length+'</span></div>Click the part that is wrong.</div>';
+    bodyHtml='<div class="stn" id="dstn">'; it.words.forEach(function(w,j){ bodyHtml+='<span class="w" data-j="'+j+'">'+w+'</span> '; }); bodyHtml+="</div>";
+  } else {
+    bodyHtml='<div class="fillrow"><input type="text" id="dinput" placeholder="type your answer"><button class="btn small" id="dcheck">Check</button></div>';
+  }
+  body.innerHTML=head+bodyHtml+'<div class="why" id="dwhy"></div><div class="qfoot"><button class="btn" id="dNext" disabled>Next →</button></div>';
+  if(it.kind==="mc"){
+    document.querySelectorAll("#dopts button").forEach(function(b){ b.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+b.dataset.j, ok=j===it.a; if(ok)b.classList.add("right"); else{ b.classList.add("wrong"); document.querySelector('#dopts button[data-j="'+it.a+'"]').classList.add("right"); } finishItem(ok, '<span class="k">Why:</span> '+it.w); }); });
+  } else if(it.kind==="error"){
+    document.querySelectorAll("#dstn .w").forEach(function(sp){ sp.addEventListener("click", function(){ if(ddone)return; ddone=true; var j=+sp.dataset.j, ok=j===it.bad; if(ok)sp.classList.add("rightpick"); else{ sp.classList.add("wrongpick"); document.querySelector('#dstn .w[data-j="'+it.bad+'"]').classList.add("rightpick"); } finishItem(ok, (ok?'<span class="k">✓ Correct.</span> ':'<span class="k">✗ Not that one: the green part is the error.</span> ')+'<span class="fix"><span class="old">'+it.fixOld+'</span> → <span class="new">'+it.fixNew+'</span></span><span class="k">Why:</span> '+it.w); }); });
+  } else {
+    $("dcheck").addEventListener("click", function(){ if(ddone)return; ddone=true; var val=norm($("dinput").value), ok=it.accept.map(norm).indexOf(val)>=0; $("dinput").className=ok?"ok":"no"; finishItem(ok, '<span class="k">'+(ok?"✓ Correct.":"Answer: "+it.accept[0]+".")+'</span> '+it.w); });
+  }
+  $("dNext").addEventListener("click", function(){ di++; renderDrill(); });
+}
+function finishItem(ok, whyHtml){
+  if(ok){ dscore++; dstreak++; } else { dstreak=0; }
+  $("dScore").textContent="Score: "+dscore; $("dStreak").textContent="🔥 "+dstreak;
+  var wy=$("dwhy"); wy.className="why show"; wy.innerHTML=whyHtml;
+  $("dNext").disabled=false;
+}
+renderDrill();
+</script>
+
+<!-- ============ Sello de autoría (no eliminar) ============ -->
+<script>
+(function () {
+  "use strict";
+  /* Sello de autoría — Prof. Daniel Lara (profe.daniellara). */
+  var B64 = "PGRpdiBpZD0iY3JlZGl0by1wcm9mZS1kYW5pZWxsYXJhIiBzdHlsZT0icG9zaXRpb246Zml4ZWQ7cmlnaHQ6MTBweDtib3R0b206MTBweDt6LWluZGV4OjIxNDc0ODM2NDc7Zm9udDoxMnB4LzEuNSBzeXN0ZW0tdWksLWFwcGxlLXN5c3RlbSxzYW5zLXNlcmlmO2JhY2tncm91bmQ6cmdiYSgxNSw2MSwzOCwuOTMpO2NvbG9yOiNmZmY7cGFkZGluZzo2cHggMTJweDtib3JkZXItcmFkaXVzOjk5OXB4O2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDAsMCwwLC4yOCk7d2hpdGUtc3BhY2U6bm93cmFwIj48c3Bhbj4mY29weTsgUHJvZi4gRGFuaWVsIExhcmE8L3NwYW4+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmluc3RhZ3JhbS5jb20vcHJvZmUuZGFuaWVsbGFyYS8iIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIiBzdHlsZT0iY29sb3I6IzlmZThjZjt0ZXh0LWRlY29yYXRpb246bm9uZSI+QHByb2ZlLmRhbmllbGxhcmE8L2E+ICZtaWRkb3Q7IDxhIGhyZWY9Imh0dHBzOi8vc2Nob2xhci5nb29nbGUuY29tL2NpdGF0aW9ucz91c2VyPWlmRzJfaHdBQUFBSiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojOWZlOGNmO3RleHQtZGVjb3JhdGlvbjpub25lIj5Hb29nbGUgU2Nob2xhcjwvYT48L2Rpdj4=";
+  var ID = "credito-profe-daniellara";
+  function build(){ var host=document.createElement("div"); host.innerHTML=atob(B64); return host.firstElementChild; }
+  function ensure(){ var el=document.getElementById(ID); if(!el||!document.body||!document.body.contains(el)){ try{ document.body.appendChild(build()); }catch(e){} } }
+  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", ensure); } else { ensure(); }
+  try{ new MutationObserver(ensure).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+  setInterval(ensure, 4000);
+})();
+</script>
+</body>
+</html>

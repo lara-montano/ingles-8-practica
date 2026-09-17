@@ -27,6 +27,23 @@ SIMS = [
  ("u5","Unit 5 · Grammar 12","Inversion in conditionals & comparisons","Had she known…, Should you need…, …than did the others.","U5_G12_inversion_conditionals_comparisons.html"),
 ]
 
+STRUCT = [
+ ("u1","Unit 1 · Structure 1","Noun number","Agreement under pressure: the real subject, uncountables, criteria and data.","U1_S1_noun_number.html"),
+ ("u2","Unit 2 · Structure 2","Person vs thing","-er / -ee / -tion: who does what to whom.","U2_S2_person_vs_thing.html"),
+ ("u4","Unit 4 · Structure 3","Make vs do","Divorcing <i>hacer</i>: make sense, do without.","U4_S3_make_vs_do.html"),
+ ("u4","Unit 4 · Structure 4","Like, alike & unlike","Position rules, and <i>like</i> + noun vs <i>as</i> + clause.","U4_S4_like_alike_unlike.html"),
+ ("u4","Unit 4 · Structure 5","Other, another & others","A decision grid: singular or plural, specific or not.","U4_S5_other_another_others.html"),
+ ("u5","Unit 5 · Structure 6","-ly and predicate adjectives","friendly and likely are adjectives; asleep only follows the verb.","U5_S6_ly_and_predicate_adjectives.html"),
+ ("u5","Unit 5 · Structure 7","-ed vs -ing adjectives","The source confuses; the person is confused.","U5_S7_ed_vs_ing_adjectives.html"),
+]
+
+def struct_cards():
+    out=[]
+    for u,k,t,d,f in STRUCT:
+        if not os.path.exists(os.path.join(WEB, f)):
+            print("  (Structure omitida, no existe aun):", f); continue
+        out.append(f'    <a class="sim {u}" href="02_Simuladores_web/{f}"><div class="unit">{k}</div><h3>{t}</h3><p>{d}</p><span class="go">Abrir \u2192</span></a>')
+    return "\n".join(out)
 def sim_cards():
     out = []
     for u,k,t,d,f in SIMS:
@@ -119,7 +136,7 @@ html = f"""<!DOCTYPE html>
   </div>
 </header>
 <nav><div class="wrap">
-  <a href="#simuladores">🧪 Simuladores</a><a href="#mock">📝 SELLI Mock</a>
+  <a href="#simuladores">🧪 Simuladores</a><a href="#structure">🔤 Structure</a><a href="#mock">📝 SELLI Mock</a>
 </div></nav>
 <main class="wrap">
 
@@ -128,6 +145,14 @@ html = f"""<!DOCTYPE html>
   <p class="lead">Una página por tema del manual, en los dos formatos del examen: <b>Structure</b> (completar la oración) y <b>Written Expression</b> (hallar el error). Tres modos: <b>Explore</b> (la regla en acción) → <b>Build</b> (arma oraciones) → <b>Drill</b> (práctica graduada ★ ★★ ★★★ con marcador y racha). Funcionan sin internet: puedes guardar la página en tu teléfono.</p>
   <div class="grid">
 {sim_cards()}
+  </div>
+</section>
+
+<section id="structure">
+  <h2>Vocabulario y precisión léxica</h2>
+  <p class="lead">Las páginas de <b>Structure</b> del manual: concordancia bajo presión, sufijos de papel, los confundibles (<i>make/do</i>, <i>like/as</i>, <i>other/another</i>) y los adjetivos que cambian de sentido según la posición o el participio. Mismos tres modos y el Drill en los dos formatos del examen.</p>
+  <div class="grid">
+{struct_cards()}
   </div>
 </section>
 

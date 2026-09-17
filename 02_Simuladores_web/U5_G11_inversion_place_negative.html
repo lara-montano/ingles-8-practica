@@ -603,8 +603,8 @@ renderTrans();
    DRILL · one graded flow — 13 items (5★ / 4★★ / 4★★★)
 ===================================================================== */
 var DRILL = [
-  {kind:"mc", diff:1, tag:"Structure", q:"Never ___ such a clean data set.", o:["I have seen","have I seen","did I saw","saw I"], a:1, w:"A fronted negative takes question order: auxiliary + subject + main verb."},
-  {kind:"mc", diff:1, tag:"Structure", q:"Seldom ___ this margin of error in a certified batch.", o:["do we accept","we accept","we do accept","accept we"], a:0, w:"Seldom is restrictive: with no auxiliary, borrow do — and the subject still follows that auxiliary, never the main verb."},
+  {kind:"mc", diff:1, tag:"Structure", q:"Never ___ such a clean data set.", o:["have I seen", "I have seen", "did I saw", "saw I"], a:0, w:"A fronted negative takes question order: auxiliary + subject + main verb."},
+  {kind:"mc", diff:1, tag:"Structure", q:"Seldom ___ this margin of error in a certified batch.", o:["we accept", "do we accept", "we do accept", "accept we"], a:1, w:"Seldom is restrictive: with no auxiliary, borrow do — and the subject still follows that auxiliary, never the main verb."},
   {kind:"mc", diff:1, tag:"Structure", q:"Into the chamber ___ the coolant from the reserve tank.", o:["it flowed","did flow","flowed","flow"], a:2, w:"Fronted place expression: the whole verb moves before the noun subject — no do-support, no extra pronoun, and the verb agrees with the coolant."},
   {kind:"error", diff:1, tag:"Written Expression", words:["Rarely","does","the","simulation","matches","reality","so","well."], bad:4, fixOld:"matches", fixNew:"match", w:"After borrowed do/does/did the main verb returns to its base form."},
   {kind:"fill", diff:1, tag:"Front it", q:"We have never lost a sample to contamination. → Never ___ a sample to contamination. (3 words)", accept:["have we lost"], w:"Auxiliary before subject: Never have we lost a sample."},
@@ -614,7 +614,7 @@ var DRILL = [
   {kind:"fill", diff:2, tag:"Echo it", q:"“We have never audited that vendor.” — and we haven’t either. → ___ (3 words)", accept:["neither have we","nor have we"], w:"Negative echo: Neither/Nor + auxiliary + subject — one negative only."},
   {kind:"error", diff:3, tag:"Written Expression", words:["Under","the","floor","runs","the","power","cables","and","the","fiber-optic","trunk."], bad:3, fixOld:"runs", fixNew:"run", w:"Place inversion pushes the subject behind the verb, but the verb still agrees with it: cables and trunk → run."},
   {kind:"error", diff:3, tag:"Written Expression", words:["Only","after","the","second","failure","the","board","approved","the","redesign."], bad:7, fixOld:"approved", fixNew:"did the board approve", w:"Only + adverbial of time inverts the main clause: did the board approve."},
-  {kind:"mc", diff:3, tag:"Structure", q:"No sooner ___ than the clients asked for a second one.", o:["the demo had ended","had the demo ended","did the demo ended","the demo ended"], a:1, w:"No sooner + past perfect inverted, then than + past simple."},
+  {kind:"mc", diff:3, tag:"Structure", q:"No sooner ___ than the clients asked for a second one.", o:["had the demo ended", "the demo had ended", "did the demo ended", "the demo ended"], a:0, w:"No sooner + past perfect inverted, then than + past simple."},
   {kind:"fill", diff:3, tag:"Front it", q:"The team did not learn the real cause until Friday. → Not until Friday ___ the real cause. (4 words)", accept:["did the team learn"], w:"Not until inverts the main clause: did the team learn."}
 ];
 var di=0, dscore=0, dstreak=0, ddone=false;
